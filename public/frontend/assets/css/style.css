@@ -48,11 +48,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&amp;display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;display=swap");
 :root {
-  --color-primary: #F64A00;
-  --color-primary-2: #F64A00;
-  --color-primary-3: #F64A00;
-  --color-primary-4: #F64A00;
-  --color-primary-5: #F64A00;
+  --color-primary: #006144;
+  --color-primary-2: #006144;
+  --color-primary-3: #006144;
+  --color-primary-4: #006144;
+  --color-primary-5: #006144;
   --color-primary-alta: #FFECEC;
   --color-secondary:#111D5E;
   --color-terciary:#90FF03;
@@ -10790,7 +10790,7 @@ body {
 }
 
 .bg-1 {
-  background: #F64A00;
+  background: #006144;
 }
 
 .bg-secondary {
@@ -11154,7 +11154,7 @@ body {
   line-height: 18px;
 }
 .pagination button.active {
-  background: #F64A00;
+  background: #006144;
   color: #ffff;
 }
 .pagination button:hover {
@@ -11181,7 +11181,7 @@ body {
   line-height: 18px;
 }
 .pagination a.active {
-  background: #F64A00;
+  background: #006144;
   color: #ffff;
 }
 .pagination a:hover {
@@ -11240,11 +11240,11 @@ body {
 }
 .blog-grid-inner .blog-header .date .title {
   margin-bottom: 0;
-  color: #F64A00;
+  color: #006144;
   margin-bottom: -5px;
 }
 .blog-grid-inner .blog-header .date span {
-  color: #F64A00;
+  color: #006144;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -15820,7 +15820,7 @@ body.sal-disabled [data-sal|=flip] {
   cursor: pointer;
 }
 .header-two .main-header .content .header-right .call-area .icon svg path {
-  fill: #F64A00;
+  fill: #006144;
 }
 .header-two .main-header .content .header-right .call-area .icon::after {
   position: absolute;
@@ -17581,7 +17581,7 @@ button.menu.rts-btn.btn-primary-3-menu:hover .menu-light {
   letter-spacing: 1px;
 }
 .banner-one-inner .pre-title span {
-  color: #F64A00;
+  color: #006144;
   font-weight: 800;
 }
 .banner-one-inner .title {
@@ -17615,7 +17615,7 @@ button.menu.rts-btn.btn-primary-3-menu:hover .menu-light {
   }
 }
 .banner-one-inner .title span {
-  color: #F64A00;
+  color: #006144;
   font-weight: 700;
   font-size: 70px;
 }
@@ -18634,7 +18634,7 @@ p.disc.banner-para {
   top: 7%;
   animation: jump-1 10s linear infinite;
   padding: 7px;
-  background: #F64A00;
+  background: #006144;
   border-radius: 7px;
 }
 .about-one-thumbnail .experience {
@@ -18674,7 +18674,7 @@ p.disc.banner-para {
 
 .about-one-thumbnail img {
   padding: 7px;
-  background: #F64A00;
+  background: #006144;
   border-radius: 7px;
 }
 
@@ -19135,7 +19135,7 @@ p.disc.banner-para {
   padding-bottom: 0;
 }
 .rts-tab-style-one .button-area button.active {
-  color: #F64A00;
+  color: #006144;
 }
 .rts-tab-style-one .tab-content {
   margin-left: 30px;
@@ -19323,7 +19323,7 @@ p.disc.banner-para {
   margin-bottom: 10px;
 }
 .about-home-six .thumbnail .experience-area span {
-  color: #F64A00;
+  color: #006144;
   font-weight: 500;
   font-size: 18px;
   line-height: 30px;
@@ -20626,7 +20626,7 @@ p.disc.banner-para {
 .cta-one-bg {
   background-image: url(../images/cta/01.jpg);
   background-repeat: no-repeat;
-  background-color: #F64A00;
+  background-color: #006144;
   background-blend-mode: multiply;
   overflow: hidden;
   background-position: center;
@@ -21073,7 +21073,7 @@ a.rts-btn.btn-secondary-5:hover {
 }
 .rts-business-solution-left .success-rate {
   position: absolute;
-  background: #F64A00;
+  background: #006144;
   padding: 47px;
   left: -1%;
   bottom: -8%;
@@ -22949,7 +22949,7 @@ a.rts-btn.btn-secondary-5:hover {
 .portfolio-area.style-5 .item::after {
   content: "";
   position: absolute;
-  background-color: #F64A00;
+  background-color: #006144;
   opacity: 0.902;
   clip-path: polygon(100% 0, 100% 100%, 45.5% 100%, 0% 55%, 0 0);
   width: 100%;
@@ -23694,7 +23694,7 @@ a.rts-btn.btn-secondary-5:hover {
   height: 333px;
   left: 10%;
   top: 60%;
-  background: #F64A00;
+  background: #006144;
   border-radius: 50%;
   z-index: 0;
 }
@@ -25756,7 +25756,7 @@ a.rts-btn.btn-secondary-5:hover {
   transform: scale(1.1);
 }
 .rts-blog-h-2-wrapper .body span {
-  color: #F64A00;
+  color: #006144;
   font-size: 16px;
   font-weight: 500;
 }
@@ -26290,7 +26290,7 @@ a.rts-btn.btn-secondary-5:hover {
 }
 
 .progress.red .progress-bar {
-  border-color: #F64A00;
+  border-color: #006144;
 }
 
 .progress.red .progress-left .progress-bar {
@@ -27891,7 +27891,7 @@ p.disc {
 .background-cta {
   background-image: url(../images/footer/callto-action.png);
   background-repeat: no-repeat;
-  background-color: #F64A00;
+  background-color: #006144;
   background-blend-mode: multiply;
   overflow: hidden;
   border-radius: 100px;
