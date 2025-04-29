@@ -9,6 +9,11 @@ use Yajra\DataTables\DataTables;
 
 class DocumentsController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      */
@@ -24,8 +29,16 @@ class DocumentsController extends Controller
                     $editUrl = route('documents.edit', $row->id);
                     $deleteUrl = route('documents.destroy', $row->id);
                     $formId = 'delete-form' . $row->id;
-
+                    $downloadId = 'download-form' . $row->id;
+                    $download = route('file.download');
                     return '
+                        <a href="javascript:void(0)" onclick="document.getElementById(\'' . $downloadId . '\').submit()" class="text-primary m-2"><i class="fas fa-arrow-down"></i></a>
+                        <form action="' . $download . '" method="POST" id="' . $downloadId . '" style="display:none;">
+                            ' . csrf_field() . '
+
+                            <input type="hidden" name="file_path" value="' . $row->file_path . '">
+                        </form>
+
                         <a href="' . $editUrl . '" class="text-info m-2"><i class="fas fa-edit"></i></a>
                         <a href="javascript:void(0)" onclick="document.getElementById(\'' . $formId . '\').submit()" class="text-danger m-2"><i class="fas fa-trash"></i></a>
                         <form action="' . $deleteUrl . '" method="POST" id="' . $formId . '" style="display:none;">
@@ -38,32 +51,32 @@ class DocumentsController extends Controller
         }
         $type = 'documents';
         $name = 'Document';
-        return view('documents.index', compact('type','name'));
+        return view('documents.index', compact('type', 'name'));
     }
 
     public function invoiceList()
     {
         $type = 'invoice';
         $name = 'Invoice';
-        return view('documents.index', compact('type','name'));
+        return view('documents.index', compact('type', 'name'));
     }
     public function payslipList()
     {
         $type = 'payslip';
         $name = 'Payslip';
-        return view('documents.index', compact('type','name'));
+        return view('documents.index', compact('type', 'name'));
     }
     public function activityList()
     {
         $type = 'activity';
         $name = 'Activity Report';
-        return view('documents.index', compact('type','name'));
+        return view('documents.index', compact('type', 'name'));
     }
     public function followupList()
     {
         $type = 'followup';
         $name = 'Follow up Sheet';
-        return view('documents.index', compact('type','name'));
+        return view('documents.index', compact('type', 'name'));
     }
 
     /**
@@ -73,31 +86,31 @@ class DocumentsController extends Controller
     {
         $type = 'document';
         $name = 'Document';
-        return view('documents.create', compact('type','name'));
+        return view('documents.create', compact('type', 'name'));
     }
     public function invoiceCreate()
     {
         $type = 'invoice';
         $name = 'Invoice';
-        return view('documents.create', compact('type','name'));
+        return view('documents.create', compact('type', 'name'));
     }
     public function payslipCreate()
     {
         $type = 'payslip';
         $name = 'Payslip';
-        return view('documents.create', compact('type','name'));
+        return view('documents.create', compact('type', 'name'));
     }
     public function activityCreate()
     {
         $type = 'activity';
         $name = 'Activity Report';
-        return view('documents.create', compact('type','name'));
+        return view('documents.create', compact('type', 'name'));
     }
     public function followupCreate()
     {
         $type = 'followup';
         $name = 'Follow up Sheet';
-        return view('documents.create', compact('type','name'));
+        return view('documents.create', compact('type', 'name'));
     }
 
     /**
@@ -113,10 +126,10 @@ class DocumentsController extends Controller
             $filePath = null;
 
             if ($request->hasFile('file')) {
-                $uniqueName = uniqid() . '___' . str_replace(' ', '_', $request->image->getClientOriginalName());
+                $uniqueName = uniqid() . '___' . str_replace(' ', '_', $request->file->getClientOriginalName());
 
                 // Store the file in the 'public' disk (configured in config/filesystems.php)
-                $filePath = $request->image->storeAs("/documents", $uniqueName, "public");
+                $filePath = $request->file->storeAs("/documents", $uniqueName, "public");
             }
             $document = Document::create([
                 'title' => $request->title,
@@ -161,10 +174,10 @@ class DocumentsController extends Controller
             $filePath = Document::find($id)->file_path ?? null;
 
             if ($request->hasFile('file')) {
-                $uniqueName = uniqid() . '___' . str_replace(' ', '_', $request->image->getClientOriginalName());
+                $uniqueName = uniqid() . '___' . str_replace(' ', '_', $request->file->getClientOriginalName());
 
                 // Store the file in the 'public' disk (configured in config/filesystems.php)
-                $filePath = $request->image->storeAs("/documents", $uniqueName, "public");
+                $filePath = $request->file->storeAs("/documents", $uniqueName, "public");
             }
             $document = Document::updateOrCreate(['id' => $id], [
                 'title' => $request->title,

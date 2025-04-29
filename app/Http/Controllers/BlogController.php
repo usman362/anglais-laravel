@@ -9,6 +9,11 @@ use Yajra\DataTables\DataTables;
 
 class BlogController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      */
@@ -72,6 +77,7 @@ class BlogController extends Controller
             }
 
             $blog = Blog::create([
+                'uuid' => uniqid(),
                 'title' => $request->title,
                 'content' => $request->content,
                 'image' => $filePath,

@@ -15,18 +15,6 @@
                             <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
                         </ol>
                     </div>
-                    <div class="d-flex">
-                        <div class="justify-content-center">
-                            <button type="button" class="btn btn-white btn-icon-text my-2 me-2">
-                                <i class="fe fe-settings"></i>
-                                <span>Settings</span>
-                            </button>
-                            <button type="button" class="btn btn-primary my-2 btn-icon-text">
-                                <i class="fe fe-download-cloud bg-white-transparent text-white"></i>
-                                <span>Reports</span>
-                            </button>
-                        </div>
-                    </div>
                 </div>
                 <!-- END PAGE HEADER -->
 

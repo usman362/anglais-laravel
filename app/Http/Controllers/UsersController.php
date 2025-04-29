@@ -4,11 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Yajra\DataTables\DataTables;
 
 class UsersController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      */
@@ -17,9 +23,6 @@ class UsersController extends Controller
         if ($request->ajax()) {
             $users = User::all();
             return DataTables::of($users)
-                ->addColumn('role', function ($row) {
-                    return 'Employee';
-                })
                 ->addColumn('actions', function ($row) {
                     $editUrl = route('users-management.edit', $row->id);
                     $deleteUrl = route('users-management.destroy', $row->id);
@@ -57,12 +60,14 @@ class UsersController extends Controller
             'last_name' => 'required',
             'email' => 'required|email|unique:users,email',
             'password' => 'required',
+            'role' => 'required'
         ]);
         try {
             $user = User::create([
                 'name' => $request->first_name . ' ' . $request->last_name,
                 'email' => $request->email,
                 'password' => Hash::make($request->password),
+                'role' => $request->role
             ]);
 
             return redirect(route('users-management.index'))->with('success', 'User has been Created Successfully');
@@ -98,6 +103,7 @@ class UsersController extends Controller
             'last_name' => 'required',
             'email' => 'required|email|unique:users,email,' . $id,
             'password' => 'required',
+            'role' => 'required'
         ]);
 
         try {
@@ -105,6 +111,7 @@ class UsersController extends Controller
                 'name' => $request->first_name . ' ' . $request->last_name,
                 'email' => $request->email,
                 'password' => Hash::make($request->password),
+                'role' => $request->role
             ]);
 
             return redirect(route('users-management.index'))->with('success', 'User has been Created Successfully');
@@ -124,5 +131,14 @@ class UsersController extends Controller
         } else {
             return back()->with('error', 'Failed to Delete User!');
         }
+    }
+
+    public function dashboard()
+    {
+        if (Auth::user()->role == 'admin') {
+            return redirect()->route('users-management.index');
+        }
+
+        return redirect()->route('profile.index');
     }
 }

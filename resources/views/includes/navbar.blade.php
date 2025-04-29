@@ -82,30 +82,22 @@
                         <div class="dropdown d-flex main-profile-menu">
                             <a class="d-flex" href="javascript:void(0);">
                                 <span class="main-img-user">
-                                    <img alt="avatar" src="{{ asset('assets/img/users/6.jpg') }}">
+                                    <img alt="avatar"
+                                        src="{{ Chatify::getUserWithAvatar(Auth::user())->avatar }}">
                                 </span>
                             </a>
                             <div class="dropdown-menu">
                                 <div class="header-navheading">
-                                    <h6 class="main-notification-title">Dennis Mark</h6>
-                                    <p class="main-notification-text">Web Designer</p>
+                                    <h6 class="main-notification-title">{{ auth()->user()->name ?? 'N/A' }}</h6>
                                 </div>
-                                <a class="dropdown-item border-top"
-                                    href="https://laravelui.spruko.com/dashplex/profile">
-                                    <i class="fe fe-user"></i> My Profile
-                                </a>
-                                <a class="dropdown-item" href="https://laravelui.spruko.com/dashplex/profile">
+                                <a class="dropdown-item" href="{{ route('profile.index') }}">
                                     <i class="fe fe-edit"></i> Edit Profile
                                 </a>
-                                <a class="dropdown-item" href="https://laravelui.spruko.com/dashplex/profile">
-                                    <i class="fe fe-settings"></i> Account Settings
-                                </a>
-                                <a class="dropdown-item" href="https://laravelui.spruko.com/dashplex/profile">
-                                    <i class="fe fe-compass"></i> Activity
-                                </a>
-                                <a class="dropdown-item" href="https://laravelui.spruko.com/dashplex/signin">
+                                <a class="dropdown-item" href="javascript:void(0)"
+                                    onclick="document.getElementById('logout-form').submit()">
                                     <i class="fe fe-power"></i> Sign Out
                                 </a>
+                                <form action="{{ route('logout') }}" id="logout-form" method="post">@csrf</form>
                             </div>
                         </div><!-- profile -->
 

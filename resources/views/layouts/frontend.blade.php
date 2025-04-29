@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from themewant.com/products/html/bizcoz/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 25 Apr 2025 22:09:39 GMT -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home One (Consulting Business)</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('frontend/assets/images/fav.png') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/assets/css/plugins/swiper.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/assets/css/plugins/fontawesome-5.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/assets/css/plugins/animate.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/assets/css/plugins/unicons.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/assets/css/vendor/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/assets/css/style.css') }}">
+</head>
+
+<body>
+
+    <!-- start header area -->
+    <!-- start header area -->
+    <header class="header--sticky header-one ">
+        <div class="header-top header-top-one bg-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 d-xl-block d-none">
+                        <div class="left">
+                            <div class="mail">
+                                <a href="mailto:webmaster@example.com"><i class="fal fa-envelope"></i>
+                                    info@example.com</a>
+                            </div>
+                            <div class="working-time">
+                                <p><i class="fal fa-map-marker-alt"></i> 13/A, New Pro State, NYC</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-xl-block d-none">
+                        <div class="right">
+                            <ul class="top-nav">
+                                <li><a href="{{ route('who_we_are') }}">About</a></li>
+                                <li><a href="{{ route('blog_list') }}">News</a></li>
+                                <li><a href="{{ route('contact_us') }}">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-main-one bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-4">
+                        <div class="thumbnail">
+                            <a href="{{ route('home') }}">
+                                <img src="{{ asset('frontend/assets/images/logo/logo.png') }}" alt="finbiz-logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class=" col-xl-9 col-lg-8 col-md-8 col-sm-8 col-8">
+                        <div class="main-header">
+                            <nav class="nav-main mainmenu-nav d-none d-xl-block">
+                                <ul class="mainmenu">
+                                    <li class="#">
+                                        <a href="{{ route('home') }}">Home</a>
+                                    </li>
+                                    <li><a href="{{ route('who_we_are') }}">Who We Are</a></li>
+                                    <li class="#">
+                                        <a href="{{ route('services') }}">Services</a>
+                                    </li>
+                                    {{-- <li class="#">
+                                        <a href="{{ route('our_values') }}">Project</a>
+                                    </li> --}}
+                                    <li class="#">
+                                        <a href="{{ route('blog_list') }}">Blog</a>
+                                    </li>
+                                    <li class="#">
+                                        <a href="{{ route('contact_us') }}">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="button-area">
+                                @auth
+                                    <a href="{{ url('dashboard') }}"
+                                        class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn">Dashboard</a>
+                                @else
+                                    <a href="{{ route('login') }}"
+                                        class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn">Log In</a>
+                                @endauth
+
+                                <button id="menu-btn" class="menu rts-btn btn-primary-alta ml--20 ml_sm--5">
+                                    <img class="menu-dark" src="{{ asset('frontend/assets/images/icon/menu.png') }}"
+                                        alt="Menu-icon">
+                                    <img class="menu-light"
+                                        src="{{ asset('frontend/assets/images/icon/menu-light.png') }}"
+                                        alt="Menu-icon">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End header area -->
+
+    <div id="side-bar" class="side-bar">
+        <button class="close-icon-menu"><i class="far fa-times"></i></button>
+        <!-- inner menu area desktop start -->
+        <div class="rts-sidebar-menu-desktop">
+            <a class="logo-1" href="{{ route('home') }}"><img class="logo"
+                    src="{{ asset('frontend/assets/images/logo/logo.png') }}" alt="finbiz_logo"></a>
+            <a class="logo-2" href="{{ route('home') }}"><img class="logo"
+                    src="{{ asset('frontend/assets/images/logo/logo.png') }}" alt="finbiz_logo"></a>
+            <a class="logo-3" href="{{ route('home') }}"><img class="logo"
+                    src="{{ asset('frontend/assets/images/logo/logo.png') }}" alt="finbiz_logo"></a>
+            <div class="body d-none d-xl-block">
+                <p class="disc">
+                    We must explain to you how all seds this mistakens idea denouncing pleasures and praising account.
+                </p>
+                <div class="get-in-touch">
+                    <!-- title -->
+                    <div class="h6 title">Get In Touch</div>
+                    <!-- title End -->
+                    <div class="wrapper">
+                        <!-- single -->
+                        <div class="single">
+                            <i class="fas fa-phone-alt"></i>
+                            <a href="#">+10000000000</a>
+                        </div>
+                        <!-- single ENd -->
+                        <!-- single -->
+                        <div class="single">
+                            <i class="fas fa-envelope"></i>
+                            <a href="#">example@gmail.com</a>
+                        </div>
+                        <!-- single ENd -->
+                        <!-- single -->
+                        <div class="single">
+                            <i class="fas fa-globe"></i>
+                            <a href="#">www.webexample.com</a>
+                        </div>
+                        <!-- single ENd -->
+                        <!-- single -->
+                        <div class="single">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <a href="#">13/A, New Pro State, NYC</a>
+                        </div>
+                        <!-- single ENd -->
+                    </div>
+                </div>
+            </div>
+            <div class="body-mobile d-block d-xl-none">
+                <nav class="nav-main mainmenu-nav">
+                    <ul class="mainmenu">
+                        <li class="#">
+                            <a href="{{ route('home') }}">Home</a>
+                        </li>
+                        <li><a href="{{ route('who_we_are') }}">About Us</a></li>
+                        <li class="#">
+                            <a href="{{ route('services') }}">Services</a>
+                        </li>
+                        {{-- <li class="#">
+                            <a href="{{ route('our_values') }}">Project</a>
+                        </li> --}}
+                        <li class="#">
+                            <a href="{{ route('blog_list') }}">Blog</a>
+                        </li>
+                        <li class="#">
+                            <a href="{{ route('contact_us') }}">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                @auth
+                <a href="{{ url('dashboard') }}"
+                    class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btnmenu">Dashboard</a>
+                    @else
+                    <a href="{{ route('login') }}"
+                    class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btnmenu">Log In</a>
+                @endauth
+
+            </div>
+        </div>
+        <!-- inner menu area desktop End -->
+
+    </div>
+
+    <div id="anywhere-home"></div>
+    <!-- ENd Header Area -->
+
+    @yield('content')
+
+
+    <!-- start header area -->
+    <!-- rts footer area start -->
+    <div class="rts-footer-area footer-one rts-section-gapTop bg-footer-one">
+        <div class="container bg-shape-f1">
+            <!-- footer call to action area -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="rts-cta-wrapper">
+                        <div class="background-cta">
+                            <div class="row">
+                                <!-- cta-left -->
+                                <div class="col-lg-6">
+                                    <div class="cta-left-wrapepr">
+                                        <p class="cta-disc">
+                                            Latest Business Ideas
+                                        </p>
+                                        <h3 class="title">Sign Up Newsletter</h3>
+                                    </div>
+                                </div>
+                                <!-- cta left end -->
+                                <div class="col-lg-6">
+                                    <!-- cta right -->
+                                    <form class="cta-input-arae">
+                                        <input type="email" name="email" placeholder="Enter Email Address"
+                                            required>
+                                        <button type="submit" class="rts-btn btn-primary">Subscribe Now</button>
+                                    </form>
+                                    <!-- cta right End -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer call to action area End -->
+            <!-- rts footer area -->
+            <div class="row pt--120 pt_sm--80 pb--80 pb_sm--40">
+                <div class="col-xl-4 col-md-6 col-sm-12 col-12">
+                    <div class="footer-two-single-wized left pt--50">
+                        <h3 class="title animated fadeIn">
+                            <span>Ready To</span> <br>
+                            Work With Us?
+                        </h3>
+                        <p class="disc">
+                            Felis consequat magnis est fames sagittis ultrices placerat sodales porttitor quisque.
+                        </p>
+                    </div>
+                </div>
+                <!-- footer mid area -->
+                <div class="col-xl-4 col-md-6 col-sm-12 col-12">
+                    <div class="footer-one-single-wized mid-bg">
+                        <div class="wized-title">
+                            <h5 class="title">Opening Hours</h5>
+                            <img src="{{ asset('frontend/assets/images/footer/under-title.png') }}"
+                                alt="finbiz_footer">
+                        </div>
+                        <div class="opening-time-inner">
+                            <div class="single-opening">
+                                <p class="day">Week Days</p>
+                                <p class="time">09.00 - 24:00</p>
+                            </div>
+                            <div class="single-opening">
+                                <p class="day">Saturday</p>
+                                <p class="time">08:00 - 03.00</p>
+                            </div>
+                            <div class="single-opening mb--30 mb_sm--10">
+                                <p class="day">Sunday</p>
+                                <p class="time">Day Off</p>
+                            </div>
+                            <a href="{{ route('contact_us') }}" class="rts-btn btn-primary contact-us">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer mid area end -->
+
+                <!-- footer end area post -->
+                <div class="col-xl-4 col-md-6 col-sm-12 col-12">
+                    <div class="footer-one-single-wized margin-left-65">
+                        <div class="wized-title">
+                            <h5 class="title">Popular Updates</h5>
+                            <img src="{{ asset('frontend/assets/images/footer/under-title.png') }}"
+                                alt="finbiz_footer">
+                        </div>
+                        <div class="post-wrapper">
+                            <!-- single post -->
+                            <div class="single-footer-post mb--30">
+                                <div class="left-thumbnail">
+                                    <img src="{{ asset('frontend/assets/images/footer/post/01.png') }}"
+                                        alt="finbiz_business-post">
+                                </div>
+                                <div class="post-right">
+                                    <p> <i class="fal fa-clock"></i> 15th April, 2024</p>
+                                    <a href="blog-details.html">
+                                        <h6 class="title">Best Business Ideas For
+                                            Getting Solution</h6>
+                                    </a>
+                                    <a class="red-more" href="blog-details.html">Read More<i
+                                            class="far fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <!-- single post End -->
+                            <!-- single post -->
+                            <div class="single-footer-post">
+                                <div class="left-thumbnail">
+                                    <img src="{{ asset('frontend/assets/images/footer/post/02.png') }}"
+                                        alt="finbiz_business-post">
+                                </div>
+                                <div class="post-right">
+                                    <p> <i class="fal fa-clock"></i> 15th April, 2024</p>
+                                    <a href="blog-details.html">
+                                        <h6 class="title">Best Business Ideas For
+                                            Getting Solution</h6>
+                                    </a>
+                                    <a class="red-more" href="blog-details.html">Read More<i
+                                            class="far fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <!-- single post End -->
+                        </div>
+                    </div>
+                </div>
+                <!-- footer end area post end-->
+            </div>
+            <!-- rts footer area End -->
+        </div>
+        <!-- copyright area start -->
+        <div class="rts-copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-center">
+                            <p>Copyright 2024. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- copyright area end -->
+    </div>
+    <!-- rts footer area end -->
+    <!-- ENd Header Area -->
+
+
+    <!-- progress Back to top -->
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- progress Back to top End -->
+
+
+    <!-- scripts start form hear -->
+    <script src="{{ asset('frontend/assets/js/vendor/jquery.min.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/vendor/jqueryui.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/vendor/waypoint.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/plugins/swiper.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/plugins/counterup.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/plugins/sal.min.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/vendor/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/plugins/contact.form.js') }}"></script>
+    <!-- main Js -->
+    <script src="{{ asset('frontend/assets/js/main.js') }}"></script>
+    <!-- scripts end form hear -->
+</body>
+
+</html>

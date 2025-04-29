@@ -11,6 +11,12 @@ class Blog extends Model
         'image',
         'content',
         'is_published',
-        'user_id'
+        'user_id',
+        'uuid',
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id',);
+    }
 }

@@ -82,8 +82,8 @@
                                         <label for="role" class="form-label tx-semibold">Role</label>
                                         <select class="form-select" name="role" id="role" required="">
                                             <option selected="" disabled="" value="">Choose...</option>
-                                            <option>Employee</option>
-                                            <option>Client</option>
+                                            <option value="employee">Employee</option>
+                                            <option value="client">Client</option>
                                         </select>
                                         @error('role')
                                             <div class="text-danger">

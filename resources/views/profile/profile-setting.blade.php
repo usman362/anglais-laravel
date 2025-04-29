@@ -24,13 +24,12 @@
                         <div class="card custom-card">
                             <div class="card-body">
                                 <div class="panel profile-cover">
-                                    <div class="profile-cover__img">
-                                        <img src="{{ asset('assets/img/users/6.jpg') }}" alt="img">
-                                        {{-- <a href="javascript:;"><i class="mdi mdi-pencil"></i></a> --}}
-                                    </div>
+                                    {{-- <div class="profile-cover__img">
+                                        <img src="{{ Chatify::getUserWithAvatar(Auth::user())->avatar }}" alt="img">
+                                    </div> --}}
                                     <div class="profile-info">
-                                        <h3 class="tx-medium">Dennis Mark</h3>
-                                        <h6 class="tx-normal">dennis@spruko.com</h6>
+                                        <h3 class="tx-medium">{{ Auth::user()->name }}</h3>
+                                        <h6 class="tx-normal">{{ Auth::user()->email }}</h6>
                                     </div>
 
                                     <div class="profile-cover__action profile-img"></div>
@@ -51,7 +50,8 @@
                                     <div class="card custom-card border">
                                         <div class="card-body">
                                             <div class="mb-4 main-content-label">Personal Information</div>
-                                            <form class="form-horizontal" action="{{route('profile.store')}}" enctype="multipart/form-data" method="POST">
+                                            <form class="form-horizontal" action="{{ route('profile.store') }}"
+                                                enctype="multipart/form-data" method="POST">
                                                 @csrf
                                                 <div class="mb-4 main-content-label">Profile Picture</div>
 
@@ -61,10 +61,17 @@
                                                             <label class="form-label">Image</label>
                                                         </div>
                                                         <div class="col-md-10">
-                                                            <input type="file" id="image" name="image"
-                                                                accept="image/*" class="dropify mb-4" data-height="200"
-                                                                required
-                                                                data-default-file="{{ asset('assets/img/users/6.jpg') }}" />
+
+                                                            @if (\App\Models\User::find(Auth::id())->avatar !== 'avatar.png')
+                                                                <input type="file" id="image" name="avatar"
+                                                                    accept="image/*" class="dropify mb-4" data-height="200"
+                                                                    required
+                                                                    data-default-file="{{ asset('storage/users-avatar/' . \App\Models\User::find(Auth::id())->avatar) }}" />
+                                                            @else
+                                                                <input type="file" id="image" name="avatar"
+                                                                    accept="image/*" class="dropify mb-4" data-height="200"
+                                                                    required />
+                                                            @endif
                                                         </div>
                                                     </div>
                                                 </div>
@@ -78,7 +85,8 @@
                                                         </div>
                                                         <div class="col-md-10">
                                                             <input type="text" class="form-control"
-                                                                placeholder="First Name" value="Dennis">
+                                                                placeholder="First Name" name="first_name"
+                                                                value="{{ explode(' ', Auth::user()->name, 2)[0] }}">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -89,7 +97,8 @@
                                                         </div>
                                                         <div class="col-md-10">
                                                             <input type="text" class="form-control"
-                                                                placeholder="Last Name" value="Mark">
+                                                                placeholder="Last Name" name="last_name"
+                                                                value="{{ explode(' ', Auth::user()->name, 2)[1] }}">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -100,7 +109,8 @@
                                                         </div>
                                                         <div class="col-md-10">
                                                             <input type="text" class="form-control"
-                                                                placeholder="Designation" value="Web Designer">
+                                                                placeholder="Designation" name="designation"
+                                                                value="{{ Auth::user()->designation }}">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -123,7 +133,8 @@
                                                         </div>
                                                         <div class="col-md-10">
                                                             <input type="text" class="form-control"
-                                                                placeholder="phone number" value="+245 354 654">
+                                                                placeholder="phone number" name="phone"
+                                                                value="{{ Auth::user()->phone }}">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -133,7 +144,7 @@
                                                             <label class="form-label">Address</label>
                                                         </div>
                                                         <div class="col-md-10">
-                                                            <textarea class="form-control" name="example-textarea-input" rows="2" placeholder="Address">San Francisco, CA</textarea>
+                                                            <textarea class="form-control" name="address" rows="2" placeholder="Address">{{ Auth::user()->address }}</textarea>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -144,15 +155,12 @@
                                                             <label class="form-label">Biographical Info</label>
                                                         </div>
                                                         <div class="col-md-10">
-                                                            <textarea class="form-control" name="example-textarea-input" rows="4"
-                                                                placeholder="Please say something about yourself"></textarea>
+                                                            <textarea class="form-control" name="bio" rows="4" placeholder="Please say something about yourself">{{ Auth::user()->bio }}</textarea>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <button type="submit" class="btn ripple btn-success w-sm float-end">Save</button>
                                             </form>
-                                        </div>
-                                        <div class="card-footer py-3">
-                                            <button class="btn ripple btn-success w-sm float-end">Save</button>
                                         </div>
                                     </div>
                                 </div>
