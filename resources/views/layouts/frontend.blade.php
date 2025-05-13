@@ -51,7 +51,7 @@
                 <div class="row">
                     <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-4">
                         <div class="thumbnail">
-                            <a href="{{ route('home') }}">
+                            <a href="{{ route('home') }}" aria-label="Go to Home">
                                 <img src="{{asset('frontend/assets/images/LOGO-AGAPEÌ.png')}}" alt="">
                             </a>
                         </div>
@@ -116,12 +116,12 @@
     <!-- End header area -->
 
     <div id="side-bar" class="side-bar">
-        <button class="close-icon-menu"><i class="far fa-times"></i></button>
+        <button class="close-icon-menu" aria-label="Close"><i class="far fa-times"></i></button>
         <!-- inner menu area desktop start -->
         <div class="rts-sidebar-menu-desktop">
-            <a class="logo-1" href="{{ route('home') }}"><img src="{{asset('frontend/assets/images/LOGO-AGAPEÌ.png')}}" alt=""></a>
-            <a class="logo-2" href="{{ route('home') }}"><img src="{{asset('frontend/assets/images/LOGO-AGAPEÌ.png')}}" alt=""></a>
-            <a class="logo-3" href="{{ route('home') }}"><img src="{{asset('frontend/assets/images/LOGO-AGAPEÌ.png')}}" alt=""></a>
+            <a class="logo-1" href="{{ route('home') }}" aria-label="Go to Home"><img src="{{asset('frontend/assets/images/LOGO-AGAPEÌ.png')}}" alt=""></a>
+            <a class="logo-2" href="{{ route('home') }}" aria-label="Go to Home"><img src="{{asset('frontend/assets/images/LOGO-AGAPEÌ.png')}}" alt=""></a>
+            <a class="logo-3" href="{{ route('home') }}" aria-label="Go to Home"><img src="{{asset('frontend/assets/images/LOGO-AGAPEÌ.png')}}" alt=""></a>
             <div class="body d-none d-xl-block">
                 <p class="disc">
                     N’attendez pas d’être heureux pour sourire. Souriez plutôt afin d’être heureux

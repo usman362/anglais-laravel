@@ -40,7 +40,7 @@
                         <img class="img-over" src="{{asset('frontend/assets/images/about/main/about-04.jpg')}}" alt="BUsiness_image">
                         <div class="goal-button-wrapper">
                             <div class="vedio-icone">
-                                <a id="play-video" class="video-play-button" href="#">
+                                <a id="play-video" class="video-play-button" href="#" aria-label="Play Video">
                                     <span></span>
                                 </a>
                             </div>
