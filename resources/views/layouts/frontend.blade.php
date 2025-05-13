@@ -79,7 +79,7 @@
                                     <li class="#">
                                         <a href="{{ route('contact_us') }}">Contact Us</a>
                                     </li>
-                                    <li class="has-droupdown">
+                                    {{-- <li class="has-droupdown">
                                         <a class="nav-link" href="#">Informations légales</a>
                                         <ul class="submenu">
                                             <li><a href="{{route('legal_1')}}">Mentions légales</a></li>
@@ -87,7 +87,7 @@
                                             <li><a href="{{route('legal_3')}}">Conditions Générales de Vente (CGV)</a></li>
                                             <li><a href="{{route('legal_4')}}">Politique de confidentialité</a></li>
                                         </ul>
-                                    </li>
+                                    </li> --}}
                                 </ul>
                             </nav>
                             <div class="button-area">
@@ -180,7 +180,7 @@
                         <li class="#">
                             <a href="{{ route('contact_us') }}">Contact Us</a>
                         </li>
-                        <li class="has-droupdown">
+                        {{-- <li class="has-droupdown">
                             <a class="nav-link" href="#">Informations légales</a>
                             <ul class="submenu">
                                 <li><a href="{{route('legal_1')}}">Mentions légales</a></li>
@@ -188,7 +188,7 @@
                                 <li><a href="{{route('legal_3')}}">Conditions Générales de Vente (CGV)</a></li>
                                 <li><a href="{{route('legal_4')}}">Politique de confidentialité</a></li>
                             </ul>
-                        </li>
+                        </li> --}}
                     </ul>
                 </nav>
 
@@ -224,32 +224,33 @@
                     </div>
                 </div>
                 <!-- footer mid area -->
-                <div class="col-xl-4 col-md-6 col-sm-12 col-12">
+
+                <div class="col-xl-5 col-md-6 col-sm-12 col-12">
                     <div class="footer-one-single-wized mid-bg">
                         <div class="wized-title">
-                            <h5 class="title">Opening Hours</h5>
+                            <h5 class="title">Informations légales</h5>
                             <img src="{{ asset('frontend/assets/images/footer/under-title.png') }}"
                                 alt="finbiz_footer">
                         </div>
                         <div class="opening-time-inner">
                             <div class="single-opening">
-                                <p class="day">Week Days</p>
-                                <p class="time">09.00 - 24:00</p>
+                                <p class="day"><a href="{{route('legal_1')}}">Mentions légales</a></p>
                             </div>
                             <div class="single-opening">
-                                <p class="day">Saturday</p>
-                                <p class="time">08:00 - 03.00</p>
+                                <p class="day"><a href="{{route('legal_2')}}">Conditions Générales dʼUtilisation (CGU)</a></p>
                             </div>
-                            <div class="single-opening mb--30 mb_sm--10">
-                                <p class="day">Sunday</p>
-                                <p class="time">Day Off</p>
+                            <div class="single-opening">
+                                <p class="day"><a href="{{route('legal_3')}}">Conditions Générales de Vente (CGV)</a></p>
+                            </div>
+                            <div class="single-opening">
+                                <p class="day"><a href="{{route('legal_4')}}">Politique de confidentialité</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- footer mid area end -->
 
-                <div class="col-xl-4 col-md-6 col-sm-12 col-12">
+                <div class="col-xl-3 col-md-6 col-sm-12 col-12">
                     <div class="footer-two-single-wized left pt--50">
                         <h3 class="title animated fadeIn">
                             <span>Ready To</span> <br>
