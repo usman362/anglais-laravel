@@ -21,12 +21,24 @@ Route::get('/home', function () {
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/who-we-are', [App\Http\Controllers\HomeController::class, 'who_we_are'])->name('who_we_are');
+Route::get('/our-values', [App\Http\Controllers\HomeController::class, 'our_values'])->name('our_values');
+Route::get('/why-us', [App\Http\Controllers\HomeController::class, 'why_us'])->name('why_us');
+Route::get('/faq', [App\Http\Controllers\HomeController::class, 'faq'])->name('faq');
+Route::get('/career', [App\Http\Controllers\HomeController::class, 'career'])->name('career');
+Route::get('/legal-1', [App\Http\Controllers\HomeController::class, 'legal_1'])->name('legal_1');
+Route::get('/legal-2', [App\Http\Controllers\HomeController::class, 'legal_2'])->name('legal_2');
+Route::get('/legal-3', [App\Http\Controllers\HomeController::class, 'legal_3'])->name('legal_3');
+Route::get('/legal-4', [App\Http\Controllers\HomeController::class, 'legal_4'])->name('legal_4');
+
 Route::get('/contact-us', [App\Http\Controllers\HomeController::class, 'contact_us'])->name('contact_us');
 Route::get('/services', [App\Http\Controllers\HomeController::class, 'services'])->name('services');
-Route::get('/service_details', [App\Http\Controllers\HomeController::class, 'service_details'])->name('service_details');
+Route::get('/service-details-1', [App\Http\Controllers\HomeController::class, 'service_details_1'])->name('service_details_1');
+Route::get('/service-details-2', [App\Http\Controllers\HomeController::class, 'service_details_2'])->name('service_details_2');
+Route::get('/service-details-3', [App\Http\Controllers\HomeController::class, 'service_details_3'])->name('service_details_3');
+Route::get('/service-details-4', [App\Http\Controllers\HomeController::class, 'service_details_4'])->name('service_details_4');
+Route::get('/service-details-5', [App\Http\Controllers\HomeController::class, 'service_details_5'])->name('service_details_5');
 Route::get('/blogs-list', [App\Http\Controllers\HomeController::class, 'blog_list'])->name('blog_list');
 Route::get('/blog/{id}', [App\Http\Controllers\HomeController::class, 'blog_details'])->name('blog_details');
-Route::get('/our-values', [App\Http\Controllers\HomeController::class, 'our_values'])->name('our_values');
 Route::post('contact-us', [App\Http\Controllers\HomeController::class, 'store_contact_us'])->name('store_contact_us');
 
 Auth::routes();

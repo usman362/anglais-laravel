@@ -23,6 +23,21 @@ class HomeController extends Controller
         return view('frontend.who-we-are');
     }
 
+    public function career()
+    {
+        return view('frontend.career');
+    }
+
+    public function why_us()
+    {
+        return view('frontend.why-us');
+    }
+
+    public function faq()
+    {
+        return view('frontend.faq');
+    }
+
     public function contact_us()
     {
         return view('frontend.contact-us');
@@ -45,9 +60,42 @@ class HomeController extends Controller
         return view('frontend.services');
     }
 
-    public function service_details()
+    public function legal_1()
     {
-        return view('frontend.service-detail');
+        return view('frontend.legal_1');
+    }
+    public function legal_2()
+    {
+        return view('frontend.legal_2');
+    }
+    public function legal_3()
+    {
+        return view('frontend.legal_3');
+    }
+    public function legal_4()
+    {
+        return view('frontend.legal_4');
+    }
+
+    public function service_details_1()
+    {
+        return view('frontend.service-detail-1');
+    }
+    public function service_details_2()
+    {
+        return view('frontend.service-detail-2');
+    }
+    public function service_details_3()
+    {
+        return view('frontend.service-detail-3');
+    }
+    public function service_details_4()
+    {
+        return view('frontend.service-detail-4');
+    }
+    public function service_details_5()
+    {
+        return view('frontend.service-detail-5');
     }
 
     public function our_values()

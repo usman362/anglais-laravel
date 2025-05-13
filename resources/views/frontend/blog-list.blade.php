@@ -1,4 +1,5 @@
 @extends('layouts.frontend')
+@section('title', 'Blogs')
 @section('content')
     <!-- start breadcrumb area -->
     <div class="rts-breadcrumb-area breadcrumb-bg bg_image">
@@ -9,7 +10,7 @@
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                     <div class="bread-tag">
-                        <a href="index-2.html">Home</a>
+                        <a href="{{route('home')}}">Home</a>
                         <span> / </span>
                         <a href="#" class="active">Latest Posts</a>
                     </div>

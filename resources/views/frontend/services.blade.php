@@ -1,17 +1,18 @@
 @extends('layouts.frontend')
+@section('title', 'Nos prestations')
 @section('content')
     <!-- start breadcrumb area -->
     <div class="rts-breadcrumb-area breadcrumb-bg bg_image">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 breadcrumb-1">
-                    <h1 class="title">Our Services</h1>
+                    <h1 class="title">Nos prestations</h1>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                     <div class="bread-tag">
                         <a href="{{route('home')}}">Home</a>
                         <span> / </span>
-                        <a href="#" class="active">Our Services</a>
+                        <a href="#" class="active">Nos prestations</a>
                     </div>
                 </div>
             </div>
@@ -27,16 +28,12 @@
                 <!-- single service area -->
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--100">
                     <div class="service-two-inner">
-                        <a href="{{route('service_details')}}" class="thumbnail"><img src="{{asset('frontend/assets/images/service/02.jpg')}}"
+                        <a href="{{route('service_details_1')}}" class="thumbnail"><img src="{{asset('frontend/assets/images/service/01.jpg')}}"
                                 alt="Business_image"></a>
-                        <div class="body-content">
+                        <div class="body-content w-100">
                             <div class="hidden-area">
-                                <h5 class="title">Strategy Growth</h5>
-                                <p class="dsic">
-                                    Porta sagittis diam imperdiet eu, tempus nisi aenean vehicula torquent dis mattis nullam
-                                    bibendum morbi laoreet lobortis id
-                                </p>
-                                <a class="rts-read-more-two color-primary" href="{{route('service_details')}}">Read More<i
+                                <h5 class="title">Accompagnement de fin de vie</h5>
+                                <a class="rts-read-more-two color-primary" href="{{route('service_details_1')}}">Read More<i
                                         class="far fa-arrow-right"></i></a>
                             </div>
                         </div>
@@ -46,16 +43,12 @@
                 <!-- single service area -->
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--100">
                     <div class="service-two-inner">
-                        <a href="{{route('service_details')}}" class="thumbnail two"><img src="{{asset('frontend/assets/images/service/03.jpg')}}"
+                        <a href="{{route('service_details_2')}}" class="thumbnail two"><img src="{{asset('frontend/assets/images/service/01.jpg')}}"
                                 alt="Business_image"></a>
-                        <div class="body-content">
+                        <div class="body-content w-100">
                             <div class="hidden-area">
-                                <h5 class="title">Grow Business</h5>
-                                <p class="dsic">
-                                    Porta sagittis diam imperdiet eu, tempus nisi aenean vehicula torquent dis mattis nullam
-                                    bibendum morbi laoreet lobortis id
-                                </p>
-                                <a class="rts-read-more-two color-primary" href="{{route('service_details')}}">Read More<i
+                                <h5 class="title">Actes quotidiens de la vie</h5>
+                                <a class="rts-read-more-two color-primary" href="{{route('service_details_2')}}">Read More<i
                                         class="far fa-arrow-right"></i></a>
                             </div>
                         </div>
@@ -65,16 +58,12 @@
                 <!-- single service area -->
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--100">
                     <div class="service-two-inner">
-                        <a href="{{route('service_details')}}" class="thumbnail three"><img src="{{asset('frontend/assets/images/service/04.jpg')}}"
+                        <a href="{{route('service_details_3')}}" class="thumbnail three"><img src="{{asset('frontend/assets/images/service/01.jpg')}}"
                                 alt="Business_image"></a>
-                        <div class="body-content">
+                        <div class="body-content w-100">
                             <div class="hidden-area">
-                                <h5 class="title">Proudly Speech</h5>
-                                <p class="dsic">
-                                    Porta sagittis diam imperdiet eu, tempus nisi aenean vehicula torquent dis mattis nullam
-                                    bibendum morbi laoreet lobortis id
-                                </p>
-                                <a class="rts-read-more-two color-primary" href="{{route('service_details')}}">Read More<i
+                                <h5 class="title">Entretien du cadre de vie</h5>
+                                <a class="rts-read-more-two color-primary" href="{{route('service_details_3')}}">Read More<i
                                         class="far fa-arrow-right"></i></a>
                             </div>
                         </div>
@@ -84,16 +73,12 @@
                 <!-- single service area -->
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--100">
                     <div class="service-two-inner">
-                        <a href="{{route('service_details')}}" class="thumbnail"><img src="{{asset('frontend/assets/images/service/02.jpg')}}"
+                        <a href="{{route('service_details_4')}}" class="thumbnail four"><img src="{{asset('frontend/assets/images/service/01.jpg')}}"
                                 alt="Business_image"></a>
-                        <div class="body-content">
+                        <div class="body-content w-100">
                             <div class="hidden-area">
-                                <h5 class="title">Model Building</h5>
-                                <p class="dsic">
-                                    Porta sagittis diam imperdiet eu, tempus nisi aenean vehicula torquent dis mattis nullam
-                                    bibendum morbi laoreet lobortis id
-                                </p>
-                                <a class="rts-read-more-two color-primary" href="{{route('service_details')}}">Read More<i
+                                <h5 class="title">Interaction sociale</h5>
+                                <a class="rts-read-more-two color-primary" href="{{route('service_details_4')}}">Read More<i
                                         class="far fa-arrow-right"></i></a>
                             </div>
                         </div>
@@ -103,35 +88,12 @@
                 <!-- single service area -->
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--60">
                     <div class="service-two-inner">
-                        <a href="{{route('service_details')}}" class="thumbnail two"><img src="{{asset('frontend/assets/images/service/03.jpg')}}"
+                        <a href="{{route('service_details_5')}}" class="thumbnail five"><img src="{{asset('frontend/assets/images/service/01.jpg')}}"
                                 alt="Business_image"></a>
-                        <div class="body-content">
+                        <div class="body-content w-100">
                             <div class="hidden-area">
-                                <h5 class="title">Solution Model</h5>
-                                <p class="dsic">
-                                    Porta sagittis diam imperdiet eu, tempus nisi aenean vehicula torquent dis mattis nullam
-                                    bibendum morbi laoreet lobortis id
-                                </p>
-                                <a class="rts-read-more-two color-primary" href="{{route('service_details')}}">Read More<i
-                                        class="far fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- single service area end-->
-                <!-- single service area -->
-                <div class="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--60 pb_sm--60">
-                    <div class="service-two-inner">
-                        <a href="{{route('service_details')}}" class="thumbnail three"><img src="{{asset('frontend/assets/images/service/04.jpg')}}"
-                                alt="Business_image"></a>
-                        <div class="body-content">
-                            <div class="hidden-area">
-                                <h5 class="title">Finbiz Solution</h5>
-                                <p class="dsic">
-                                    Porta sagittis diam imperdiet eu, tempus nisi aenean vehicula torquent dis mattis nullam
-                                    bibendum morbi laoreet lobortis id
-                                </p>
-                                <a class="rts-read-more-two color-primary" href="{{route('service_details')}}">Read More<i
+                                <h5 class="title">Appui administratif personnalisé</h5>
+                                <a class="rts-read-more-two color-primary" href="{{route('service_details_5')}}">Read More<i
                                         class="far fa-arrow-right"></i></a>
                             </div>
                         </div>
@@ -142,109 +104,5 @@
         </div>
     </div>
     <!-- our service area end -->
-
-    <!-- service accordion area -->
-    <div class="rts-accordion-area service rts-section-gap">
-        <div class="accordion-service-bg bg_image ptb--120 ptb_md--80 ptb_sm--60">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6">
-                        <div class="accordion-service-inner">
-                            <div class="title-area-start">
-                                <span class="sub color-primary">JUST A CONSULTANCY</span>
-                                <h2 class="title">We know how to manage
-                                    business globally</h2>
-                            </div>
-                            <div class="accordion-area">
-                                <div class="accordion" id="accordionExample">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingOne">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#collapseOne" aria-expanded="true"
-                                                aria-controls="collapseOne">
-                                                Making Easy Business Growth
-                                            </button>
-                                        </h2>
-                                        <div id="collapseOne" class="accordion-collapse collapse show"
-                                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                Neque parturient sed nascetur facilisis suscipit ridiculus magna lobortis
-                                                imperdiet vivamus est aliquam euismod nec quam convallis ornare justo
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingTwo">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                                aria-expanded="false" aria-controls="collapseTwo">
-                                                Business Solution Model
-                                            </button>
-                                        </h2>
-                                        <div id="collapseTwo" class="accordion-collapse collapse"
-                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                Neque parturient sed nascetur facilisis suscipit ridiculus magna lobortis
-                                                imperdiet vivamus est aliquam euismod nec quam convallis ornare justo
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingThree">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                                aria-expanded="false" aria-controls="collapseThree">
-                                                Finbiz Company Solution
-                                            </button>
-                                        </h2>
-                                        <div id="collapseThree" class="accordion-collapse collapse"
-                                            aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                Neque parturient sed nascetur facilisis suscipit ridiculus magna lobortis
-                                                imperdiet vivamus est aliquam euismod nec quam convallis ornare justo
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingFour">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                                aria-expanded="false" aria-controls="collapseFour">
-                                                Management Process
-                                            </button>
-                                        </h2>
-                                        <div id="collapseFour" class="accordion-collapse collapse"
-                                            aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                Neque parturient sed nascetur facilisis suscipit ridiculus magna lobortis
-                                                imperdiet vivamus est aliquam euismod nec quam convallis ornare justo
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingFive">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseFive"
-                                                aria-expanded="false" aria-controls="collapseFive">
-                                                Managing Invesment
-                                            </button>
-                                        </h2>
-                                        <div id="collapseFive" class="accordion-collapse collapse"
-                                            aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                Neque parturient sed nascetur facilisis suscipit ridiculus magna lobortis
-                                                imperdiet vivamus est aliquam euismod nec quam convallis ornare justo
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- service accordion area End -->
 
 @endsection

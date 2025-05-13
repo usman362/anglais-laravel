@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-<!-- Mirrored from themewant.com/products/html/bizcoz/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 25 Apr 2025 22:09:39 GMT -->
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home One (Consulting Business)</title>
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('frontend/assets/images/fav.png') }}">
+    <title>@yield('title')</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ.png') }}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/plugins/swiper.min.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/plugins/fontawesome-5.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/plugins/animate.min.css') }}">
@@ -39,11 +36,11 @@
                     </div>
                     <div class="col-lg-6 d-xl-block d-none">
                         <div class="right">
-                            <ul class="top-nav">
+                            {{-- <ul class="top-nav">
                                 <li><a href="{{ route('who_we_are') }}">About</a></li>
                                 <li><a href="{{ route('blog_list') }}">News</a></li>
                                 <li><a href="{{ route('contact_us') }}">Contact</a></li>
-                            </ul>
+                            </ul> --}}
                         </div>
                     </div>
                 </div>
@@ -55,7 +52,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-4">
                         <div class="thumbnail">
                             <a href="{{ route('home') }}">
-                                <img src="{{ asset('frontend/assets/images/logo/logo.png') }}" alt="finbiz-logo">
+                                <img src="{{asset('frontend/assets/images/LOGO-AGAPEÌ.png')}}" alt="">
                             </a>
                         </div>
                     </div>
@@ -66,19 +63,31 @@
                                     <li class="#">
                                         <a href="{{ route('home') }}">Home</a>
                                     </li>
-                                    <li><a href="{{ route('who_we_are') }}">Who We Are</a></li>
+                                    {{-- <li><a href="{{ route('who_we_are') }}">Qui sommes-nous</a></li>
                                     <li class="#">
-                                        <a href="{{ route('services') }}">Services</a>
+                                        <a href="{{ route('services') }}">Nos prestations</a>
                                     </li>
-                                    {{-- <li class="#">
-                                        <a href="{{ route('our_values') }}">Project</a>
+                                    <li class="#">
+                                        <a href="{{ route('our_values') }}">Nos valeurs</a>
                                     </li> --}}
                                     <li class="#">
-                                        <a href="{{ route('blog_list') }}">Blog</a>
+                                        <a href="{{ route('blog_list') }}">Blogs</a>
+                                    </li>
+                                    <li class="#">
+                                        <a href="{{ route('career') }}">Nous recrutons</a>
                                     </li>
                                     <li class="#">
                                         <a href="{{ route('contact_us') }}">Contact Us</a>
                                     </li>
+                                    {{-- <li class="has-droupdown">
+                                        <a class="nav-link" href="#">Informations légales</a>
+                                        <ul class="submenu">
+                                            <li><a href="{{route('legal_1')}}">Mentions légales</a></li>
+                                            <li><a href="{{route('legal_2')}}">Conditions Générales dʼUtilisation (CGU)</a></li>
+                                            <li><a href="{{route('legal_3')}}">Conditions Générales de Vente (CGV)</a></li>
+                                            <li><a href="{{route('legal_4')}}">Politique de confidentialité</a></li>
+                                        </ul>
+                                    </li> --}}
                                 </ul>
                             </nav>
                             <div class="button-area">
@@ -110,12 +119,9 @@
         <button class="close-icon-menu"><i class="far fa-times"></i></button>
         <!-- inner menu area desktop start -->
         <div class="rts-sidebar-menu-desktop">
-            <a class="logo-1" href="{{ route('home') }}"><img class="logo"
-                    src="{{ asset('frontend/assets/images/logo/logo.png') }}" alt="finbiz_logo"></a>
-            <a class="logo-2" href="{{ route('home') }}"><img class="logo"
-                    src="{{ asset('frontend/assets/images/logo/logo.png') }}" alt="finbiz_logo"></a>
-            <a class="logo-3" href="{{ route('home') }}"><img class="logo"
-                    src="{{ asset('frontend/assets/images/logo/logo.png') }}" alt="finbiz_logo"></a>
+            <a class="logo-1" href="{{ route('home') }}"><img src="{{asset('frontend/assets/images/LOGO-AGAPEÌ.png')}}" alt=""></a>
+            <a class="logo-2" href="{{ route('home') }}"><img src="{{asset('frontend/assets/images/LOGO-AGAPEÌ.png')}}" alt=""></a>
+            <a class="logo-3" href="{{ route('home') }}"><img src="{{asset('frontend/assets/images/LOGO-AGAPEÌ.png')}}" alt=""></a>
             <div class="body d-none d-xl-block">
                 <p class="disc">
                     We must explain to you how all seds this mistakens idea denouncing pleasures and praising account.
@@ -158,19 +164,31 @@
                         <li class="#">
                             <a href="{{ route('home') }}">Home</a>
                         </li>
-                        <li><a href="{{ route('who_we_are') }}">About Us</a></li>
+                        {{-- <li><a href="{{ route('who_we_are') }}">Qui sommes-nous</a></li>
                         <li class="#">
-                            <a href="{{ route('services') }}">Services</a>
+                            <a href="{{ route('services') }}">Nos prestations</a>
                         </li>
-                        {{-- <li class="#">
-                            <a href="{{ route('our_values') }}">Project</a>
+                        <li class="#">
+                            <a href="{{ route('our_values') }}">Nos valeurs</a>
                         </li> --}}
                         <li class="#">
-                            <a href="{{ route('blog_list') }}">Blog</a>
+                            <a href="{{ route('blog_list') }}">Blogs</a>
+                        </li>
+                        <li class="#">
+                            <a href="{{ route('career') }}">Nous recrutons</a>
                         </li>
                         <li class="#">
                             <a href="{{ route('contact_us') }}">Contact Us</a>
                         </li>
+                        {{-- <li class="has-droupdown">
+                            <a class="nav-link" href="#">Informations légales</a>
+                            <ul class="submenu">
+                                <li><a href="{{route('legal_1')}}">Mentions légales</a></li>
+                                <li><a href="{{route('legal_2')}}">Conditions Générales dʼUtilisation (CGU)</a></li>
+                                <li><a href="{{route('legal_3')}}">Conditions Générales de Vente (CGV)</a></li>
+                                <li><a href="{{route('legal_4')}}">Politique de confidentialité</a></li>
+                            </ul>
+                        </li> --}}
                     </ul>
                 </nav>
 
@@ -198,48 +216,11 @@
     <!-- rts footer area start -->
     <div class="rts-footer-area footer-one rts-section-gapTop bg-footer-one">
         <div class="container bg-shape-f1">
-            <!-- footer call to action area -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="rts-cta-wrapper">
-                        <div class="background-cta">
-                            <div class="row">
-                                <!-- cta-left -->
-                                <div class="col-lg-6">
-                                    <div class="cta-left-wrapepr">
-                                        <p class="cta-disc">
-                                            Latest Business Ideas
-                                        </p>
-                                        <h3 class="title">Sign Up Newsletter</h3>
-                                    </div>
-                                </div>
-                                <!-- cta left end -->
-                                <div class="col-lg-6">
-                                    <!-- cta right -->
-                                    <form class="cta-input-arae">
-                                        <input type="email" name="email" placeholder="Enter Email Address"
-                                            required>
-                                        <button type="submit" class="rts-btn btn-primary">Subscribe Now</button>
-                                    </form>
-                                    <!-- cta right End -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- footer call to action area End -->
             <!-- rts footer area -->
-            <div class="row pt--120 pt_sm--80 pb--80 pb_sm--40">
+            <div class="row">
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12">
                     <div class="footer-two-single-wized left pt--50">
-                        <h3 class="title animated fadeIn">
-                            <span>Ready To</span> <br>
-                            Work With Us?
-                        </h3>
-                        <p class="disc">
-                            Felis consequat magnis est fames sagittis ultrices placerat sodales porttitor quisque.
-                        </p>
+                        <img src="{{asset('frontend/assets/images/LOGO-AGAPEÌ.png')}}" alt="">
                     </div>
                 </div>
                 <!-- footer mid area -->
@@ -263,59 +244,27 @@
                                 <p class="day">Sunday</p>
                                 <p class="time">Day Off</p>
                             </div>
-                            <a href="{{ route('contact_us') }}" class="rts-btn btn-primary contact-us">Contact Us</a>
                         </div>
                     </div>
                 </div>
                 <!-- footer mid area end -->
 
-                <!-- footer end area post -->
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12">
-                    <div class="footer-one-single-wized margin-left-65">
-                        <div class="wized-title">
-                            <h5 class="title">Popular Updates</h5>
-                            <img src="{{ asset('frontend/assets/images/footer/under-title.png') }}"
-                                alt="finbiz_footer">
-                        </div>
-                        <div class="post-wrapper">
-                            <!-- single post -->
-                            <div class="single-footer-post mb--30">
-                                <div class="left-thumbnail">
-                                    <img src="{{ asset('frontend/assets/images/footer/post/01.png') }}"
-                                        alt="finbiz_business-post">
-                                </div>
-                                <div class="post-right">
-                                    <p> <i class="fal fa-clock"></i> 15th April, 2024</p>
-                                    <a href="blog-details.html">
-                                        <h6 class="title">Best Business Ideas For
-                                            Getting Solution</h6>
-                                    </a>
-                                    <a class="red-more" href="blog-details.html">Read More<i
-                                            class="far fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                            <!-- single post End -->
-                            <!-- single post -->
-                            <div class="single-footer-post">
-                                <div class="left-thumbnail">
-                                    <img src="{{ asset('frontend/assets/images/footer/post/02.png') }}"
-                                        alt="finbiz_business-post">
-                                </div>
-                                <div class="post-right">
-                                    <p> <i class="fal fa-clock"></i> 15th April, 2024</p>
-                                    <a href="blog-details.html">
-                                        <h6 class="title">Best Business Ideas For
-                                            Getting Solution</h6>
-                                    </a>
-                                    <a class="red-more" href="blog-details.html">Read More<i
-                                            class="far fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                            <!-- single post End -->
-                        </div>
+                    <div class="footer-two-single-wized left pt--50">
+                        <h3 class="title animated fadeIn">
+                            <span>Ready To</span> <br>
+                            Work With Us?
+                        </h3>
+                        <p class="disc">
+                            Felis consequat magnis est fames sagittis ultrices placerat sodales porttitor quisque.
+                        </p>
+                    </div>
+                    <div class="footer-one-single-wized mid-bg mt-4">
+                        {{-- <div class="opening-time-inner"> --}}
+                            <a href="{{ route('contact_us') }}" class="rts-btn btn-primary contact-us">Contact Us</a>
+                        {{-- </div> --}}
                     </div>
                 </div>
-                <!-- footer end area post end-->
             </div>
             <!-- rts footer area End -->
         </div>
@@ -325,7 +274,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="text-center">
-                            <p>Copyright 2024. All rights reserved.</p>
+                            <p>Copyright 2025. All rights reserved.</p>
                         </div>
                     </div>
                 </div>
