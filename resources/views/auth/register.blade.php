@@ -78,7 +78,7 @@
 
 
 @extends('auth.layouts.app')
-@section('title','Sign In')
+@section('title','connectez vous')
 @section('content')
     <!-- PAGE -->
     <div class="page main-signin-wrapper">
@@ -102,7 +102,7 @@
                                         <div class="clearfix"></div>
                                         <form action="login" method="POST">
                                             @csrf
-                                            <h2 class="text-start mb-2">Sign In</h2>
+                                            <h2 class="text-start mb-2">connectez vous</h2>
                                             <p class="mb-4 text-muted tx-13 ms-0 text-start">Sign in to Create, Discover
                                                 and Connect with the Global Community</p>
                                             <div class="panel desc-tabs border-0 p-0">
@@ -135,7 +135,7 @@
                                                                     </span>
                                                                 @enderror
                                                             </div>
-                                                            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                                                            <button type="submit" class="btn btn-primary btn-block">connectez vous</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -157,7 +157,7 @@
                                 <div class="clearfix"></div>
                                 <div class="clearfix"></div>
                                 <img src="{{ asset('assets/img/pngs/user.png') }}" class="ht-250 mb-0" alt="user">
-                                <h2 class="mt-4 text-white tx-normal">Sign In Your Account</h2>
+                                <h2 class="mt-4 text-white tx-normal">connectez vous Your Account</h2>
                                 <span class="tx-white-6 tx-13 mb-5 mt-xl-0">Sign in to Create, Discover and Connect
                                     with the Global Community</span>
                             </div>

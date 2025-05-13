@@ -15283,7 +15283,7 @@ body.sal-disabled [data-sal|=flip] {
 }
 
 .header-main-one .thumbnail a {
-  padding: 36px 0;
+  padding: 16px 0;
   display: block;
   max-width: max-content;
 }
@@ -15292,7 +15292,7 @@ body.sal-disabled [data-sal|=flip] {
 }
 @media only screen and (max-width: 479px) {
   .header-main-one .thumbnail a {
-    padding: 18px 0;
+    padding: 16px 0;
   }
 }
 
@@ -26720,8 +26720,8 @@ a.rts-btn.btn-secondary-5:hover {
   margin-bottom: 0;
 }
 .faq-two-inner .faq-accordion-area .accordion .accordion-item .accordion-header button {
-  border: 1px solid #414857;
-  background: transparent;
+  border: 1px solid #016144;
+  background: #016144;
   border-radius: 5px;
   font-weight: 700;
   font-size: 18px;
@@ -26739,8 +26739,8 @@ a.rts-btn.btn-secondary-5:hover {
 }
 .faq-two-inner .faq-accordion-area .accordion .accordion-item .accordion-header button[aria-expanded=true] {
   border: 1px solid transparent;
-  background: #fff;
-  color: #1C2539;
+  background: #016144;
+  color: #fff;
   border-radius: 5px 5px 0 0;
 }
 .faq-two-inner .faq-accordion-area .accordion .accordion-item .accordion-header button[aria-expanded=true]::after {
@@ -26765,13 +26765,14 @@ a.rts-btn.btn-secondary-5:hover {
   top: -5px;
   position: relative;
   transform: none;
-  color: var(--color-primary);
+  /* color: var(--color-primary); */
+  color: #FFF388;
 }
 .faq-two-inner .faq-accordion-area .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
   box-shadow: none;
 }
 .faq-two-inner .faq-accordion-area .accordion .accordion-body {
-  background: #fff;
+  background: #fff37f;
   border-radius: 0 0 5px 5px;
   padding: 10px 35px 35px 35px;
 }
@@ -27726,13 +27727,13 @@ p.disc {
 }
 
 .progress-wrap svg {
-  color: #df0a0a;
+  color: #ffee04;
   border-radius: 50%;
   background: #fff;
 }
 
 .progress-wrap svg.progress-circle path {
-  stroke: #f64a00;
+  stroke: #ffee04;
   stroke-width: 34px;
   box-sizing: border-box;
   -webkit-transition: all 200ms linear;

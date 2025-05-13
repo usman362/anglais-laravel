@@ -10,7 +10,7 @@
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                     <div class="bread-tag">
-                        <a href="{{route('home')}}">Home</a>
+                        <a href="{{route('home')}}">Accueil</a>
                         <span> / </span>
                         <a href="#" class="active">Post Details</a>
                     </div>

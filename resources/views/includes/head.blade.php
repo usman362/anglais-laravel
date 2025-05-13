@@ -8,7 +8,7 @@
     <meta name="keywords" content="Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum" />
 
     <!-- FAVICON -->
-    <link rel="icon" href="{{ asset('assets/img/brand/favicon.ico') }}" type="image/x-icon" />
+    <link rel="icon" href="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ.png') }}" type="image/x-icon" />
 
     <!-- TITLE -->
     <title>@yield('title')</title>

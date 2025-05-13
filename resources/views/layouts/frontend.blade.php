@@ -26,11 +26,11 @@
                     <div class="col-lg-6 d-xl-block d-none">
                         <div class="left">
                             <div class="mail">
-                                <a href="mailto:webmaster@example.com"><i class="fal fa-envelope"></i>
-                                    info@example.com</a>
+                                <a href="mailto:contact@agape-nantes.fr"><i class="fal fa-envelope"></i>
+                                    contact@agape-nantes.fr</a>
                             </div>
                             <div class="working-time">
-                                <p><i class="fal fa-map-marker-alt"></i> 13/A, New Pro State, NYC</p>
+                                <p><i class="fal fa-map-marker-alt"></i> 10 bis rue de la Basinerie 44300 Nantes</p>
                             </div>
                         </div>
                     </div>
@@ -61,23 +61,23 @@
                             <nav class="nav-main mainmenu-nav d-none d-xl-block">
                                 <ul class="mainmenu">
                                     <li class="#">
-                                        <a href="{{ route('home') }}">Home</a>
+                                        <a href="{{ route('home') }}">Accueil</a>
+                                    </li>
+                                    <li class="#">
+                                        <a href="{{ route('services') }}">Nos services</a>
                                     </li>
                                     {{-- <li><a href="{{ route('who_we_are') }}">Qui sommes-nous</a></li>
                                     <li class="#">
-                                        <a href="{{ route('services') }}">Nos prestations</a>
-                                    </li>
-                                    <li class="#">
                                         <a href="{{ route('our_values') }}">Nos valeurs</a>
                                     </li> --}}
-                                    <li class="#">
+                                    {{-- <li class="#">
                                         <a href="{{ route('blog_list') }}">Blogs</a>
-                                    </li>
-                                    <li class="#">
+                                    </li> --}}
+                                    {{-- <li class="#">
                                         <a href="{{ route('career') }}">Nous recrutons</a>
-                                    </li>
+                                    </li> --}}
                                     <li class="#">
-                                        <a href="{{ route('contact_us') }}">Contact Us</a>
+                                        <a href="{{ route('contact_us') }}">Contactez-nous</a>
                                     </li>
                                     {{-- <li class="has-droupdown">
                                         <a class="nav-link" href="#">Informations légales</a>
@@ -124,11 +124,11 @@
             <a class="logo-3" href="{{ route('home') }}"><img src="{{asset('frontend/assets/images/LOGO-AGAPEÌ.png')}}" alt=""></a>
             <div class="body d-none d-xl-block">
                 <p class="disc">
-                    We must explain to you how all seds this mistakens idea denouncing pleasures and praising account.
+                    N’attendez pas d’être heureux pour sourire. Souriez plutôt afin d’être heureux
                 </p>
                 <div class="get-in-touch">
                     <!-- title -->
-                    <div class="h6 title">Get In Touch</div>
+                    <div class="h6 title">Contactez nous</div>
                     <!-- title End -->
                     <div class="wrapper">
                         <!-- single -->
@@ -140,19 +140,19 @@
                         <!-- single -->
                         <div class="single">
                             <i class="fas fa-envelope"></i>
-                            <a href="#">example@gmail.com</a>
+                            <a href="#">contact@agape-nantes.fr</a>
                         </div>
                         <!-- single ENd -->
                         <!-- single -->
                         <div class="single">
                             <i class="fas fa-globe"></i>
-                            <a href="#">www.webexample.com</a>
+                            <a href="https://agape-nantes.fr/" target="_blank">www.agape-nantes.fr</a>
                         </div>
                         <!-- single ENd -->
                         <!-- single -->
                         <div class="single">
                             <i class="fas fa-map-marker-alt"></i>
-                            <a href="#">13/A, New Pro State, NYC</a>
+                            <a href="#">10 bis rue de la Basinerie 44300 Nantes</a>
                         </div>
                         <!-- single ENd -->
                     </div>
@@ -162,23 +162,24 @@
                 <nav class="nav-main mainmenu-nav">
                     <ul class="mainmenu">
                         <li class="#">
-                            <a href="{{ route('home') }}">Home</a>
+                            <a href="{{ route('home') }}">Accueil</a>
                         </li>
-                        {{-- <li><a href="{{ route('who_we_are') }}">Qui sommes-nous</a></li>
                         <li class="#">
-                            <a href="{{ route('services') }}">Nos prestations</a>
+                            <a href="{{ route('services') }}">Nos services</a>
                         </li>
+                        {{--
+                        <li><a href="{{ route('who_we_are') }}">Qui sommes-nous</a></li>
                         <li class="#">
                             <a href="{{ route('our_values') }}">Nos valeurs</a>
                         </li> --}}
-                        <li class="#">
+                        {{-- <li class="#">
                             <a href="{{ route('blog_list') }}">Blogs</a>
-                        </li>
-                        <li class="#">
+                        </li> --}}
+                        {{-- <li class="#">
                             <a href="{{ route('career') }}">Nous recrutons</a>
-                        </li>
+                        </li> --}}
                         <li class="#">
-                            <a href="{{ route('contact_us') }}">Contact Us</a>
+                            <a href="{{ route('contact_us') }}">Contactez-nous</a>
                         </li>
                         {{-- <li class="has-droupdown">
                             <a class="nav-link" href="#">Informations légales</a>
@@ -197,7 +198,7 @@
                     class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btnmenu">Dashboard</a>
                     @else
                     <a href="{{ route('login') }}"
-                    class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btnmenu">Log In</a>
+                    class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btnmenu">Votre espace personnel</a>
                 @endauth
 
             </div>
@@ -226,7 +227,7 @@
                 <!-- footer mid area -->
 
                 <div class="col-xl-5 col-md-6 col-sm-12 col-12">
-                    <div class="footer-one-single-wized mid-bg">
+                    <div class="footer-one-single-wized mid-bg" style="background: none">
                         <div class="wized-title">
                             <h5 class="title">Informations légales</h5>
                             <img src="{{ asset('frontend/assets/images/footer/under-title.png') }}"
@@ -234,16 +235,19 @@
                         </div>
                         <div class="opening-time-inner">
                             <div class="single-opening">
-                                <p class="day"><a href="{{route('legal_1')}}">Mentions légales</a></p>
+                                <p class="day"><a style="color:#fff" href="{{route('legal_1')}}">Mentions légales</a></p>
                             </div>
                             <div class="single-opening">
-                                <p class="day"><a href="{{route('legal_2')}}">Conditions Générales dʼUtilisation (CGU)</a></p>
+                                <p class="day"><a style="color:#fff" href="{{route('legal_2')}}">Conditions Générales dʼUtilisation (CGU)</a></p>
                             </div>
                             <div class="single-opening">
-                                <p class="day"><a href="{{route('legal_3')}}">Conditions Générales de Vente (CGV)</a></p>
+                                <p class="day"><a style="color:#fff" href="{{route('legal_3')}}">Conditions Générales de Vente (CGV)</a></p>
                             </div>
                             <div class="single-opening">
-                                <p class="day"><a href="{{route('legal_4')}}">Politique de confidentialité</a></p>
+                                <p class="day"><a style="color:#fff" href="{{route('legal_4')}}">Politique de confidentialité</a></p>
+                            </div>
+                            <div class="single-opening">
+                                <p class="day"><a style="color:#fff" href="{{route('career')}}">Nous recrutons</a></p>
                             </div>
                         </div>
                     </div>
@@ -253,17 +257,23 @@
                 <div class="col-xl-3 col-md-6 col-sm-12 col-12">
                     <div class="footer-two-single-wized left pt--50">
                         <h3 class="title animated fadeIn">
-                            <span>Ready To</span> <br>
-                            Work With Us?
+                            <span>Vous avez</span> <br>
+                            des question ?
                         </h3>
                         <p class="disc">
-                            Felis consequat magnis est fames sagittis ultrices placerat sodales porttitor quisque.
+                            Un sourire est souvent l’essentiel.
                         </p>
                     </div>
-                    <div class="footer-one-single-wized mid-bg mt-4">
-                        {{-- <div class="opening-time-inner"> --}}
-                            <a href="{{ route('contact_us') }}" class="rts-btn btn-primary contact-us">Contact Us</a>
-                        {{-- </div> --}}
+
+                    <div class="footer-one-single-wized mt-4">
+                        <div class="opening-time-inner">
+                            <div class="single-opening">
+                                <p class="day"><a style="color:#fff" href="{{route('legal_1')}}">Nous recrutons</a></p>
+                            </div>
+                            <div class="single-opening">
+                                <p class="day"><a style="color:#fff" href="{{route('legal_2')}}">Espace collaborateurs</a></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -275,7 +285,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="text-center">
-                            <p>Copyright 2025. All rights reserved.</p>
+                            <p>Copyright 2025. Tous droits réservés.</p>
                         </div>
                     </div>
                 </div>

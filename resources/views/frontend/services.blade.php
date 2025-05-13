@@ -10,7 +10,7 @@
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                     <div class="bread-tag">
-                        <a href="{{route('home')}}">Home</a>
+                        <a href="{{route('home')}}">Accueil</a>
                         <span> / </span>
                         <a href="#" class="active">Nos prestations</a>
                     </div>
@@ -33,7 +33,7 @@
                         <div class="body-content w-100">
                             <div class="hidden-area">
                                 <h5 class="title">Accompagnement de fin de vie</h5>
-                                <a class="rts-read-more-two color-primary" href="{{route('service_details_1')}}">Read More<i
+                                <a class="rts-read-more-two color-primary" href="{{route('service_details_1')}}">En savoir plus<i
                                         class="far fa-arrow-right"></i></a>
                             </div>
                         </div>
@@ -48,7 +48,7 @@
                         <div class="body-content w-100">
                             <div class="hidden-area">
                                 <h5 class="title">Actes quotidiens de la vie</h5>
-                                <a class="rts-read-more-two color-primary" href="{{route('service_details_2')}}">Read More<i
+                                <a class="rts-read-more-two color-primary" href="{{route('service_details_2')}}">En savoir plus<i
                                         class="far fa-arrow-right"></i></a>
                             </div>
                         </div>
@@ -63,7 +63,7 @@
                         <div class="body-content w-100">
                             <div class="hidden-area">
                                 <h5 class="title">Entretien du cadre de vie</h5>
-                                <a class="rts-read-more-two color-primary" href="{{route('service_details_3')}}">Read More<i
+                                <a class="rts-read-more-two color-primary" href="{{route('service_details_3')}}">En savoir plus<i
                                         class="far fa-arrow-right"></i></a>
                             </div>
                         </div>
@@ -78,7 +78,7 @@
                         <div class="body-content w-100">
                             <div class="hidden-area">
                                 <h5 class="title">Interaction sociale</h5>
-                                <a class="rts-read-more-two color-primary" href="{{route('service_details_4')}}">Read More<i
+                                <a class="rts-read-more-two color-primary" href="{{route('service_details_4')}}">En savoir plus<i
                                         class="far fa-arrow-right"></i></a>
                             </div>
                         </div>
@@ -93,7 +93,7 @@
                         <div class="body-content w-100">
                             <div class="hidden-area">
                                 <h5 class="title">Appui administratif personnalisé</h5>
-                                <a class="rts-read-more-two color-primary" href="{{route('service_details_5')}}">Read More<i
+                                <a class="rts-read-more-two color-primary" href="{{route('service_details_5')}}">En savoir plus<i
                                         class="far fa-arrow-right"></i></a>
                             </div>
                         </div>

@@ -3,26 +3,26 @@
     <div class="main-menu main-sidebar main-sidebar-sticky side-menu">
         <div class="main-sidebar-header main-container-1">
             <div class="sidemenu-logo">
-                {{-- <a class="main-logo" href="https://laravelui.spruko.com/dashplex">
-                    <img src="{{ asset('assets/img/brand/logo-light.png') }}" class="header-brand-img desktop-logo-dark"
+                <a class="main-logo" href="{{route('home')}}">
+                    <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ.png') }}" class="header-brand-img desktop-logo-dark"
                         alt="logo">
-                    <img src="{{ asset('assets/img/brand/icon-light.png') }}" class="header-brand-img icon-logo-dark"
+                    <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ.png') }}" class="header-brand-img icon-logo-dark"
                         alt="logo">
-                    <img src="{{ asset('assets/img/brand/logo.png') }}" class="header-brand-img desktop-logo"
+                    <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ.png') }}" class="header-brand-img desktop-logo"
                         alt="logo">
-                    <img src="{{ asset('assets/img/brand/icon.png') }}" class="header-brand-img icon-logo"
+                    <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ.png') }}" class="header-brand-img icon-logo"
                         alt="logo">
-                </a> --}}
-                <a href="javascript:void(0)" class="text-white">
-                    <h4 class="m-4"> Dashboard</h4>
                 </a>
+                {{-- <a href="javascript:void(0)" class="text-white">
+                    <h4 class="m-4"> Dashboard</h4>
+                </a> --}}
             </div>
             <div class="main-sidebar-body main-body-1">
                 <div class="slide-left disabled" id="slide-left"><svg xmlns="http://www.w3.org/2000/svg" fill="#c9bebe"
                         width="24" height="24" viewBox="0 0 24 24">
                         <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z" />
                     </svg></div>
-                <ul class="menu-nav nav">
+                <ul class="menu-nav nav mt-4">
 
                     @if (auth()->user()->role == 'admin')
                         <li class="nav-header"><span class="nav-label">Users Management</span></li>

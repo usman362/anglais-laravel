@@ -381,7 +381,7 @@
                                 </div>
                                 <div class="clearfix mb-3">
                                     <div class="clearfix">
-                                        <span class="float-start text-dark">Home</span>
+                                        <span class="float-start text-dark">Accueil</span>
                                         <span class="float-end text-dark">52%</span>
                                     </div>
                                     <div class="progress ht-7 mt-2">
