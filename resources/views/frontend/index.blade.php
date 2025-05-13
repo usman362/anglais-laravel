@@ -422,7 +422,7 @@
 
     {{-- Legal Pages --}}
 
-    <!-- Legal 1 -->
+    {{-- <!-- Legal 1 -->
     <div class="rts-about-area rts-section-gap bg-about-sm-shape">
         <div class="container">
             <div class="row g-5 align-items-center">
@@ -812,5 +812,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 @endsection

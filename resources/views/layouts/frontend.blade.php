@@ -79,7 +79,7 @@
                                     <li class="#">
                                         <a href="{{ route('contact_us') }}">Contact Us</a>
                                     </li>
-                                    {{-- <li class="has-droupdown">
+                                    <li class="has-droupdown">
                                         <a class="nav-link" href="#">Informations légales</a>
                                         <ul class="submenu">
                                             <li><a href="{{route('legal_1')}}">Mentions légales</a></li>
@@ -87,7 +87,7 @@
                                             <li><a href="{{route('legal_3')}}">Conditions Générales de Vente (CGV)</a></li>
                                             <li><a href="{{route('legal_4')}}">Politique de confidentialité</a></li>
                                         </ul>
-                                    </li> --}}
+                                    </li>
                                 </ul>
                             </nav>
                             <div class="button-area">
@@ -180,7 +180,7 @@
                         <li class="#">
                             <a href="{{ route('contact_us') }}">Contact Us</a>
                         </li>
-                        {{-- <li class="has-droupdown">
+                        <li class="has-droupdown">
                             <a class="nav-link" href="#">Informations légales</a>
                             <ul class="submenu">
                                 <li><a href="{{route('legal_1')}}">Mentions légales</a></li>
@@ -188,7 +188,7 @@
                                 <li><a href="{{route('legal_3')}}">Conditions Générales de Vente (CGV)</a></li>
                                 <li><a href="{{route('legal_4')}}">Politique de confidentialité</a></li>
                             </ul>
-                        </li> --}}
+                        </li>
                     </ul>
                 </nav>
 
