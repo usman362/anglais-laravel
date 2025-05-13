@@ -13,7 +13,6 @@
         "laravel/ui": "^4.6",
         "munafio/chatify": "^1.6",
         "spatie/laravel-permission": "^6.17",
-        "stichoza/google-translate-php": "^5.2",
         "thiagoalessio/tesseract_ocr": "^2.13",
         "yajra/laravel-datatables-oracle": "^12.0"
     },

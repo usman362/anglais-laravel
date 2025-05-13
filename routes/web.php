@@ -7,12 +7,9 @@ use App\Http\Controllers\InterventionController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ScheduleController;
 use App\Http\Controllers\UsersController;
-use Google\Cloud\Vision\V1\Client\ImageAnnotatorClient;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use thiagoalessio\TesseractOCR\TesseractOCR;
-use Stichoza\GoogleTranslate\GoogleTranslate;
 
 Route::get('/home', function () {
     return redirect('/');
