@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ.png') }}">
-    <link rel="stylesheet" href="{{ asset('frontend/assets/css/plugins/swiper.min.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('frontend/assets/css/plugins/swiper.min.css') }}"> --}}
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/plugins/fontawesome-5.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/plugins/animate.min.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/plugins/unicons.css') }}">
@@ -308,9 +308,9 @@
 
     <!-- scripts start form hear -->
     <script src="{{ asset('frontend/assets/js/vendor/jquery.min.js') }}"></script>
-    <script src="{{ asset('frontend/assets/js/vendor/jqueryui.js') }}"></script>
+    {{-- <script src="{{ asset('frontend/assets/js/vendor/jqueryui.js') }}"></script> --}}
     <script src="{{ asset('frontend/assets/js/vendor/waypoint.js') }}"></script>
-    <script src="{{ asset('frontend/assets/js/plugins/swiper.js') }}"></script>
+    {{-- <script src="{{ asset('frontend/assets/js/plugins/swiper.js') }}"></script> --}}
     <script src="{{ asset('frontend/assets/js/plugins/counterup.js') }}"></script>
     <script src="{{ asset('frontend/assets/js/plugins/sal.min.js') }}"></script>
     <script src="{{ asset('frontend/assets/js/vendor/bootstrap.min.js') }}"></script>
