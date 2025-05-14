@@ -6,13 +6,13 @@
     <!-- META DATA -->
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-    <meta name="description" content="Dashplex - Laravel Admin Panel Dashboard Template">
+    <meta name="description" content="">
     <meta name="author" content="Spruko Technologies Private Limited">
     <meta name="keywords"
         content="admin dashboard, dashboard ui, backend, admin panel, admin template, dashboard template, admin, bootstrap, laravel, laravel admin panel, php admin panel, php admin dashboard, laravel admin template, laravel dashboard, laravel admin panel" />
 
     <!-- FAVICON -->
-    <link rel="icon" href="{{ asset('assets/img/brand/favicon.ico') }}" type="image/x-icon" />
+    <link rel="icon" href="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ.png') }}" type="image/x-icon" />
 
     <!-- TITLE -->
     <title>@yield('title')</title>
