@@ -32,24 +32,24 @@
         <div class="container">
             <div class="row g-5 align-items-center">
                 <!-- about us -->
-                <div
-                    class="col-md-6 col-sm-12 col-12">
-                <div class="about-image-v-inner">
-                    <div class="image-area">
-                        <img class="mt--110 img-1" src="{{asset('frontend/assets/images/about/main/about-03.jpg')}}" alt="BUsiness_image">
-                        <img class="img-over" src="{{asset('frontend/assets/images/about/main/about-04.jpg')}}" alt="BUsiness_image">
-                        <div class="goal-button-wrapper">
-                            <div class="vedio-icone">
-                                <a id="play-video" class="video-play-button" href="#" aria-label="Play Video">
-                                    <span></span>
-                                </a>
+                <div class="col-md-6 col-sm-12 col-12">
+                    <div class="about-image-v-inner">
+                        <div class="image-area">
+                            <img class="mt--110 img-1" src="{{ asset('frontend/assets/images/about/main/about-03.jpg') }}"
+                                alt="BUsiness_image">
+                            <img class="img-over" src="{{ asset('frontend/assets/images/about/main/about-04.jpg') }}"
+                                alt="BUsiness_image">
+                            <div class="goal-button-wrapper">
+                                <div class="vedio-icone">
+                                    <a id="play-video" class="video-play-button" href="#" aria-label="Play Video">
+                                        <span></span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                </div>
-                <div
-                    class="col-md-6 col-sm-12 col-12 mt_md--50 mt_sm--50">
+                <div class="col-md-6 col-sm-12 col-12 mt_md--50 mt_sm--50">
                     <div class="rts-title-area">
                         <h2 class="title">Qui sommes-nous</h2>
                     </div>
@@ -96,8 +96,7 @@
 
 
 
-                <div
-                    class="col-md-12 col-sm-12 col-12 mt_md--50 mt_sm--50">
+                <div class="col-md-12 col-sm-12 col-12 mt_md--50 mt_sm--50">
                     <div class="rts-title-area">
                         <h2 class="title">Nos valeurs</h2>
                     </div>
@@ -106,11 +105,6 @@
                             Nous assurons grâce à nos valeurs la fourniture et la qualité des prestations en sʼadaptant
                             à lʼunicité de chacun de vos besoins.
                         </p>
-                    </div>
-                </div>
-                <div
-                    class="col-md-6 col-sm-12 col-12 mt_md--50 mt_sm--50">
-                    <div class="about-inner">
 
                         <p class="disc">
                             Les deux règles de base :
@@ -123,40 +117,78 @@
                             </li>
                         </ul>
                         </p>
-
-                        <p class="disc">
-                            <b>La bien-traitance</b> Avec votre aide et lʼensemble des professionnels nous vous
-                            proposons un accompagnement dans le respect de la dignité, de lʼautonomie et dans
-                            lʼadaptation la plus juste à vos besoins des prestations personnalisées.
-                        </p>
-                        <p class="disc">
-
-                            <b>La bienveillance</b> Agapé sʼengage à traiter avec une écoute attentive, une attitude
-                            positive pour assurer votre accompagnement.
-                        </p>
-                        <p class="disc">
-                            <b>Le mieux-être</b> Le maintien de votre bien-être physique, mental et social, que nous
-                            favorisons en offrant des services adaptés à chaque individu.
-                        </p>
-                        <p class="disc">
-                            <b>L'autonomie</b> Lʼobjectif est de vous permettre de conserver le maximum d'autonomie
-                            possible dans votre vie quotidienne.
-                        </p>
-                        <p class="disc">
-                            <b>L'humanité</b> Chez nous, lʼhumain est au cœur de nos préoccupations. Cela signifie créer
-                            un environnement de travail agréable pour les intervenants·e·s et vous offrir un
-                            accompagnement chaleureux.
-                        </p>
-                        <p class="disc">
-                            <b>Le professionalisme</b> Les intervenants doivent être qualifiés et formés pour assurer
-                            des prestations de qualité et adaptées aux besoins de chacun.
-                        </p>
                     </div>
                 </div>
+                <div class="col-sm-12 col-12 mt_md--50 mt_sm--50">
+                    <div class="about-inner">
+                        <div class="row">
+                            <div class="col-md-10">
+                                <p class="disc" style="margin-top:56px">
+                                    <b>La bien-traitance</b> Avec votre aide et lʼensemble des professionnels nous vous
+                                    proposons un accompagnement dans le respect de la dignité, de lʼautonomie et dans
+                                    lʼadaptation la plus juste à vos besoins des prestations personnalisées.
+                                </p>
+                            </div>
+                            <div class="col-md-2">
+                                <img style="width: 100%" src="{{asset('frontend/assets/images/blog/grid/01.jpg')}}" alt="">
+                            </div>
 
-                <div class="col-md-6 col-sm-12 col-12">
-                    <div class="feature-left-area">
-                        <img src="{{asset('frontend/assets/images/feature/01.png')}}" alt="">
+                            <div class="col-md-2">
+                                <img style="width: 100%" src="{{asset('frontend/assets/images/blog/grid/01.jpg')}}" alt="">
+                            </div>
+                            <div class="col-md-10">
+                            <p class="disc" style="margin-top:56px">
+                                <b>La bienveillance</b> Agapé sʼengage à traiter avec une écoute attentive, une attitude
+                                positive pour assurer votre accompagnement.
+                            </p>
+                            </div>
+
+
+                            <div class="col-md-10">
+                            <p class="disc" style="margin-top:56px">
+                                <b>Le mieux-être</b> Le maintien de votre bien-être physique, mental et social, que nous
+                                favorisons en offrant des services adaptés à chaque individu.
+                            </p>
+                            </div>
+
+                            <div class="col-md-2">
+                                <img style="width: 100%" src="{{asset('frontend/assets/images/blog/grid/01.jpg')}}" alt="">
+                            </div>
+
+                            <div class="col-md-2">
+                                <img style="width: 100%" src="{{asset('frontend/assets/images/blog/grid/01.jpg')}}" alt="">
+                            </div>
+
+                            <div class="col-md-10">
+                            <p class="disc" style="margin-top:56px">
+                                <b>L'autonomie</b> Lʼobjectif est de vous permettre de conserver le maximum d'autonomie
+                                possible dans votre vie quotidienne.
+                            </p>
+                            </div>
+
+                            <div class="col-md-10">
+                            <p class="disc" style="margin-top:56px">
+                                <b>L'humanité</b> Chez nous, lʼhumain est au cœur de nos préoccupations. Cela signifie créer
+                                un environnement de travail agréable pour les intervenants·e·s et vous offrir un
+                                accompagnement chaleureux.
+                            </p>
+                            </div>
+                            <div class="col-md-2">
+                                <img style="width: 100%" src="{{asset('frontend/assets/images/blog/grid/01.jpg')}}" alt="">
+                            </div>
+
+                            <div class="col-md-2">
+                                <img style="width: 100%" src="{{asset('frontend/assets/images/blog/grid/01.jpg')}}" alt="">
+                            </div>
+
+                            <div class="col-md-10">
+                            <p class="disc" style="margin-top:56px">
+                                <b>Le professionalisme</b> Les intervenants doivent être qualifiés et formés pour assurer
+                                des prestations de qualité et adaptées aux besoins de chacun.
+                            </p>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
                 <!-- our values -->
@@ -178,13 +210,13 @@
                 <!-- single service area -->
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--100">
                     <div class="service-two-inner">
-                        <a href="{{ route('service_details_1') }}" class="thumbnail"><img
+                        <a href="{{ route('service_details_1') }}"><img
                                 src="{{ asset('frontend/assets/images/service/01.jpg') }}" alt="Business_image"></a>
                         <div class="body-content w-100">
                             <div class="hidden-area">
                                 <h5 class="title">Accompagnement de fin de vie</h5>
-                                <a class="rts-read-more-two color-primary" href="{{ route('service_details_1') }}">Read
-                                    More<i class="far fa-arrow-right"></i></a>
+                                <a class="rts-read-more-two color-primary" href="{{ route('service_details_1') }}"> En
+                                    savoir plus<i class="far fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -193,13 +225,13 @@
                 <!-- single service area -->
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--100">
                     <div class="service-two-inner">
-                        <a href="{{ route('service_details_2') }}" class="thumbnail two"><img
+                        <a href="{{ route('service_details_2') }}"><img
                                 src="{{ asset('frontend/assets/images/service/01.jpg') }}" alt="Business_image"></a>
                         <div class="body-content w-100">
                             <div class="hidden-area">
                                 <h5 class="title">Actes quotidiens de la vie</h5>
-                                <a class="rts-read-more-two color-primary" href="{{ route('service_details_2') }}">Read
-                                    More<i class="far fa-arrow-right"></i></a>
+                                <a class="rts-read-more-two color-primary" href="{{ route('service_details_2') }}"> En
+                                    savoir plus<i class="far fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -208,13 +240,13 @@
                 <!-- single service area -->
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--100">
                     <div class="service-two-inner">
-                        <a href="{{ route('service_details_3') }}" class="thumbnail three"><img
+                        <a href="{{ route('service_details_3') }}"><img
                                 src="{{ asset('frontend/assets/images/service/01.jpg') }}" alt="Business_image"></a>
                         <div class="body-content w-100">
                             <div class="hidden-area">
                                 <h5 class="title">Entretien du cadre de vie</h5>
-                                <a class="rts-read-more-two color-primary" href="{{ route('service_details_3') }}">Read
-                                    More<i class="far fa-arrow-right"></i></a>
+                                <a class="rts-read-more-two color-primary" href="{{ route('service_details_3') }}"> En
+                                    savoir plus<i class="far fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -223,13 +255,13 @@
                 <!-- single service area -->
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--100">
                     <div class="service-two-inner">
-                        <a href="{{ route('service_details_4') }}" class="thumbnail four"><img
+                        <a href="{{ route('service_details_4') }}"><img
                                 src="{{ asset('frontend/assets/images/service/01.jpg') }}" alt="Business_image"></a>
                         <div class="body-content w-100">
                             <div class="hidden-area">
                                 <h5 class="title">Interaction sociale</h5>
-                                <a class="rts-read-more-two color-primary" href="{{ route('service_details_4') }}">Read
-                                    More<i class="far fa-arrow-right"></i></a>
+                                <a class="rts-read-more-two color-primary" href="{{ route('service_details_4') }}"> En
+                                    savoir plus<i class="far fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -238,13 +270,13 @@
                 <!-- single service area -->
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--60">
                     <div class="service-two-inner">
-                        <a href="{{ route('service_details_5') }}" class="thumbnail five"><img
+                        <a href="{{ route('service_details_5') }}"><img
                                 src="{{ asset('frontend/assets/images/service/01.jpg') }}" alt="Business_image"></a>
                         <div class="body-content w-100">
                             <div class="hidden-area">
                                 <h5 class="title">Appui administratif personnalisé</h5>
-                                <a class="rts-read-more-two color-primary" href="{{ route('service_details_5') }}">Read
-                                    More<i class="far fa-arrow-right"></i></a>
+                                <a class="rts-read-more-two color-primary" href="{{ route('service_details_5') }}"> En
+                                    savoir plus<i class="far fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -264,11 +296,10 @@
 
                 <div class="col-md-6 col-sm-12 col-12">
                     <div class="rts-test-one-image-inner">
-                        <img src="{{asset('frontend/assets/images/testimonials/01.png')}}" alt="business_testimobials">
+                        <img src="{{ asset('frontend/assets/images/testimonials/01.png') }}" alt="business_testimobials">
                     </div>
                 </div>
-                <div
-                    class="col-md-6 col-sm-12 col-12 mt_md--50 mt_sm--50">
+                <div class="col-md-6 col-sm-12 col-12 mt_md--50 mt_sm--50">
                     <div class="rts-title-area">
                         <h2 class="title">Ce qui fait notre différence</h2>
                     </div>
@@ -326,7 +357,9 @@
                             <div class="accordion" id="accordionExample">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                                            aria-controls="collapseOne">
                                             Comment sont financées nos prestations ?
                                         </button>
                                     </h2>

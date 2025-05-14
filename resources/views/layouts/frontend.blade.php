@@ -257,8 +257,8 @@
                 <div class="col-xl-3 col-md-6 col-sm-12 col-12">
                     <div class="footer-two-single-wized left pt--50">
                         <h3 class="title animated fadeIn">
-                            <span>Vous avez</span> <br>
-                            des question ?
+                            Vous avez <br>
+                            des questions ?
                         </h3>
                         <p class="disc">
                             Un sourire est souvent l’essentiel.
