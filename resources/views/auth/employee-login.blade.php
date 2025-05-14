@@ -23,7 +23,7 @@
                                         <div class="clearfix"></div>
                                         <form action="login" method="POST">
                                             @csrf
-                                            <input type="hidden" name="role" value="admin">
+                                            <input type="hidden" name="role" value="employee">
                                             <h2 class="text-start mb-2">connectez vous</h2>
                                             <p class="mb-4 text-muted tx-13 ms-0 text-start">Sign in to Create, Discover
                                                 and Connect with the Global Community</p>

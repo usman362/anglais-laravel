@@ -95,8 +95,8 @@
                                     <a href="{{ url('dashboard') }}"
                                         class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn">Dashboard</a>
                                 @else
-                                    <a href="{{ route('login') }}"
-                                        class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn">Log In</a>
+                                    <a href="{{ route('client-login') }}"
+                                        class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn">Votre espace personnel</a>
                                 @endauth
 
                                 <button id="menu-btn" class="menu rts-btn btn-primary-alta ml--20 ml_sm--5">
@@ -268,10 +268,10 @@
                     <div class="footer-one-single-wized mt-4">
                         <div class="opening-time-inner">
                             <div class="single-opening">
-                                <p class="day"><a style="color:#fff" href="{{route('legal_1')}}">Nous recrutons</a></p>
+                                <p class="day"><a style="color:#fff" href="{{route('career')}}">Nous recrutons</a></p>
                             </div>
                             <div class="single-opening">
-                                <p class="day"><a style="color:#fff" href="{{route('legal_2')}}">Espace collaborateurs</a></p>
+                                <p class="day"><a style="color:#fff" href="{{route('employee-login')}}">Espace collaborateurs</a></p>
                             </div>
                         </div>
                     </div>

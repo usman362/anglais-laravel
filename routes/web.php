@@ -15,6 +15,8 @@ Route::get('/home', function () {
     return redirect('/');
 });
 
+Route::view('client-login','auth.client-login')->name('client-login');
+Route::view('employee-login','auth.employee-login')->name('employee-login');
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/who-we-are', [App\Http\Controllers\HomeController::class, 'who_we_are'])->name('who_we_are');
