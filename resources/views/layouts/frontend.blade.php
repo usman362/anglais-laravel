@@ -23,9 +23,9 @@
                 margin-bottom: 12px;
             }
         }
-        /* .skiptranslate{
+        .skiptranslate{
             display: none !important;
-        } */
+        }
         body{
             top: 0 !important;
         }
@@ -336,20 +336,6 @@
     </div>
     <!-- progress Back to top End -->
 
-
-    <!-- scripts start form hear -->
-    <script src="{{ asset('frontend/assets/js/vendor/jquery.min.js') }}"></script>
-    {{-- <script src="{{ asset('frontend/assets/js/vendor/jqueryui.js') }}"></script> --}}
-    <script src="{{ asset('frontend/assets/js/vendor/waypoint.js') }}"></script>
-    {{-- <script src="{{ asset('frontend/assets/js/plugins/swiper.js') }}"></script> --}}
-    <script src="{{ asset('frontend/assets/js/plugins/counterup.js') }}"></script>
-    <script src="{{ asset('frontend/assets/js/plugins/sal.min.js') }}"></script>
-    <script src="{{ asset('frontend/assets/js/vendor/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('frontend/assets/js/plugins/contact.form.js') }}"></script>
-    <!-- main Js -->
-    <script src="{{ asset('frontend/assets/js/main.js') }}"></script>
-    <!-- scripts end form hear -->
-
     <div id="google_translate_element"></div>
 
     <script type="text/javascript">
@@ -363,6 +349,19 @@
 
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
     </script>
+
+    <!-- scripts start form hear -->
+    <script src="{{ asset('frontend/assets/js/vendor/jquery.min.js') }}"></script>
+    {{-- <script src="{{ asset('frontend/assets/js/vendor/jqueryui.js') }}"></script> --}}
+    <script src="{{ asset('frontend/assets/js/vendor/waypoint.js') }}"></script>
+    {{-- <script src="{{ asset('frontend/assets/js/plugins/swiper.js') }}"></script> --}}
+    <script src="{{ asset('frontend/assets/js/plugins/counterup.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/plugins/sal.min.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/vendor/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/plugins/contact.form.js') }}"></script>
+    <!-- main Js -->
+    <script src="{{ asset('frontend/assets/js/main.js') }}"></script>
+    <!-- scripts end form hear -->
 </body>
 
 </html>
