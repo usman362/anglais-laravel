@@ -23,9 +23,9 @@
                 margin-bottom: 12px;
             }
         }
-        .skiptranslate{
+        /* .skiptranslate{
             display: none !important;
-        }
+        } */
         body{
             top: 0 !important;
         }
