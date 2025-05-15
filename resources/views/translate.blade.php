@@ -11,32 +11,29 @@
 <div id="google_translate_element"></div>
 
 <script type="text/javascript">
- function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                includedLanguages: 'fr'
-            }, 'google_translate_element');
-        }
-
-// Auto-translate to French on load
-function setFrenchLanguage() {
-    var cookieName = "googtrans";
-    var cookieValue = "/en/fr";
-    var domain = window.location.hostname;
-
-    document.cookie = cookieName + "=" + cookieValue + ";path=/;domain=" + domain;
-
-    // Force URL hash for Google Translate
-    if (window.location.hash !== "#googtrans(/en/fr)") {
-      window.location.hash = "#googtrans(/en/fr)";
-      window.location.reload();
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'fr',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
     }
-  }
 
-  // Trigger on page load
-  window.onload = function () {
-    setFrenchLanguage();
-  };
+    // Wait for the widget to be ready, then auto-select 'fr'
+    function autoSelectFrench() {
+        const interval = setInterval(function () {
+            const select = document.querySelector('.goog-te-combo');
+            if (select) {
+                select.value = 'fr';
+                select.dispatchEvent(new Event('change')); // trigger change
+                clearInterval(interval);
+            }
+        }, 500);
+    }
+
+    window.addEventListener('load', function () {
+        autoSelectFrench();
+    });
 </script>
 
 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
