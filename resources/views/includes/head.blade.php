@@ -22,8 +22,8 @@
     <link href="{{ asset('assets/web-fonts/plugin.css') }}" rel="stylesheet" />
 
     <!-- APP CSS & APP SCSS -->
-    <link rel="preload" as="style" href="{{ asset('assets/app.67855e29.css') }}" />
-    <link rel="preload" as="style" href="{{ asset('assets/app.4b443544.css') }}" />
+    {{-- <link rel="preload" as="style" href="{{ asset('assets/app.67855e29.css') }}" />
+    <link rel="preload" as="style" href="{{ asset('assets/app.4b443544.css') }}" /> --}}
     <link rel="stylesheet" href="{{ asset('assets/app.67855e29.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/app.4b443544.css') }}" />
     <style>
