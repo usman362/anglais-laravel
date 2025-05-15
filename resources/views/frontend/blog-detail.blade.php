@@ -27,7 +27,7 @@
                 <!-- rts blo post area -->
                 <div class="col-md-12 col-sm-12 col-12">
                     <!-- single post -->
-                    <div class="blog-single-post-listing details mb--0">
+                    <div class="blog-single-post-listing notranslate details mb--0">
                         <div class="thumbnail">
                             <img src="{{ asset('storage/' . $blog->image) }}" alt="Business-Blog">
                         </div>

@@ -13,6 +13,26 @@
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/plugins/unicons.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/vendor/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/style.css') }}">
+    <style>
+        @media(max-width: 786px) {
+            .rts-title-area {
+                margin-top: 36px;
+            }
+
+            .about-inner img {
+                margin-bottom: 12px;
+            }
+        }
+        .skiptranslate{
+            display: none !important;
+        }
+        body{
+            top: 0 !important;
+        }
+        #goog-gt-tt{
+            visibility: hidden !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -52,7 +72,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-4">
                         <div class="thumbnail">
                             <a href="{{ route('home') }}" aria-label="Go to Home">
-                                <img src="{{asset('frontend/assets/images/LOGO-AGAPEÌ.png')}}" alt="">
+                                <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ.png') }}" alt="">
                             </a>
                         </div>
                     </div>
@@ -96,7 +116,8 @@
                                         class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn">Dashboard</a>
                                 @else
                                     <a href="{{ route('client-login') }}"
-                                        class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn">Votre espace personnel</a>
+                                        class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn">Votre espace
+                                        personnel</a>
                                 @endauth
 
                                 <button id="menu-btn" class="menu rts-btn btn-primary-alta ml--20 ml_sm--5">
@@ -119,9 +140,12 @@
         <button class="close-icon-menu" aria-label="Close"><i class="far fa-times"></i></button>
         <!-- inner menu area desktop start -->
         <div class="rts-sidebar-menu-desktop">
-            <a class="logo-1" href="{{ route('home') }}" aria-label="Go to Home"><img src="{{asset('frontend/assets/images/LOGO-AGAPEÌ.png')}}" alt=""></a>
-            <a class="logo-2" href="{{ route('home') }}" aria-label="Go to Home"><img src="{{asset('frontend/assets/images/LOGO-AGAPEÌ.png')}}" alt=""></a>
-            <a class="logo-3" href="{{ route('home') }}" aria-label="Go to Home"><img src="{{asset('frontend/assets/images/LOGO-AGAPEÌ.png')}}" alt=""></a>
+            <a class="logo-1" href="{{ route('home') }}" aria-label="Go to Home"><img
+                    src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ.png') }}" alt=""></a>
+            <a class="logo-2" href="{{ route('home') }}" aria-label="Go to Home"><img
+                    src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ.png') }}" alt=""></a>
+            <a class="logo-3" href="{{ route('home') }}" aria-label="Go to Home"><img
+                    src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ.png') }}" alt=""></a>
             <div class="body d-none d-xl-block">
                 <p class="disc">
                     N’attendez pas d’être heureux pour sourire. Souriez plutôt afin d’être heureux
@@ -194,11 +218,11 @@
                 </nav>
 
                 @auth
-                <a href="{{ url('dashboard') }}"
-                    class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btnmenu">Dashboard</a>
-                    @else
+                    <a href="{{ url('dashboard') }}"
+                        class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btnmenu">Dashboard</a>
+                @else
                     <a href="{{ route('login') }}"
-                    class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btnmenu">Votre espace personnel</a>
+                        class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btnmenu">Votre espace personnel</a>
                 @endauth
 
             </div>
@@ -221,7 +245,7 @@
             <div class="row">
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12">
                     <div class="footer-two-single-wized left pt--50">
-                        <img src="{{asset('frontend/assets/images/LOGO-AGAPEÌ.png')}}" alt="">
+                        <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ.png') }}" alt="">
                     </div>
                 </div>
                 <!-- footer mid area -->
@@ -235,19 +259,24 @@
                         </div>
                         <div class="opening-time-inner">
                             <div class="single-opening">
-                                <p class="day"><a style="color:#fff" href="{{route('legal_1')}}">Mentions légales</a></p>
+                                <p class="day"><a style="color:#fff" href="{{ route('legal_1') }}">Mentions
+                                        légales</a></p>
                             </div>
                             <div class="single-opening">
-                                <p class="day"><a style="color:#fff" href="{{route('legal_2')}}">Conditions Générales dʼUtilisation (CGU)</a></p>
+                                <p class="day"><a style="color:#fff" href="{{ route('legal_2') }}">Conditions
+                                        Générales dʼUtilisation (CGU)</a></p>
                             </div>
                             <div class="single-opening">
-                                <p class="day"><a style="color:#fff" href="{{route('legal_3')}}">Conditions Générales de Vente (CGV)</a></p>
+                                <p class="day"><a style="color:#fff" href="{{ route('legal_3') }}">Conditions
+                                        Générales de Vente (CGV)</a></p>
                             </div>
                             <div class="single-opening">
-                                <p class="day"><a style="color:#fff" href="{{route('legal_4')}}">Politique de confidentialité</a></p>
+                                <p class="day"><a style="color:#fff" href="{{ route('legal_4') }}">Politique de
+                                        confidentialité</a></p>
                             </div>
                             <div class="single-opening">
-                                <p class="day"><a style="color:#fff" href="{{route('career')}}">Nous recrutons</a></p>
+                                <p class="day"><a style="color:#fff" href="{{ route('career') }}">Nous
+                                        recrutons</a></p>
                             </div>
                         </div>
                     </div>
@@ -268,10 +297,12 @@
                     <div class="footer-one-single-wized mt-4">
                         <div class="opening-time-inner">
                             <div class="single-opening">
-                                <p class="day"><a style="color:#fff" href="{{route('career')}}">Nous recrutons</a></p>
+                                <p class="day"><a style="color:#fff" href="{{ route('career') }}">Nous
+                                        recrutons</a></p>
                             </div>
                             <div class="single-opening">
-                                <p class="day"><a style="color:#fff" href="{{route('employee-login')}}">Espace collaborateurs</a></p>
+                                <p class="day"><a style="color:#fff" href="{{ route('employee-login') }}">Espace
+                                        collaborateurs</a></p>
                             </div>
                         </div>
                     </div>
@@ -318,6 +349,20 @@
     <!-- main Js -->
     <script src="{{ asset('frontend/assets/js/main.js') }}"></script>
     <!-- scripts end form hear -->
+
+    {{-- <div id="google_translate_element"></div> --}}
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'fr'
+            }, 'google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
 </body>
 
 </html>

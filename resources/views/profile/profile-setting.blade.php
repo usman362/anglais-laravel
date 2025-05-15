@@ -27,7 +27,7 @@
                                     {{-- <div class="profile-cover__img">
                                         <img src="{{ Chatify::getUserWithAvatar(Auth::user())->avatar }}" alt="img">
                                     </div> --}}
-                                    <div class="profile-info">
+                                    <div class="profile-info notranslate">
                                         <h3 class="tx-medium">{{ Auth::user()->name }}</h3>
                                         <h6 class="tx-normal">{{ Auth::user()->email }}</h6>
                                     </div>

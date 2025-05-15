@@ -30,7 +30,17 @@
     <link rel="preload" as="style" href="{{ asset('assets/app.4b443544.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/app.67855e29.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/app.4b443544.css') }}" />
-
+    <style>
+        body{
+            top: 0 !important;
+        }
+        .skiptranslate{
+            display: none !important;
+        }
+        #goog-gt-tt{
+            visibility: hidden !important;
+        }
+    </style>
 
 </head>
 
@@ -38,45 +48,56 @@
 
     <!--- GLOBAL LOADER -->
     <div id="global-loader">
-        <img src="{{asset('assets/img/loader.svg')}}" class="loader-img" alt="loader">
+        <img src="{{ asset('assets/img/loader.svg') }}" class="loader-img" alt="loader">
     </div>
     <!--- END GLOBAL LOADER -->
 
-   @yield('content')
+    @yield('content')
 
     <!-- SCRIPTS -->
 
     <!-- JQUERY JS -->
-    <script src="{{asset('assets/plugins/jquery/jquery.min.js')}}"></script>
+    <script src="{{ asset('assets/plugins/jquery/jquery.min.js') }}"></script>
 
     <!-- BOOTSTRAP JS -->
-    <script src="{{asset('assets/plugins/bootstrap/js/popper.min.js')}}"></script>
-    <script src="{{asset('assets/plugins/bootstrap/js/bootstrap.min.js')}}"></script>
+    <script src="{{ asset('assets/plugins/bootstrap/js/popper.min.js') }}"></script>
+    <script src="{{ asset('assets/plugins/bootstrap/js/bootstrap.min.js') }}"></script>
 
     <!-- PERFECT-SCROLLBAR JS -->
-    <script src="{{asset('assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js')}}"></script>
+    <script src="{{ asset('assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
 
     <!-- SELECT2 JS -->
-    <script src="{{asset('assets/plugins/select2/js/select2.min.js')}}"></script>
+    <script src="{{ asset('assets/plugins/select2/js/select2.min.js') }}"></script>
 
 
     <!-- BOOTSTRAP SHOW PASSWORD JS -->
-    <script src="{{asset('assets/plugins/bootstrap/js/bootstrap-show-password.min.js')}}"></script>
+    <script src="{{ asset('assets/plugins/bootstrap/js/bootstrap-show-password.min.js') }}"></script>
 
     <!-- GENERATE-OTP JS -->
-    <link rel="modulepreload" href="{{asset('assets/generate-otp.e4c72a37.js')}}" />
-    <script type="module" src="{{asset('assets/generate-otp.e4c72a37.js')}}"></script>
+    <link rel="modulepreload" href="{{ asset('assets/generate-otp.e4c72a37.js') }}" />
+    <script type="module" src="{{ asset('assets/generate-otp.e4c72a37.js') }}"></script>
 
 
     <!-- STICKY JS-->
-    <script src="{{asset('assets/sticky.js')}}"></script>
+    <script src="{{ asset('assets/sticky.js') }}"></script>
 
     <!-- APP JS -->
-    <link rel="modulepreload" href="{{asset('assets/app.7e916841.js')}}" />
-    <script type="module" src="{{asset('assets/app.7e916841.js')}}"></script>
+    <link rel="modulepreload" href="{{ asset('assets/app.7e916841.js') }}" />
+    <script type="module" src="{{ asset('assets/app.7e916841.js') }}"></script>
 
     <!-- END SCRIPTS -->
 
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'fr'
+            }, 'google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
 </body>
 
 </html>

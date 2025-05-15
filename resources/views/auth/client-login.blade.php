@@ -63,12 +63,13 @@
                                                 </div>
                                             </div>
                                         </form>
-                                        {{-- <div class="text-start mt-4 ms-0 mb-3">
+                                        <div class="text-center mt-4 ms-0 mb-3">
                                             <div class="mb-1"><a href="{{ route('password.request') }}">Forgot
-                                                    password?</a></div>
-                                            <div>Don't have an account? <a href="{{ route('register') }}">Register
-                                                    Here</a></div>
-                                        </div> --}}
+                                                password?</a></div>
+                                                {{--
+                                                <div>Don't have an account? <a href="{{ route('register') }}">Register
+                                                    Here</a></div>--}}
+                                                </div>
                                     </div>
                                 </div>
                             </div>
@@ -79,9 +80,6 @@
                                 <div class="clearfix"></div>
                                 <div class="clearfix"></div>
                                 <img src="{{ asset('assets/img/pngs/user.png') }}" class="ht-250 mb-0" alt="user">
-                                <h2 class="mt-4 text-white tx-normal">connectez vous Your Account</h2>
-                                <span class="tx-white-6 tx-13 mb-5 mt-xl-0">Sign in to Create, Discover and Connect
-                                    with the Global Community</span>
                             </div>
                         </div>
                     </div>

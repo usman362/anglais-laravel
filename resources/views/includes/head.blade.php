@@ -26,6 +26,16 @@
     <link rel="preload" as="style" href="{{ asset('assets/app.4b443544.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/app.67855e29.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/app.4b443544.css') }}" />
-
+    <style>
+        body{
+            top: 0 !important;
+        }
+        .skiptranslate{
+            display: none !important;
+        }
+        #goog-gt-tt{
+            visibility: hidden !important;
+        }
+    </style>
     @stack('styles')
 </head>

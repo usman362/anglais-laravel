@@ -49,7 +49,7 @@
                                                 @endif
                                             </tr>
                                         </thead>
-                                        <tbody>
+                                        <tbody class="notranslate">
 
                                         </tbody>
                                     </table>

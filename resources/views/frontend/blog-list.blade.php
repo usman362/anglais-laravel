@@ -31,7 +31,7 @@
                         @foreach ($blogs as $blog)
                             <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                                 <!-- start blog grid inner -->
-                                <div class="blog-grid-inner">
+                                <div class="blog-grid-inner notranslate">
                                     <div class="blog-header">
                                         <a class="thumbnail" href="{{ route('blog_details', $blog->uuid) }}">
                                             <img src="{{ asset('storage/' . $blog->image) }}" alt="Business_Blog">

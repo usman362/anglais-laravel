@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Notifications\AccountCreatedNotification;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -69,7 +70,7 @@ class UsersController extends Controller
                 'password' => Hash::make($request->password),
                 'role' => $request->role
             ]);
-
+            $user->notify(new AccountCreatedNotification($user->role, $request->password));
             return redirect(route('users-management.index'))->with('success', 'User has been Created Successfully');
         } catch (\Exception $e) {
             return redirect(route('users-management.index'))->with('error', 'Failed to Create User');
@@ -107,16 +108,15 @@ class UsersController extends Controller
         ]);
 
         try {
-            $user = User::create([
+            $user = User::update(['id' => $id],[
                 'name' => $request->first_name . ' ' . $request->last_name,
                 'email' => $request->email,
                 'password' => Hash::make($request->password),
                 'role' => $request->role
             ]);
-
-            return redirect(route('users-management.index'))->with('success', 'User has been Created Successfully');
+            return redirect(route('users-management.index'))->with('success', 'User has been Updated Successfully');
         } catch (\Exception $e) {
-            return redirect(route('users-management.index'))->with('error', 'Failed to Create User');
+            return redirect(route('users-management.index'))->with('error', 'Failed to Update User');
         }
     }
 

@@ -45,7 +45,7 @@
                                                 <th class="wd-20p">Action</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
+                                        <tbody class="notranslate">
 
                                         </tbody>
                                     </table>
