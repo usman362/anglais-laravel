@@ -10,19 +10,20 @@
                 </svg>
             </a>
             <div class="hor-logo">
-                <a class="main-logo" href="{{route('home')}}">
-                    <img style="width: 100px" src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ.png') }}" class="header-brand-img desktop-logo"
-                        alt="logo">
-                    <img style="width: 100px" src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ.png') }}" class="header-brand-img desktop-logo-dark"
-                        alt="logo">
+                <a class="main-logo" href="{{ route('home') }}">
+                    <img style="width: 100px" src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ.png') }}"
+                        class="header-brand-img desktop-logo" alt="logo">
+                    <img style="width: 100px" src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ.png') }}"
+                        class="header-brand-img desktop-logo-dark" alt="logo">
                 </a>
             </div>
         </div>
         <div class="main-header-center">
             <div class="responsive-logo">
-                <a href="{{route('home')}}"><img style="width: 100px"
-                        src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ.png') }}" class="mobile-logo" alt="logo"></a>
-                <a href="{{route('home')}}"><img style="width: 100px"
+                <a href="{{ route('home') }}"><img style="width: 100px"
+                        src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ.png') }}" class="mobile-logo"
+                        alt="logo"></a>
+                <a href="{{ route('home') }}"><img style="width: 100px"
                         src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ.png') }}" class="mobile-logo-dark"
                         alt="logo"></a>
             </div>
@@ -60,12 +61,14 @@
                                 </span>
                             </a>
                         </div> --}}
+                        <a class="nav-link mt-2 mr-2 icon" href="{{ url('messenger') }}">
+                            <img src="{{ asset('assets/img/chat.png') }}" class="mt-2" width="20" alt="">
+                        </a>
 
                         <div class="dropdown d-flex main-profile-menu">
-                            <a class="d-flex" href="javascript:void(0);">
+                            <a class="d-flex" href="javascript:void(0)">
                                 <span class="main-img-user">
-                                    <img alt="avatar"
-                                        src="{{ Chatify::getUserWithAvatar(Auth::user())->avatar }}">
+                                    <img alt="avatar" src="{{ Chatify::getUserWithAvatar(Auth::user())->avatar }}">
                                 </span>
                             </a>
                             <div class="dropdown-menu">
