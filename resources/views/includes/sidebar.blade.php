@@ -4,13 +4,13 @@
         <div class="main-sidebar-header main-container-1">
             <div class="sidemenu-logo">
                 <a class="main-logo" href="{{route('home')}}">
-                    <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ.png') }}" class="header-brand-img desktop-logo-dark"
+                    <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}" class="header-brand-img desktop-logo-dark"
                         alt="logo">
-                    <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ.png') }}" class="header-brand-img icon-logo-dark"
+                    <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}" class="header-brand-img icon-logo-dark"
                         alt="logo">
-                    <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ.png') }}" class="header-brand-img desktop-logo"
+                    <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}" class="header-brand-img desktop-logo"
                         alt="logo">
-                    <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ.png') }}" class="header-brand-img icon-logo"
+                    <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}" class="header-brand-img icon-logo"
                         alt="logo">
                 </a>
                 {{-- <a href="javascript:void(0)" class="text-white">
@@ -22,17 +22,12 @@
                         width="24" height="24" viewBox="0 0 24 24">
                         <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z" />
                     </svg></div>
-                <ul class="menu-nav nav mt-4">
+                <ul class="menu-nav nav" style="margin-top:66px !important">
 
                     @if (auth()->user()->role == 'admin')
-                        <li class="nav-header"><span class="nav-label">Users Management</span></li>
                         <li class="nav-item">
                             <a class="nav-link with-sub" href="javascript:void(0);">
-                                <svg class="sidemenu-icon menu-icon" xmlns="http://www.w3.org/2000/svg"
-                                    enable-background="new 0 0 24 24" viewBox="0 0 24 24">
-                                    <path
-                                        d="M21.5,2H2.4993896C2.2234497,2.0001831,1.9998169,2.223999,2,2.5v19.0005493C2.0001831,21.7765503,2.223999,22.0001831,2.5,22h19.0006104C21.7765503,21.9998169,22.0001831,21.776001,22,21.5V2.4993896C21.9998169,2.2234497,21.776001,1.9998169,21.5,2z M8.5,21H3v-5.5h5.5V21z M8.5,14.5H3v-5h5.5V14.5z M8.5,8.5H3V3h5.5V8.5z M14.5,21h-5v-5.5h5V21z M14.5,14.5h-5v-5h5V14.5z M14.5,8.5h-5V3h5V8.5z M21,21h-5.5v-5.5H21V21z M21,14.5h-5.5v-5H21V14.5z M21,8.5h-5.5V3H21V8.5z" />
-                                </svg>
+                                <img style="width: 30px;padding:0 2px;" src="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ_-2.png') }}" alt="">
                                 <span class="sidemenu-label">Users</span>
                                 <i class="angle fe fe-chevron-right"></i>
                             </a>
@@ -50,11 +45,7 @@
                     @endif
                     <li class="nav-item">
                         <a class="nav-link with-sub" href="javascript:void(0);">
-                            <svg class="sidemenu-icon menu-icon" xmlns="http://www.w3.org/2000/svg"
-                                enable-background="new 0 0 24 24" viewBox="0 0 24 24">
-                                <path
-                                    d="M21.5,2H2.4993896C2.2234497,2.0001831,1.9998169,2.223999,2,2.5v19.0005493C2.0001831,21.7765503,2.223999,22.0001831,2.5,22h19.0006104C21.7765503,21.9998169,22.0001831,21.776001,22,21.5V2.4993896C21.9998169,2.2234497,21.776001,1.9998169,21.5,2z M8.5,21H3v-5.5h5.5V21z M8.5,14.5H3v-5h5.5V14.5z M8.5,8.5H3V3h5.5V8.5z M14.5,21h-5v-5.5h5V21z M14.5,14.5h-5v-5h5V14.5z M14.5,8.5h-5V3h5V8.5z M21,21h-5.5v-5.5H21V21z M21,14.5h-5.5v-5H21V14.5z M21,8.5h-5.5V3H21V8.5z" />
-                            </svg>
+                            <img style="width: 30px;padding:0 2px;" src="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ_-2.png') }}" alt="">
                             <span class="sidemenu-label">Documents</span>
                             <i class="angle fe fe-chevron-right"></i>
                         </a>
@@ -63,7 +54,7 @@
                             <li class="nav-sub-item">
                                 <a class="nav-sub-link" href="{{ route('documents.index') }}">Documents List</a>
                             </li>
-                            @if (auth()->user()->role == 'admin' || auth()->user()->role == 'client')
+                            @if (auth()->user()->role == 'admin')
                                 <li class="nav-sub-item">
                                     <a class="nav-sub-link" href="{{ route('documents.create') }}">Documents Create</a>
                                 </li>
@@ -89,11 +80,7 @@
                     @if (auth()->user()->role == 'admin')
                         <li class="nav-item">
                             <a class="nav-link with-sub" href="javascript:void(0);">
-                                <svg class="sidemenu-icon menu-icon" xmlns="http://www.w3.org/2000/svg"
-                                    enable-background="new 0 0 24 24" viewBox="0 0 24 24">
-                                    <path
-                                        d="M21.5,2H2.4993896C2.2234497,2.0001831,1.9998169,2.223999,2,2.5v19.0005493C2.0001831,21.7765503,2.223999,22.0001831,2.5,22h19.0006104C21.7765503,21.9998169,22.0001831,21.776001,22,21.5V2.4993896C21.9998169,2.2234497,21.776001,1.9998169,21.5,2z M8.5,21H3v-5.5h5.5V21z M8.5,14.5H3v-5h5.5V14.5z M8.5,8.5H3V3h5.5V8.5z M14.5,21h-5v-5.5h5V21z M14.5,14.5h-5v-5h5V14.5z M14.5,8.5h-5V3h5V8.5z M21,21h-5.5v-5.5H21V21z M21,14.5h-5.5v-5H21V14.5z M21,8.5h-5.5V3H21V8.5z" />
-                                </svg>
+                                <img style="width: 30px;padding:0 2px;" src="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ_-2.png') }}" alt="">
                                 <span class="sidemenu-label notranslate">Planning</span>
                                 <i class="angle fe fe-chevron-right"></i>
                             </a>
@@ -109,14 +96,10 @@
                         </li>
                     @endif
 
-                    @if (auth()->user()->role == 'client' || auth()->user()->role == 'employee')
+
                         <li class="nav-item">
                             <a class="nav-link with-sub" href="javascript:void(0);">
-                                <svg class="sidemenu-icon menu-icon" xmlns="http://www.w3.org/2000/svg"
-                                    enable-background="new 0 0 24 24" viewBox="0 0 24 24">
-                                    <path
-                                        d="M21.5,2H2.4993896C2.2234497,2.0001831,1.9998169,2.223999,2,2.5v19.0005493C2.0001831,21.7765503,2.223999,22.0001831,2.5,22h19.0006104C21.7765503,21.9998169,22.0001831,21.776001,22,21.5V2.4993896C21.9998169,2.2234497,21.776001,1.9998169,21.5,2z M8.5,21H3v-5.5h5.5V21z M8.5,14.5H3v-5h5.5V14.5z M8.5,8.5H3V3h5.5V8.5z M14.5,21h-5v-5.5h5V21z M14.5,14.5h-5v-5h5V14.5z M14.5,8.5h-5V3h5V8.5z M21,21h-5.5v-5.5H21V21z M21,14.5h-5.5v-5H21V14.5z M21,8.5h-5.5V3H21V8.5z" />
-                                </svg>
+                                <img style="width: 30px;padding:0 2px;" src="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ_-2.png') }}" alt="">
                                 <span class="sidemenu-label">Interventions</span>
                                 <i class="angle fe fe-chevron-right"></i>
                             </a>
@@ -126,7 +109,7 @@
                                     <a class="nav-sub-link" href="{{ route('interventions.index') }}">Interventions
                                         List</a>
                                 </li>
-                                @if (auth()->user()->role == 'client')
+                                @if (auth()->user()->role == 'admin')
                                     <li class="nav-sub-item">
                                         <a class="nav-sub-link"
                                             href="{{ route('interventions.create') }}">Interventions
@@ -135,15 +118,10 @@
                                 @endif
                             </ul>
                         </li>
-                    @endif
                     @if (auth()->user()->role == 'admin')
                         <li class="nav-item">
                             <a class="nav-link with-sub" href="javascript:void(0);">
-                                <svg class="sidemenu-icon menu-icon" xmlns="http://www.w3.org/2000/svg"
-                                    enable-background="new 0 0 24 24" viewBox="0 0 24 24">
-                                    <path
-                                        d="M21.5,2H2.4993896C2.2234497,2.0001831,1.9998169,2.223999,2,2.5v19.0005493C2.0001831,21.7765503,2.223999,22.0001831,2.5,22h19.0006104C21.7765503,21.9998169,22.0001831,21.776001,22,21.5V2.4993896C21.9998169,2.2234497,21.776001,1.9998169,21.5,2z M8.5,21H3v-5.5h5.5V21z M8.5,14.5H3v-5h5.5V14.5z M8.5,8.5H3V3h5.5V8.5z M14.5,21h-5v-5.5h5V21z M14.5,14.5h-5v-5h5V14.5z M14.5,8.5h-5V3h5V8.5z M21,21h-5.5v-5.5H21V21z M21,14.5h-5.5v-5H21V14.5z M21,8.5h-5.5V3H21V8.5z" />
-                                </svg>
+                                <img style="width: 30px;padding:0 2px;" src="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ_-2.png') }}" alt="">
                                 <span class="sidemenu-label">Blogs</span>
                                 <i class="angle fe fe-chevron-right"></i>
                             </a>
@@ -161,11 +139,7 @@
                     @if (auth()->user()->role == 'client')
                         <li class="nav-item">
                             <a class="nav-link with-sub" href="javascript:void(0);">
-                                <svg class="sidemenu-icon menu-icon" xmlns="http://www.w3.org/2000/svg"
-                                    enable-background="new 0 0 24 24" viewBox="0 0 24 24">
-                                    <path
-                                        d="M21.5,2H2.4993896C2.2234497,2.0001831,1.9998169,2.223999,2,2.5v19.0005493C2.0001831,21.7765503,2.223999,22.0001831,2.5,22h19.0006104C21.7765503,21.9998169,22.0001831,21.776001,22,21.5V2.4993896C21.9998169,2.2234497,21.776001,1.9998169,21.5,2z M8.5,21H3v-5.5h5.5V21z M8.5,14.5H3v-5h5.5V14.5z M8.5,8.5H3V3h5.5V8.5z M14.5,21h-5v-5.5h5V21z M14.5,14.5h-5v-5h5V14.5z M14.5,8.5h-5V3h5V8.5z M21,21h-5.5v-5.5H21V21z M21,14.5h-5.5v-5H21V14.5z M21,8.5h-5.5V3H21V8.5z" />
-                                </svg>
+                                <img style="width: 30px;padding:0 2px;" src="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ_-2.png') }}" alt="">
                                 <span class="sidemenu-label">Contracts</span>
                                 <i class="angle fe fe-chevron-right"></i>
                             </a>

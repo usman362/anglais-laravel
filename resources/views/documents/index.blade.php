@@ -16,7 +16,7 @@
                             <li class="breadcrumb-item active" aria-current="page">List</li>
                         </ol>
                     </div>
-                    @if (auth()->user()->role == 'admin' || auth()->user()->role == 'client')
+                    @if (auth()->user()->role == 'admin')
                         <div class="d-flex">
                             <div class="justify-content-center">
                                 <a href="{{ route($type . '.create') }}" class="btn btn-primary my-2 btn-icon-text">
@@ -43,8 +43,9 @@
                                         <thead>
                                             <tr>
                                                 <th class="wd-20p">File Name</th>
+                                                <th class="wd-20p">User</th>
                                                 <th class="wd-25p">Type</th>
-                                                @if (auth()->user()->role == 'admin' || auth()->user()->role == 'client')
+                                                @if (auth()->user()->role == 'admin')
                                                     <th class="wd-20p">Action</th>
                                                 @endif
                                             </tr>
@@ -87,12 +88,15 @@
                         data: 'title',
                         name: 'title'
                     },
-
+                    {
+                        data: 'user',
+                        name: 'user'
+                    },
                     {
                         data: 'type',
                         name: 'type'
                     },
-                    @if(auth()->user()->role == 'admin' || auth()->user()->role == 'client')
+                    @if(auth()->user()->role == 'admin')
                     {
                         data: 'actions',
                         name: 'actions',

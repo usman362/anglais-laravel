@@ -19113,6 +19113,12 @@ p.disc.banner-para {
   .rts-tab-style-one .button-area {
     padding: 10px;
   }
+
+  .footer-third-section{
+    margin-top: -56px;
+    text-align: center;
+    padding-bottom: 40px;
+  }
 }
 .rts-tab-style-one .button-area button {
   background: transparent !important;

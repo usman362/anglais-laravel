@@ -2,7 +2,7 @@
 @section('title', 'Nos prestations')
 @section('content')
     <!-- start breadcrumb area -->
-    <div class="rts-breadcrumb-area breadcrumb-bg bg_image">
+    <div class="rts-breadcrumb-area breadcrumb-bg bg_image notranslate">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 breadcrumb-1">
@@ -22,7 +22,7 @@
 
 
     <!-- our service area start -->
-    <div class="rts-service-area rts-section-gapTop pb--200 service-two-bg bg_image">
+    <div class="rts-service-area rts-section-gapTop pb--200 service-two-bg bg_image notranslate">
         <div class="container">
             <div class="row g-5 service padding-controler">
                 <!-- single service area -->

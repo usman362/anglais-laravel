@@ -29,9 +29,10 @@
                             </div>
                             <div class="card-body" data-select2-id="14">
                                 {{-- needs-validation was-validated --}}
-                                <form class="row g-3" action="{{ route('documents.update',@$document->id) }}" novalidate="" method="POST"
-                                    data-select2-id="13" enctype="multipart/form-data">
+                                <form class="row g-3" action="{{ route('documents.update', @$document->id) }}" novalidate=""
+                                    method="POST" data-select2-id="13" enctype="multipart/form-data">
                                     @csrf
+                                    @method('PUT')
                                     <div class="row row-sm">
                                         <div class="col-lg-12 col-md-12">
                                             <div class="card custom-card">
@@ -39,7 +40,16 @@
                                                     <label for="title" class="form-label tx-semibold">Document
                                                         name</label>
                                                     <input type="text" name="title" class="form-control mb-4"
-                                                        id="title" value="{{old('title',@$document->title)}}" required="">
+                                                        id="title" value="{{ old('title', @$document->title) }}"
+                                                        required="">
+                                                    <label for="user_id" class="form-label tx-semibold">Select User</label>
+                                                    <select name="user_id" class="form-control notranslate mb-4"
+                                                        id="user_id" required>
+                                                        @foreach ($users as $user)
+                                                            <option value="{{ $user->id }}" @selected(old('user_id', @$document->user_id) == $user->id)>
+                                                                {{ $user->name . ' (' . $user->role . ')' }}</option>
+                                                        @endforeach
+                                                    </select>
                                                     <label for="file" class="form-label tx-semibold">Document
                                                         file</label>
                                                     <input type="file" id="file" name="file" required

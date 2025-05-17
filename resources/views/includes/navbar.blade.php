@@ -11,9 +11,9 @@
             </a>
             <div class="hor-logo">
                 <a class="main-logo" href="{{ route('home') }}">
-                    <img style="width: 100px" src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ.png') }}"
+                    <img style="width: 100px" src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}"
                         class="header-brand-img desktop-logo" alt="logo">
-                    <img style="width: 100px" src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ.png') }}"
+                    <img style="width: 100px" src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}"
                         class="header-brand-img desktop-logo-dark" alt="logo">
                 </a>
             </div>
@@ -21,10 +21,10 @@
         <div class="main-header-center">
             <div class="responsive-logo">
                 <a href="{{ route('home') }}"><img style="width: 100px"
-                        src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ.png') }}" class="mobile-logo"
+                        src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}" class="mobile-logo"
                         alt="logo"></a>
                 <a href="{{ route('home') }}"><img style="width: 100px"
-                        src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ.png') }}" class="mobile-logo-dark"
+                        src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}" class="mobile-logo-dark"
                         alt="logo"></a>
             </div>
         </div>

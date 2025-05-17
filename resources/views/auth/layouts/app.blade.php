@@ -12,7 +12,7 @@
         content="admin dashboard, dashboard ui, backend, admin panel, admin template, dashboard template, admin, bootstrap, laravel, laravel admin panel, php admin panel, php admin dashboard, laravel admin template, laravel dashboard, laravel admin panel" />
 
     <!-- FAVICON -->
-    <link rel="icon" href="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ.png') }}" type="image/x-icon" />
+    <link rel="icon" href="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ_-2.png') }}" type="image/x-icon" />
 
     <!-- TITLE -->
     <title>@yield('title')</title>

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ_-2.png') }}">
     {{-- <link rel="stylesheet" href="{{ asset('frontend/assets/css/plugins/swiper.min.css') }}"> --}}
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/plugins/fontawesome-5.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/plugins/animate.min.css') }}">
@@ -72,7 +72,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-4">
                         <div class="thumbnail">
                             <a href="{{ route('home') }}" aria-label="Go to Home">
-                                <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ.png') }}" alt="">
+                                <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}" alt="">
                             </a>
                         </div>
                     </div>
@@ -113,7 +113,7 @@
                             <div class="button-area">
                                 @auth
                                     <a href="{{ url('dashboard') }}"
-                                        class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn">Dashboard</a>
+                                        class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn">Tableau de bord</a>
                                 @else
                                     <a href="{{ route('client-login') }}"
                                         class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn">Votre espace
@@ -141,11 +141,11 @@
         <!-- inner menu area desktop start -->
         <div class="rts-sidebar-menu-desktop">
             <a class="logo-1" href="{{ route('home') }}" aria-label="Go to Home"><img
-                    src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ.png') }}" alt=""></a>
+                    src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}" alt=""></a>
             <a class="logo-2" href="{{ route('home') }}" aria-label="Go to Home"><img
-                    src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ.png') }}" alt=""></a>
+                    src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}" alt=""></a>
             <a class="logo-3" href="{{ route('home') }}" aria-label="Go to Home"><img
-                    src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ.png') }}" alt=""></a>
+                    src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}" alt=""></a>
             <div class="body d-none d-xl-block">
                 <p class="disc">
                     N’attendez pas d’être heureux pour sourire. Souriez plutôt afin d’être heureux
@@ -245,7 +245,7 @@
             <div class="row">
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12">
                     <div class="footer-two-single-wized left pt--50">
-                        <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ.png') }}" alt="">
+                        <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}" alt="">
                     </div>
                 </div>
                 <!-- footer mid area -->
@@ -283,14 +283,14 @@
                 </div>
                 <!-- footer mid area end -->
 
-                <div class="col-xl-3 col-md-6 col-sm-12 col-12">
+                <div class="col-xl-3 col-md-6 col-sm-12 col-12 footer-third-section">
                     <div class="footer-two-single-wized left pt--50">
                         <h3 class="title animated fadeIn">
                             Vous avez <br>
                             des questions ?
                         </h3>
                         <p class="disc">
-                            Un sourire est souvent l’essentiel.
+                            <img style="width: 36px;" src="{{asset('frontend/assets/images/SMILEY-AGAPEÌ_-2.png')}}" alt=""> Un sourire est souvent l’essentiel.
                         </p>
                     </div>
 
@@ -336,7 +336,7 @@
     </div>
     <!-- progress Back to top End -->
 
-    <div id="google_translate_element"></div>
+    {{-- <div id="google_translate_element"></div>
 
     <script type="text/javascript">
        function googleTranslateElementInit() {
@@ -364,7 +364,7 @@
     </script>
 
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-    </script>
+    </script> --}}
 
     <!-- scripts start form hear -->
     <script src="{{ asset('frontend/assets/js/vendor/jquery.min.js') }}"></script>

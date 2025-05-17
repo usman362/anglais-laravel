@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Document;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Yajra\DataTables\DataTables;
 
@@ -20,10 +22,14 @@ class DocumentsController extends Controller
     public function index(Request $request)
     {
         if ($request->ajax()) {
-            $users = Document::all();
+            if (Auth::user()->role == 'admin') {
+                $users = Document::all();
+            } else {
+                $users = Document::where('user_id', Auth::user()->id)->get();
+            }
             return DataTables::of($users)
-                ->addColumn('role', function ($row) {
-                    return 'Employee';
+                ->addColumn('user', function ($row) {
+                    return $row->user->name ?? '';
                 })
                 ->addColumn('actions', function ($row) {
                     $editUrl = route('documents.edit', $row->id);
@@ -86,31 +92,36 @@ class DocumentsController extends Controller
     {
         $type = 'document';
         $name = 'Document';
-        return view('documents.create', compact('type', 'name'));
+        $users = User::where('role', '!=', 'admin')->get();
+        return view('documents.create', compact('type', 'name', 'users'));
     }
     public function invoiceCreate()
     {
         $type = 'invoice';
         $name = 'Invoice';
-        return view('documents.create', compact('type', 'name'));
+        $users = User::where('role', '!=', 'admin')->get();
+        return view('documents.create', compact('type', 'name', 'users'));
     }
     public function payslipCreate()
     {
         $type = 'payslip';
         $name = 'Payslip';
-        return view('documents.create', compact('type', 'name'));
+        $users = User::where('role', '!=', 'admin')->get();
+        return view('documents.create', compact('type', 'name', 'users'));
     }
     public function activityCreate()
     {
         $type = 'activity';
         $name = 'Activity Report';
-        return view('documents.create', compact('type', 'name'));
+        $users = User::where('role', '!=', 'admin')->get();
+        return view('documents.create', compact('type', 'name', 'users'));
     }
     public function followupCreate()
     {
         $type = 'followup';
         $name = 'Follow up Sheet';
-        return view('documents.create', compact('type', 'name'));
+        $users = User::where('role', '!=', 'admin')->get();
+        return view('documents.create', compact('type', 'name', 'users'));
     }
 
     /**
@@ -135,7 +146,7 @@ class DocumentsController extends Controller
                 'title' => $request->title,
                 'file_path' => $filePath,
                 'type' => $request->type,
-                // 'user_id' => ,
+                'user_id' => $request->user_id,
             ]);
 
             return redirect(route('documents.index'))->with('success', 'Document has been Created Successfully');
@@ -158,7 +169,8 @@ class DocumentsController extends Controller
     public function edit(string $id)
     {
         $document = Document::find($id);
-        return view('documents.edit', compact('document'));
+        $users = User::where('role', '!=', 'admin')->get();
+        return view('documents.edit', compact('document', 'users'));
     }
 
     /**
@@ -168,7 +180,7 @@ class DocumentsController extends Controller
     {
         $request->validate([
             'title' => 'required',
-            'file' => 'required',
+            'file' => 'nullable',
         ]);
         try {
             $filePath = Document::find($id)->file_path ?? null;
@@ -182,8 +194,7 @@ class DocumentsController extends Controller
             $document = Document::updateOrCreate(['id' => $id], [
                 'title' => $request->title,
                 'file_path' => $filePath,
-                'type' => $request->type,
-                // 'user_id' => ,
+                'user_id' => $request->user_id,
             ]);
 
             return redirect(route('documents.index'))->with('success', 'Document has been Created Successfully');

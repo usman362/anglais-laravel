@@ -17,13 +17,15 @@
                         </ol>
                     </div>
                     <div class="d-flex">
-                    <div class="justify-content-center">
-                        <a href="{{route('interventions.create')}}" class="btn btn-primary my-2 btn-icon-text">
-                            <i class="fe fe-plus bg-white-transparent text-white"></i>
-                            <span>Add Interventions</span>
-                        </a>
+                        @if (auth()->user()->role == 'admin')
+                            <div class="justify-content-center">
+                                <a href="{{ route('interventions.create') }}" class="btn btn-primary my-2 btn-icon-text">
+                                    <i class="fe fe-plus bg-white-transparent text-white"></i>
+                                    <span>Add Interventions</span>
+                                </a>
+                            </div>
+                        @endif
                     </div>
-                </div>
                 </div>
                 <!-- END PAGE HEADER -->
 
@@ -43,7 +45,9 @@
                                                 <th class="wd-20p">Client</th>
                                                 <th class="wd-20p">Employee</th>
                                                 <th class="wd-20p">Notes</th>
-                                                <th class="wd-20p">Action</th>
+                                                @if (auth()->user()->role == 'admin')
+                                                    <th class="wd-20p">Action</th>
+                                                @endif
                                             </tr>
                                         </thead>
                                         <tbody class="notranslate">
@@ -65,9 +69,7 @@
 @endsection
 
 @push('scripts')
-
     <script>
-
         $(function() {
 
 
@@ -101,13 +103,14 @@
                         data: 'notes',
                         name: 'notes'
                     },
-
-                    {
-                        data: 'actions',
-                        name: 'actions',
-                        orderable: false,
-                        searchable: false
-                    },
+                    @if (auth()->user()->role == 'admin')
+                        {
+                            data: 'actions',
+                            name: 'actions',
+                            orderable: false,
+                            searchable: false
+                        },
+                    @endif
 
                 ]
 

@@ -42,6 +42,13 @@
                                                     <input type="text" name="title" class="form-control mb-4"
                                                         id="title" value="{{ old('title', @$document->title) }}"
                                                         required="">
+
+                                                    <label for="user_id" class="form-label tx-semibold">Select User</label>
+                                                    <select name="user_id" class="form-control notranslate mb-4" id="user_id" required>
+                                                        @foreach ($users as $user)
+                                                            <option value="{{$user->id}}" @selected(old('user_id') == $user->id)>{{$user->name.' ('.$user->role.')'}}</option>
+                                                        @endforeach
+                                                    </select>
                                                     <label for="file" class="form-label tx-semibold">{{$name}}
                                                         file</label>
                                                     <input type="file" id="file" name="file" required

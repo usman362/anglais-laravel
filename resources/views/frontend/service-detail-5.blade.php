@@ -2,7 +2,7 @@
 @section('title', 'Appui administratif personnalisé')
 @section('content')
     <!-- start breadcrumb area -->
-    <div class="rts-breadcrumb-area breadcrumb-bg bg_image">
+    <div class="rts-breadcrumb-area breadcrumb-bg bg_image notranslate">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 breadcrumb-1">
@@ -21,7 +21,7 @@
     <!-- end breadcrumb area -->
 
     <!-- start service details area -->
-    <div class="rts-service-details-area rts-section-gap">
+    <div class="rts-service-details-area rts-section-gap notranslate">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-12">
