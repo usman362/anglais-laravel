@@ -195,7 +195,7 @@
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--100">
                     <div class="service-two-inner">
                         <a href="{{ route('service_details_1') }}"><img
-                                src="{{ asset('frontend/assets/images/service/01.jpg') }}" alt="Business_image"></a>
+                                src="{{ asset('frontend/assets/images/service-1.jpeg') }}" alt="Business_image"></a>
                         <div class="body-content w-100">
                             <div class="hidden-area">
                                 <h5 class="title">Accompagnement de fin de vie</h5>
@@ -210,7 +210,7 @@
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--100">
                     <div class="service-two-inner">
                         <a href="{{ route('service_details_2') }}"><img
-                                src="{{ asset('frontend/assets/images/service/01.jpg') }}" alt="Business_image"></a>
+                                src="{{ asset('frontend/assets/images/service-2.jpeg') }}" alt="Business_image"></a>
                         <div class="body-content w-100">
                             <div class="hidden-area">
                                 <h5 class="title">Actes quotidiens de la vie</h5>
@@ -225,7 +225,7 @@
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--100">
                     <div class="service-two-inner">
                         <a href="{{ route('service_details_3') }}"><img
-                                src="{{ asset('frontend/assets/images/service/01.jpg') }}" alt="Business_image"></a>
+                                src="{{ asset('frontend/assets/images/service-3.jpeg') }}" alt="Business_image"></a>
                         <div class="body-content w-100">
                             <div class="hidden-area">
                                 <h5 class="title">Entretien du cadre de vie</h5>
@@ -239,8 +239,8 @@
                 <!-- single service area -->
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--100">
                     <div class="service-two-inner">
-                        <a href="{{ route('service_details_4') }}"><img
-                                src="{{ asset('frontend/assets/images/service/01.jpg') }}" alt="Business_image"></a>
+                        <a href="{{ route('service_details_4') }}"><img style="height: 276px;width: 415px;"
+                                src="{{ asset('frontend/assets/images/service-4.jpeg') }}" alt="Business_image"></a>
                         <div class="body-content w-100">
                             <div class="hidden-area">
                                 <h5 class="title">Interaction sociale</h5>
@@ -255,7 +255,7 @@
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--60">
                     <div class="service-two-inner">
                         <a href="{{ route('service_details_5') }}"><img
-                                src="{{ asset('frontend/assets/images/service/01.jpg') }}" alt="Business_image"></a>
+                                src="{{ asset('frontend/assets/images/service-5.jpeg') }}" alt="Business_image"></a>
                         <div class="body-content w-100">
                             <div class="hidden-area">
                                 <h5 class="title">Appui administratif personnalisé</h5>
