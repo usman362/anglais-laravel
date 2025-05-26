@@ -15,23 +15,23 @@ Route::get('/home', function () {
     return redirect('/');
 });
 
-Route::view('client-login','auth.client-login')->name('client-login');
-Route::view('employee-login','auth.employee-login')->name('employee-login');
+Route::view('votre-espace-client','auth.client-login')->name('client-login');
+Route::view('espace-collaborateurs','auth.employee-login')->name('employee-login');
 // Route::view('test-translate','translate');
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/who-we-are', [App\Http\Controllers\HomeController::class, 'who_we_are'])->name('who_we_are');
-Route::get('/our-values', [App\Http\Controllers\HomeController::class, 'our_values'])->name('our_values');
-Route::get('/why-us', [App\Http\Controllers\HomeController::class, 'why_us'])->name('why_us');
+Route::get('/qui-sommes-nous', [App\Http\Controllers\HomeController::class, 'who_we_are'])->name('who_we_are');
+Route::get('/our-valeurs', [App\Http\Controllers\HomeController::class, 'our_values'])->name('our_values');
+Route::get('/pourquoi-nous', [App\Http\Controllers\HomeController::class, 'why_us'])->name('why_us');
 Route::get('/faq', [App\Http\Controllers\HomeController::class, 'faq'])->name('faq');
-Route::get('/career', [App\Http\Controllers\HomeController::class, 'career'])->name('career');
+Route::get('/nous-recrutons', [App\Http\Controllers\HomeController::class, 'career'])->name('career');
 Route::get('/mentions-légales', [App\Http\Controllers\HomeController::class, 'legal_1'])->name('legal_1');
 Route::get('/conditions-générales-d-utilisation', [App\Http\Controllers\HomeController::class, 'legal_2'])->name('legal_2');
 Route::get('/conditions-générales-de-vente', [App\Http\Controllers\HomeController::class, 'legal_3'])->name('legal_3');
 Route::get('/politique-de-confidentialité', [App\Http\Controllers\HomeController::class, 'legal_4'])->name('legal_4');
 
-Route::get('/contact-us', [App\Http\Controllers\HomeController::class, 'contact_us'])->name('contact_us');
-Route::get('/services', [App\Http\Controllers\HomeController::class, 'services'])->name('services');
+Route::get('/contactez-nous', [App\Http\Controllers\HomeController::class, 'contact_us'])->name('contact_us');
+Route::get('/nos-services', [App\Http\Controllers\HomeController::class, 'services'])->name('services');
 Route::get('/accompagnement-de-fin-de-vie', [App\Http\Controllers\HomeController::class, 'service_details_1'])->name('service_details_1');
 Route::get('/actes-quotidiens-de-la-vie', [App\Http\Controllers\HomeController::class, 'service_details_2'])->name('service_details_2');
 Route::get('/entretien-du-cadre-de-vie', [App\Http\Controllers\HomeController::class, 'service_details_3'])->name('service_details_3');

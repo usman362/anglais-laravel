@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ_-2.png') }}">
-    {{-- <link rel="stylesheet" href="{{ asset('frontend/assets/css/plugins/swiper.min.css') }}"> --}}
+    <link rel="stylesheet" href="{{ asset('frontend/assets/css/plugins/swiper.min.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/plugins/fontawesome-5.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/plugins/animate.min.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/plugins/unicons.css') }}">
@@ -45,6 +45,11 @@
                 <div class="row">
                     <div class="col-lg-6 d-xl-block d-none">
                         <div class="left">
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-xl-block d-none">
+                        <div class="right left">
                             <div class="mail">
                                 <a href="mailto:contact@agape-nantes.fr"><i class="fal fa-envelope"></i>
                                     contact@agape-nantes.fr</a>
@@ -52,15 +57,6 @@
                             <div class="working-time">
                                 <p><i class="fal fa-map-marker-alt"></i> 10 bis rue de la Basinerie 44300 Nantes</p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 d-xl-block d-none">
-                        <div class="right">
-                            {{-- <ul class="top-nav">
-                                <li><a href="{{ route('who_we_are') }}">About</a></li>
-                                <li><a href="{{ route('blog_list') }}">News</a></li>
-                                <li><a href="{{ route('contact_us') }}">Contact</a></li>
-                            </ul> --}}
                         </div>
                     </div>
                 </div>
@@ -116,8 +112,7 @@
                                         class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn">Tableau de bord</a>
                                 @else
                                     <a href="{{ route('client-login') }}"
-                                        class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn">Votre espace
-                                        personnel</a>
+                                        class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn">Votre espace client</a>
                                 @endauth
 
                                 <button id="menu-btn" class="menu rts-btn btn-primary-alta ml--20 ml_sm--5">
@@ -222,7 +217,7 @@
                         class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btnmenu">Dashboard</a>
                 @else
                     <a href="{{ route('login') }}"
-                        class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btnmenu">Votre espace personnel</a>
+                        class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btnmenu">Votre espace client</a>
                 @endauth
 
             </div>
@@ -274,10 +269,6 @@
                                 <p class="day"><a style="color:#fff" href="{{ route('legal_4') }}">Politique de
                                         confidentialité</a></p>
                             </div>
-                            <div class="single-opening">
-                                <p class="day"><a style="color:#fff" href="{{ route('career') }}">Nous
-                                        recrutons</a></p>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -296,6 +287,9 @@
 
                     <div class="footer-one-single-wized mt-4">
                         <div class="opening-time-inner">
+                            <div class="single-opening">
+                                <p class="day"><a style="color:#fff" href="{{ route('contact_us') }}">Contactez-nous</a></p>
+                            </div>
                             <div class="single-opening">
                                 <p class="day"><a style="color:#fff" href="{{ route('career') }}">Nous
                                         recrutons</a></p>
@@ -370,7 +364,7 @@
     <script src="{{ asset('frontend/assets/js/vendor/jquery.min.js') }}"></script>
     {{-- <script src="{{ asset('frontend/assets/js/vendor/jqueryui.js') }}"></script> --}}
     <script src="{{ asset('frontend/assets/js/vendor/waypoint.js') }}"></script>
-    {{-- <script src="{{ asset('frontend/assets/js/plugins/swiper.js') }}"></script> --}}
+    <script src="{{ asset('frontend/assets/js/plugins/swiper.js') }}"></script>
     <script src="{{ asset('frontend/assets/js/plugins/counterup.js') }}"></script>
     <script src="{{ asset('frontend/assets/js/plugins/sal.min.js') }}"></script>
     <script src="{{ asset('frontend/assets/js/vendor/bootstrap.min.js') }}"></script>
