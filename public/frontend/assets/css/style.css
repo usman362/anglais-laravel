@@ -15283,17 +15283,12 @@ body.sal-disabled [data-sal|=flip] {
 }
 
 .header-main-one .thumbnail a {
-  padding: 16px 0;
+  padding: 0;
   display: block;
   max-width: max-content;
 }
 .header-main-one .thumbnail a img {
-  max-width: 181px;
-}
-@media only screen and (max-width: 479px) {
-  .header-main-one .thumbnail a {
-    padding: 16px 0;
-  }
+  max-width: 246px;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
@@ -17443,8 +17438,9 @@ button.menu.rts-btn.btn-primary-3-menu:hover .menu-light {
 }
 
 .banner-one .swiper-wrapper .swiper-slide {
-  background-image: url(../images/banner/banner-01.jpg);
-  background-size: cover;
+  /* background-image: url(../images/banner/banner-01.jpg); */
+  background-image: url(../images/service-6.jpeg);
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -17461,7 +17457,8 @@ button.menu.rts-btn.btn-primary-3-menu:hover .menu-light {
   z-index: 0;
 }
 .banner-one .swiper-wrapper .swiper-slide.two {
-  background-image: url(../images/banner/banner-02.jpg);
+  background-image: url(../images/service-4.jpeg);
+  background-size: cover !important;
 }
 .banner-one .swiper-wrapper .swiper-slide.three {
   background-image: url(../images/banner/banner-03.jpg);
@@ -26684,7 +26681,11 @@ a.rts-btn.btn-secondary-5:hover {
 }
 
 .rts-faq-bg {
-  background-image: url(../images/faq/bg-01.jpg);
+  background-color: #fff37f;
+}
+
+.rts-faq-bg .title{
+  color: rgb(1, 97, 68) !important;
 }
 
 .faq-two-inner .title-area-faq .sub {

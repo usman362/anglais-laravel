@@ -28,8 +28,8 @@
                 <!-- single service area -->
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--100">
                     <div class="service-two-inner">
-                        <a href="{{ route('service_details_1') }}"><img
-                                src="{{ asset('frontend/assets/images/service-1.jpeg') }}" alt="Business_image"></a>
+                        <a href="{{ route('service_details_1') }}"><img style="height: 276px;width: 415px;"
+                                src="{{ asset('frontend/assets/images/service-7.jpeg') }}" alt="Business_image"></a>
                         <div class="body-content w-100">
                             <div class="hidden-area">
                                 <h5 class="title">Accompagnement de fin de vie</h5>
@@ -59,7 +59,7 @@
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--100">
                     <div class="service-two-inner">
                         <a href="{{ route('service_details_3') }}"><img
-                                src="{{ asset('frontend/assets/images/service-3.jpeg') }}" alt="Business_image"></a>
+                                src="{{ asset('frontend/assets/images/service-6.jpeg') }}" alt="Business_image"></a>
                         <div class="body-content w-100">
                             <div class="hidden-area">
                                 <h5 class="title">Entretien du cadre de vie</h5>
@@ -89,7 +89,7 @@
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--60">
                     <div class="service-two-inner">
                         <a href="{{ route('service_details_5') }}"><img
-                                src="{{ asset('frontend/assets/images/service-5.jpeg') }}" alt="Business_image"></a>
+                                src="{{ asset('frontend/assets/images/service-8.jpeg') }}" alt="Business_image"></a>
                         <div class="body-content w-100">
                             <div class="hidden-area">
                                 <h5 class="title">Appui administratif personnalisé</h5>
