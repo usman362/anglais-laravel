@@ -43,21 +43,37 @@ Route::post('contact-us', [App\Http\Controllers\HomeController::class, 'store_co
 
 Auth::routes();
 Route::get('dashboard', [UsersController::class, 'dashboard'])->name('dashboard');
-Route::resource('users-management', UsersController::class);
+Route::resource('utilisateurs', UsersController::class)->names([
+    'index'   => 'users-management.index',
+    'create'  => 'users-management.create',
+    'store'   => 'users-management.store',
+    'show'    => 'users-management.show',
+    'edit'    => 'users-management.edit',
+    'update'  => 'users-management.update',
+    'destroy' => 'users-management.destroy',
+]);
 Route::resource('documents', DocumentsController::class);
-Route::get('invoice-create', [DocumentsController::class, 'invoiceCreate'])->name('invoice.create');
-Route::get('payslip-create', [DocumentsController::class, 'payslipCreate'])->name('payslip.create');
-Route::get('followup-create', [DocumentsController::class, 'followupCreate'])->name('followup.create');
-Route::get('activity-create', [DocumentsController::class, 'activityCreate'])->name('activity.create');
-Route::get('invoice-list', [DocumentsController::class, 'invoiceList'])->name('invoice.List');
-Route::get('payslip-list', [DocumentsController::class, 'payslipList'])->name('payslip.List');
-Route::get('followup-list', [DocumentsController::class, 'followupList'])->name('followup.List');
-Route::get('activity-list', [DocumentsController::class, 'activityList'])->name('activity.List');
-Route::resource('schedules', ScheduleController::class);
+Route::get('ajouter-une-facture', [DocumentsController::class, 'invoiceCreate'])->name('invoice.create');
+Route::get('ajouter-une-fiche-de-paie', [DocumentsController::class, 'payslipCreate'])->name('payslip.create');
+Route::get('ajouter-une-feuille-de-suivi', [DocumentsController::class, 'followupCreate'])->name('followup.create');
+Route::get('ajouter-un-rapport-d-activité', [DocumentsController::class, 'activityCreate'])->name('activity.create');
+Route::get('liste-des-factures', [DocumentsController::class, 'invoiceList'])->name('invoice.List');
+Route::get('bulletins-de-paie', [DocumentsController::class, 'payslipList'])->name('payslip.List');
+Route::get('fiches-de-suivi', [DocumentsController::class, 'followupList'])->name('followup.List');
+Route::get('rapports-d-activité', [DocumentsController::class, 'activityList'])->name('activity.List');
+Route::resource('planning', ScheduleController::class)->names([
+    'index'   => 'schedules.index',
+    'create'  => 'schedules.create',
+    'store'   => 'schedules.store',
+    'show'    => 'schedules.show',
+    'edit'    => 'schedules.edit',
+    'update'  => 'schedules.update',
+    'destroy' => 'schedules.destroy',
+]);
 Route::resource('interventions', InterventionController::class);
 Route::resource('blogs', BlogController::class);
 Route::resource('contracts', ContractsController::class);
-Route::get('profile-setting', [ProfileController::class, 'index'])->name('profile.index');
+Route::get('modifier-le-profil', [ProfileController::class, 'index'])->name('profile.index');
 Route::post('profile-setting', [ProfileController::class, 'store'])->name('profile.store');
 
 Route::post('/file-download', function (Request $request) {
