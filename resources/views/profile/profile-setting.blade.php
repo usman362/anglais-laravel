@@ -21,7 +21,7 @@
                 <!-- ROW -->
                 <div class="row row-sm">
                     <div class="col-xl-12 col-md-12">
-                        <div class="card custom-card">
+                        <div class="card custom-card" style="background-color:snow">
                             <div class="card-body">
                                 <div class="panel profile-cover">
                                     {{-- <div class="profile-cover__img">
@@ -44,16 +44,15 @@
                 <!-- ROW -->
                 <div class="row row-sm">
                     <div class="col-md-12">
-                        <div class="card custom-card main-content-body-profile">
+                        <div class="card custom-card main-content-body-profile" style="background-color:snow">
                             <div class="tab-content">
                                 <div class="main-content-body tab-pane p-4 border-top-0 active" id="edit">
-                                    <div class="card custom-card border">
+                                    <div class="card custom-card border" style="background-color:snow">
                                         <div class="card-body">
                                             <div class="mb-4 main-content-label">Personal Information</div>
                                             <form class="form-horizontal" action="{{ route('profile.store') }}"
                                                 enctype="multipart/form-data" method="POST">
                                                 @csrf
-                                                <div class="mb-4 main-content-label">Profile Picture</div>
 
                                                 <div class="form-group ">
                                                     <div class="row row-sm">
@@ -102,18 +101,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="form-group ">
-                                                    <div class="row row-sm">
-                                                        <div class="col-md-2">
-                                                            <label class="form-label">Designation</label>
-                                                        </div>
-                                                        <div class="col-md-10">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Designation" name="designation"
-                                                                value="{{ Auth::user()->designation }}">
-                                                        </div>
-                                                    </div>
-                                                </div>
                                                 <div class="mb-4 main-content-label">Contact Info</div>
                                                 {{-- <div class="form-group ">
                                                     <div class="row row-sm">
@@ -145,17 +132,6 @@
                                                         </div>
                                                         <div class="col-md-10">
                                                             <textarea class="form-control" name="address" rows="2" placeholder="Address">{{ Auth::user()->address }}</textarea>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="mb-4 main-content-label">About Yourself</div>
-                                                <div class="form-group ">
-                                                    <div class="row row-sm">
-                                                        <div class="col-md-2">
-                                                            <label class="form-label">Biographical Info</label>
-                                                        </div>
-                                                        <div class="col-md-10">
-                                                            <textarea class="form-control" name="bio" rows="4" placeholder="Please say something about yourself">{{ Auth::user()->bio }}</textarea>
                                                         </div>
                                                     </div>
                                                 </div>

@@ -1,5 +1,5 @@
 @extends('auth.layouts.app')
-@section('title','connectez vous')
+@section('title','Espace client')
 @section('content')
     <!-- PAGE -->
     <div class="page main-signin-wrapper">
@@ -24,9 +24,9 @@
                                         <form action="login" method="POST">
                                             @csrf
                                             <input type="hidden" name="role" value="client">
-                                            <h2 class="text-start mb-2">connectez vous</h2>
-                                            <p class="mb-4 text-muted tx-13 ms-0 text-start">Sign in to Create, Discover
-                                                and Connect with the Global Community</p>
+                                            <h4 class="text-start mb-2">Connectez-vous pour créer, découvrir et vous
+                                                connecter avec la communauté mondiale</h4>
+                                            <p class="mb-4 text-muted tx-13 ms-0 text-start">Accédez à vos interventions et documents</p>
                                             <div class="panel desc-tabs border-0 p-0">
                                                 <div class="panel-body tabs-menu-body mt-2">
                                                     <div class="tab-content">
@@ -66,9 +66,7 @@
                                         <div class="text-center mt-4 ms-0 mb-3">
                                             <div class="mb-1"><a href="{{ route('password.request') }}">Forgot
                                                 password?</a></div>
-                                                {{--
-                                                <div>Don't have an account? <a href="{{ route('register') }}">Register
-                                                    Here</a></div>--}}
+                                                <div><a href="{{ route('home') }}">Retour</a></div>
                                                 </div>
                                     </div>
                                 </div>
@@ -79,7 +77,7 @@
                                 <div class="clearfix"></div>
                                 <div class="clearfix"></div>
                                 <div class="clearfix"></div>
-                                <img src="{{ asset('assets/img/pngs/user.png') }}" class="ht-250 mb-0" alt="user">
+                                <img src="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ.png') }}" class="ht-250 mb-0 mt-4" alt="user">
                             </div>
                         </div>
                     </div>
