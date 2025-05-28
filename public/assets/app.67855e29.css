@@ -48322,8 +48322,7 @@ ul.inbox-pagination {
     -webkit-box-pack: end;
     justify-content: flex-end;
     overflow: hidden;
-    background: url(https://laravelui.spruko.com/dashplex/build/assets/img/media/bg-profileimage.jpg) no-repeat;
-    background-size: cover;
+    background-color: #055f45;
     height: 255px
 }
 

@@ -1,7 +1,17 @@
 @extends('layouts.app')
 @section('title', 'Profile Setting')
 @section('content')
+    <style>
+        .btn-success {
+            color: #000 !important;
+            background-color: #ffeced !important;
+            border-color: #ffeced !important;
+        }
 
+        .dropify-wrapper{
+            background-color: #ffeced !important;
+        }
+    </style>
     <div class="main-content side-content pt-0">
         <div class="main-container container-fluid">
             <div class="inner-body">
@@ -21,12 +31,12 @@
                 <!-- ROW -->
                 <div class="row row-sm">
                     <div class="col-xl-12 col-md-12">
-                        <div class="card custom-card" style="background-color:snow">
+                        <div class="card custom-card" style="background-color:#fff37f">
                             <div class="card-body">
                                 <div class="panel profile-cover">
-                                    {{-- <div class="profile-cover__img">
+                                    <div class="profile-cover__img">
                                         <img src="{{ Chatify::getUserWithAvatar(Auth::user())->avatar }}" alt="img">
-                                    </div> --}}
+                                    </div>
                                     <div class="profile-info notranslate">
                                         <h3 class="tx-medium">{{ Auth::user()->name }}</h3>
                                         <h6 class="tx-normal">{{ Auth::user()->email }}</h6>
@@ -44,12 +54,12 @@
                 <!-- ROW -->
                 <div class="row row-sm">
                     <div class="col-md-12">
-                        <div class="card custom-card main-content-body-profile" style="background-color:snow">
+                        <div class="card custom-card main-content-body-profile" style="background-color:#fff37f">
                             <div class="tab-content">
                                 <div class="main-content-body tab-pane p-4 border-top-0 active" id="edit">
-                                    <div class="card custom-card border" style="background-color:snow">
+                                    <div class="card custom-card border" style="background-color:#055f45">
                                         <div class="card-body">
-                                            <div class="mb-4 main-content-label">Personal Information</div>
+                                            <div class="mb-4 main-content-label text-white">Personal Information</div>
                                             <form class="form-horizontal" action="{{ route('profile.store') }}"
                                                 enctype="multipart/form-data" method="POST">
                                                 @csrf
@@ -57,7 +67,7 @@
                                                 <div class="form-group ">
                                                     <div class="row row-sm">
                                                         <div class="col-md-2">
-                                                            <label class="form-label">Image</label>
+                                                            <label class="form-label text-white">Image</label>
                                                         </div>
                                                         <div class="col-md-10">
 
@@ -75,12 +85,12 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="mb-4 main-content-label">Name</div>
+                                                <div class="mb-4 main-content-label text-white">Name</div>
 
                                                 <div class="form-group ">
                                                     <div class="row row-sm">
                                                         <div class="col-md-2">
-                                                            <label class="form-label">First Name</label>
+                                                            <label class="form-label text-white">First Name</label>
                                                         </div>
                                                         <div class="col-md-10">
                                                             <input type="text" class="form-control"
@@ -92,7 +102,7 @@
                                                 <div class="form-group ">
                                                     <div class="row row-sm">
                                                         <div class="col-md-2">
-                                                            <label class="form-label">last Name</label>
+                                                            <label class="form-label text-white">last Name</label>
                                                         </div>
                                                         <div class="col-md-10">
                                                             <input type="text" class="form-control"
@@ -101,11 +111,11 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="mb-4 main-content-label">Contact Info</div>
+                                                <div class="mb-4 main-content-label text-white">Contact Info</div>
                                                 {{-- <div class="form-group ">
                                                     <div class="row row-sm">
                                                         <div class="col-md-2">
-                                                            <label class="form-label">Email<i>(required)</i></label>
+                                                            <label class="form-label text-white">Email<i>(required)</i></label>
                                                         </div>
                                                         <div class="col-md-10">
                                                             <input type="text" class="form-control" placeholder="Email"
@@ -116,7 +126,7 @@
                                                 <div class="form-group ">
                                                     <div class="row row-sm">
                                                         <div class="col-md-2">
-                                                            <label class="form-label">Phone</label>
+                                                            <label class="form-label text-white">Phone</label>
                                                         </div>
                                                         <div class="col-md-10">
                                                             <input type="text" class="form-control"
@@ -128,14 +138,15 @@
                                                 <div class="form-group ">
                                                     <div class="row row-sm">
                                                         <div class="col-md-2">
-                                                            <label class="form-label">Address</label>
+                                                            <label class="form-label text-white">Address</label>
                                                         </div>
                                                         <div class="col-md-10">
                                                             <textarea class="form-control" name="address" rows="2" placeholder="Address">{{ Auth::user()->address }}</textarea>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <button type="submit" class="btn ripple btn-success w-sm float-end">Save</button>
+                                                <button type="submit"
+                                                    class="btn ripple btn-success w-sm float-end">Save</button>
                                             </form>
                                         </div>
                                     </div>
