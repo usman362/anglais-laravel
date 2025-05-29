@@ -1,5 +1,5 @@
 @extends('auth.layouts.app')
-@section('title','Reset Password')
+@section('title','Réinitialiser le mot de passe')
 @section('content')
     <!-- PAGE -->
     <div class="page main-signin-wrapper">
@@ -13,18 +13,18 @@
                                 <div class="row row-sm">
                                     <div class="card-body mt-2 mb-2">
                                         <div class="mobilelogo">
-                                            <img src="{{ asset('assets/img/brand/logo.png') }}"
-                                                class=" d-lg-none header-brand-img text-start float-start mb-4 dark-logo"
+                                            <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}"
+                                                class=" d-lg-none header-brand-img mb-4 dark-logo"
                                                 alt="logo">
-                                            <img src="{{ asset('assets/img/brand/logo-light.png') }}"
-                                                class=" d-lg-none header-brand-img text-start float-start mb-4 light-logo"
+                                            <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}"
+                                                class=" d-lg-none header-brand-img mb-4 light-logo"
                                                 alt="logo">
                                         </div>
                                         <div class="clearfix"></div>
                                         <form action="{{ route('password.update') }}" method="POST">
                                             @csrf
                                             <input type="hidden" name="token" value="{{ $token }}">
-                                            <h2 class="text-start mb-2">Reset Password</h2>
+                                            <h2 class="text-start mb-2">Réinitialiser le mot de passe</h2>
                                             <div class="panel desc-tabs border-0 p-0">
                                                 <div class="panel-body tabs-menu-body mt-2">
                                                     <div class="tab-content">
@@ -43,7 +43,7 @@
                                                                 @enderror
                                                             </div>
                                                             <div class="form-group text-start">
-                                                                <label for="password" class="tx-medium">Password</label>
+                                                                <label for="password" class="tx-medium">Mot de passe</label>
                                                                 <input id="password" type="password"
                                                                     class="form-control @error('password') is-invalid @enderror"
                                                                     name="password" required
@@ -57,7 +57,7 @@
                                                             </div>
 
                                                             <div class="form-group text-start">
-                                                                <label for="password-confirm" class="tx-medium">Confirm Password</label>
+                                                                <label for="password-confirm" class="tx-medium">Confirmer le mot de passe</label>
                                                                 <input id="password-confirm" type="password"
                                                                     class="form-control @error('password-confirm') is-invalid @enderror"
                                                                     name="password_confirmation" required
@@ -69,7 +69,7 @@
                                                                     </span>
                                                                 @enderror
                                                             </div>
-                                                            <button type="submit" class="btn btn-primary btn-block">Reset Password</button>
+                                                            <button type="submit" class="btn btn-primary btn-block">Réinitialiser le mot de passe</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -84,7 +84,7 @@
                                 <div class="clearfix"></div>
                                 <div class="clearfix"></div>
                                 <div class="clearfix"></div>
-                                <img src="{{ asset('assets/img/pngs/user.png') }}" class="ht-250 mb-0" alt="user">
+                                <img src="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ.png') }}" class="ht-250 mb-0" alt="utilisateur">
                             </div>
                         </div>
                     </div>
@@ -95,4 +95,3 @@
     </div>
     <!-- END PAGE -->
 @endsection
-

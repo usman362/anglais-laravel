@@ -11059,7 +11059,7 @@ body {
   }
 }
 .rts-title-area.contact-fluid::after {
-  content: "Contact Us";
+  content: "Contactez-nous";
   left: 49%;
   transform: translateX(-50%);
   z-index: -1;

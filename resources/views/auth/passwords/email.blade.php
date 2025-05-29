@@ -1,5 +1,5 @@
 @extends('auth.layouts.app')
-@section('title', 'Reset Password')
+@section('title', 'Réinitialiser le mot de passe')
 @section('content')
     <!-- PAGE -->
     <div class="page main-signin-wrapper">
@@ -13,17 +13,17 @@
                                 <div class="row row-sm">
                                     <div class="card-body mt-2 mb-2">
                                         <div class="mobilelogo">
-                                            <img src="{{ asset('assets/img/brand/logo.png') }}"
-                                                class=" d-lg-none header-brand-img text-start float-start mb-4 dark-logo"
+                                            <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}"
+                                                class=" d-lg-none header-brand-img mb-4 dark-logo"
                                                 alt="logo">
-                                            <img src="{{ asset('assets/img/brand/logo-light.png') }}"
-                                                class=" d-lg-none header-brand-img text-start float-start mb-4 light-logo"
+                                            <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}"
+                                                class=" d-lg-none header-brand-img mb-4 light-logo"
                                                 alt="logo">
                                         </div>
                                         <div class="clearfix"></div>
                                         <form action="{{ route('password.email') }}" method="POST">
                                             @csrf
-                                            <h2 class="text-start mb-2">Reset Password</h2>
+                                            <h2 class="text-start mb-2">Réinitialiser le mot de passe</h2>
 
                                             @if (session('status'))
                                                 <div class="alert alert-success" role="alert">
@@ -47,8 +47,9 @@
                                                                     </span>
                                                                 @enderror
                                                             </div>
-                                                            <button type="submit" class="btn btn-primary btn-block">Send
-                                                                Password Reset Link</button>
+                                                            <button type="submit" class="btn btn-primary btn-block">
+                                                                Envoyer le lien de réinitialisation
+                                                            </button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -63,7 +64,7 @@
                                 <div class="clearfix"></div>
                                 <div class="clearfix"></div>
                                 <div class="clearfix"></div>
-                                <img src="{{ asset('assets/img/pngs/user.png') }}" class="ht-250 mb-0" alt="user">
+                                <img src="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ.png') }}" class="ht-250 mb-0" alt="utilisateur">
                             </div>
                         </div>
                     </div>
