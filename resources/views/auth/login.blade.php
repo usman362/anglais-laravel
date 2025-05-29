@@ -1,5 +1,5 @@
 @extends('auth.layouts.app')
-@section('title','connectez vous')
+@section('title','Connectez-vous')
 @section('content')
     <!-- PAGE -->
     <div class="page main-signin-wrapper">
@@ -13,20 +13,21 @@
                                 <div class="row row-sm">
                                     <div class="card-body mt-2 mb-2">
                                         <div class="mobilelogo">
-                                            <img src="{{ asset('assets/img/brand/logo.png') }}"
-                                                class=" d-lg-none header-brand-img text-start float-start mb-4 dark-logo"
+                                            <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}"
+                                                class=" d-lg-none header-brand-img mb-4 dark-logo"
                                                 alt="logo">
-                                            <img src="{{ asset('assets/img/brand/logo-light.png') }}"
-                                                class=" d-lg-none header-brand-img text-start float-start mb-4 light-logo"
+                                            <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}"
+                                                class=" d-lg-none header-brand-img mb-4 light-logo"
                                                 alt="logo">
                                         </div>
                                         <div class="clearfix"></div>
                                         <form action="login" method="POST">
                                             @csrf
                                             <input type="hidden" name="role" value="admin">
-                                            <h2 class="text-start mb-2">connectez vous</h2>
-                                            <p class="mb-4 text-muted tx-13 ms-0 text-start">Sign in to Create, Discover
-                                                and Connect with the Global Community</p>
+                                            <h2 class="text-start mb-2">Connectez-vous</h2>
+                                            <p class="mb-4 text-muted tx-13 ms-0 text-start">
+                                                Connectez-vous pour créer, découvrir et vous connecter avec la communauté mondiale
+                                            </p>
                                             <div class="panel desc-tabs border-0 p-0">
                                                 <div class="panel-body tabs-menu-body mt-2">
                                                     <div class="tab-content">
@@ -45,7 +46,7 @@
                                                                 @enderror
                                                             </div>
                                                             <div class="form-group text-start">
-                                                                <label for="password" class="tx-medium">Password</label>
+                                                                <label for="password" class="tx-medium">Mot de passe</label>
                                                                 <input id="password" type="password"
                                                                     class="form-control @error('password') is-invalid @enderror"
                                                                     name="password" required
@@ -57,17 +58,17 @@
                                                                     </span>
                                                                 @enderror
                                                             </div>
-                                                            <button type="submit" class="btn btn-primary btn-block">connectez vous</button>
+                                                            <button type="submit" class="btn btn-primary btn-block">Connectez-vous</button>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </form>
                                         <div class="text-center mt-4 ms-0 mb-3">
-                                            <div class="mb-1"><a href="{{ route('password.request') }}">Forgot
-                                                    password?</a></div>
-                                            {{-- <div>Don't have an account? <a href="{{ route('register') }}">Register
-                                                    Here</a></div> --}}
+                                            <div class="mb-1">
+                                                <a href="{{ route('password.request') }}">Mot de passe oublié&nbsp;?</a>
+                                            </div>
+                                            <div><a href="{{ route('home') }}">Retour</a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -78,7 +79,7 @@
                                 <div class="clearfix"></div>
                                 <div class="clearfix"></div>
                                 <div class="clearfix"></div>
-                                <img src="{{ asset('assets/img/pngs/user.png') }}" class="ht-250 mb-0" alt="user">
+                                <img src="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ.png') }}" class="ht-250 mb-0" alt="utilisateur">
                             </div>
                         </div>
                     </div>

@@ -1,84 +1,5 @@
-{{-- @extends('auth.layouts.app')
-
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
-
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
-                        @csrf
-
-                        <div class="row mb-3">
-                            <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Name') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-
-                                @error('name')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-end">{{ __('Confirm Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
-                        </div>
-
-                        <div class="row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-@endsection --}}
-
-
 @extends('auth.layouts.app')
-@section('title','connectez vous')
+@section('title','Connectez-vous')
 @section('content')
     <!-- PAGE -->
     <div class="page main-signin-wrapper">
@@ -92,19 +13,21 @@
                                 <div class="row row-sm">
                                     <div class="card-body mt-2 mb-2">
                                         <div class="mobilelogo">
-                                            <img src="{{ asset('assets/img/brand/logo.png') }}"
-                                                class=" d-lg-none header-brand-img text-start float-start mb-4 dark-logo"
+                                            <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}"
+                                                class=" d-lg-none header-brand-img mb-4 dark-logo"
                                                 alt="logo">
-                                            <img src="{{ asset('assets/img/brand/logo-light.png') }}"
-                                                class=" d-lg-none header-brand-img text-start float-start mb-4 light-logo"
+                                            <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}"
+                                                class=" d-lg-none header-brand-img mb-4 light-logo"
                                                 alt="logo">
                                         </div>
                                         <div class="clearfix"></div>
                                         <form action="login" method="POST">
                                             @csrf
-                                            <h2 class="text-start mb-2">connectez vous</h2>
-                                            <p class="mb-4 text-muted tx-13 ms-0 text-start">Sign in to Create, Discover
-                                                and Connect with the Global Community</p>
+                                            <input type="hidden" name="role" value="admin">
+                                            <h2 class="text-start mb-2">Connectez-vous</h2>
+                                            <p class="mb-4 text-muted tx-13 ms-0 text-start">
+                                                Connectez-vous pour créer, découvrir et vous connecter avec la communauté mondiale
+                                            </p>
                                             <div class="panel desc-tabs border-0 p-0">
                                                 <div class="panel-body tabs-menu-body mt-2">
                                                     <div class="tab-content">
@@ -123,7 +46,7 @@
                                                                 @enderror
                                                             </div>
                                                             <div class="form-group text-start">
-                                                                <label for="password" class="tx-medium">Password</label>
+                                                                <label for="password" class="tx-medium">Mot de passe</label>
                                                                 <input id="password" type="password"
                                                                     class="form-control @error('password') is-invalid @enderror"
                                                                     name="password" required
@@ -135,18 +58,18 @@
                                                                     </span>
                                                                 @enderror
                                                             </div>
-                                                            <button type="submit" class="btn btn-primary btn-block">connectez vous</button>
+                                                            <button type="submit" class="btn btn-primary btn-block">Connectez-vous</button>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </form>
-                                        {{-- <div class="text-start mt-4 ms-0 mb-3">
-                                            <div class="mb-1"><a href="{{ route('password.request') }}">Forgot
-                                                    password?</a></div>
-                                            <div>Don't have an account? <a href="{{ route('register') }}">Register
-                                                    Here</a></div>
-                                        </div> --}}
+                                        <div class="text-center mt-4 ms-0 mb-3">
+                                            <div class="mb-1">
+                                                <a href="{{ route('password.request') }}">Mot de passe oublié&nbsp;?</a>
+                                            </div>
+                                            <div><a href="{{ route('home') }}">Retour</a></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -156,10 +79,7 @@
                                 <div class="clearfix"></div>
                                 <div class="clearfix"></div>
                                 <div class="clearfix"></div>
-                                <img src="{{ asset('assets/img/pngs/user.png') }}" class="ht-250 mb-0" alt="user">
-                                <h2 class="mt-4 text-white tx-normal">connectez vous Your Account</h2>
-                                <span class="tx-white-6 tx-13 mb-5 mt-xl-0">Sign in to Create, Discover and Connect
-                                    with the Global Community</span>
+                                <img src="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ.png') }}" class="ht-250 mb-0" alt="utilisateur">
                             </div>
                         </div>
                     </div>
@@ -170,3 +90,4 @@
     </div>
     <!-- END PAGE -->
 @endsection
+

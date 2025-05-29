@@ -1,5 +1,5 @@
 @extends('auth.layouts.app')
-@section('title', 'Confirm Password')
+@section('title', 'Confirmer le mot de passe')
 @section('content')
     <!-- PAGE -->
     <div class="page main-signin-wrapper">
@@ -13,25 +13,26 @@
                                 <div class="row row-sm">
                                     <div class="card-body mt-2 mb-2">
                                         <div class="mobilelogo">
-                                            <img src="{{ asset('assets/img/brand/logo.png') }}"
-                                                class=" d-lg-none header-brand-img text-start float-start mb-4 dark-logo"
+                                            <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}"
+                                                class=" d-lg-none header-brand-img mb-4 dark-logo"
                                                 alt="logo">
-                                            <img src="{{ asset('assets/img/brand/logo-light.png') }}"
-                                                class=" d-lg-none header-brand-img text-start float-start mb-4 light-logo"
+                                            <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}"
+                                                class=" d-lg-none header-brand-img mb-4 light-logo"
                                                 alt="logo">
                                         </div>
                                         <div class="clearfix"></div>
                                         <form action="{{ route('password.confirm') }}" method="POST">
                                             @csrf
-                                            <h2 class="text-start mb-2">Confirm Password</h2>
-                                            <p class="mb-4 text-muted tx-13 ms-0 text-start">Please confirm your password
-                                                before continuing.</p>
+                                            <h2 class="text-start mb-2">Confirmer le mot de passe</h2>
+                                            <p class="mb-4 text-muted tx-13 ms-0 text-start">
+                                                Veuillez confirmer votre mot de passe avant de continuer.
+                                            </p>
                                             <div class="panel desc-tabs border-0 p-0">
                                                 <div class="panel-body tabs-menu-body mt-2">
                                                     <div class="tab-content">
                                                         <div class="tab-pane active" id="tab01">
                                                             <div class="form-group text-start">
-                                                                <label for="password" class="tx-medium">Password</label>
+                                                                <label for="password" class="tx-medium">Mot de passe</label>
                                                                 <input id="password" type="password"
                                                                     class="form-control @error('password') is-invalid @enderror"
                                                                     name="password" required
@@ -43,8 +44,9 @@
                                                                     </span>
                                                                 @enderror
                                                             </div>
-                                                            <button type="submit" class="btn btn-primary btn-block">Confirm
-                                                                Password</button>
+                                                            <button type="submit" class="btn btn-primary btn-block">
+                                                                Confirmer le mot de passe
+                                                            </button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -52,8 +54,9 @@
                                         </form>
                                         @if (Route::has('password.request'))
                                             <div class="text-center mt-4 ms-0 mb-3">
-                                                <div class="mb-1"><a href="{{ route('password.request') }}">Forgot
-                                                        password?</a></div>
+                                                <div class="mb-1">
+                                                    <a href="{{ route('password.request') }}">Mot de passe oublié ?</a>
+                                                </div>
                                             </div>
                                         @endif
                                     </div>
@@ -65,7 +68,7 @@
                                 <div class="clearfix"></div>
                                 <div class="clearfix"></div>
                                 <div class="clearfix"></div>
-                                <img src="{{ asset('assets/img/pngs/user.png') }}" class="ht-250 mb-0" alt="user">
+                                <img src="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ.png') }}" class="ht-250 mb-0" alt="utilisateur">
                             </div>
                         </div>
                     </div>

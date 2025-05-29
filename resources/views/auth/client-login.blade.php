@@ -13,11 +13,11 @@
                                 <div class="row row-sm">
                                     <div class="card-body mt-2 mb-2">
                                         <div class="mobilelogo">
-                                            <img src="{{ asset('assets/img/brand/logo.png') }}"
-                                                class=" d-lg-none header-brand-img text-start float-start mb-4 dark-logo"
+                                            <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}"
+                                                class=" d-lg-none header-brand-img mb-4 dark-logo"
                                                 alt="logo">
-                                            <img src="{{ asset('assets/img/brand/logo-light.png') }}"
-                                                class=" d-lg-none header-brand-img text-start float-start mb-4 light-logo"
+                                            <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}"
+                                                class=" d-lg-none header-brand-img mb-4 light-logo"
                                                 alt="logo">
                                         </div>
                                         <div class="clearfix"></div>
@@ -45,7 +45,7 @@
                                                                 @enderror
                                                             </div>
                                                             <div class="form-group text-start">
-                                                                <label for="password" class="tx-medium">Password</label>
+                                                                <label for="password" class="tx-medium">Mot de passe</label>
                                                                 <input id="password" type="password"
                                                                     class="form-control @error('password') is-invalid @enderror"
                                                                     name="password" required
@@ -57,17 +57,16 @@
                                                                     </span>
                                                                 @enderror
                                                             </div>
-                                                            <button type="submit" class="btn btn-primary btn-block">connectez vous</button>
+                                                            <button type="submit" class="btn btn-primary btn-block">Se connecter</button>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </form>
                                         <div class="text-center mt-4 ms-0 mb-3">
-                                            <div class="mb-1"><a href="{{ route('password.request') }}">Forgot
-                                                password?</a></div>
-                                                <div><a href="{{ route('home') }}">Retour</a></div>
-                                                </div>
+                                            <div class="mb-1"><a href="{{ route('password.request') }}">Mot de passe oublié ?</a></div>
+                                            <div><a href="{{ route('home') }}">Retour</a></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -77,7 +76,7 @@
                                 <div class="clearfix"></div>
                                 <div class="clearfix"></div>
                                 <div class="clearfix"></div>
-                                <img src="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ.png') }}" class="ht-250 mb-0 mt-4" alt="user">
+                                <img src="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ.png') }}" class="ht-250 mb-0 mt-4" alt="utilisateur">
                             </div>
                         </div>
                     </div>
