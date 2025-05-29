@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/plugins/unicons.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/vendor/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/assets/css/our_values.css') }}">
     <style>
         @media(max-width: 786px) {
             .rts-title-area {
