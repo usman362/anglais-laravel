@@ -53,126 +53,112 @@
     </div>
     <!-- banner blank space area end -->
 
-    <div class="rts-service-area background-service rts-section-gapTop">
+
+
+    <section class="values-section py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="rts-title-area text-ledt">
-                        <h2 class="title">Our valeurs</h2>
+            <div class="row justify-content-center align-items-stretch">
+                <div class="col-lg-12 col-md-12 col-sm-12 gap-4">
+                    <div class="top">
+                        <h1 class="title">Nos Valeurs</h1>
+                        <p class="description">
+                            Nous assurons grâce à nos valeurs la fourniture et la qualité
+                            des prestations en <br />
+                            s'adaptant à l'unicité de chacun de vos besoins.
+                        </p>
                     </div>
-                    <p class="disc">
-                        Nous contrôlons grâce à nos valeurs la fourniture et la qualité des prestations en sʼadaptant à
-                        lʼunicité de chacun de vos besoins.
-                    </p>
-                    <p class="disc">
-                        Les deux règles de base :
-                    <ul>
-                        <li>Ne jamais prendre des engagements que lʼon ne peut tenir.
-                        </li>
-                        <li>Ne jamais parler aux clients.
-                        </li>
-                    </ul>
-                    </p>
                 </div>
             </div>
         </div>
-        <div class="container-fluid service-main plr--120-service mt--50 plr_md--0 pl_sm--0 pr_sm--0">
-            <div class=" row">
-                <!-- start single Service -->
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="service-one-inner one">
-                        <div class="thumbnail">
-                            <img src="{{ asset('frontend/assets/images/service/icon/01.svg') }}" alt="finbiz_service">
-                        </div>
-                        <div class="service-details">
-                            <p class="disc">
-                                <b>La bien-traitance</b> Avec votre aide et lʼensemble des professionnels nous vous
-                                proposons un accompagnement dans le respect de la dignité, de lʼautonomie et dans
-                                lʼadaptation la plus juste à vos besoins de prestations personnalisées.
+        <div class="container text-center">
+            <!-- Top Center Box -->
+            <div class="row justify-content-center align-items-stretch text-center">
+                <div class="col-lg-4 col-md-12 col-sm-12 gap-4">
+                    <div class="value-box box-1">
+                        <img class="icon" src="{{asset('frontend/assets/images/our_values/2.jpg')}}" alt="icon" />
+                        <h5 class="title">La bienveillance</h5>
+                        <p class="description">
+                            agapé s'engage à traiter avec une écoute attentive, une atti-
+                            tude positive pour assurer votre accompagnement.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Middle Row -->
+            <div class="row justify-content-center align-items-stretch text-center">
+                <!-- Left Column -->
+                <div class="col-lg-4 col-md-12 col-sm-12 d-flex flex-column justify-content-between gap-4">
+                    <div class="value-box box-2">
+                        <img class="icon" src="{{asset('frontend/assets/images/our_values/1.jpg')}}" alt="icon" />
+                        <h5 class="title">La bien-traitance</h5>
+                        <p class="description">
+                            Avec votre aide et l'ensemble des professionnels nous vous
+                            proposonsunaccompagnement dans le respect de la dignité, de
+                            l'autonomie et dans l'adaptation la plus juste à vos besoins des
+                            prestations personnalisées.
+                        </p>
+                    </div>
+                    <div class="value-box box-3">
+                        <img class="icon" src="{{asset('frontend/assets/images/our_values/4.jpg')}}" alt="icon" />
+                        <h5 class="title">Le mieux-être</h5>
+                        <p class="description">
+                            Le maintien de votre bien-être physique, mental et social, que
+                            nous favorisons en offrant des services adaptés à chaque
+                            individu.
+                        </p>
+                    </div>
+                </div>
+                <!-- Center Box -->
+                <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center align-items-center">
+                    <div class="center-box position-relative">
+                        <div class="value">2</div>
+                        <div class="value-box box-4">
+                            <h5 class="title">Les deux règles de base</h5>
+                            <img class="icon" src="{{asset('frontend/assets/images/our_values/7.jpg')}}" alt="icon" />
+                            <p class="description">
+                                Ne jamais prendre des engagements que l’on ne peut tenir.
                             </p>
+                            <img class="icon" src="{{asset('frontend/assets/images/our_values/7.jpg')}}" alt="icon" />
+                            <p class="description">Ne jamais mentir aux clients.</p>
                         </div>
                     </div>
                 </div>
-                <!-- end single Services -->
-                <!-- start single Service -->
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="service-one-inner two">
-                        <div class="thumbnail">
-                            <img src="{{ asset('frontend/assets/images/service/icon/02.svg') }}" alt="finbiz_service">
-                        </div>
-                        <div class="service-details">
-                            <p class="disc">
-                                <b>La bienveillance</b> Agapé sʼengage à traiter avec une écoute attentive, une attitude
-                                positive pour assurer votre accompagnement.
-                            </p>
-                        </div>
+                <!-- Right Column -->
+                <div class="col-lg-4 col-md-12 col-sm-12 d-flex flex-column justify-content-between gap-4">
+                    <div class="value-box box-5">
+                        <img class="icon" src="{{asset('frontend/assets/images/our_values/3.jpg')}}" alt="icon" />
+                        <h5 class="title">L’humanité</h5>
+                        <p class="description">
+                            Chez nous, l’humain est au cœur de nos préoccupations. Cela
+                            signifie créer un environnement de travail agréable pour les
+                            intervenant·e·s et vous offrir un accompagnement chaleureux.
+                        </p>
+                    </div>
+                    <div class="value-box box-6">
+                        <img class="icon" src="{{asset('frontend/assets/images/our_values/5.jpg')}}" alt="icon" />
+                        <h5 class="title">L’autonomie</h5>
+                        <p class="description">
+                            L’objectif est de vous permettre de conserver le maximum
+                            d’autonomie possible dans votre vie quotidienne.
+                        </p>
                     </div>
                 </div>
-                <!-- end single Services -->
-                <!-- start single Service -->
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="service-one-inner three">
-                        <div class="thumbnail">
-                            <img src="{{ asset('frontend/assets/images/service/icon/03.svg') }}" alt="finbiz_service">
-                        </div>
-                        <div class="service-details">
-                            <p class="disc">
-                                <b>Le mieux-être</b> Le maintien de votre bien-être physique, mental et social, que nous
-                                favorisons en offrant des services adaptés à chaque individu.
-                            </p>
-                        </div>
+            </div>
+            <!-- Bottom Center Box -->
+            <div class="row justify-content-center align-items-stretch text-center">
+                <div class="col-lg-4 col-md-12 col-sm-12 gap-4">
+                    <div class="value-box box-7">
+                        <img class="icon" src="{{asset('frontend/assets/images/our_values/6.jpg')}}" alt="icon" />
+                        <h5 class="title">Le professionnalisme</h5>
+                        <p class="description">
+                            Les intervenants doivent être qualifiés et formés pour assurer
+                            des prestations de qualité et adaptées aux besoins de chacun.
+                        </p>
                     </div>
                 </div>
-                <!-- end single Services -->
-                <!-- start single Service -->
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="service-one-inner four">
-                        <div class="thumbnail">
-                            <img src="{{ asset('frontend/assets/images/service/icon/04.svg') }}" alt="finbiz_service">
-                        </div>
-                        <div class="service-details">
-                            <p class="disc">
-                                <b>L'autonomie</b> Lʼobjectif est de vous permettre de conserver le maximum d'autonomie
-                                possible dans votre vie quotidienne.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- end single Services -->
-                <!-- start single Service -->
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="service-one-inner five">
-                        <div class="thumbnail">
-                            <img src="{{ asset('frontend/assets/images/service/icon/05.svg') }}" alt="finbiz_service">
-                        </div>
-                        <div class="service-details">
-                            <p class="disc">
-                                <b>L'humanité</b> Chez nous, l'humain est au cœur de nos préoccupations. Cela signifie créer
-                                un environnement de travail agréable pour les intervenants·e·s et vous offrir un
-                                accompagnement chaleureux.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- end single Services -->
-                <!-- start single Service -->
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="service-one-inner six">
-                        <div class="thumbnail">
-                            <img src="{{ asset('frontend/assets/images/service/icon/06.svg') }}" alt="finbiz_service">
-                        </div>
-                        <div class="service-details">
-                            <p class="disc">
-                                <b>Le professionnalisme</b> Les intervenants doivent être qualifiés et formés pour assurer
-                                des prestations de qualité et adaptées aux besoins de chacun.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- end single Services -->
             </div>
         </div>
-    </div>
+    </section>
 
 
     <!-- rts about us section start -->
