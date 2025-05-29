@@ -79,9 +79,9 @@ class ContractsController extends Controller
                 'user_id' => $request->user_id ?? Auth::id(),
             ]);
 
-            return redirect(route('contracts.index'))->with('success', 'Contract has been Created Successfully');
+            return redirect(route('contracts.index'))->with('success', 'Le contrat a été créé avec succès');
         } catch (\Exception $e) {
-            return redirect(route('contracts.index'))->with('error', 'Failed to Create Contract');
+            return redirect(route('contracts.index'))->with('error', 'Échec de la création du contrat');
         }
     }
 
@@ -130,9 +130,9 @@ class ContractsController extends Controller
                 'user_id' => $request->user_id ?? Auth::id(),
             ]);
 
-            return redirect(route('contracts.index'))->with('success', 'Contract has been Updated Successfully');
+            return redirect(route('contracts.index'))->with('success', 'Le contrat a été mis à jour avec succès');
         } catch (\Exception $e) {
-            return redirect(route('contracts.index'))->with('error', 'Failed to Update Contract');
+            return redirect(route('contracts.index'))->with('error', 'Échec de la mise à jour du contrat');
         }
     }
 
@@ -143,9 +143,9 @@ class ContractsController extends Controller
     {
         $contract = Contract::find($id);
         if ($contract->delete()) {
-            return back()->with('success', 'Contract has been Deleted Successfully!');
+            return back()->with('success', 'Le contrat a été supprimé avec succès !');
         } else {
-            return back()->with('error', 'Failed to Delete Contract!');
+            return back()->with('error', 'Échec de la suppression du contrat !');
         }
     }
 }

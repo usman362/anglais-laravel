@@ -149,9 +149,9 @@ class DocumentsController extends Controller
                 'user_id' => $request->user_id,
             ]);
 
-            return redirect(route('documents.index'))->with('success', 'Document has been Created Successfully');
+            return redirect(route('documents.index'))->with('success', 'Le document a été créé avec succès');
         } catch (\Exception $e) {
-            return redirect(route('documents.index'))->with('error', 'Failed to Create Document');
+            return redirect(route('documents.index'))->with('error', 'Échec de la création du document');
         }
     }
 
@@ -197,9 +197,9 @@ class DocumentsController extends Controller
                 'user_id' => $request->user_id,
             ]);
 
-            return redirect(route('documents.index'))->with('success', 'Document has been Created Successfully');
+            return redirect(route('documents.index'))->with('success', 'Le document a été mis à jour avec succès');
         } catch (\Exception $e) {
-            return redirect(route('documents.index'))->with('error', 'Failed to Create Document');
+            return redirect(route('documents.index'))->with('error', 'Échec de la création du document');
         }
     }
 
@@ -210,9 +210,9 @@ class DocumentsController extends Controller
     {
         $user = Document::find($id);
         if ($user->delete()) {
-            return back()->with('success', 'Document has been Deleted Successfully!');
+            return back()->with('success', 'Le document a été supprimé avec succès !');
         } else {
-            return back()->with('error', 'Failed to Delete Document!');
+            return back()->with('error', 'Échec de la suppression du document !');
         }
     }
 }

@@ -49,12 +49,12 @@ class ProfileController extends Controller
                     $file->storeAs(config('chatify.user_avatar.folder'), $avatar, config('chatify.storage_disk_name'));
                     $success = $update ? 1 : 0;
                 } else {
-                    return redirect(route('profile.index'))->with('error', 'File extension not allowed!');
+                    return redirect(route('profile.index'))->with('error', 'Extension de fichier non autorisée !');
                 }
             } else {
-                return redirect(route('profile.index'))->with('error', 'File size you are trying to upload is too large!');
+                return redirect(route('profile.index'))->with('error', 'La taille du fichier que vous essayez de télécharger est trop grande !');
             }
         }
-        return redirect(route('profile.index'))->with('success', 'Profile has been Updated Successfully');
+        return redirect(route('profile.index'))->with('success', 'Le profil a été mis à jour avec succès');
     }
 }

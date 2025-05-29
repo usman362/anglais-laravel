@@ -1,30 +1,30 @@
 @extends('layouts.app')
-@section('title', 'Add User')
+@section('title', 'Ajouter un utilisateur')
 @section('content')
 
     <div class="main-content side-content pt-0">
         <div class="main-container container-fluid">
             <div class="inner-body" data-select2-id="18">
 
-                <!-- PAGE HEADER -->
+                <!-- EN-TÊTE DE PAGE -->
                 <div class="page-header">
                     <div>
-                        <h2 class="main-content-title tx-24 mg-b-5">Add User</h2>
+                        <h2 class="main-content-title tx-24 mg-b-5">Ajouter un utilisateur</h2>
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:;">Users</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Create</li>
+                            <li class="breadcrumb-item"><a href="javascript:;">Utilisateurs</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Créer</li>
                         </ol>
                     </div>
                 </div>
-                <!-- END PAGE HEADER -->
+                <!-- FIN EN-TÊTE DE PAGE -->
 
-                <!-- ROW -->
+                <!-- LIGNE -->
                 <div class="row" data-select2-id="17">
                     <div class="col-lg-12 col-md-12" data-select2-id="16">
                         <div class="card custom-card" data-select2-id="15">
                             <div class="card-header">
                                 <div>
-                                    <h6 class="main-content-label tx-15">Add User</h6>
+                                    <h6 class="main-content-label tx-15">Ajouter un utilisateur</h6>
                                 </div>
                             </div>
                             <div class="card-body" data-select2-id="14">
@@ -34,7 +34,7 @@
                                     data-select2-id="13">
                                     @csrf
                                     <div class="col-md-6">
-                                        <label for="first_name" class="form-label tx-semibold">First name</label>
+                                        <label for="first_name" class="form-label tx-semibold">Prénom</label>
                                         <input type="text" name="first_name" class="form-control" id="first_name"
                                             value="" required="">
 
@@ -45,7 +45,7 @@
                                         @enderror
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="last_name" class="form-label tx-semibold">Last name</label>
+                                        <label for="last_name" class="form-label tx-semibold">Nom</label>
                                         <input type="text" name="last_name" class="form-control" id="last_name"
                                             value="" required="">
                                         @error('last_name')
@@ -68,7 +68,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="password" class="form-label tx-semibold">Password</label>
+                                        <label for="password" class="form-label tx-semibold">Mot de passe</label>
                                         <div class="input-group has-validation">
                                             <input type="text" name="password" class="form-control" id="password" required="">
                                             @error('password')
@@ -79,10 +79,10 @@
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="role" class="form-label tx-semibold">Role</label>
+                                        <label for="role" class="form-label tx-semibold">Rôle</label>
                                         <select class="form-select" name="role" id="role" required="">
-                                            <option selected="" disabled="" value="">Choose...</option>
-                                            <option value="employee">Employee</option>
+                                            <option selected="" disabled="" value="">Choisir...</option>
+                                            <option value="employee">Employé</option>
                                             <option value="client">Client</option>
                                         </select>
                                         @error('role')
@@ -92,14 +92,14 @@
                                         @enderror
                                     </div>
                                     <div class="col-12">
-                                        <button class="btn btn-primary" type="submit">Submit form</button>
+                                        <button class="btn btn-primary" type="submit">Envoyer</button>
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- END ROW -->
+                <!-- FIN LIGNE -->
             </div>
         </div>
     </div>

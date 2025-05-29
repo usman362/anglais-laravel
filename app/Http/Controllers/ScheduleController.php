@@ -14,7 +14,7 @@ class ScheduleController extends Controller
     {
         $this->middleware('auth');
     }
-    
+
     /**
      * Display a listing of the resource.
      */
@@ -73,9 +73,9 @@ class ScheduleController extends Controller
                 'user_id' => $request->user_id,
             ]);
 
-            return redirect(route('schedules.index'))->with('success', 'Schedule has been Created Successfully');
+            return redirect(route('schedules.index'))->with('success', 'Le calendrier a été créé avec succès');
         } catch (\Exception $e) {
-            return redirect(route('schedules.index'))->with('error', 'Failed to Create Schedule');
+            return redirect(route('schedules.index'))->with('error', 'Échec de la création du planning');
         }
     }
 

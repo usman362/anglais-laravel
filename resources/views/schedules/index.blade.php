@@ -1,48 +1,48 @@
 @extends('layouts.app')
-@section('title', 'Schedules List')
+@section('title', 'Liste des Plannings')
 @section('content')
 
-    <!-- MAIN-CONTENT -->
+    <!-- CONTENU PRINCIPAL -->
     <div class="main-content side-content pt-0">
         <div class="main-container container-fluid">
             <div class="inner-body">
 
-                <!-- PAGE HEADER -->
+                <!-- EN-TÊTE DE PAGE -->
                 <div class="page-header">
                     <div>
-                        <h2 class="main-content-title tx-24 mg-b-5">Schedules</h2>
+                        <h2 class="main-content-title tx-24 mg-b-5">Plannings</h2>
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:;">Schedules</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">List</li>
+                            <li class="breadcrumb-item"><a href="javascript:;">Plannings</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Liste</li>
                         </ol>
                     </div>
                     <div class="d-flex">
-                    <div class="justify-content-center">
-                        <a href="{{route('schedules.create')}}" class="btn btn-primary my-2 btn-icon-text">
-                            <i class="fe fe-plus bg-white-transparent text-white"></i>
-                            <span>Add Schedules</span>
-                        </a>
+                        <div class="justify-content-center">
+                            <a href="{{route('schedules.create')}}" class="btn btn-primary my-2 btn-icon-text">
+                                <i class="fe fe-plus bg-white-transparent text-white"></i>
+                                <span>Ajouter un planning</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                </div>
-                <!-- END PAGE HEADER -->
+                <!-- FIN EN-TÊTE DE PAGE -->
 
-                <!-- ROW-->
+                <!-- LIGNE -->
                 <div class="row row-sm">
                     <div class="col-lg-12">
                         <div class="card custom-card overflow-hidden">
                             <div class="card-body">
                                 <div>
-                                    <h6 class="main-content-label mb-1">Schedules List</h6>
+                                    <h6 class="main-content-label mb-1">Liste des plannings</h6>
                                 </div>
                                 <div class="table-responsive">
                                     <table class="table table-bordered text-nowrap border-bottom" id="users-datatable">
                                         <thead>
                                             <tr>
-                                                <th class="wd-20p">User</th>
+                                                <th class="wd-20p">Utilisateur</th>
                                                 <th class="wd-25p">Date</th>
-                                                <th class="wd-20p">Start Time</th>
-                                                <th class="wd-20p">End Time</th>
+                                                <th class="wd-20p">Heure de début</th>
+                                                <th class="wd-20p">Heure de fin</th>
                                                 <th class="wd-20p">Action</th>
                                             </tr>
                                         </thead>
@@ -55,12 +55,12 @@
                         </div>
                     </div>
                 </div>
-                <!-- END ROW -->
+                <!-- FIN LIGNE -->
 
             </div>
         </div>
     </div>
-    <!-- END MAIN-CONTENT -->
+    <!-- FIN CONTENU PRINCIPAL -->
 
 @endsection
 
@@ -69,8 +69,6 @@
     <script>
 
         $(function() {
-
-
 
             var table = $('#users-datatable').DataTable({
 
@@ -112,8 +110,6 @@
                 ]
 
             });
-
-
 
         });
     </script>

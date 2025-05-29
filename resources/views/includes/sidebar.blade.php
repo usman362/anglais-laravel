@@ -13,9 +13,6 @@
                     <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}" class="header-brand-img icon-logo"
                         alt="logo">
                 </a>
-                {{-- <a href="javascript:void(0)" class="text-white">
-                    <h4 class="m-4"> Dashboard</h4>
-                </a> --}}
             </div>
             <div class="main-sidebar-body main-body-1">
                 <div class="slide-left disabled" id="slide-left"><svg xmlns="http://www.w3.org/2000/svg" fill="#c9bebe"
@@ -28,17 +25,16 @@
                         <li class="nav-item">
                             <a class="nav-link with-sub" href="javascript:void(0);">
                                 <img style="width: 30px;padding:0 2px;" src="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ_-2.png') }}" alt="">
-                                <span class="sidemenu-label">Users</span>
+                                <span class="sidemenu-label">Utilisateurs</span>
                                 <i class="angle fe fe-chevron-right"></i>
                             </a>
                             <ul class="nav-sub">
-                                <li class="side-menu-label1"><a href="javascript:void(0);">Users</a></li>
+                                <li class="side-menu-label1"><a href="javascript:void(0);">Utilisateurs</a></li>
                                 <li class="nav-sub-item">
-                                    <a class="nav-sub-link" href="{{ route('users-management.index') }}">Users List</a>
+                                    <a class="nav-sub-link" href="{{ route('users-management.index') }}">Liste des utilisateurs</a>
                                 </li>
                                 <li class="nav-sub-item">
-                                    <a class="nav-sub-link" href="{{ route('users-management.create') }}">Users
-                                        Create</a>
+                                    <a class="nav-sub-link" href="{{ route('users-management.create') }}">Créer un utilisateur</a>
                                 </li>
                             </ul>
                         </li>
@@ -52,27 +48,27 @@
                         <ul class="nav-sub">
                             <li class="side-menu-label1"><a href="javascript:void(0);">Documents</a></li>
                             <li class="nav-sub-item">
-                                <a class="nav-sub-link" href="{{ route('documents.index') }}">Documents List</a>
+                                <a class="nav-sub-link" href="{{ route('documents.index') }}">Liste des documents</a>
                             </li>
                             @if (auth()->user()->role == 'admin')
                                 <li class="nav-sub-item">
-                                    <a class="nav-sub-link" href="{{ route('documents.create') }}">Documents Create</a>
+                                    <a class="nav-sub-link" href="{{ route('documents.create') }}">Créer un document</a>
                                 </li>
                             @endif
                             @if (auth()->user()->role == 'admin' || auth()->user()->role == 'employee')
                                 <li class="nav-sub-item">
-                                    <a class="nav-sub-link" href="{{ route('payslip.List') }}">Payslips</a>
+                                    <a class="nav-sub-link" href="{{ route('payslip.List') }}">Bulletins de paie</a>
                                 </li>
                                 <li class="nav-sub-item">
-                                    <a class="nav-sub-link" href="{{ route('followup.List') }}">Follow-up sheets</a>
+                                    <a class="nav-sub-link" href="{{ route('followup.List') }}">Fiches de suivi</a>
                                 </li>
                                 <li class="nav-sub-item">
-                                    <a class="nav-sub-link" href="{{ route('activity.List') }}">Activity reports</a>
+                                    <a class="nav-sub-link" href="{{ route('activity.List') }}">Rapports d’activité</a>
                                 </li>
                             @endif
                             @if (auth()->user()->role == 'admin' || auth()->user()->role == 'client')
                                 <li class="nav-sub-item">
-                                    <a class="nav-sub-link" href="{{ route('invoice.List') }}">Invoice List</a>
+                                    <a class="nav-sub-link" href="{{ route('invoice.List') }}">Liste des factures</a>
                                 </li>
                             @endif
                         </ul>
@@ -87,37 +83,34 @@
                             <ul class="nav-sub notranslate">
                                 <li class="side-menu-label1"><a href="javascript:void(0);">Planning</a></li>
                                 <li class="nav-sub-item">
-                                    <a class="nav-sub-link" href="{{ route('schedules.index') }}">Planning List</a>
+                                    <a class="nav-sub-link" href="{{ route('schedules.index') }}">Liste du planning</a>
                                 </li>
                                 <li class="nav-sub-item">
-                                    <a class="nav-sub-link" href="{{ route('schedules.create') }}">Planning Create</a>
+                                    <a class="nav-sub-link" href="{{ route('schedules.create') }}">Créer un planning</a>
                                 </li>
                             </ul>
                         </li>
                     @endif
 
 
-                        <li class="nav-item">
-                            <a class="nav-link with-sub" href="javascript:void(0);">
-                                <img style="width: 30px;padding:0 2px;" src="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ_-2.png') }}" alt="">
-                                <span class="sidemenu-label">Interventions</span>
-                                <i class="angle fe fe-chevron-right"></i>
-                            </a>
-                            <ul class="nav-sub">
-                                <li class="side-menu-label1"><a href="javascript:void(0);">Interventions</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link with-sub" href="javascript:void(0);">
+                            <img style="width: 30px;padding:0 2px;" src="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ_-2.png') }}" alt="">
+                            <span class="sidemenu-label">Interventions</span>
+                            <i class="angle fe fe-chevron-right"></i>
+                        </a>
+                        <ul class="nav-sub">
+                            <li class="side-menu-label1"><a href="javascript:void(0);">Interventions</a></li>
+                            <li class="nav-sub-item">
+                                <a class="nav-sub-link" href="{{ route('interventions.index') }}">Liste des interventions</a>
+                            </li>
+                            @if (auth()->user()->role == 'admin')
                                 <li class="nav-sub-item">
-                                    <a class="nav-sub-link" href="{{ route('interventions.index') }}">Interventions
-                                        List</a>
+                                    <a class="nav-sub-link" href="{{ route('interventions.create') }}">Créer une intervention</a>
                                 </li>
-                                @if (auth()->user()->role == 'admin')
-                                    <li class="nav-sub-item">
-                                        <a class="nav-sub-link"
-                                            href="{{ route('interventions.create') }}">Interventions
-                                            Create</a>
-                                    </li>
-                                @endif
-                            </ul>
-                        </li>
+                            @endif
+                        </ul>
+                    </li>
                     @if (auth()->user()->role == 'admin')
                         <li class="nav-item">
                             <a class="nav-link with-sub" href="javascript:void(0);">
@@ -128,10 +121,10 @@
                             <ul class="nav-sub">
                                 <li class="side-menu-label1"><a href="javascript:void(0);">Blogs</a></li>
                                 <li class="nav-sub-item">
-                                    <a class="nav-sub-link" href="{{ route('blogs.index') }}">Blog List</a>
+                                    <a class="nav-sub-link" href="{{ route('blogs.index') }}">Liste des blogs</a>
                                 </li>
                                 <li class="nav-sub-item">
-                                    <a class="nav-sub-link" href="{{ route('blogs.create') }}">Blog Create</a>
+                                    <a class="nav-sub-link" href="{{ route('blogs.create') }}">Créer un blog</a>
                                 </li>
                             </ul>
                         </li>
@@ -140,17 +133,16 @@
                         <li class="nav-item">
                             <a class="nav-link with-sub" href="javascript:void(0);">
                                 <img style="width: 30px;padding:0 2px;" src="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ_-2.png') }}" alt="">
-                                <span class="sidemenu-label">Contracts</span>
+                                <span class="sidemenu-label">Contrats</span>
                                 <i class="angle fe fe-chevron-right"></i>
                             </a>
                             <ul class="nav-sub">
-                                <li class="side-menu-label1"><a href="javascript:void(0);">Contracts</a></li>
+                                <li class="side-menu-label1"><a href="javascript:void(0);">Contrats</a></li>
                                 <li class="nav-sub-item">
-                                    <a class="nav-sub-link" href="{{ route('contracts.index') }}">Contract List</a>
+                                    <a class="nav-sub-link" href="{{ route('contracts.index') }}">Liste des contrats</a>
                                 </li>
                                 <li class="nav-sub-item">
-                                    <a class="nav-sub-link" href="{{ route('contracts.create') }}">Contract
-                                        Create</a>
+                                    <a class="nav-sub-link" href="{{ route('contracts.create') }}">Créer un contrat</a>
                                 </li>
                             </ul>
                         </li>
