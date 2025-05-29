@@ -79,11 +79,11 @@
                                     <h6 class="main-notification-title">{{ auth()->user()->name ?? 'N/A' }}</h6>
                                 </div>
                                 <a class="dropdown-item" href="{{ route('profile.index') }}">
-                                    <i class="fe fe-edit"></i> Edit Profile
+                                    <i class="fe fe-edit"></i> Modifier le profil
                                 </a>
                                 <a class="dropdown-item" href="javascript:void(0)"
                                     onclick="document.getElementById('logout-form').submit()">
-                                    <i class="fe fe-power"></i> Sign Out
+                                    <i class="fe fe-power"></i> Se déconnecter
                                 </a>
                                 <form action="{{ route('logout') }}" id="logout-form" method="post">@csrf</form>
                             </div>

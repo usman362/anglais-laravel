@@ -72,9 +72,9 @@ class InterventionController extends Controller
                 'notes' => $request->notes,
             ]);
 
-            return redirect(route('interventions.index'))->with('success', 'Intervention has been Created Successfully');
+            return redirect(route('interventions.index'))->with('success', "L'intervention a été créée avec succès");
         } catch (\Exception $e) {
-            return redirect(route('interventions.index'))->with('error', 'Failed to Create Intervention');
+            return redirect(route('interventions.index'))->with('error', "Échec de la création d'une intervention");
         }
     }
 
@@ -110,9 +110,9 @@ class InterventionController extends Controller
     {
         $user = Intervention::find($id);
         if ($user->delete()) {
-            return back()->with('success', 'User has been Deleted Successfully!');
+            return back()->with('success', "L'utilisateur a été supprimé avec succès !");
         } else {
-            return back()->with('error', 'Failed to Delete User!');
+            return back()->with('error', "Échec de la suppression de l'utilisateur !");
         }
     }
 }

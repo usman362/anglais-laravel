@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Edit Blog')
+@section('title', 'Modifier le blog')
 @section('content')
 
     <div class="main-content side-content pt-0">
@@ -9,10 +9,10 @@
                 <!-- PAGE HEADER -->
                 <div class="page-header">
                     <div>
-                        <h2 class="main-content-title tx-24 mg-b-5">Edit Blog</h2>
+                        <h2 class="main-content-title tx-24 mg-b-5">Modifier le blog</h2>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="javascript:;">Blogs</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Edit</li>
+                            <li class="breadcrumb-item active" aria-current="page">Modifier</li>
                         </ol>
                     </div>
                 </div>
@@ -24,7 +24,7 @@
                         <div class="card custom-card" data-select2-id="15">
                             <div class="card-header">
                                 <div>
-                                    <h6 class="main-content-label tx-15">Edit Blog</h6>
+                                    <h6 class="main-content-label tx-15">Modifier le blog</h6>
                                 </div>
                             </div>
                             <div class="card-body" data-select2-id="14">
@@ -39,18 +39,17 @@
                                             <div class="card custom-card">
 
                                                 <div class="card-body">
-                                                    <label for="title" class="form-label tx-semibold">Title</label>
+                                                    <label for="title" class="form-label tx-semibold">Titre</label>
                                                     <input type="text" name="title" class="form-control mb-4"
                                                         id="title" value="{{ old('title', @$blog->title) }}"
                                                         required="">
 
-                                                    <label for="content" class="form-label tx-semibold">Content</label>
+                                                    <label for="content" class="form-label tx-semibold">Contenu</label>
                                                     <textarea id="content" name="content">
                                                         {{ old('content', @$blog->content) }}
                                                     </textarea>
                                                     <br>
-                                                    <label for="image" class="form-label tx-semibold">Image
-                                                        Upload</label>
+                                                    <label for="image" class="form-label tx-semibold">Téléchargement d'image</label>
                                                     <input type="file" id="image" name="image" accept="image/*"
                                                         class="dropify mb-4" data-height="200" required
                                                         data-default-file="{{ asset('storage/' . @$blog->image) }}" />
@@ -58,14 +57,14 @@
                                                         <input type="checkbox" id="is_published" name="is_published"
                                                             class="custom-switch-input" @checked(@$blog->is_published == 1)>
                                                         <span class="custom-switch-indicator"></span>
-                                                        <span class="custom-switch-description">Publish</span>
+                                                        <span class="custom-switch-description">Publier</span>
                                                     </label>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <button class="btn btn-primary" type="submit">Submit form</button>
+                                        <button class="btn btn-primary" type="submit">Soumettre le formulaire</button>
                                     </div>
                                 </form>
                             </div>

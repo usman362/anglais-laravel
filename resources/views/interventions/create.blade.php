@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Add Intervention')
+@section('title', 'Ajouter une intervention')
 @section('content')
 
     <div class="main-content side-content pt-0">
@@ -9,10 +9,10 @@
                 <!-- PAGE HEADER -->
                 <div class="page-header">
                     <div>
-                        <h2 class="main-content-title tx-24 mg-b-5">Add Intervention</h2>
+                        <h2 class="main-content-title tx-24 mg-b-5">Ajouter une intervention</h2>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="javascript:;">Interventions</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Create</li>
+                            <li class="breadcrumb-item active" aria-current="page">Créer</li>
                         </ol>
                     </div>
                 </div>
@@ -24,7 +24,7 @@
                         <div class="card custom-card" data-select2-id="15">
                             <div class="card-header">
                                 <div>
-                                    <h6 class="main-content-label tx-15">Add Intervention</h6>
+                                    <h6 class="main-content-label tx-15">Ajouter une intervention</h6>
                                 </div>
                             </div>
                             <div class="card-body" data-select2-id="14">
@@ -33,13 +33,13 @@
                                     data-select2-id="13">
                                     @csrf
                                     <div class="col-md-6">
-                                        <label for="first_name" class="form-label tx-semibold">Select Date</label>
+                                        <label for="first_name" class="form-label tx-semibold">Sélectionner la date</label>
                                         <div class="">
                                             <div class="input-group">
                                                 <div class="input-group-text">
                                                     <i class="fe fe-calendar lh--9 op-6"></i>
                                                 </div>
-                                                <input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+                                                <input class="form-control fc-datepicker" placeholder="MM/JJ/AAAA"
                                                     type="text" name="date"
                                                     value="{{ old('date', @$schedule->date) }}" required>
                                             </div>
@@ -51,9 +51,9 @@
                                         @enderror
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="user_id" class="form-label tx-semibold">Select Employee</label>
+                                        <label for="user_id" class="form-label tx-semibold">Sélectionner un employé</label>
                                         <select class="form-select" name="user_id" id="user_id" required="">
-                                            <option selected="" disabled="" value="">Choose...</option>
+                                            <option selected="" disabled="" value="">Choisir...</option>
                                             @foreach (\App\Models\User::all() as $user)
                                                 <option value="{{ $user->id }}" @selected($user->id == old('role', @$schedule->user_id))>
                                                     {{ $user->name }}</option>
@@ -80,7 +80,7 @@
                             </div>
 
                             <div class="col-12">
-                                <button class="btn btn-primary" type="submit">Submit form</button>
+                                <button class="btn btn-primary" type="submit">Soumettre le formulaire</button>
                             </div>
                             </form>
                         </div>

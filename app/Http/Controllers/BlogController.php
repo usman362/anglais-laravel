@@ -85,9 +85,9 @@ class BlogController extends Controller
                 'user_id' => Auth::id() ?? 0,
             ]);
 
-            return redirect(route('blogs.index'))->with('success', 'Blog has been Created Successfully');
+            return redirect(route('blogs.index'))->with('success', 'Le blog a été créé avec succès');
         } catch (\Exception $e) {
-            return redirect(route('blogs.index'))->with('error', 'Failed to Create Blog');
+            return redirect(route('blogs.index'))->with('error', 'Échec de la création du blog');
         }
     }
 
@@ -137,9 +137,9 @@ class BlogController extends Controller
                 'user_id' => Auth::id() ?? 0,
             ]);
 
-            return redirect(route('blogs.index'))->with('success', 'Blog has been Updated Successfully');
+            return redirect(route('blogs.index'))->with('success', 'Le blog a été mis à jour avec succès');
         } catch (\Exception $e) {
-            return redirect(route('blogs.index'))->with('error', 'Failed to Update Blog');
+            return redirect(route('blogs.index'))->with('error', 'Échec de la mise à jour du blog');
         }
     }
 
@@ -150,9 +150,9 @@ class BlogController extends Controller
     {
         $blog = Blog::find($id);
         if ($blog->delete()) {
-            return back()->with('success', 'Blog has been Deleted Successfully!');
+            return back()->with('success', 'Le blog a été supprimé avec succès !');
         } else {
-            return back()->with('error', 'Failed to Delete Blog!');
+            return back()->with('error', 'Échec de la suppression du blog !');
         }
     }
 }

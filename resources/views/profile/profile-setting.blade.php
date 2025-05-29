@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Profile Setting')
+@section('title', 'Paramètres du profil')
 @section('content')
     <style>
         .btn-success {
@@ -19,10 +19,10 @@
                 <!-- PAGE HEADER -->
                 <div class="page-header">
                     <div>
-                        <h2 class="main-content-title tx-24 mg-b-5">Profile</h2>
+                        <h2 class="main-content-title tx-24 mg-b-5">Profil</h2>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="javascript:;">Pages</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Profile</li>
+                            <li class="breadcrumb-item active" aria-current="page">Profil</li>
                         </ol>
                     </div>
                 </div>
@@ -59,7 +59,7 @@
                                 <div class="main-content-body tab-pane p-4 border-top-0 active" id="edit">
                                     <div class="card custom-card border" style="background-color:#055f45">
                                         <div class="card-body">
-                                            <div class="mb-4 main-content-label text-white">Personal Information</div>
+                                            <div class="mb-4 main-content-label text-white">Informations personnelles</div>
                                             <form class="form-horizontal" action="{{ route('profile.store') }}"
                                                 enctype="multipart/form-data" method="POST">
                                                 @csrf
@@ -85,16 +85,16 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="mb-4 main-content-label text-white">Name</div>
+                                                <div class="mb-4 main-content-label text-white">Nom</div>
 
                                                 <div class="form-group ">
                                                     <div class="row row-sm">
                                                         <div class="col-md-2">
-                                                            <label class="form-label text-white">First Name</label>
+                                                            <label class="form-label text-white">Prénom</label>
                                                         </div>
                                                         <div class="col-md-10">
                                                             <input type="text" class="form-control"
-                                                                placeholder="First Name" name="first_name"
+                                                                placeholder="Prénom" name="first_name"
                                                                 value="{{ explode(' ', Auth::user()->name, 2)[0] }}">
                                                         </div>
                                                     </div>
@@ -102,35 +102,25 @@
                                                 <div class="form-group ">
                                                     <div class="row row-sm">
                                                         <div class="col-md-2">
-                                                            <label class="form-label text-white">last Name</label>
+                                                            <label class="form-label text-white">Nom de famille</label>
                                                         </div>
                                                         <div class="col-md-10">
                                                             <input type="text" class="form-control"
-                                                                placeholder="Last Name" name="last_name"
-                                                                value="{{ explode(' ', Auth::user()->name, 2)[1] }}">
+                                                                placeholder="Nom de famille" name="last_name"
+                                                                value="{{ explode(' ', Auth::user()->name, 2)[1] ?? '' }}">
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="mb-4 main-content-label text-white">Contact Info</div>
-                                                {{-- <div class="form-group ">
-                                                    <div class="row row-sm">
-                                                        <div class="col-md-2">
-                                                            <label class="form-label text-white">Email<i>(required)</i></label>
-                                                        </div>
-                                                        <div class="col-md-10">
-                                                            <input type="text" class="form-control" placeholder="Email"
-                                                                value="info@Dashplex.in">
-                                                        </div>
-                                                    </div>
-                                                </div> --}}
+                                                <div class="mb-4 main-content-label text-white">Informations de contact</div>
+
                                                 <div class="form-group ">
                                                     <div class="row row-sm">
                                                         <div class="col-md-2">
-                                                            <label class="form-label text-white">Phone</label>
+                                                            <label class="form-label text-white">Téléphone</label>
                                                         </div>
                                                         <div class="col-md-10">
                                                             <input type="text" class="form-control"
-                                                                placeholder="phone number" name="phone"
+                                                                placeholder="Numéro de téléphone" name="phone"
                                                                 value="{{ Auth::user()->phone }}">
                                                         </div>
                                                     </div>
@@ -138,15 +128,15 @@
                                                 <div class="form-group ">
                                                     <div class="row row-sm">
                                                         <div class="col-md-2">
-                                                            <label class="form-label text-white">Address</label>
+                                                            <label class="form-label text-white">Adresse</label>
                                                         </div>
                                                         <div class="col-md-10">
-                                                            <textarea class="form-control" name="address" rows="2" placeholder="Address">{{ Auth::user()->address }}</textarea>
+                                                            <textarea class="form-control" name="address" rows="2" placeholder="Adresse">{{ Auth::user()->address }}</textarea>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <button type="submit"
-                                                    class="btn ripple btn-success w-sm float-end">Save</button>
+                                                    class="btn ripple btn-success w-sm float-end">Enregistrer</button>
                                             </form>
                                         </div>
                                     </div>

@@ -20,7 +20,7 @@
         @include('includes.sidebar')
 
         @yield('content')
-
+{{-- 
         <div id="google_translate_element"></div>
 
         <script type="text/javascript">
@@ -48,7 +48,7 @@
     });
         </script>
 
-        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> --}}
 
 
     </div>

@@ -71,9 +71,9 @@ class UsersController extends Controller
                 'role' => $request->role
             ]);
             $user->notify(new AccountCreatedNotification($user->role, $request->password));
-            return redirect(route('users-management.index'))->with('success', 'User has been Created Successfully');
+            return redirect(route('users-management.index'))->with('success', "L'utilisateur a été créé avec succès");
         } catch (\Exception $e) {
-            return redirect(route('users-management.index'))->with('error', 'Failed to Create User');
+            return redirect(route('users-management.index'))->with('error', "Échec de la création d'un utilisateur");
         }
     }
 
@@ -114,9 +114,9 @@ class UsersController extends Controller
                 'password' => Hash::make($request->password),
                 'role' => $request->role
             ]);
-            return redirect(route('users-management.index'))->with('success', 'User has been Updated Successfully');
+            return redirect(route('users-management.index'))->with('success', "L'utilisateur a été mis à jour avec succès");
         } catch (\Exception $e) {
-            return redirect(route('users-management.index'))->with('error', 'Failed to Update User');
+            return redirect(route('users-management.index'))->with('error', "Échec de la mise à jour de l'utilisateur");
         }
     }
 
@@ -127,9 +127,9 @@ class UsersController extends Controller
     {
         $user = User::find($id);
         if ($user->delete()) {
-            return back()->with('success', 'User has been Deleted Successfully!');
+            return back()->with('success', "User has been Deleted Successfully!");
         } else {
-            return back()->with('error', 'Failed to Delete User!');
+            return back()->with('error', "Échec de la suppression de l'utilisateur !");
         }
     }
 
