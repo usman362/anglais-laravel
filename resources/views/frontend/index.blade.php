@@ -14,9 +14,13 @@
                         <h4 class="title">
                             <span>
                                 <br>
+                                l’aide à domicile, une présence qui réconforte
                                 <br>
-                                Un sourire est une clef secrète qui ouvre bien des cœurs.
+
+                                Des gestes simples
+
                                 <br>
+                                Un soutien qui respecte
                                 <br>
 
                             </span>
@@ -54,113 +58,6 @@
     <!-- banner blank space area end -->
 
 
-
-    <section class="values-section py-5">
-        <div class="container">
-            <div class="row justify-content-center align-items-stretch">
-                <div class="col-lg-12 col-md-12 col-sm-12 gap-4">
-                    <div class="top">
-                        <h1 class="title">Nos Valeurs</h1>
-                        <p class="description">
-                            Nous assurons grâce à nos valeurs la fourniture et la qualité
-                            des prestations en <br />
-                            s'adaptant à l'unicité de chacun de vos besoins.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container text-center">
-            <!-- Top Center Box -->
-            <div class="row justify-content-center align-items-stretch text-center">
-                <div class="col-lg-4 col-md-12 col-sm-12 gap-4">
-                    <div class="value-box box-1">
-                        <img class="icon" src="{{asset('frontend/assets/images/our_values/2.jpg')}}" alt="icon" />
-                        <h5 class="title">La bienveillance</h5>
-                        <p class="description">
-                            agapé s'engage à traiter avec une écoute attentive, une atti-
-                            tude positive pour assurer votre accompagnement.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- Middle Row -->
-            <div class="row justify-content-center align-items-stretch text-center">
-                <!-- Left Column -->
-                <div class="col-lg-4 col-md-12 col-sm-12 d-flex flex-column justify-content-between gap-4">
-                    <div class="value-box box-2">
-                        <img class="icon" src="{{asset('frontend/assets/images/our_values/1.jpg')}}" alt="icon" />
-                        <h5 class="title">La bien-traitance</h5>
-                        <p class="description">
-                            Avec votre aide et l'ensemble des professionnels nous vous
-                            proposonsunaccompagnement dans le respect de la dignité, de
-                            l'autonomie et dans l'adaptation la plus juste à vos besoins des
-                            prestations personnalisées.
-                        </p>
-                    </div>
-                    <div class="value-box box-3">
-                        <img class="icon" src="{{asset('frontend/assets/images/our_values/4.jpg')}}" alt="icon" />
-                        <h5 class="title">Le mieux-être</h5>
-                        <p class="description">
-                            Le maintien de votre bien-être physique, mental et social, que
-                            nous favorisons en offrant des services adaptés à chaque
-                            individu.
-                        </p>
-                    </div>
-                </div>
-                <!-- Center Box -->
-                <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center align-items-center">
-                    <div class="center-box position-relative">
-                        <div class="value">2</div>
-                        <div class="value-box box-4">
-                            <h5 class="title">Les deux règles de base</h5>
-                            <img class="icon" src="{{asset('frontend/assets/images/our_values/7.jpg')}}" alt="icon" />
-                            <p class="description">
-                                Ne jamais prendre des engagements que l’on ne peut tenir.
-                            </p>
-                            <img class="icon" src="{{asset('frontend/assets/images/our_values/7.jpg')}}" alt="icon" />
-                            <p class="description">Ne jamais mentir aux clients.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Right Column -->
-                <div class="col-lg-4 col-md-12 col-sm-12 d-flex flex-column justify-content-between gap-4">
-                    <div class="value-box box-5">
-                        <img class="icon" src="{{asset('frontend/assets/images/our_values/3.jpg')}}" alt="icon" />
-                        <h5 class="title">L’humanité</h5>
-                        <p class="description">
-                            Chez nous, l’humain est au cœur de nos préoccupations. Cela
-                            signifie créer un environnement de travail agréable pour les
-                            intervenant·e·s et vous offrir un accompagnement chaleureux.
-                        </p>
-                    </div>
-                    <div class="value-box box-6">
-                        <img class="icon" src="{{asset('frontend/assets/images/our_values/5.jpg')}}" alt="icon" />
-                        <h5 class="title">L’autonomie</h5>
-                        <p class="description">
-                            L’objectif est de vous permettre de conserver le maximum
-                            d’autonomie possible dans votre vie quotidienne.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- Bottom Center Box -->
-            <div class="row justify-content-center align-items-stretch text-center">
-                <div class="col-lg-4 col-md-12 col-sm-12 gap-4">
-                    <div class="value-box box-7">
-                        <img class="icon" src="{{asset('frontend/assets/images/our_values/6.jpg')}}" alt="icon" />
-                        <h5 class="title">Le professionnalisme</h5>
-                        <p class="description">
-                            Les intervenants doivent être qualifiés et formés pour assurer
-                            des prestations de qualité et adaptées aux besoins de chacun.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
     <!-- rts about us section start -->
     <div class="rts-about-area rts-section-gap bg-about-sm-shape">
         <div class="container">
@@ -189,38 +86,33 @@
                     </div>
                     <div class="about-inner">
                         <p class="disc">
-                            Agapé, est une jeune entreprise dʼautonomie à domicile (SAD) dʼÉconomie sociale et solidaire
-                            (ESS) dans le département de Loire-Atlantique. Nous avons décidé de repenser lʼaide à
-                            domicile, de lʼaccompagnement à domicile jusquʼà lʼinclusion.
+                            Chez agapé, notre nom n'est pas un hasard. Il est tiré du grec ancien et incarne un amour vrai,
+                            inconditionnel, patient, dépourvu de désintéressement. C'est cette philosophie qui a donné
+                            naissance à notre entreprise, ici même en Loire-Atlantique.
                         </p>
 
                         <p class="disc">
-                            Notre particularité réside dans lʼinclusion d'outils dʼéducation populaire, qui rend l'offre
-                            de service stimulante, riche, optimale, beaucoup plus centrée sur le mieux-être, la dignité,
-                            et le
-                            confort en favorisant le maintien à domicile. Quant aux intervenants·e·s recruté·e·s sur
-                            leurs qualifications leurs valeurs humaines et lʼaltruisme, des formations spécifiques avec
-                            promotion à lʼinterne et un pack de fidélisation leur sont proposé.e.s. Le tout dans une
-                            ambiance de valeur d'entreprise familiale et de développement durable où le NOUS est au
-                            centre du développement.
+                            L'histoire de notre création est très personnelle. Travailler comme aide à domicile m’a permis
+                            de comprendre qu'il fallait changer la façon dont on accompagne les personnes chez elles. Le but
+                            est de repenser complètement l'aide à domicile, pour qu'elle mène à une vraie interaction
+                            sociale.
                         </p>
 
                         <p class="disc">
-                            Ainsi, Agapé créer une belle relation de confiance intervenants·e·s et client·e·s et de
-                            bénéficier dʼun accompagnement serein, global (social, technique,administratif etc.) au sein
-                            de son
-                            environnement. Mais également de répondre à la pénurie de main-d'œuvre, du manque de
-                            qualification, de revalorisation du métier, du manque de formation et de l'absence de
-                            carrière à long terme dans les SAAD en employant des personnes des quartiers prioritaires de
-                            la ville (QPV) éloignées de l'emploi et des personnes d'association Insertion par l'activité
-                            économique (IAE) avec un pack de fidélisation, d'accès à une formation continue et de stage.
-                            Les bureaux dʼAgapé se trouvent dans un quartier prioritaire de la ville de Nantes. Les QPV
-                            sont des quartiers définis, par la loi de programmation pour la ville et la cohésion urbaine
-                            du 21 février 2014. Ce choix est incité par la principale cible de recrutement : des
-                            personnes des quartiers prioritaires, lʼenvie de redynamiser ces quartiers et permettre un
-                            fort maillage et ancrage territorial. En parallèle Agapé prévoit sur le long terme avoir un
-                            partenariat avec des associations dʼinsertion par lʼactivité économique pour permettre le
-                            recrutement et la formation de travailleur·euses handicapées sur des missions adaptées.
+                            Ce service est destiné aux personnes âgées, en situation de handicap de tout genre, et toute
+                            personne ayant besoin d'une aide au quotidien.
+                        </p>
+
+                        <p class="disc">
+                            Nous croyons en un accompagnement qui va bien plus loin que les gestes du quotidien. Notre
+                            objectif principal est simple : vous aider rester chez vous le plus longtemps possible, dans les
+                            meilleures conditions et entouré de ce qui compte le plus pour vous.
+                        </p>
+
+                        <p class="disc">
+                            Nous nous engageons à vous offrir un soutien chaleureux, personnalisé et respectueux, en mettant
+                            toujours votre dignité au premier plan. Chez agapé, chaque personne est unique. Notre mission
+                            est de vous permettre de vivre pleinement, chez vous, et en toute tranquillité.
                         </p>
                     </div>
                 </div>
@@ -230,6 +122,117 @@
     </div>
 
     <!-- our services -->
+
+    <section class="values-section py-5">
+        <div class="container">
+            <div class="row justify-content-center align-items-stretch">
+                <div class="col-lg-12 col-md-12 col-sm-12 gap-4">
+                    <div class="top">
+                        <h1 class="title">Nos Valeurs</h1>
+                        <p class="description">
+                            Nous assurons grâce à nos valeurs la fourniture et la qualité
+                            des prestations en <br />
+                            s'adaptant à l'unicité de chacun de vos besoins.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center">
+            <!-- Top Center Box -->
+            <div class="row justify-content-center align-items-stretch text-center">
+                <div class="col-lg-4 col-md-12 col-sm-12 gap-4">
+                    <div class="value-box box-1">
+                        <img class="icon" src="{{ asset('frontend/assets/images/our_values/2.jpg') }}" alt="icon" />
+                        <h5 class="title">La bienveillance</h5>
+                        <p class="description">
+                            agapé s'engage à traiter avec une écoute attentive, une atti-
+                            tude positive pour assurer votre accompagnement.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Middle Row -->
+            <div class="row justify-content-center align-items-stretch text-center">
+                <!-- Left Column -->
+                <div class="col-lg-4 col-md-12 col-sm-12 d-flex flex-column justify-content-between gap-4">
+                    <div class="value-box box-2">
+                        <img class="icon" src="{{ asset('frontend/assets/images/our_values/1.jpg') }}" alt="icon" />
+                        <h5 class="title">La bien-traitance</h5>
+                        <p class="description">
+                            Avec votre aide et l'ensemble des professionnels nous vous
+                            proposonsunaccompagnement dans le respect de la dignité, de
+                            l'autonomie et dans l'adaptation la plus juste à vos besoins des
+                            prestations personnalisées.
+                        </p>
+                    </div>
+                    <div class="value-box box-3">
+                        <img class="icon" src="{{ asset('frontend/assets/images/our_values/4.jpg') }}" alt="icon" />
+                        <h5 class="title">Le mieux-être</h5>
+                        <p class="description">
+                            Le maintien de votre bien-être physique, mental et social, que
+                            nous favorisons en offrant des services adaptés à chaque
+                            individu.
+                        </p>
+                    </div>
+                </div>
+                <!-- Center Box -->
+                <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center align-items-center">
+                    <div class="center-box position-relative">
+                        <div class="value">2</div>
+                        <div class="value-box box-4">
+                            <h5 class="title">Les deux règles de base</h5>
+                            <img class="icon" src="{{ asset('frontend/assets/images/our_values/7.jpg') }}"
+                                alt="icon" />
+                            <p class="description">
+                                Ne jamais prendre des engagements que l’on ne peut tenir.
+                            </p>
+                            <img class="icon" src="{{ asset('frontend/assets/images/our_values/7.jpg') }}"
+                                alt="icon" />
+                            <p class="description">Ne jamais mentir aux clients.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Column -->
+                <div class="col-lg-4 col-md-12 col-sm-12 d-flex flex-column justify-content-between gap-4">
+                    <div class="value-box box-5">
+                        <img class="icon" src="{{ asset('frontend/assets/images/our_values/3.jpg') }}" alt="icon" />
+                        <h5 class="title">L’humanité</h5>
+                        <p class="description">
+                            Chez nous, l’humain est au cœur de nos préoccupations. Cela
+                            signifie créer un environnement de travail agréable pour les
+                            intervenant·e·s et vous offrir un accompagnement chaleureux.
+                        </p>
+                    </div>
+                    <div class="value-box box-6">
+                        <img class="icon" src="{{ asset('frontend/assets/images/our_values/5.jpg') }}"
+                            alt="icon" />
+                        <h5 class="title">L’autonomie</h5>
+                        <p class="description">
+                            L’objectif est de vous permettre de conserver le maximum
+                            d’autonomie possible dans votre vie quotidienne.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom Center Box -->
+            <div class="row justify-content-center align-items-stretch text-center">
+                <div class="col-lg-4 col-md-12 col-sm-12 gap-4">
+                    <div class="value-box box-7">
+                        <img class="icon" src="{{ asset('frontend/assets/images/our_values/6.jpg') }}"
+                            alt="icon" />
+                        <h5 class="title">Le professionnalisme</h5>
+                        <p class="description">
+                            Les intervenants doivent être qualifiés et formés pour assurer
+                            des prestations de qualité et adaptées aux besoins de chacun.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
     <!-- our service area start -->
     <div class="rts-service-area rts-section-gapTop pb--200 service-two-bg bg_image">
