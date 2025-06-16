@@ -149,7 +149,7 @@
                 <div class="col-lg-4 col-md-12 col-sm-12 gap-4">
                     <div class="value-box box-1">
                         <img class="icon" src="{{ asset('frontend/assets/images/our_values/2.jpg') }}" alt="icon" />
-                        <h5 class="title">La bienveillance AGAPÉ : une écoute attentiv</h5>
+                        <h5 class="title">La bienveillance AGAPÉ : une écoute attentive</h5>
                         <p class="description">
                             Avec votre collaboration et celle de nos intervenants, nous veillons à
 ce que votre accompagnement respecte toujours votre dignité et votre autonomie. Nous nous adaptons au plus juste à vos besoins pour vous proposer des prestations véritablement personnalisées.
