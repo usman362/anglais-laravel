@@ -62,7 +62,7 @@
                             </a>
                         </div> --}}
                         <a class="nav-link mt-2 icon" style="margin-right:12px" href="{{ route('home') }}">
-                            <img src="{{ asset('assets/img/worldwide.png') }}" class="mt-2" width="20" alt="">
+                            <img src="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ.png') }}" width="40" alt="">
                         </a>
                         <a class="nav-link mt-2 icon" style="margin-right:12px" href="{{ url('messenger') }}">
                             <img src="{{ asset('assets/img/chat.png') }}" class="mt-2" width="20" alt="">
