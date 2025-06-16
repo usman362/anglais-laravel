@@ -96,7 +96,7 @@
                                 Les données personnelles collectées via le site sont destinées exclusivement à Agapé et sont
                                 traitées conformément au Règlement Général sur la Protection des Données (RGPD). <br>
                                 Pour toute demande dʼaccès, de rectification ou de suppression de vos données personnelles,
-                                vous pouvez nous contacter à contact@agape- nantes.fr.
+                                vous pouvez nous contacter à contact@agape-nantes.fr.
                             </p>
 
                             <h4 class="title">7. Crédit dʼimpôt & financement</h4>
