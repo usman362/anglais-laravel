@@ -2,6 +2,11 @@
 @section('title', 'Accueil')
 @section('content')
 
+<style>
+    .value-box .title {
+    padding-bottom: 20px !important;
+}
+</style>
 
     <!-- banner blank space area -->
     <div class="rts-banner-area rts-banner-one">
