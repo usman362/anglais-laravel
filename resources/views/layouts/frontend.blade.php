@@ -239,14 +239,14 @@
         <div class="container bg-shape-f1">
             <!-- rts footer area -->
             <div class="row">
-                <div class="col-xl-3 col-md-6 col-sm-12 col-12">
+                <div class="col-xl-4 col-md-6 col-sm-12 col-12">
                     <div class="footer-two-single-wized left pt--50">
                         <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}" alt="">
                     </div>
                 </div>
                 <!-- footer mid area -->
 
-                <div class="col-xl-3 col-md-6 col-sm-12 col-12">
+                <div class="col-xl-5 col-md-6 col-sm-12 col-12">
                     <div class="footer-one-single-wized mid-bg" style="background: none">
                         <div class="wized-title">
                             <h5 class="title">Informations légales</h5>
@@ -269,26 +269,6 @@
                             <div class="single-opening">
                                 <p class="day"><a style="color:#fff" href="{{ route('legal_4') }}">Politique de
                                         confidentialité</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- footer mid area end -->
-                <!-- footer mid area -->
-
-                <div class="col-xl-3 col-md-6 col-sm-12 col-12">
-                    <div class="footer-one-single-wized mid-bg" style="background: none">
-                        <div class="wized-title">
-                            <h5 class="title">Développement du site</h5>
-                            <img src="{{ asset('frontend/assets/images/footer/under-title.png') }}"
-                                alt="finbiz_footer">
-                        </div>
-                        <div class="opening-time-inner">
-                            <div class="single-opening">
-                                <p class="day">
-                                    
-
-                                </p>
                             </div>
                         </div>
                     </div>

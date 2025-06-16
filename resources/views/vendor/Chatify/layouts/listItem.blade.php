@@ -1,23 +1,23 @@
-{{-- -------------------- Saved Messages -------------------- --}}
+{{-- -------------------- Messages enregistrés -------------------- --}}
 @if($get == 'saved')
     <table class="messenger-list-item" data-contact="{{ Auth::user()->id }}">
         <tr data-action="0">
-            {{-- Avatar side --}}
+            {{-- Côté avatar --}}
             <td>
             <div class="saved-messages avatar av-m">
                 <span class="far fa-bookmark"></span>
             </div>
             </td>
-            {{-- center side --}}
+            {{-- Côté central --}}
             <td>
-                <p data-id="{{ Auth::user()->id }}" data-type="user">Saved Messages <span>You</span></p>
-                <span>Save messages secretly</span>
+                <p data-id="{{ Auth::user()->id }}" data-type="user">Messages enregistrés <span>Vous</span></p>
+                <span>Enregistrez les messages en toute discrétion</span>
             </td>
         </tr>
     </table>
 @endif
 
-{{-- -------------------- Contact list -------------------- --}}
+{{-- -------------------- Liste de contacts -------------------- --}}
 @if($get == 'users' && !!$lastMessage)
 <?php
 $lastMessageBody = mb_convert_encoding($lastMessage->body, 'UTF-8', 'UTF-8');
@@ -25,7 +25,7 @@ $lastMessageBody = strlen($lastMessageBody) > 30 ? mb_substr($lastMessageBody, 0
 ?>
 <table class="messenger-list-item" data-contact="{{ $user->id }}">
     <tr data-action="0">
-        {{-- Avatar side --}}
+        {{-- Côté avatar --}}
         <td style="position: relative">
             @if($user->active_status)
                 <span class="activeStatus"></span>
@@ -34,45 +34,45 @@ $lastMessageBody = strlen($lastMessageBody) > 30 ? mb_substr($lastMessageBody, 0
         style="background-image: url('{{ $user->avatar }}');">
         </div>
         </td>
-        {{-- center side --}}
+        {{-- Côté central --}}
         <td>
         <p data-id="{{ $user->id }}" data-type="user">
             {{ strlen($user->name) > 12 ? trim(substr($user->name,0,12)).'..' : $user->name }}
             <span class="contact-item-time" data-time="{{$lastMessage->created_at}}">{{ $lastMessage->timeAgo }}</span></p>
         <span>
-            {{-- Last Message user indicator --}}
+            {{-- Indicateur d'utilisateur du dernier message --}}
             {!!
                 $lastMessage->from_id == Auth::user()->id
-                ? '<span class="lastMessageIndicator">You :</span>'
+                ? '<span class="lastMessageIndicator">Vous :</span>'
                 : ''
             !!}
-            {{-- Last message body --}}
+            {{-- Corps du dernier message --}}
             @if($lastMessage->attachment == null)
             {!!
                 $lastMessageBody
             !!}
             @else
-            <span class="fas fa-file"></span> Attachment
+            <span class="fas fa-file"></span> Pièce jointe
             @endif
         </span>
-        {{-- New messages counter --}}
+        {{-- Compteur de nouveaux messages --}}
             {!! $unseenCounter > 0 ? "<b>".$unseenCounter."</b>" : '' !!}
         </td>
     </tr>
 </table>
 @endif
 
-{{-- -------------------- Search Item -------------------- --}}
+{{-- -------------------- Élément de recherche -------------------- --}}
 @if($get == 'search_item')
 <table class="messenger-list-item" data-contact="{{ $user->id }}">
     <tr data-action="0">
-        {{-- Avatar side --}}
+        {{-- Côté avatar --}}
         <td>
         <div class="avatar av-m"
         style="background-image: url('{{ $user->avatar }}');">
         </div>
         </td>
-        {{-- center side --}}
+        {{-- Côté central --}}
         <td>
             <p data-id="{{ $user->id }}" data-type="user">
             {{ strlen($user->name) > 12 ? trim(substr($user->name,0,12)).'..' : $user->name }}
@@ -82,9 +82,7 @@ $lastMessageBody = strlen($lastMessageBody) > 30 ? mb_substr($lastMessageBody, 0
 </table>
 @endif
 
-{{-- -------------------- Shared photos Item -------------------- --}}
+{{-- -------------------- Élément photo partagée -------------------- --}}
 @if($get == 'sharedPhoto')
 <div class="shared-photo chat-image" style="background-image: url('{{ $image }}')"></div>
 @endif
-
-
