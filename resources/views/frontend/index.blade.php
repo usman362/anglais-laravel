@@ -116,7 +116,13 @@
 
                         <p class="disc">
                             Nous nous engageons à vous offrir un soutien chaleureux, personnalisé et respectueux, en mettant
-                            toujours votre dignité au premier plan. Chez agapé, chaque personne est unique. Notre mission
+                            toujours votre dignité au premier plan. Chez <span
+                            style="
+                        font-weight: 1000;
+                        font-style: italic;
+                        font-family: cursive;
+                        font-size: 18px;
+                    ">agapé</span>, chaque personne est unique. Notre mission
                             est de vous permettre de vivre pleinement, chez vous, et en toute tranquillité.
                         </p>
                     </div>
