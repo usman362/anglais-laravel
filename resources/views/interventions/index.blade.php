@@ -75,6 +75,9 @@
                 processing: true,
                 serverSide: true,
                 ajax: "{{ route('interventions.index') }}",
+                language: {
+                    url: 'https://cdn.datatables.net/plug-ins/1.13.7/i18n/fr-FR.json'
+                },
                 columns: [
                     {
                         data: 'date',

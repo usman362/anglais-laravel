@@ -64,18 +64,33 @@
 @endsection
 
 @push('scripts')
-
     <script>
         $(function() {
             var table = $('#users-datatable').DataTable({
                 processing: true,
                 serverSide: true,
                 ajax: "{{ route('users-management.index') }}",
-                columns: [
-                    { data: 'name', name: 'name' },
-                    { data: 'email', name: 'email' },
-                    { data: 'role', name: 'role' },
-                    { data: 'actions', name: 'actions', orderable: false, searchable: false },
+                language: {
+                    url: 'https://cdn.datatables.net/plug-ins/1.13.7/i18n/fr-FR.json'
+                },
+                columns: [{
+                        data: 'name',
+                        name: 'name'
+                    },
+                    {
+                        data: 'email',
+                        name: 'email'
+                    },
+                    {
+                        data: 'role',
+                        name: 'role'
+                    },
+                    {
+                        data: 'actions',
+                        name: 'actions',
+                        orderable: false,
+                        searchable: false
+                    },
                 ]
             });
         });
