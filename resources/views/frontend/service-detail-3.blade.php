@@ -36,7 +36,7 @@
                             de fragilité.
                         </p>
 
-                        <h4 class="title pink-text"><img src="{{asset('frontend/assets/images/icon/25.png')}}" width="54" alt=""> Ménage et entretien du cadre de vie</h4>
+                        <h4 class="title pink-text"><img src="{{asset('frontend/assets/images/icon/42.png')}}" width="40" alt=""> Ménage et entretien du cadre de vie</h4>
                         <p class="disc">
                             Nos aides à domicile assurent lʼentretien régulier du logement selon les besoins et les attentes
                             du bénéficiaire. Cela comprend :
