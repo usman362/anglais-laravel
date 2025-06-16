@@ -29,7 +29,7 @@
     }
 </style>
 
-<style>
+{{-- <style>
     body{
         top: 0 !important;
     }
@@ -39,4 +39,4 @@
     #goog-gt-tt{
         visibility: hidden !important;
     }
-</style>
+</style> --}}

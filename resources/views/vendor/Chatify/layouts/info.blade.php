@@ -1,11 +1,12 @@
-{{-- user info and avatar --}}
+{{-- informations de l'utilisateur et avatar --}}
 <div class="avatar av-l chatify-d-flex"></div>
 <p class="info-name">{{ config('chatify.name') }}</p>
 <div class="messenger-infoView-btns">
-    <a href="#" class="danger delete-conversation">Delete Conversation</a>
+    <a href="#" class="danger delete-conversation">Supprimer la conversation</a>
 </div>
-{{-- shared photos --}}
+
+{{-- photos partagées --}}
 <div class="messenger-infoView-shared">
-    <p class="messenger-title"><span>Shared Photos</span></p>
+    <p class="messenger-title"><span>Photos partagées</span></p>
     <div class="shared-photos-list"></div>
 </div>
