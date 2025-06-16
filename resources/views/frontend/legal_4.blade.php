@@ -1,24 +1,26 @@
 @extends('layouts.frontend')
 @section('title', 'Politique de confidentialité')
 @section('content')
-    <!-- start breadcrumb area -->
-    <div class="rts-breadcrumb-area breadcrumb-bg bg_image">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 breadcrumb-1">
-                    <h1 class="title">Politique de confidentialité</h1>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="bread-tag">
-                        <a href="{{ route('home') }}">Accueil</a>
-                        <span> / </span>
-                        <a href="#" class="active">Politique de confidentialité</a>
+    <!-- début zone fil d’Ariane -->
+    <div class="breadcrumb-bg bg_image" style="background-image:url({{ asset('frontend/assets/images/faq/faq-2.jpeg') }});background-position:top;">
+        <div class="rts-breadcrumb-area" style="background-color: #0000007d">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 breadcrumb-1">
+                        <h1 class="title pink-text">Politique de confidentialité</h1>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="bread-tag">
+                            <a href="{{ route('home') }}">Accueil</a>
+                            <span> / </span>
+                            <a href="#" class="active">Politique de confidentialité</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- end breadcrumb area -->
+    <!-- fin zone fil d’Ariane -->
 
     <!-- rts about us section start -->
     <div class="rts-about-area rts-section-gap">

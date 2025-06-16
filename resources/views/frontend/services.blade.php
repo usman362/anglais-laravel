@@ -1,25 +1,27 @@
 @extends('layouts.frontend')
 @section('title', 'Nos prestations')
 @section('content')
-    <!-- start breadcrumb area -->
-    <div class="rts-breadcrumb-area breadcrumb-bg bg_image notranslate">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 breadcrumb-1">
-                    <h1 class="title">Nos prestations</h1>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="bread-tag">
-                        <a href="{{route('home')}}">Accueil</a>
-                        <span> / </span>
-                        <a href="#" class="active">Nos prestations</a>
+
+    <!-- début zone fil d’Ariane -->
+    <div class="breadcrumb-bg bg_image" style="background-image:url({{ asset('frontend/assets/images/service-1.jpeg') }});">
+        <div class="rts-breadcrumb-area" style="background-color: #0000007d">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 breadcrumb-1">
+                        <h1 class="title pink-text">Nos prestations</h1>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="bread-tag">
+                            <a href="{{ route('home') }}">Accueil</a>
+                            <span> / </span>
+                            <a href="#" class="active">Nos prestations</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- end breadcrumb area -->
-
+    <!-- fin zone fil d’Ariane -->
 
     <!-- our service area start -->
     <div class="rts-service-area rts-section-gapTop pb--200 service-two-bg bg_image notranslate">

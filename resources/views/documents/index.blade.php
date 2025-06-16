@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', $name . 's List')
+@section('title', 'Liste des documents')
 @section('content')
 
     <!-- MAIN-CONTENT -->
@@ -13,7 +13,7 @@
                         <h2 class="main-content-title tx-24 mg-b-5">{{ $name }}s</h2>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="javascript:;">{{ $name }}s</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">List</li>
+                            <li class="breadcrumb-item active" aria-current="page">Liste</li>
                         </ol>
                     </div>
                     @if (auth()->user()->role == 'admin')
@@ -36,7 +36,7 @@
                         <div class="card custom-card overflow-hidden">
                             <div class="card-body">
                                 <div>
-                                    <h6 class="main-content-label mb-1">{{ $name }}s List</h6>
+                                    <h6 class="main-content-label mb-1">Liste des documents</h6>
                                 </div>
                                 <div class="table-responsive">
                                     <table class="table table-bordered text-nowrap border-bottom" id="documents-datatable">

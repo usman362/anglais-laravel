@@ -28,3 +28,15 @@
         --primary-color: {{ $messengerColor }};
     }
 </style>
+
+<style>
+    body{
+        top: 0 !important;
+    }
+    .skiptranslate{
+        display: none !important;
+    }
+    #goog-gt-tt{
+        visibility: hidden !important;
+    }
+</style>

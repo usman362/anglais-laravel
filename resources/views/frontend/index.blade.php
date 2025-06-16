@@ -8,42 +8,49 @@
         <div class="swiper mySwiper banner-one">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <!-- banner single content -->
-                    <div class="banner-one-inner text-start">
-
-                        <h4 class="title">
-                            <span>
-                                <br>
-                                l’aide à domicile, une présence qui réconforte
-                                <br>
-
-                                Des gestes simples
-
-                                <br>
-                                Un soutien qui respecte
-                                <br>
-
-                            </span>
-                        </h4>
-                        <img class="shape-img one" src="{{ asset('frontend/assets/images/banner/shape/01.png') }}"
-                            alt="banner_business">
+                    <div style="background: #0707074d;">
+                        <!-- banner single content -->
+                        <div class="banner-one-inner text-start">
+                            <h4 class="title">
+                                <span style="font-size: 50px;-webkit-text-stroke: 1pt #fff37f47;">
+                                    L’aide à domicile, une présence qui réconforte
+                                </span>
+                            </h4>
+                            <img class="shape-img one" src="{{ asset('frontend/assets/images/banner/shape/01.png') }}"
+                                alt="banner_business">
+                        </div>
+                        <!-- banner single content end -->
                     </div>
-                    <!-- banner single content end -->
                 </div>
                 <div class="swiper-slide two">
-                    <!-- banner single content -->
-                    <div class="banner-one-inner text-start">
-                        <h4 class="title">
-                            <span>
-                                Je connais un moyen
-                                de ne pas vieillir : c’est d’accueillir les années comme elles viennent et avec le
-                                sourire... un sourire, c'est toujours jeune.
-                            </span>
-                        </h4>
-                        <img class="shape-img one" src="{{ asset('frontend/assets/images/banner/shape/01.png') }}"
-                            alt="banner_business">
+                    <div style="background: #0707074d;">
+                        <!-- banner single content -->
+                        <div class="banner-one-inner text-start">
+                            <h4 class="title">
+                                <span style="font-size: 50px;-webkit-text-stroke: 1pt #fff37f47;">
+                                    Un soutien qui respecte
+                                </span>
+                            </h4>
+                            <img class="shape-img one" src="{{ asset('frontend/assets/images/banner/shape/01.png') }}"
+                                alt="banner_business">
+                        </div>
+                        <!-- banner single content end -->
                     </div>
-                    <!-- banner single content end -->
+                </div>
+                <div class="swiper-slide three">
+                    <div style="background: #0707074d;">
+                        <!-- banner single content -->
+                        <div class="banner-one-inner text-start">
+                            <h4 class="title">
+                                <span style="font-size: 50px;-webkit-text-stroke: 1pt #fff37f47;">
+                                    Des gestes simples
+                                </span>
+                            </h4>
+                            <img class="shape-img one" src="{{ asset('frontend/assets/images/banner/shape/01.png') }}"
+                                alt="banner_business">
+                        </div>
+                        <!-- banner single content end -->
+                    </div>
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -66,17 +73,8 @@
                 <div class="col-md-6 col-sm-12 col-12">
                     <div class="about-image-v-inner">
                         <div class="image-area">
-                            <img class="mt--110 img-1" src="{{ asset('frontend/assets/images/about/main/about-03.jpg') }}"
+                            <img class="img-1" src="{{ asset('frontend/assets/images/sommes-nous.jpeg') }}"
                                 alt="BUsiness_image">
-                            <img class="img-over" src="{{ asset('frontend/assets/images/about/main/about-04.jpg') }}"
-                                alt="BUsiness_image">
-                            <div class="goal-button-wrapper">
-                                <div class="vedio-icone">
-                                    <a id="play-video" class="video-play-button" href="#" aria-label="Play Video">
-                                        <span></span>
-                                    </a>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -86,7 +84,14 @@
                     </div>
                     <div class="about-inner">
                         <p class="disc">
-                            Chez agapé, notre nom n'est pas un hasard. Il est tiré du grec ancien et incarne un amour vrai,
+                            Chez <span
+                                style="
+                            font-weight: 1000;
+                            font-style: italic;
+                            font-family: cursive;
+                            font-size: 18px;
+                        ">agapé</span>,
+                            notre nom n'est pas un hasard. Il est tiré du grec ancien et incarne un amour vrai,
                             inconditionnel, patient, dépourvu de désintéressement. C'est cette philosophie qui a donné
                             naissance à notre entreprise, ici même en Loire-Atlantique.
                         </p>
@@ -130,9 +135,9 @@
                     <div class="top">
                         <h1 class="title">Nos Valeurs</h1>
                         <p class="description">
-                            Nous assurons grâce à nos valeurs la fourniture et la qualité
-                            des prestations en <br />
-                            s'adaptant à l'unicité de chacun de vos besoins.
+                            Chez AGAPÉ, nous sommes convaincus que l'aide à domicile est avant tout une question de
+                            confiance et de respect. C'est pourquoi nos valeurs guident chacune de nos actions, pour vous
+                            offrir un accompagnement de qualité.
                         </p>
                     </div>
                 </div>
@@ -144,10 +149,10 @@
                 <div class="col-lg-4 col-md-12 col-sm-12 gap-4">
                     <div class="value-box box-1">
                         <img class="icon" src="{{ asset('frontend/assets/images/our_values/2.jpg') }}" alt="icon" />
-                        <h5 class="title">La bienveillance</h5>
+                        <h5 class="title">La bienveillance AGAPÉ : une écoute attentiv</h5>
                         <p class="description">
-                            agapé s'engage à traiter avec une écoute attentive, une atti-
-                            tude positive pour assurer votre accompagnement.
+                            Avec votre collaboration et celle de nos intervenants, nous veillons à
+ce que votre accompagnement respecte toujours votre dignité et votre autonomie. Nous nous adaptons au plus juste à vos besoins pour vous proposer des prestations véritablement personnalisées.
                         </p>
                     </div>
                 </div>
@@ -158,21 +163,18 @@
                 <div class="col-lg-4 col-md-12 col-sm-12 d-flex flex-column justify-content-between gap-4">
                     <div class="value-box box-2">
                         <img class="icon" src="{{ asset('frontend/assets/images/our_values/1.jpg') }}" alt="icon" />
-                        <h5 class="title">La bien-traitance</h5>
+                        <h5 class="title">La bien-traitance : un accompagnement sur mesure</h5>
                         <p class="description">
-                            Avec votre aide et l'ensemble des professionnels nous vous
-                            proposonsunaccompagnement dans le respect de la dignité, de
-                            l'autonomie et dans l'adaptation la plus juste à vos besoins des
-                            prestations personnalisées.
+                            Avec votre collaboration et celle de nos intervenants, nous veillons à
+ce que votre accompagnement respecte toujours votre dignité et votre autonomie. Nous nous adaptons au plus juste à vos besoins pour vous proposer des prestations véritablement personnalisées.
                         </p>
                     </div>
                     <div class="value-box box-3">
                         <img class="icon" src="{{ asset('frontend/assets/images/our_values/4.jpg') }}" alt="icon" />
-                        <h5 class="title">Le mieux-être</h5>
+                        <h5 class="title">Le mieux-être : notre priorité</h5>
                         <p class="description">
-                            Le maintien de votre bien-être physique, mental et social, que
-                            nous favorisons en offrant des services adaptés à chaque
-                            individu.
+                            Maintenir votre bien-être physique, mental et social est au cœur de nos préoccupations. Nous vous aidons à trouver des services adaptés à vos besoins spécifiques pour que vous puissiez vous sentir bien
+                            chez vous.
                         </p>
                     </div>
                 </div>
@@ -196,21 +198,21 @@
                 <!-- Right Column -->
                 <div class="col-lg-4 col-md-12 col-sm-12 d-flex flex-column justify-content-between gap-4">
                     <div class="value-box box-5">
-                        <img class="icon" src="{{ asset('frontend/assets/images/our_values/3.jpg') }}" alt="icon" />
-                        <h5 class="title">L’humanité</h5>
+                        <img class="icon" src="{{ asset('frontend/assets/images/our_values/3.jpg') }}"
+                            alt="icon" />
+                        <h5 class="title">L'humanité : le respect de chacun</h5>
                         <p class="description">
-                            Chez nous, l’humain est au cœur de nos préoccupations. Cela
-                            signifie créer un environnement de travail agréable pour les
-                            intervenant·e·s et vous offrir un accompagnement chaleureux.
+                            L'humain est au centre de tout ce que nous faisons. Cela signifie créer un environnement de travail agréable et respectueux pour les
+intervenant(e)s que vous employez, tout en vous offrant un
+accompagnement chaleureux et bienveillant.
                         </p>
                     </div>
                     <div class="value-box box-6">
                         <img class="icon" src="{{ asset('frontend/assets/images/our_values/5.jpg') }}"
                             alt="icon" />
-                        <h5 class="title">L’autonomie</h5>
+                        <h5 class="title">L'autonomie : préserver votre liberté</h5>
                         <p class="description">
-                            L’objectif est de vous permettre de conserver le maximum
-                            d’autonomie possible dans votre vie quotidienne.
+                            Notre objectif est de vous aider à recruter des auxiliaires qui vous permettront de conserver un maximum d'autonomiedans votre vie quotidienne. Il s'agit de vous soutenir sans vous déposséder.
                         </p>
                     </div>
                 </div>
@@ -221,10 +223,9 @@
                     <div class="value-box box-7">
                         <img class="icon" src="{{ asset('frontend/assets/images/our_values/6.jpg') }}"
                             alt="icon" />
-                        <h5 class="title">Le professionnalisme</h5>
+                        <h5 class="title">Le professionnalisme : des services de qualité</h5>
                         <p class="description">
-                            Les intervenants doivent être qualifiés et formés pour assurer
-                            des prestations de qualité et adaptées aux besoins de chacun.
+                            Nous vous aidons à trouver des intervenants qualifiés et formés, capables de vous offrir des prestations de haute qualité, parfaitement adaptées à vos besoins spécifiques.
                         </p>
                     </div>
                 </div>
@@ -378,13 +379,21 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="thumbnail-faq-four">
-                        <img src="{{ asset('frontend/assets/images/faq/02.png') }}" alt="">
+                        <img src="{{ asset('frontend/assets/images/faq/faq-1.jpeg') }}" alt="">
+                    </div>
+                    <div class="thumbnail-faq-four mt-4">
+                        <img src="{{ asset('frontend/assets/images/faq/faq-2.jpeg') }}" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="faq-two-inner">
                         <div class="title-area-faq">
                             <h2 class="title">FAQ</h2>
+                            <p class="disc">
+                                Chez AGAPÉ, nous savons qu'il est normal d'avoir des questions lorsque l'on envisage une
+                                aide à domicile, surtout en mode mandataire. Voici les réponses aux interrogations les plus
+                                fréquentes pour vous éclairer.
+                            </p>
                         </div>
                         <!-- faq accordion area -->
                         <div class="faq-accordion-area">
@@ -394,37 +403,18 @@
                                         <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
                                             aria-controls="collapseOne">
-                                            Comment sont financées nos prestations ?
+                                            1. Qu'est-ce que le mode mandataire chez AGAPÉ ?
                                         </button>
                                     </h2>
                                     <div id="collapseOne" class="accordion-collapse collapse"
                                         aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
                                         <div class="accordion-body">
-                                            Nos prestations relèvent des services à la personne à domicile (article L.7231-1
-                                            du Code du travail) et ouvrent droit, selon les conditions en vigueur, à un
-                                            <b>crédit dʼimpôt égal à 50 % des dépenses engagées</b>, conformément à
-                                            lʼarticle 199
-                                            sexdecies du CGI. <br>
-                                            Les personnes âgées peuvent bénéficier de lʼAPA 1, tandis que les personnes
-                                            handicapées peuvent solliciter la PCH 2. Lʼaide sociale peut également
-                                            intervenir pour les personnes les plus démunies. Des compléments santé et des
-                                            avantages fiscaux sont aussi possibles. Ces aides viennent en déduction du
-                                            montant total. <br>
-                                            Nous vous aidons gratuitement à étudier les possibilités de financement, et à
-                                            établir les dossiers de prise en charge (CARSAT 3 , CAF 4 , CPAM 5, MSA 6,
-                                            Mutuelles,...) en mettant à votre disposition les coordonnées du CLIC 7 de
-                                            référence qui vous orientera. <br>
-                                            Vous pouvez bénéficier dʼun crédit dʼimpôt <b>immédiatement déduit du montant
-                                                dû</b> si
-                                            vous engagez des dépenses avec Agapé, et ce <b>quelle</b> que soit votre
-                                            situation
-                                            professionnelle (en activité, sans activité, retraité), selon les conditions
-                                            requises. Vous ne réglez que 50 % des sommes à payer (salaires et charges
-                                            sociales), retenues dans la limite dʼun plafond annuel qui dépend de votre
-                                            situation et qui peut être éventuellement majoré dans certains cas. <br>
-                                            Depuis 2022, il vous est possible dʼactiver lʼavance immédiate des aides
-                                            fiscales et sociales au titre des services à la personne, même pour financer
-                                            leur service hors PCH et APA.
+                                            En mode mandataire, vous êtes l'employeur direct de votre auxiliaire de vie.
+                                            AGAPÉ vous accompagne dans toutes les démarches administratives et de gestion :
+                                            aide au recrutement, élaboration du contrat de travail, gestion des salaires et
+                                            des déclarations Urssaf. Ce mode vous offre plus de flexibilité et un lien
+                                            direct avec votre intervenant, tout en bénéficiant de notre expertise et de
+                                            notre soutien.
                                         </div>
                                     </div>
                                 </div>
@@ -433,22 +423,137 @@
                                         <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
                                             aria-controls="collapseTwo">
-                                            Comment intervenons nous ?
+                                            2. Que font les aides à domicile ? Quels services peuvent-elles offrir ?
                                         </button>
                                     </h2>
                                     <div id="collapseTwo" class="accordion-collapse collapse"
                                         aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            Un contrat de mandat vous lie à <b>Agapé</b>. Vous <b>nous sollicitez</b> pour
-                                            sélectionner et
-                                            <b>recruter votre intervenant·e</b> à domicile, ainsi que pour gérer les
-                                            formalités
-                                            administratives (<b>contrat, bulletin de paie, déclarations sociales et
-                                                patronales</b> auprès des organismes dédiés).<br>
-                                            <b>Vous, accompagné·e par notre équipe, endossez</b> la totalité des tâches et
-                                            responsabilités liées à votre statut. <b>Vous êtes lʼunique employeur direct</b>
-                                            de
-                                            votre intervenant·e, qui travaille sous votre autorité.
+                                            Les aides à domicile sont là pour vous accompagner dans votre quotidien et vous
+                                            aider à maintenir votre autonomie. Leurs missions peuvent être très variées et
+                                            sont toujours personnalisées selon vos besoins. Elles peuvent inclure :
+                                            <ul>
+                                                <li style="list-style: circle;color:#000">
+                                                    Aide à la personne : aide à la toilette, à l'habillage, à la mobilité
+                                                    (lever, coucher, transferts), aide à la prise de repas.
+                                                </li>
+                                                <li style="list-style: circle;color:#000">
+                                                    Entretien du cadre de vie : ménage courant, repassage, entretien du
+                                                    linge.
+                                                </li>
+                                                <li style="list-style: circle;color:#000">
+                                                    Préparation des repas : élaboration de menus équilibrés, préparation des
+                                                    repas et aide à la prise.
+                                                </li>
+                                                <li style="list-style: circle;color:#000">
+                                                    Accompagnement extérieur : courses, rendez-vous médicaux, promenades,
+                                                    activités sociales.
+                                                </li>
+                                                <li style="list-style: circle;color:#000">
+                                                    Soutien moral et social : présence attentive, conversation, lutte contre
+                                                    l'isolement.
+                                                </li>
+                                                <li style="list-style: circle;color:#000">
+                                                    Aide administrative : classement de documents, aide aux démarches
+                                                    simples.
+                                                </li>
+                                            </ul>
+                                            Chaque plan d'aide est unique et défini avec vous.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            3. Quels sont les délais pour mettre en place une aide à domicile ?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Nous nous efforçons d'être les plus réactifs possible. Une fois que nous avons bien compris vos besoins, la mise en place d'une aide à domicile peut généralement se faire dans un délai de quelques jours à une semaine. Ce délai dépendra de la disponibilité de l'intervenant idéal correspondant à votre profil et de la rapidité des démarches administratives (signature de contrat, etc.). Pour les situations urgentes, nous mettons tout en œuvre pour accélérer le processus.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            4. Est-il possible de changer d'auxiliaire de vie en cours de prestation ?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Oui, absolument. Votre confort et votre satisfaction sont nos priorités. Si, pour quelque raison que ce soit, le courant ne passe pas avec l'auxiliaire de vie choisi ou si vos besoins évoluent, il est tout à fait possible de demander un changement. Nous sommes là pour vous aider à trouver une nouvelle personne qui correspondra mieux à vos attentes et à votre personnalité. C'est l'un des avantages de notre approche personnalisée.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            5. Comment la continuité des services est-elle assurée (vacances, maladie) ?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            En mode mandataire, puisque vous êtes l'employeur, nous vous aidons à anticiper les absences (vacances, maladie) de votre auxiliaire. Nous pouvons vous accompagner dans la recherche d'un remplaçant temporaire si votre intervenant habituel est absent, afin d'assurer une continuité des services. Nous vous conseillons sur les meilleures pratiques pour gérer ces situations.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            6. Puis-je bénéficier d'aides financières pour l'aide à domicile ?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Oui, tout à fait ! Plusieurs dispositifs existent pour vous aider à financer les services d'aide à domicile. Les principaux sont:
+                                            <ul>
+                                                <li style="list-style: circle;color:#000">
+                                                    L'Allocation Personnalisée d'Autonomie (APA) pour les personnes âgées en perte d'autonomie.
+                                                </li>
+                                                <li style="list-style: circle;color:#000">
+                                                    La Prestation de Compensation du Handicap (PCH) pour les personnes en situation de handicap.
+                                                </li>
+                                                <li style="list-style: circle;color:#000">
+                                                    La réduction ou le crédit d'impôt de 50%.
+                                                </li>
+                                                <li style="list-style: circle;color:#000">
+                                                    Le service Avance Immédiate de l'Urssaf qui vous permet de déduire votre crédit d'impôt en temps réel.
+                                                </li>
+                                                <li style="list-style: circle;color:#000">
+                                                    Certaines mutuelles, assurances ou caisses de retraite peuvent aussi proposer des prises en charge.
+                                                </li>
+                                            </ul>
+                                            Nous pouvons vous conseiller et vous orienter vers les organismes adaptés à votre situation.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            7. Comment la qualité des intervenants est-elle garantie en mode mandataire ?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Bien que vous soyez l'employeur, AGAPÉ vous aide à recruter des intervenants qualifiés et expérimentés. Nous vous accompagnons dans la vérification de leurs compétences, de leurs références, et vous proposons des profils qui correspondent à vos besoins et à nos valeurs de bienveillance et de professionnalisme. Nous mettons à votre disposition des outils et des conseils pour vous aider à faire le meilleur choix.
+                                            <br>
+                                            Vous avez d'autres questions ? N'hésitez pas à nous contacter directement. Nous sommes là pour vous accompagner !
                                         </div>
                                     </div>
                                 </div>

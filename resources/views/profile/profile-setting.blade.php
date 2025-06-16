@@ -67,7 +67,7 @@
                                                 <div class="form-group ">
                                                     <div class="row row-sm">
                                                         <div class="col-md-2">
-                                                            <label class="form-label text-white">Image</label>
+                                                            <label class="form-label text-white">Photo de profil</label>
                                                         </div>
                                                         <div class="col-md-10">
 
