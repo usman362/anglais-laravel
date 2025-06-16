@@ -59,7 +59,24 @@
 
                             </p>
 
-                            <h4 class="title">3. Propriété intellectuelle</h4>
+                            <h4 class="title">3. Développement du site</h4>
+                            <p class="disc">
+                                Le site a été conçu et développé par Digital Web Creation, société spécialisée dans la création de solutions digitales
+                                <br>
+                                sur mesure :
+                                <br>
+                                Digital Web Creation – SARL au capital de 1 000 €
+                                <br>
+                                17 rue Océane, 44800 Saint-Herblain
+                                <br>
+                                SIREN : 943 587 527 – TVA intracommunautaire : FR50943587527
+                                <br>
+                                Site : digital-webcreation.fr
+                                <br>
+                                Contact : serviceclient@digital-webcreation.fr
+                            </p>
+
+                            <h4 class="title">4. Propriété intellectuelle</h4>
                             <p class="disc">
                                 Lʼensemble des contenus présents sur ce site (textes, images, graphismes, logo, icônes,
                                 etc.) est la propriété exclusive dʼAgapé, sauf mention contraire. <br>
@@ -67,14 +84,14 @@
                                 même partielle, de ces éléments est strictement interdite sans l'accord écrit d'Agapé.
                             </p>
 
-                            <h4 class="title">4. Responsabilité</h4>
+                            <h4 class="title">5. Responsabilité</h4>
                             <p class="disc">
                                 Agapé met tout en œuvre pour fournir des informations précises et à jour sur son site.
                                 Toutefois, elle ne saurait être tenue responsable des erreurs ou omissions, ni de
                                 lʼutilisation ou de lʼinterprétation de ces informations.
                             </p>
 
-                            <h4 class="title">5. Données personnelles</h4>
+                            <h4 class="title">6. Données personnelles</h4>
                             <p class="disc">
                                 Les données personnelles collectées via le site sont destinées exclusivement à Agapé et sont
                                 traitées conformément au Règlement Général sur la Protection des Données (RGPD). <br>
@@ -82,7 +99,7 @@
                                 vous pouvez nous contacter à contact@agape- nantes.fr.
                             </p>
 
-                            <h4 class="title">6. Crédit dʼimpôt & financement</h4>
+                            <h4 class="title">7. Crédit dʼimpôt & financement</h4>
                             <p class="disc">
                                 Conformément à l'arrêté du 17 mars 2015, les consommateurs sont informés que les prestations
                                 proposées par Agapé sont éligibles au crédit dʼimpôt pour lʼemploi dʼun salarié à domicile
