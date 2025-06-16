@@ -71,6 +71,9 @@
                 processing: true,
                 serverSide: true,
                 ajax: "{{ route('blogs.index') }}",
+                language: {
+                    url: 'https://cdn.datatables.net/plug-ins/1.13.7/i18n/fr-FR.json'
+                },
                 columns: [
                     { data: 'image', name: 'image' },
                     { data: 'title', name: 'title' },
