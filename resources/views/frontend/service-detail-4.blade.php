@@ -53,7 +53,7 @@
                             de la personne.
                         </p>
 
-                        <h4 class="title">Mise en place dʼactivités stimulantes</h4>
+                        <h4 class="title pink-text"><img src="{{asset('frontend/assets/images/icon/32.png')}}" width="54" alt=""> Mise en place dʼactivités stimulantes</h4>
                         <p class="disc">
                             Pour entretenir la mémoire, la concentration, la motricité ou simplement le plaisir de faire,
                             nos équipes proposent des activités personnalisées et adaptées :
@@ -67,7 +67,7 @@
                         passions de chacun.
                         </p>
 
-                        <h4 class="title">Dame de compagnie</h4>
+                        <h4 class="title pink-text"><img src="{{asset('frontend/assets/images/icon/24.png')}}" width="54" alt=""> Dame de compagnie</h4>
                         <p class="disc">
                             La présence dʼune dame de compagnie est précieuse pour les personnes seules ou en perte
                             dʼautonomie. Elle peut :

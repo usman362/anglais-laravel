@@ -6,10 +6,10 @@
         <div class="rts-breadcrumb-area" style="background-color: #0000007d">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 breadcrumb-1">
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 breadcrumb-1">
                         <h1 class="title">Accompagnement de fin de vie</h1>
                     </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                         <div class="bread-tag">
                             <a href="{{ route('home') }}">Accueil</a>
                             <span> / </span>
@@ -29,6 +29,7 @@
                 <div class="col-md-12 col-sm-12 col-12">
                     <!-- service details left area start -->
                     <div class="service-detials-step-1">
+                        <h1 class="title pink-text" style="font-size: 40px"><img src="{{asset('frontend/assets/images/icon/29.png')}}" width="50" alt=""> Accompagnement de fin de vie</h1>
                         <p class="disc">
                             Chez Agapé, nous considérons que chaque fin de vie mérite dʼêtre vécue avec dignité, sérénité et
                             humanité. Lʼaccompagnement que nous proposons sʼinscrit dans une approche profondément humaine,
