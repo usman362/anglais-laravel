@@ -6,10 +6,10 @@
         <div class="rts-breadcrumb-area" style="background-color: #0000007d">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 breadcrumb-1">
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 breadcrumb-1">
                     <h1 class="title">Appui administratif personnalisé</h1>
                 </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                     <div class="bread-tag">
                         <a href="{{ route('home') }}">Accueil</a>
                         <span> / </span>
@@ -33,7 +33,7 @@
                             Gérer ses papiers, comprendre des démarches ou rédiger un courrier peut devenir un véritable casse-tête, surtout face à des procédures de plus en plus dématérialisées. Chez Agapé, nous savons que lʼautonomie passe aussi par la maîtrise de lʼadministratif. Cʼest pourquoi nous proposons un accompagnement humain, patient et adapté à chaque situation.
                         </p>
 
-                        <h4 class="title">Mise en place dʼactivités stimulantes</h4>
+                        <h4 class="title pink-text"><img src="{{asset('frontend/assets/images/icon/27.png')}}" width="54" alt=""> Aide aux démarches administratives</h4>
                         <p class="disc">
                             Nous assistons les bénéficiaires dans une grande variété de démarches, notamment :
                         <ul>
@@ -45,7 +45,7 @@
                         Nos intervenants prennent le temps dʼexpliquer chaque étape, de rassurer et de guider, dans le respect des choix et de la confidentialité.
                         </p>
 
-                        <h4 class="title">Rédaction de courriers et courriels</h4>
+                        <h4 class="title pink-text"><img src="{{asset('frontend/assets/images/icon/28.png')}}" width="54" alt=""> Rédaction de courriers et courriels</h4>
                         <p class="disc">
                             Nous proposons également une aide à la rédaction de lettres, courriels ou formulaires, quʼil sʼagisse :
                         <ul>

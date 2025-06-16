@@ -6,10 +6,10 @@
         <div class="rts-breadcrumb-area" style="background-color: #0000007d">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 breadcrumb-1">
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 breadcrumb-1">
                     <h1 class="title">Entretien du cadre de vie</h1>
                 </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                     <div class="bread-tag">
                         <a href="{{ route('home') }}">Accueil</a>
                         <span> / </span>
@@ -36,7 +36,7 @@
                             de fragilité.
                         </p>
 
-                        <h4 class="title">Ménage et entretien du cadre de vie</h4>
+                        <h4 class="title pink-text"><img src="{{asset('frontend/assets/images/icon/25.png')}}" width="54" alt=""> Ménage et entretien du cadre de vie</h4>
                         <p class="disc">
                             Nos aides à domicile assurent lʼentretien régulier du logement selon les besoins et les attentes
                             du bénéficiaire. Cela comprend :
@@ -50,7 +50,7 @@
                         avec des produits adaptés à son environnement.
                         </p>
 
-                        <h4 class="title">Courses et approvisionnement</h4>
+                        <h4 class="title pink-text"><img src="{{asset('frontend/assets/images/icon/23.png')}}" width="54" alt=""> Courses et approvisionnement</h4>
                         <p class="disc">
                             Les courses peuvent représenter une vraie contrainte, notamment pour les personnes âgées ou à
                             mobilité réduite. Nos intervenants peuvent :
@@ -63,7 +63,7 @@
                         toujours pris en compte.
                         </p>
 
-                        <h4 class="title">Aide à la préparation des repas</h4>
+                        <h4 class="title pink-text"><img src="{{asset('frontend/assets/images/icon/25.png')}}" width="54" alt=""> Aide à la préparation des repas</h4>
                         <p class="disc">
                             Cuisiner devient parfois difficile, voire impossible. Nos équipes accompagnent les bénéficiaires
                             dans la préparation de repas équilibrés, savoureux et adaptés à leur état de santé. Selon les
@@ -71,7 +71,7 @@
                             conserver les habitudes alimentaires et les traditions culinaires de chacun.
                         </p>
 
-                        <h4 class="title">Aide à la prise des repas</h4>
+                        <h4 class="title pink-text"><img src="{{asset('frontend/assets/images/icon/22.png')}}" width="54" alt=""> Aide à la prise des repas</h4>
                         <p class="disc">
                             Lorsque la personne a besoin dʼaide pour sʼinstaller à table, découper les aliments ou manger,
                             nos intervenants sont présents pour lʼaccompagner en douceur, sans la brusquer ni la rendre
@@ -79,7 +79,7 @@
                             lutter contre lʼisolement.
                         </p>
 
-                        <h4 class="title">Prise de médicaments selon ordonnance</h4>
+                        <h4 class="title pink-text"><img src="{{asset('frontend/assets/images/icon/26.png')}}" width="54" alt=""> Prise de médicaments selon ordonnance</h4>
                         <p class="disc">
                             La bonne observance dʼun traitement médical est cruciale pour la santé. Nos auxiliaires de vie
                             sʼassurent que les médicaments sont pris aux bons moments, dans le respect strict des
