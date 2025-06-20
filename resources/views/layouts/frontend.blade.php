@@ -69,7 +69,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-4">
                         <div class="thumbnail">
                             <a href="{{ route('home') }}" aria-label="Go to Home">
-                                <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}" alt="">
+                                <img src="{{ asset('frontend/assets/images/logo/agape-gif.gif') }}" alt="">
                             </a>
                         </div>
                     </div>
@@ -241,7 +241,7 @@
             <div class="row">
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12">
                     <div class="footer-two-single-wized left pt--50">
-                        <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}" alt="">
+                        <img src="{{ asset('frontend/assets/images/logo/agape-gif.gif') }}" alt="">
                     </div>
                 </div>
                 <!-- footer mid area -->
