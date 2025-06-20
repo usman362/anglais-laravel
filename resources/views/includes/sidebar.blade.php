@@ -4,13 +4,13 @@
         <div class="main-sidebar-header main-container-1">
             <div class="sidemenu-logo">
                 <a class="main-logo" href="{{route('home')}}">
-                    <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}" class="header-brand-img desktop-logo-dark"
+                    <img src="{{ asset('frontend/assets/images/logo/agape-gif.gif') }}" class="header-brand-img desktop-logo-dark"
                         alt="logo">
-                    <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}" class="header-brand-img icon-logo-dark"
+                    <img src="{{ asset('frontend/assets/images/logo/agape-gif.gif') }}" class="header-brand-img icon-logo-dark"
                         alt="logo">
-                    <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}" class="header-brand-img desktop-logo"
+                    <img src="{{ asset('frontend/assets/images/logo/agape-gif.gif') }}" class="header-brand-img desktop-logo"
                         alt="logo">
-                    <img src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}" class="header-brand-img icon-logo"
+                    <img src="{{ asset('frontend/assets/images/logo/agape-gif.gif') }}" class="header-brand-img icon-logo"
                         alt="logo">
                 </a>
             </div>
