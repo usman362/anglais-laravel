@@ -6,15 +6,8 @@
         <div class="rts-breadcrumb-area" style="background-color: #0000007d">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 breadcrumb-1">
+                    <div class="col-sm-12 col-12 breadcrumb-1">
                         <h1 class="title">Accompagnement de fin de vie</h1>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-                        <div class="bread-tag">
-                            <a href="{{ route('home') }}">Accueil</a>
-                            <span> / </span>
-                            <a href="#" class="active">Accompagnement de fin de vie</a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -31,9 +24,7 @@
                     <div class="service-detials-step-1">
                         <h1 class="title pink-text" style="font-size: 40px"><img src="{{asset('frontend/assets/images/icon/29.png')}}" width="50" alt=""> Accompagnement de fin de vie</h1>
                         <p class="disc">
-                            Chez Agapé, nous considérons que chaque fin de vie mérite dʼêtre vécue avec dignité, sérénité et
-                            humanité. Lʼaccompagnement que nous proposons sʼinscrit dans une approche profondément humaine,
-                            attentive et respectueuse des volontés de la personne en fin de vie, ainsi que de sa famille.
+                            Chaque fin de vie mérite dʼêtre vécue avec dignité et sérénité. Lʼaccompagnement que nous proposons sʼinscrit dans une approche profondément humaine, attentive et respectueuse des volontés de la personne en fin de vie, ainsi que de sa famille.
                         </p>
                         <p class="disc">
                             Nos intervenants offrent une présence rassurante et bienveillante, un soutien émotionnel
@@ -49,16 +40,14 @@
                         <p class="disc">
                             Cet accompagnement peut inclure :
                         <ul>
-                            <li>Une présence régulière ou ponctuelle auprès du bénéficiaire Des temps dʼéchange, de lecture,
-                                ou</li>
-                            <li>de silence partagé</li>
+                            <li>Une présence régulière ou ponctuelle auprès du bénéficiaire</li>
+                            <li>Des temps dʼéchange, de lecture, ou de silence partagé</li>
                             <li>Le relais avec les professionnels de santé si nécessaire</li>
                             <li>Le respect absolu des volontés et du rythme de la personne</li>
                         </ul>
                         </p>
                         <p class="disc">
-                            Parce quʼaccompagner la fin de vie, cʼest aussi honorer la vie elle- même, Agapé sʼengage à être
-                            un soutien solide et respectueux, dans les moments les plus sensibles.
+                            Parce qu’accompagner la fin de vie, cʼest aussi honorer la vie elle- même, agapé sʼengage à être un soutien solide et respectueux, dans les moments les plus sensibles.
                         </p>
                     </div>
                 </div>
@@ -72,7 +61,7 @@
     <div class="rts-service-area pb--200 notranslate">
         <div class="container">
             <div class="row g-5 service padding-controler">
-                <h4 class="title">Autre Sevices</h4>
+                <h4 class="title">Autres Services</h4>
                 <!-- single service area -->
                 <div class="col-md-3 col-sm-12 col-12 pb--140 pb_md--100">
                     <div class="service-two-inner">
