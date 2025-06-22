@@ -77,10 +77,10 @@
                         <div class="main-header">
                             <nav class="nav-main mainmenu-nav d-none d-xl-block">
                                 <ul class="mainmenu">
-                                    <li class="#">
+                                    <li class="#" style="list-style: none">
                                         <a href="{{ route('home') }}">Accueil</a>
                                     </li>
-                                    <li class="#">
+                                    <li class="#" style="list-style: none">
                                         <a href="{{ route('services') }}">Nos prestations</a>
                                     </li>
                                     {{-- <li><a href="{{ route('who_we_are') }}">Qui sommes-nous</a></li>
@@ -93,7 +93,7 @@
                                     {{-- <li class="#">
                                         <a href="{{ route('career') }}">Nous recrutons</a>
                                     </li> --}}
-                                    <li class="#">
+                                    <li class="#" style="list-style: none">
                                         <a href="{{ route('contact_us') }}">Contactez-nous</a>
                                     </li>
                                     {{-- <li class="has-droupdown">
@@ -154,7 +154,7 @@
                         <!-- single -->
                         <div class="single">
                             <i class="fas fa-phone-alt"></i>
-                            <a href="#">+10000000000</a>
+                            <a href="#">06 71 67 31 68</a>
                         </div>
                         <!-- single ENd -->
                         <!-- single -->
@@ -181,10 +181,10 @@
             <div class="body-mobile d-block d-xl-none">
                 <nav class="nav-main mainmenu-nav">
                     <ul class="mainmenu">
-                        <li class="#">
+                        <li class="#" style="list-style: none">
                             <a href="{{ route('home') }}">Accueil</a>
                         </li>
-                        <li class="#">
+                        <li class="#" style="list-style: none">
                             <a href="{{ route('services') }}">Nos prestations</a>
                         </li>
                         {{--
@@ -198,7 +198,7 @@
                         {{-- <li class="#">
                             <a href="{{ route('career') }}">Nous recrutons</a>
                         </li> --}}
-                        <li class="#">
+                        <li class="#" style="list-style: none">
                             <a href="{{ route('contact_us') }}">Contactez-nous</a>
                         </li>
                         {{-- <li class="has-droupdown">
