@@ -6,15 +6,8 @@
         <div class="rts-breadcrumb-area" style="background-color: #0000007d">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 breadcrumb-1">
-                    <h1 class="title">Appui administratif personnalisé</h1>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-                    <div class="bread-tag">
-                        <a href="{{ route('home') }}">Accueil</a>
-                        <span> / </span>
-                        <a href="#" class="active">Appui administratif personnalisé</a>
-                    </div>
+                <div class="col-sm-12 col-12 breadcrumb-1">
+                    <h1 class="title">Aide administratif</h1>
                 </div>
             </div>
         </div>
@@ -30,7 +23,7 @@
                     <!-- service details left area start -->
                     <div class="service-detials-step-1">
                         <p class="disc">
-                            Gérer ses papiers, comprendre des démarches ou rédiger un courrier peut devenir un véritable casse-tête, surtout face à des procédures de plus en plus dématérialisées. Chez Agapé, nous savons que lʼautonomie passe aussi par la maîtrise de lʼadministratif. Cʼest pourquoi nous proposons un accompagnement humain, patient et adapté à chaque situation.
+                            Gérer ses papiers, comprendre des démarches ou rédiger un courrier peut devenir un véritable casse-tête, surtout face à des procédures de plus en plus dématérialisées. Lʼautonomie passeaussi par la maîtrise de lʼadministratif, cʼest pourquoi nous proposons un accompagnement humain, patient et adapté à chaque situation.
                         </p>
 
                         <h4 class="title pink-text"><img src="{{asset('frontend/assets/images/icon/27.png')}}" width="54" alt=""> Aide aux démarches administratives</h4>
@@ -73,7 +66,7 @@ un soutien concret à lʼautonomie et à la tranquillité dʼesprit, pour que ch
     <div class="rts-service-area pb--200 notranslate">
         <div class="container">
             <div class="row g-5 service padding-controler">
-                <h4 class="title">Autre Sevices</h4>
+                <h4 class="title">Autres Services</h4>
                 <!-- single service area -->
                 <div class="col-md-3 col-sm-12 col-12 pb--140 pb_md--100">
                     <div class="service-two-inner">

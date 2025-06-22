@@ -2,11 +2,11 @@
 @section('title', 'Accueil')
 @section('content')
 
-<style>
-    .value-box .title {
-    padding-bottom: 20px !important;
-}
-</style>
+    <style>
+        .value-box .title {
+            padding-bottom: 20px !important;
+        }
+    </style>
 
     <!-- banner blank space area -->
     <div class="rts-banner-area rts-banner-one">
@@ -78,7 +78,7 @@
                 <div class="col-md-6 col-sm-12 col-12">
                     <div class="about-image-v-inner">
                         <div class="image-area">
-                            <img class="img-1" src="{{ asset('frontend/assets/images/sommes-nous.jpeg') }}"
+                            <img class="img-1" src="{{ asset('frontend/assets/images/photo-auxiliaire.png') }}"
                                 alt="BUsiness_image">
                         </div>
                     </div>
@@ -122,12 +122,13 @@
                         <p class="disc">
                             Nous nous engageons à vous offrir un soutien chaleureux, personnalisé et respectueux, en mettant
                             toujours votre dignité au premier plan. Chez <span
-                            style="
+                                style="
                         font-weight: 1000;
                         font-style: italic;
                         font-family: cursive;
                         font-size: 18px;
-                    ">agapé</span>, chaque personne est unique. Notre mission
+                    ">agapé</span>,
+                            chaque personne est unique. Notre mission
                             est de vous permettre de vivre pleinement, chez vous, et en toute tranquillité.
                         </p>
                     </div>
@@ -163,7 +164,7 @@
                         <h5 class="title">La bienveillance AGAPÉ : une écoute attentive</h5>
                         <p class="description">
                             Avec votre collaboration et celle de nos intervenants, nous veillons à
-ce que votre accompagnement respecte toujours votre dignité et votre autonomie. Nous nous adaptons au plus juste à vos besoins pour vous proposer des prestations véritablement personnalisées.
+                            ce que votre accompagnement respecte toujours votre dignité et votre autonomie.
                         </p>
                     </div>
                 </div>
@@ -176,16 +177,17 @@ ce que votre accompagnement respecte toujours votre dignité et votre autonomie.
                         <img class="icon" src="{{ asset('frontend/assets/images/our_values/1.jpg') }}" alt="icon" />
                         <h5 class="title">La bien-traitance : un accompagnement sur mesure</h5>
                         <p class="description">
-                            Avec votre collaboration et celle de nos intervenants, nous veillons à
-ce que votre accompagnement respecte toujours votre dignité et votre autonomie. Nous nous adaptons au plus juste à vos besoins pour vous proposer des prestations véritablement personnalisées.
+                            Nous veillons à ce que votre accompagnement respecte toujours
+                            votre dignité et votre autonomie. Nous nous adaptons au plus
+                            juste à vos besoins pour vous proposer des prestations
+                            véritablement personnalisées.
                         </p>
                     </div>
                     <div class="value-box box-3">
                         <img class="icon" src="{{ asset('frontend/assets/images/our_values/4.jpg') }}" alt="icon" />
                         <h5 class="title">Le mieux-être : notre priorité</h5>
                         <p class="description">
-                            Maintenir votre bien-être physique, mental et social est au cœur de nos préoccupations. Nous vous aidons à trouver des services adaptés à vos besoins spécifiques pour que vous puissiez vous sentir bien
-                            chez vous.
+                            Maintenir votre bien-être physique, mental et social est au cœur de nos préoccupations. Nous vous aidons à trouver des services adaptés à vos besoins spécifiques pour que vous puissiez vous sentir.
                         </p>
                     </div>
                 </div>
@@ -213,9 +215,9 @@ ce que votre accompagnement respecte toujours votre dignité et votre autonomie.
                             alt="icon" />
                         <h5 class="title">L'humanité : le respect de chacun</h5>
                         <p class="description">
-                            L'humain est au centre de tout ce que nous faisons. Cela signifie créer un environnement de travail agréable et respectueux pour les
-intervenant(e)s que vous employez, tout en vous offrant un
-accompagnement chaleureux et bienveillant.
+                            L'humain est au centre de tout ce que nous faisons. Cela signifie créer un environnement de
+                            travail agréable et respectueux pour les intervenants, tout en vous offrant un accompagnement
+                            chaleureux et bienveillant.
                         </p>
                     </div>
                     <div class="value-box box-6">
@@ -223,7 +225,8 @@ accompagnement chaleureux et bienveillant.
                             alt="icon" />
                         <h5 class="title">L'autonomie : préserver votre liberté</h5>
                         <p class="description">
-                            Notre objectif est de vous aider à recruter des auxiliaires qui vous permettront de conserver un maximum d'autonomiedans votre vie quotidienne. Il s'agit de vous soutenir sans vous déposséder.
+                            Notre objectif est de vous aider à recruter des auxiliaires qui vous permettront de conserver un
+                            maximum d'autonomiedans votre vie quotidienne. Il s'agit de vous soutenir sans vous déposséder.
                         </p>
                     </div>
                 </div>
@@ -236,7 +239,8 @@ accompagnement chaleureux et bienveillant.
                             alt="icon" />
                         <h5 class="title">Le professionnalisme : des services de qualité</h5>
                         <p class="description">
-                            Nous vous aidons à trouver des intervenants qualifiés et formés, capables de vous offrir des prestations de haute qualité, parfaitement adaptées à vos besoins spécifiques.
+                            Nous vous proposons des intervenants qualifiés et formés, capables de
+                            vous offrir des prestations de haute qualité, parfaitement adaptées à vos besoins spécifiques.
                         </p>
                     </div>
                 </div>
@@ -302,7 +306,7 @@ accompagnement chaleureux et bienveillant.
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--100">
                     <div class="service-two-inner">
                         <a href="{{ route('service_details_4') }}"><img style="height: 276px;width: 415px;"
-                                src="{{ asset('frontend/assets/images/service-4.jpeg') }}" alt="Business_image"></a>
+                                src="{{ asset('frontend/assets/images/faq/faq-2.jpeg') }}" alt="Business_image"></a>
                         <div class="body-content w-100">
                             <div class="hidden-area">
                                 <h5 class="title">Interaction sociale</h5>
@@ -347,37 +351,24 @@ accompagnement chaleureux et bienveillant.
                 </div>
                 <div class="col-md-6 col-sm-12 col-12 mt_md--50 mt_sm--50">
                     <div class="rts-title-area">
-                        <h2 class="title">Ce qui fait notre différence</h2>
+                        <h2 class="title">Ce qui nous distingue</h2>
                     </div>
                     <div class="about-inner">
-                        <h5>Reconnaissance et revalorisation dʼun métier en tension</h5>
                         <p class="disc">
-                            Chez nous, chaque parcours compte. Nous offrons des formations pour grandir ensemble, tout en
-                            reconnaissant lʼimportance précieuse de l'expérience acquise.
-                        </p>
-
-                        <h5>Partenariats</h5>
-                        <p class="disc">
-                            Comme des maillons dʼune même chaîne, nous unissons nos forces avec lʼassociation Projet
-                            Solidaire dans la Cité, Green Act et Julie Viau, pour tisser un réseau d'entraide et
-                            d'accompagnement chaleureux.
-                        </p>
-
-                        <h5>Vision holistique</h5>
-                        <p class="disc">
-                            Conscients que la qualité de nos services repose sur le bien-être de nos équipes, nous avons mis
-                            en place un programme de fidélisation complet. Celui- ci comprend des séances de sophrologie et
-                            de socio-esthétique pour favoriser la détente et lʼestime de soi, des groupes de parole pour un
-                            soutien psychologique et des avantages pour reconnaître leur engagement.
-                        </p>
-
-
-                        <h5>Offre personnalisée</h5>
-                        <p class="disc">
-                            Parce que nous sommes tous différents, nous proposons aux bénéficiaires de nos prestations une
-                            offre singulière en coordination avec tout les professionnels intervenant à domicile.
-                            <br>
-                            Unique <br> Individuelle <br> Personnalisée
+                            Une expertise reconnue : Nos intervenants sont le cœur de notre service. Chacune et chacun
+                            possède une expérience minimale de 3 ans auprès de personnes âgées, en perte d'autonomie ou en
+                            situation de handicap, garantissant un accompagnement professionnel et bienveillant. <br><br>
+                            Savoir-faire et savoir-être au service de l'humain : Nous avons spécifiquement adapté leurs
+                            compétences et leur savoir-être aux outils de l'éducation populaire. Cette approche unique nous
+                            permet d'assurer un service optimal, axé sur le maintien de l'autonomie et le bien-être global
+                            de la personne accompagnée. <br><br>
+                            Stabilité et confiance : Nous nous engageons à ce que les mêmes personnes accompagnent vos
+                            proches. Cette continuité est essentielle pour établir une relation de confiance durable et un
+                            accompagnement personnalisé qui répond au plus près des besoins de chacun. <br><br>
+                            Collaboration pour un suivi complet : Nos intervenants travaillent en collaboration étroite avec
+                            tous les professionnels à domicile (médecins, infirmiers, kinésithérapeutes, etc.) ainsi qu'avec
+                            la famille. Cette approche coordonnée garantit un suivi et une prise en charge globale de la
+                            personne, assurant une sérénité pour tous.
                         </p>
                     </div>
                 </div>
@@ -484,7 +475,13 @@ accompagnement chaleureux et bienveillant.
                                     <div id="collapseTwo" class="accordion-collapse collapse"
                                         aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            Nous nous efforçons d'être les plus réactifs possible. Une fois que nous avons bien compris vos besoins, la mise en place d'une aide à domicile peut généralement se faire dans un délai de quelques jours à une semaine. Ce délai dépendra de la disponibilité de l'intervenant idéal correspondant à votre profil et de la rapidité des démarches administratives (signature de contrat, etc.). Pour les situations urgentes, nous mettons tout en œuvre pour accélérer le processus.
+                                            Nous nous efforçons d'être les plus réactifs possible. Une fois que nous avons
+                                            bien compris vos besoins, la mise en place d'une aide à domicile peut
+                                            généralement se faire dans un délai de quelques jours à une semaine. Ce délai
+                                            dépendra de la disponibilité de l'intervenant idéal correspondant à votre profil
+                                            et de la rapidité des démarches administratives (signature de contrat, etc.).
+                                            Pour les situations urgentes, nous mettons tout en œuvre pour accélérer le
+                                            processus.
                                         </div>
                                     </div>
                                 </div>
@@ -499,7 +496,12 @@ accompagnement chaleureux et bienveillant.
                                     <div id="collapseTwo" class="accordion-collapse collapse"
                                         aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            Oui, absolument. Votre confort et votre satisfaction sont nos priorités. Si, pour quelque raison que ce soit, le courant ne passe pas avec l'auxiliaire de vie choisi ou si vos besoins évoluent, il est tout à fait possible de demander un changement. Nous sommes là pour vous aider à trouver une nouvelle personne qui correspondra mieux à vos attentes et à votre personnalité. C'est l'un des avantages de notre approche personnalisée.
+                                            Oui, absolument. Votre confort et votre satisfaction sont nos priorités. Si,
+                                            pour quelque raison que ce soit, le courant ne passe pas avec l'auxiliaire de
+                                            vie choisi ou si vos besoins évoluent, il est tout à fait possible de demander
+                                            un changement. Nous sommes là pour vous aider à trouver une nouvelle personne
+                                            qui correspondra mieux à vos attentes et à votre personnalité. C'est l'un des
+                                            avantages de notre approche personnalisée.
                                         </div>
                                     </div>
                                 </div>
@@ -514,7 +516,11 @@ accompagnement chaleureux et bienveillant.
                                     <div id="collapseTwo" class="accordion-collapse collapse"
                                         aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            En mode mandataire, puisque vous êtes l'employeur, nous vous aidons à anticiper les absences (vacances, maladie) de votre auxiliaire. Nous pouvons vous accompagner dans la recherche d'un remplaçant temporaire si votre intervenant habituel est absent, afin d'assurer une continuité des services. Nous vous conseillons sur les meilleures pratiques pour gérer ces situations.
+                                            En mode mandataire, puisque vous êtes l'employeur, nous vous aidons à anticiper
+                                            les absences (vacances, maladie) de votre auxiliaire. Nous pouvons vous
+                                            accompagner dans la recherche d'un remplaçant temporaire si votre intervenant
+                                            habituel est absent, afin d'assurer une continuité des services. Nous vous
+                                            conseillons sur les meilleures pratiques pour gérer ces situations.
                                         </div>
                                     </div>
                                 </div>
@@ -529,25 +535,31 @@ accompagnement chaleureux et bienveillant.
                                     <div id="collapseTwo" class="accordion-collapse collapse"
                                         aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            Oui, tout à fait ! Plusieurs dispositifs existent pour vous aider à financer les services d'aide à domicile. Les principaux sont:
+                                            Oui, tout à fait ! Plusieurs dispositifs existent pour vous aider à financer les
+                                            services d'aide à domicile. Les principaux sont:
                                             <ul>
                                                 <li style="list-style: circle;color:#000">
-                                                    L'Allocation Personnalisée d'Autonomie (APA) pour les personnes âgées en perte d'autonomie.
+                                                    L'Allocation Personnalisée d'Autonomie (APA) pour les personnes âgées en
+                                                    perte d'autonomie.
                                                 </li>
                                                 <li style="list-style: circle;color:#000">
-                                                    La Prestation de Compensation du Handicap (PCH) pour les personnes en situation de handicap.
+                                                    La Prestation de Compensation du Handicap (PCH) pour les personnes en
+                                                    situation de handicap.
                                                 </li>
                                                 <li style="list-style: circle;color:#000">
                                                     La réduction ou le crédit d'impôt de 50%.
                                                 </li>
                                                 <li style="list-style: circle;color:#000">
-                                                    Le service Avance Immédiate de l'Urssaf qui vous permet de déduire votre crédit d'impôt en temps réel.
+                                                    Le service Avance Immédiate de l'Urssaf qui vous permet de déduire votre
+                                                    crédit d'impôt en temps réel.
                                                 </li>
                                                 <li style="list-style: circle;color:#000">
-                                                    Certaines mutuelles, assurances ou caisses de retraite peuvent aussi proposer des prises en charge.
+                                                    Certaines mutuelles, assurances ou caisses de retraite peuvent aussi
+                                                    proposer des prises en charge.
                                                 </li>
                                             </ul>
-                                            Nous pouvons vous conseiller et vous orienter vers les organismes adaptés à votre situation.
+                                            Nous pouvons vous conseiller et vous orienter vers les organismes adaptés à
+                                            votre situation.
                                         </div>
                                     </div>
                                 </div>
@@ -562,9 +574,15 @@ accompagnement chaleureux et bienveillant.
                                     <div id="collapseTwo" class="accordion-collapse collapse"
                                         aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            Bien que vous soyez l'employeur, AGAPÉ vous aide à recruter des intervenants qualifiés et expérimentés. Nous vous accompagnons dans la vérification de leurs compétences, de leurs références, et vous proposons des profils qui correspondent à vos besoins et à nos valeurs de bienveillance et de professionnalisme. Nous mettons à votre disposition des outils et des conseils pour vous aider à faire le meilleur choix.
+                                            Bien que vous soyez l'employeur, AGAPÉ vous aide à recruter des intervenants
+                                            qualifiés et expérimentés. Nous vous accompagnons dans la vérification de leurs
+                                            compétences, de leurs références, et vous proposons des profils qui
+                                            correspondent à vos besoins et à nos valeurs de bienveillance et de
+                                            professionnalisme. Nous mettons à votre disposition des outils et des conseils
+                                            pour vous aider à faire le meilleur choix.
                                             <br>
-                                            Vous avez d'autres questions ? N'hésitez pas à nous contacter directement. Nous sommes là pour vous accompagner !
+                                            Vous avez d'autres questions ? N'hésitez pas à nous contacter directement. Nous
+                                            sommes là pour vous accompagner !
                                         </div>
                                     </div>
                                 </div>

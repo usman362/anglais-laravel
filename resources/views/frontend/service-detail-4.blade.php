@@ -2,19 +2,12 @@
 @section('title', 'Interaction sociale')
 @section('content')
     <!-- start breadcrumb area -->
-    <div class="breadcrumb-bg bg_image notranslate" style="background-image: url({{asset('frontend/assets/images/service-4.jpeg')}});background-size: 100% 170%;background-position: top;">
+    <div class="breadcrumb-bg bg_image notranslate" style="background-image: url({{asset('frontend/assets/images/faq/faq-2.jpeg')}});background-size: 100% 170%;background-position: top;">
         <div class="rts-breadcrumb-area" style="background-color: #0000007d">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 breadcrumb-1">
-                    <h1 class="title">Interaction sociale</h1>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="bread-tag">
-                        <a href="{{ route('home') }}">Accueil</a>
-                        <span> / </span>
-                        <a href="#" class="active">Interaction sociale</a>
-                    </div>
+                <div class="col-sm-12 col-12 breadcrumb-1">
+                    <h1 class="title">Interaction sociale stimulante</h1>
                 </div>
                 </div>
             </div>
@@ -30,10 +23,7 @@
                     <!-- service details left area start -->
                     <div class="service-detials-step-1">
                         <p class="disc">
-                            Chez Agapé, nous sommes convaincus que lʼaccompagnement ne se limite pas aux gestes techniques.
-                            Le lien humain, la communication et la
-                            stimulation sont essentiels pour maintenir une qualité de vie, une bonne santé mentale et un
-                            sentiment dʼutilité.
+                            agapé, est convaincu que lʼaccompagnement ne se limite pas aux gestes techniques. Le lien humain, la communication et la stimulation sont essentiels pour maintenir une qualité de vie, une bonne santé mentale et un sentiment dʼutilité.
                         </p>
 
                         <p class="disc">
@@ -82,9 +72,7 @@
                         </p>
 
                         <p class="disc">
-                            Chez Agapé, nous croyons que le bien-être passe aussi par le cœur. Cʼest pourquoi nous mettons
-                            un point dʼhonneur à préserver, voire renforcer, le lien social des personnes que nous
-                            accompagnons. Parce que chaque sourire, chaque mot échangé, est une victoire contre la solitude
+                            agapé, croit que le bien-être passe aussi par le cœur. Cʼest pourquoi nous mettons un point dʼhonneur à préserver, voire renforcer, le lien social des personnes que nous accompagnons. Parce que chaque sourire, chaque mot échangé, est une victoire contre la solitude.
                         </p>
 
                     </div>
@@ -98,7 +86,7 @@
     <div class="rts-service-area pb--200 notranslate">
         <div class="container">
             <div class="row g-5 service padding-controler">
-                <h4 class="title">Autre Sevices</h4>
+                <h4 class="title">Autres Services</h4>
                 <!-- single service area -->
                 <div class="col-md-3 col-sm-12 col-12 pb--140 pb_md--100">
                     <div class="service-two-inner">

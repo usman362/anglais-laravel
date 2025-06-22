@@ -6,15 +6,8 @@
         <div class="rts-breadcrumb-area" style="background-color: #0000007d">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 breadcrumb-1">
+                <div class="col-sm-12 col-12 breadcrumb-1">
                     <h1 class="title">Entretien du cadre de vie</h1>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-                    <div class="bread-tag">
-                        <a href="{{ route('home') }}">Accueil</a>
-                        <span> / </span>
-                        <a href="#" class="active">Entretien du cadre de vie</a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -30,10 +23,7 @@
                     <!-- service details left area start -->
                     <div class="service-detials-step-1">
                         <p class="disc">
-                            Vivre chez soi, dans un environnement propre, organisé et sécurisé, est fondamental pour le
-                            bien-être et lʼautonomie. Chez Agapé, nous proposons un accompagnement global, à la fois
-                            pratique et humain, pour permettre à chacun de vivre sereinement au quotidien, même en situation
-                            de fragilité.
+                           Vivre chez soi, dans un environnement propre, organisé et sécurisé, est fondamental pour le bien-être et lʼautonomie. agapé propose un accompagnement global, à la fois pratique et humain, pour permettre à chacun de vivre sereinement au quotidien, même en situation de fragilité.
                         </p>
 
                         <h4 class="title pink-text"><img src="{{asset('frontend/assets/images/icon/42.png')}}" width="40" alt=""> Ménage et entretien du cadre de vie</h4>
@@ -79,7 +69,7 @@
                             lutter contre lʼisolement.
                         </p>
 
-                        <h4 class="title pink-text"><img src="{{asset('frontend/assets/images/icon/26.png')}}" width="54" alt=""> Prise de médicaments selon ordonnance</h4>
+                        <h4 class="title pink-text"><img src="{{asset('frontend/assets/images/icon/26.png')}}" width="54" alt=""> Aide à la prise de médicament selon ordonnance</h4>
                         <p class="disc">
                             La bonne observance dʼun traitement médical est cruciale pour la santé. Nos auxiliaires de vie
                             sʼassurent que les médicaments sont pris aux bons moments, dans le respect strict des
@@ -97,7 +87,7 @@
     <div class="rts-service-area pb--200 notranslate">
         <div class="container">
             <div class="row g-5 service padding-controler">
-                <h4 class="title">Autre Sevices</h4>
+                <h4 class="title">Autres Services</h4>
                 <!-- single service area -->
                 <div class="col-md-3 col-sm-12 col-12 pb--140 pb_md--100">
                     <div class="service-two-inner">

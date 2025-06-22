@@ -6,15 +6,8 @@
         <div class="rts-breadcrumb-area" style="background-color: #0000007d">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 breadcrumb-1">
+                <div class="col-sm-12 col-12 breadcrumb-1">
                     <h1 class="title">Actes quotidiens de la vie</h1>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-                    <div class="bread-tag">
-                        <a href="{{ route('home') }}">Accueil</a>
-                        <span> / </span>
-                        <a href="#" class="active">Actes quotidiens de la vie</a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -30,7 +23,7 @@
                     <!-- service details left area start -->
                     <div class="service-detials-step-1">
                         <p class="disc">
-                            Au cœur de notre mission chez Agapé, lʼaccompagnement dans les gestes essentiels du quotidien est une priorité. Ces actes, souvent simples en apparence, peuvent devenir complexes et éprouvants pour les personnes âgées, dépendantes ou en situation de handicap. Notre objectif : leur permettre de vivre chez elles en toute sécurité, dans le respect de leur autonomie et de leur dignité.
+                            Au cœur de notre mission, lʼaccompagnement dans les gestes essentiels du quotidien est une priorité. Ces actes, souvent simples en apparence, peuvent devenir complexes et éprouvants pour les personnes âgées, dépendantes ou en situation de handicap. Notre objectif : leur permettre de vivre chez elles en toute sécurité, dans le respect de leur autonomie et de leur dignité.
                         </p>
 
                         <h4 class="title pink-text"><img src="{{asset('frontend/assets/images/icon/13.png')}}" width="54" alt=""> Aide au lever et au coucher</h4>
@@ -63,7 +56,7 @@
     <div class="rts-service-area pb--200 notranslate">
         <div class="container">
             <div class="row g-5 service padding-controler">
-                <h4 class="title">Autre Sevices</h4>
+                <h4 class="title">Autres Services</h4>
                 <!-- single service area -->
                 <div class="col-md-3 col-sm-12 col-12 pb--140 pb_md--100">
                     <div class="service-two-inner">
