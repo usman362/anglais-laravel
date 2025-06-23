@@ -29675,8 +29675,21 @@ a.rts-btn.btn-secondary-5:hover {
     padding: 10px 35px 35px 35px;
 }
 
-.rts-copyright-area a:hover{
+.rts-copyright-area a:hover {
     color: unset !important;
+}
+
+.tarif-section {
+    text-align: center;
+    background-color: #016144;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 0;
+    font-size: 22px;
+}
+
+.tarif-section a:hover{
+    color: #fff;
 }
 
 .pink-text {

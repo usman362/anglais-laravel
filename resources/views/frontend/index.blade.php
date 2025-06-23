@@ -759,7 +759,7 @@
                     </div>
                 </div>
             </div>
-            <a href="{{asset('frontend/assets/TARIF_AGAPEÌ_.pdf')}}" style="top: 36px;position: relative;" class="mt-4 rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn" target="_blank">Tarifs</a>
+            {{-- <a href="{{asset('frontend/assets/TARIF_AGAPEÌ_.pdf')}}" style="top: 36px;position: relative;" class="mt-4 rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn" target="_blank">Tarifs</a> --}}
         </div>
     </div>
 @endsection
