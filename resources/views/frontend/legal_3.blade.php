@@ -48,8 +48,8 @@
 
                             <h4 class="title">Droit de rétractation</h4>
                             <p class="disc">
-                                Conformément à lʼarticle L22118 du Code de la consommation, le client particulier dispose dʼun délai de 14 jours à compter de la signature du contrat pour exercer son droit de rétractation sans avoir à motiver sa décision ni à supporter dʼautres coûts que ceux prévus par la loi. <br>
-                                Cependant, conformément à lʼarticle L22125 du Code de la consommation, si le client souhaite que lʼexécution de la prestation commence avant la fin du délai de rétractation, il devra en faire la demande expresse par écrit (papier ou numérique). <br>
+                                Conformément à lʼarticle L221-18 du Code de la consommation, le client particulier dispose dʼun délai de 14 jours à compter de la signature du contrat pour exercer son droit de rétractation sans avoir à motiver sa décision ni à supporter dʼautres coûts que ceux prévus par la loi. <br>
+                                Cependant, conformément à lʼarticle L221-25 du Code de la consommation, si le client souhaite que lʼexécution de la prestation commence avant la fin du délai de rétractation, il devra en faire la demande expresse par écrit (papier ou numérique). <br>
                                 En cas dʼexercice du droit de rétractation après le début de lʼexécution de la prestation, les prestations effectivement réalisées seront dues au prorata du service fourni jusquʼà la date de réception de la demande de rétractation. Si la prestation a été entièrement réalisée, aucun remboursement ne pourra être exigé.
                             </p>
 

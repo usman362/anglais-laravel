@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ_-2.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ_-2.png') }}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/plugins/swiper.min.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/plugins/fontawesome-5.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/plugins/animate.min.css') }}">
@@ -140,11 +140,11 @@
         <!-- inner menu area desktop start -->
         <div class="rts-sidebar-menu-desktop">
             <a class="logo-1" href="{{ route('home') }}" aria-label="Go to Home"><img
-                    src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}" alt=""></a>
+                    src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}" alt=""></a>
             <a class="logo-2" href="{{ route('home') }}" aria-label="Go to Home"><img
-                    src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}" alt=""></a>
+                    src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}" alt=""></a>
             <a class="logo-3" href="{{ route('home') }}" aria-label="Go to Home"><img
-                    src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}" alt=""></a>
+                    src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}" alt=""></a>
             <div class="body d-none d-xl-block">
                 <p class="disc">
                     N’attendez pas d’être heureux pour sourire. Souriez plutôt afin d’être heureux
@@ -241,13 +241,7 @@
 
     <!-- start header area -->
 
-    <a href="{{asset('frontend/assets/TARIF_AGAPEÌ_.pdf')}}" target="_blank">
-        <div class="tarif-section">
-            {{-- <a href=""> --}}
-                Tarifs
-            {{-- </a> --}}
-        </div>
-    </a>
+  
     <!-- rts footer area start -->
     <div class="rts-footer-area footer-one rts-section-gapTop bg-footer-one">
         <div class="container bg-shape-f1">
@@ -296,7 +290,7 @@
                             des questions ?
                         </h3>
                         <p class="disc">
-                            <img style="width: 36px;" src="{{asset('frontend/assets/images/SMILEY-AGAPEÌ_-2.png')}}" alt=""> Un sourire est souvent l’essentiel.
+                            <img style="width: 36px;" src="{{asset('frontend/assets/images/SMILEY-AGAPEÌ_-2.png')}}" alt=""> Un sourire est souvent l’essentiel.
                         </p>
                     </div>
 
@@ -325,7 +319,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="text-center">
-                            <p class="mb-2">Copyright 2025 Tous droits réservés - <a href="https://digitalwebcreative.fr/" target="_blank">Développement Digital Web Creation</a></p>
+                            <p class="mb-2">Copyright 2025 Tous droits réservés - <a href="https://digital-webcreation.fr/" target="_blank">Développement Digital Web Creation</a></p>
                             <p>Philippien 4 : 13 Je puis tout par celui qui me fortifie</p>
                         </div>
                     </div>

@@ -34,7 +34,7 @@
                                     <h2 class="accordion-header" id="headingOne">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            <span>01. </span> Comment sont financées nos prestations ?
+                                            <span>01. </span> Que font les aides à domicile ? Quels services peuvent-elles offrir?
                                         </button>
                                     </h2>
                                     <div id="collapseOne" class="accordion-collapse collapse show"
