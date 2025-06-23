@@ -18826,8 +18826,8 @@ button.menu.rts-btn.btn-primary-3-menu:hover .menu-light {
 
 .banner-one .swiper-wrapper .swiper-slide {
     /* background-image: url(../images/banner/banner-01.jpg); */
-    background-image: url(../images/service-6.jpeg);
-    background-size: 100% 100%;
+    background-image: url('../images/banner/1.svg');
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
@@ -18846,12 +18846,12 @@ button.menu.rts-btn.btn-primary-3-menu:hover .menu-light {
 }
 
 .banner-one .swiper-wrapper .swiper-slide.two {
-    background-image: url(../images/service-4.jpeg);
+    background-image: url('../images/banner/2.svg');
     background-size: cover !important;
 }
 
 .banner-one .swiper-wrapper .swiper-slide.three {
-    background-image: url(../images/service-1.jpeg);
+    background-image: url('../images/banner/3.svg');
 }
 
 .offwrap {

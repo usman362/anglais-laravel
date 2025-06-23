@@ -241,13 +241,11 @@
 
     <!-- start header area -->
 
-    <a href="{{asset('frontend/assets/TARIF_AGAPEÌ_.pdf')}}" target="_blank">
+    {{-- <a href="{{asset('frontend/assets/TARIF_AGAPEÌ_.pdf')}}" target="_blank">
         <div class="tarif-section">
-            {{-- <a href=""> --}}
                 Tarifs
-            {{-- </a> --}}
         </div>
-    </a>
+    </a> --}}
     <!-- rts footer area start -->
     <div class="rts-footer-area footer-one rts-section-gapTop bg-footer-one">
         <div class="container bg-shape-f1">
