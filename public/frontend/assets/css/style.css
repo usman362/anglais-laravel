@@ -29670,13 +29670,25 @@ a.rts-btn.btn-secondary-5:hover {
 }
 
 .faq-two-inner .faq-accordion-area .accordion .accordion-body {
-    background: #fff37f;
+    background: #fff;
     border-radius: 0 0 5px 5px;
     padding: 10px 35px 35px 35px;
 }
 
-.pink-text{
+.rts-copyright-area a:hover{
+    color: unset !important;
+}
+
+.pink-text {
     color: #f287b6 !important;
+}
+
+.green-text {
+    color: #016144 !important;
+}
+
+.number-ul li {
+    list-style: decimal;
 }
 
 .thumbnail-faq-four {

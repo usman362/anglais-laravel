@@ -83,6 +83,9 @@
                                     <li class="#" style="list-style: none">
                                         <a href="{{ route('services') }}">Nos prestations</a>
                                     </li>
+                                    <li class="#" style="list-style: none">
+                                        <a href="{{ asset('frontend/assets/TARIF_AGAPEÌ_.pdf') }}" target="_blank">Tarifs</a>
+                                    </li>
                                     {{-- <li><a href="{{ route('who_we_are') }}">Qui sommes-nous</a></li>
                                     <li class="#">
                                         <a href="{{ route('our_values') }}">Nos valeurs</a>
@@ -186,6 +189,9 @@
                         </li>
                         <li class="#" style="list-style: none">
                             <a href="{{ route('services') }}">Nos prestations</a>
+                        </li>
+                        <li class="#" style="list-style: none">
+                            <a href="{{ asset('frontend/assets/TARIF_AGAPEÌ_.pdf') }}" target="_blank">Tarifs</a>
                         </li>
                         {{--
                         <li><a href="{{ route('who_we_are') }}">Qui sommes-nous</a></li>
@@ -311,7 +317,8 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="text-center">
-                            <p>Copyright 2025. Tous droits réservés.</p>
+                            <p class="mb-2">Copyright 2025 Tous droits réservés - <a href="https://digitalwebcreative.fr/" target="_blank">Développement Digital Web Creation</a></p>
+                            <p>Philippien 4 : 13 Je puis tout par celui qui me fortifie</p>
                         </div>
                     </div>
                 </div>

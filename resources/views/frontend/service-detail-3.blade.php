@@ -23,7 +23,13 @@
                     <!-- service details left area start -->
                     <div class="service-detials-step-1">
                         <p class="disc">
-                           Vivre chez soi, dans un environnement propre, organisé et sécurisé, est fondamental pour le bien-être et lʼautonomie. agapé propose un accompagnement global, à la fois pratique et humain, pour permettre à chacun de vivre sereinement au quotidien, même en situation de fragilité.
+                           Vivre chez soi, dans un environnement propre, organisé et sécurisé, est fondamental pour le bien-être et lʼautonomie. <span
+                                style="
+                            font-weight: 1000;
+                            font-style: italic;
+                            font-family: cursive;
+                            font-size: 18px;
+                        ">agapé</span> propose un accompagnement global, à la fois pratique et humain, pour permettre à chacun de vivre sereinement au quotidien, même en situation de fragilité.
                         </p>
 
                         <h4 class="title pink-text"><img src="{{asset('frontend/assets/images/icon/42.png')}}" width="40" alt=""> Ménage et entretien du cadre de vie</h4>

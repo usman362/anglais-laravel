@@ -23,7 +23,13 @@
                     <!-- service details left area start -->
                     <div class="service-detials-step-1">
                         <p class="disc">
-                            agapé, est convaincu que lʼaccompagnement ne se limite pas aux gestes techniques. Le lien humain, la communication et la stimulation sont essentiels pour maintenir une qualité de vie, une bonne santé mentale et un sentiment dʼutilité.
+                            <span
+                                style="
+                            font-weight: 1000;
+                            font-style: italic;
+                            font-family: cursive;
+                            font-size: 18px;
+                        ">agapé</span>, est convaincu que lʼaccompagnement ne se limite pas aux gestes techniques. Le lien humain, la communication et la stimulation sont essentiels pour maintenir une qualité de vie, une bonne santé mentale et un sentiment dʼutilité.
                         </p>
 
                         <p class="disc">
@@ -72,7 +78,13 @@
                         </p>
 
                         <p class="disc">
-                            agapé, croit que le bien-être passe aussi par le cœur. Cʼest pourquoi nous mettons un point dʼhonneur à préserver, voire renforcer, le lien social des personnes que nous accompagnons. Parce que chaque sourire, chaque mot échangé, est une victoire contre la solitude.
+                            <span
+                                style="
+                            font-weight: 1000;
+                            font-style: italic;
+                            font-family: cursive;
+                            font-size: 18px;
+                        ">agapé</span>, croit que le bien-être passe aussi par le cœur. Cʼest pourquoi nous mettons un point dʼhonneur à préserver, voire renforcer, le lien social des personnes que nous accompagnons. Parce que chaque sourire, chaque mot échangé, est une victoire contre la solitude.
                         </p>
 
                     </div>
