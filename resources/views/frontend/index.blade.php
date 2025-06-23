@@ -187,7 +187,9 @@
                         <img class="icon" src="{{ asset('frontend/assets/images/our_values/4.jpg') }}" alt="icon" />
                         <h5 class="title">Le mieux-être : notre priorité</h5>
                         <p class="description">
-                            Maintenir votre bien-être physique, mental et social est au cœur de nos préoccupations. Nous vous aidons à trouver des services adaptés à vos besoins spécifiques pour que vous puissiez vous sentir.
+                            Maintenir votre bien-être physique, mental et social est au cœur de nos préoccupations. Nous
+                            vous aidons à trouver des services adaptés à vos besoins spécifiques pour que vous puissiez vous
+                            sentir.
                         </p>
                     </div>
                 </div>
@@ -379,22 +381,43 @@
     <div class="rts-faq-section rts-section-gap rts-faq-bg bg_image">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6">
+                {{-- <div class="col-lg-5">
                     <div class="thumbnail-faq-four">
                         <img src="{{ asset('frontend/assets/images/faq/faq-1.jpeg') }}" alt="">
                     </div>
                     <div class="thumbnail-faq-four mt-4">
                         <img src="{{ asset('frontend/assets/images/faq/faq-2.jpeg') }}" alt="">
                     </div>
-                </div>
-                <div class="col-lg-6">
+                </div> --}}
+                <div class="col-lg-12">
                     <div class="faq-two-inner">
                         <div class="title-area-faq">
                             <h2 class="title">FAQ</h2>
                             <p class="disc">
-                                Chez AGAPÉ, nous savons qu'il est normal d'avoir des questions lorsque l'on envisage une
-                                aide à domicile, surtout en mode mandataire. Voici les réponses aux interrogations les plus
-                                fréquentes pour vous éclairer.
+                                Nous vous offrons un service complet, sans surprise. V oici ce que couvre notre tarif :
+
+                            <ul>
+                                <li>
+                                    Le salaire de nos auxiliaires de vie : Des personnes dévouées et formées pour vous
+                                    accompagner au quotidien.
+                                </li>
+                                <li>
+                                    Les charges sociales : Pour que nos équipes soient bien protégées.
+                                </li>
+                                <li>
+                                    Les frais de déplacement : Quand nos aides se rendent à votre domicile.
+                                </li>
+                                <li>
+                                    L'assurance qualité : Pour un service fiable et sécurisant.
+                                </li>
+                            </ul>
+
+                            Votre devis gratuit ! Avant de commencer, nous vous préparons un devis clair et précis
+                            et ça ne vous engage à rien. <br>
+                            N'hésitez pas à nous contacter pour une discussion. Nous sommes là pour vous ! <br>
+                            Financer votre accompagnement : les différentes aides disponibles <br>
+                            Nous savons que le coût peut être une préoccupation. C'est pourquoi nous vous aidons à utiliser
+                            les aides financières et dispositifs existants possibles :
                             </p>
                         </div>
                         <!-- faq accordion area -->
@@ -405,161 +428,52 @@
                                         <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
                                             aria-controls="collapseOne">
-                                            1. Qu'est-ce que le mode mandataire chez AGAPÉ ?
+                                            1. L'Avance Immédiate de l'Urssaf : payez moins cher tout de suite !
                                         </button>
                                     </h2>
                                     <div id="collapseOne" class="accordion-collapse collapse"
                                         aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
                                         <div class="accordion-body">
-                                            En mode mandataire, vous êtes l'employeur direct de votre auxiliaire de vie.
-                                            AGAPÉ vous accompagne dans toutes les démarches administratives et de gestion :
-                                            aide au recrutement, élaboration du contrat de travail, gestion des salaires et
-                                            des déclarations Urssaf. Ce mode vous offre plus de flexibilité et un lien
-                                            direct avec votre intervenant, tout en bénéficiant de notre expertise et de
-                                            notre soutien.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                                            aria-controls="collapseTwo">
-                                            2. Que font les aides à domicile ? Quels services peuvent-elles offrir ?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse"
-                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            Les aides à domicile sont là pour vous accompagner dans votre quotidien et vous
-                                            aider à maintenir votre autonomie. Leurs missions peuvent être très variées et
-                                            sont toujours personnalisées selon vos besoins. Elles peuvent inclure :
+                                            C'est un service gratuit et facile à utiliser qui vous permet de déduire
+                                            immédiatement votre crédit d'impôt de 50% au moment du paiement de votre
+                                            facture. Vous ne payez donc que la moitié du montant !
+                                            <h6 class="green-text mt-2">Qui peut en bénéficier ?</h6>
                                             <ul>
-                                                <li style="list-style: circle;color:#000">
-                                                    Aide à la personne : aide à la toilette, à l'habillage, à la mobilité
-                                                    (lever, coucher, transferts), aide à la prise de repas.
+                                                <li>
+                                                    Vous devez avoir un compte bancaire en France.
                                                 </li>
-                                                <li style="list-style: circle;color:#000">
-                                                    Entretien du cadre de vie : ménage courant, repassage, entretien du
-                                                    linge.
+                                                <li>
+                                                    Un numéro fiscal doit être associé à votre état civil.
                                                 </li>
-                                                <li style="list-style: circle;color:#000">
-                                                    Préparation des repas : élaboration de menus équilibrés, préparation des
-                                                    repas et aide à la prise.
-                                                </li>
-                                                <li style="list-style: circle;color:#000">
-                                                    Accompagnement extérieur : courses, rendez-vous médicaux, promenades,
-                                                    activités sociales.
-                                                </li>
-                                                <li style="list-style: circle;color:#000">
-                                                    Soutien moral et social : présence attentive, conversation, lutte contre
-                                                    l'isolement.
-                                                </li>
-                                                <li style="list-style: circle;color:#000">
-                                                    Aide administrative : classement de documents, aide aux démarches
-                                                    simples.
+                                                <li>
+                                                    Vous devez avoir déjà fait au moins une déclaration de revenus.
                                                 </li>
                                             </ul>
-                                            Chaque plan d'aide est unique et défini avec vous.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                                            aria-controls="collapseTwo">
-                                            3. Quels sont les délais pour mettre en place une aide à domicile ?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse"
-                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            Nous nous efforçons d'être les plus réactifs possible. Une fois que nous avons
-                                            bien compris vos besoins, la mise en place d'une aide à domicile peut
-                                            généralement se faire dans un délai de quelques jours à une semaine. Ce délai
-                                            dépendra de la disponibilité de l'intervenant idéal correspondant à votre profil
-                                            et de la rapidité des démarches administratives (signature de contrat, etc.).
-                                            Pour les situations urgentes, nous mettons tout en œuvre pour accélérer le
-                                            processus.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                                            aria-controls="collapseTwo">
-                                            4. Est-il possible de changer d'auxiliaire de vie en cours de prestation ?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse"
-                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            Oui, absolument. Votre confort et votre satisfaction sont nos priorités. Si,
-                                            pour quelque raison que ce soit, le courant ne passe pas avec l'auxiliaire de
-                                            vie choisi ou si vos besoins évoluent, il est tout à fait possible de demander
-                                            un changement. Nous sommes là pour vous aider à trouver une nouvelle personne
-                                            qui correspondra mieux à vos attentes et à votre personnalité. C'est l'un des
-                                            avantages de notre approche personnalisée.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                                            aria-controls="collapseTwo">
-                                            5. Comment la continuité des services est-elle assurée (vacances, maladie) ?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse"
-                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            En mode mandataire, puisque vous êtes l'employeur, nous vous aidons à anticiper
-                                            les absences (vacances, maladie) de votre auxiliaire. Nous pouvons vous
-                                            accompagner dans la recherche d'un remplaçant temporaire si votre intervenant
-                                            habituel est absent, afin d'assurer une continuité des services. Nous vous
-                                            conseillons sur les meilleures pratiques pour gérer ces situations.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                                            aria-controls="collapseTwo">
-                                            6. Puis-je bénéficier d'aides financières pour l'aide à domicile ?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse"
-                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            Oui, tout à fait ! Plusieurs dispositifs existent pour vous aider à financer les
-                                            services d'aide à domicile. Les principaux sont:
-                                            <ul>
-                                                <li style="list-style: circle;color:#000">
-                                                    L'Allocation Personnalisée d'Autonomie (APA) pour les personnes âgées en
-                                                    perte d'autonomie.
+                                            Attention : Ce service n'est pas encore disponible si vous bénéficiez déjà de
+                                            l'APA ou de la PCH.
+                                            <h6 class="green-text mt-2">
+                                                Comment ça fonctionne avec AGAPÉ ?
+                                            </h6>
+                                            <ul class="number-ul">
+                                                <li>
+                                                    Nous créons votre compte Urssaf avec votre accord.
                                                 </li>
-                                                <li style="list-style: circle;color:#000">
-                                                    La Prestation de Compensation du Handicap (PCH) pour les personnes en
-                                                    situation de handicap.
+                                                <li>
+                                                    Vous recevez un e-mail pour activer votre compte en ligne sur le site de
+                                                    l'Urssaf.
                                                 </li>
-                                                <li style="list-style: circle;color:#000">
-                                                    La réduction ou le crédit d'impôt de 50%.
+                                                <li>
+                                                    Dès l'activation, vous bénéficiez de l'Avance Immédiate.
                                                 </li>
-                                                <li style="list-style: circle;color:#000">
-                                                    Le service Avance Immédiate de l'Urssaf qui vous permet de déduire votre
-                                                    crédit d'impôt en temps réel.
+                                                <li>
+                                                    Vous la validez en ligne sous 48h.
                                                 </li>
-                                                <li style="list-style: circle;color:#000">
-                                                    Certaines mutuelles, assurances ou caisses de retraite peuvent aussi
-                                                    proposer des prises en charge.
+                                                <li>
+                                                    L'Urssaf prélève ensuite le montant réduit sur votre compte et nous
+                                                    reverse la totalité. 6. Votre déclaration de revenus est même
+                                                    pré-remplie !
                                                 </li>
                                             </ul>
-                                            Nous pouvons vous conseiller et vous orienter vers les organismes adaptés à
-                                            votre situation.
                                         </div>
                                     </div>
                                 </div>
@@ -568,21 +482,274 @@
                                         <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
                                             aria-controls="collapseTwo">
-                                            7. Comment la qualité des intervenants est-elle garantie en mode mandataire ?
+                                            2. La réduction ou le crédit d'impôt
                                         </button>
                                     </h2>
                                     <div id="collapseTwo" class="accordion-collapse collapse"
                                         aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            Bien que vous soyez l'employeur, AGAPÉ vous aide à recruter des intervenants
-                                            qualifiés et expérimentés. Nous vous accompagnons dans la vérification de leurs
-                                            compétences, de leurs références, et vous proposons des profils qui
-                                            correspondent à vos besoins et à nos valeurs de bienveillance et de
-                                            professionnalisme. Nous mettons à votre disposition des outils et des conseils
-                                            pour vous aider à faire le meilleur choix.
-                                            <br>
-                                            Vous avez d'autres questions ? N'hésitez pas à nous contacter directement. Nous
-                                            sommes là pour vous accompagner !
+                                            Lorsque vous faites appel à un service d'aide à la personne comme AGAPÉ, vous
+                                            pouvez bénéficier d'une réduction ou d'un crédit d'impôt de 50% des sommes
+                                            facturées.
+
+                                            <h6 class="green-text mt-2">
+                                                Comment ça marche ?
+                                            </h6>
+                                            Chaque année, nous vous fournirons une attestation fiscale récapitulant les
+                                            sommes dépensées. Vous devrez reporter ce montant sur votre déclaration
+                                            d'impôts.
+                                            Situation Plafond de dépense annuelles Déduction maximale par foyer fiscal
+                                            Situation standard 12 000 € 6 000 €Si vous vivez avec une personne de 65 ans ou
+                                            + 13 500 € 6 750 € Si vous avez une carte d'invalidité.
+                                            <table class="mt-2">
+                                                <thead>
+                                                    <th>
+                                                        Situation
+                                                    </th>
+                                                    <th>
+                                                        Plafond de dépenses annuelles
+                                                    </th>
+                                                    <th>
+                                                        Déduction maximale par foyer fiscal
+                                                    </th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Situation standard</td>
+                                                        <td>12000€</td>
+                                                        <td>6000€</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Si vous vivez avec une personne de 65 ans ou +</td>
+                                                        <td>13500€</td>
+                                                        <td>6750€</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Si vous avez une carte d'invalidité á 80%</td>
+                                                        <td>20000€</td>
+                                                        <td>10000€</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            3. L'Allocation Personnalisée d'Autonomie (APA)
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            L'APA est une aide financière destinée aux personnes âgées de 60 ans et plus en
+                                            perte d'autonomie. Elle permet de couvrir une partie des dépenses liées à l'aide
+                                            à domicile.
+                                            <h6 class="green-text mt-2">
+                                                Qui peut en bénéficier ?
+                                            </h6>
+                                            Pour être éligible à l'APA, vous devez :
+                                            <ul>
+                                                <li>
+                                                    Avoir 60 ans ou plus.
+                                                </li>
+                                                <li>
+                                                    Vivre de manière stable en France (ou avoir un titre de séjour valide si
+                                                    vous êtes étranger).
+                                                </li>
+                                                <li>
+                                                    Présenter une perte d'autonomie évaluée par la grille AGGIR.
+                                                </li>
+                                            </ul>
+
+                                            <h6 class="green-text mt-2">
+                                                Comment faire votre demande ?
+                                            </h6>
+                                            Vous pouvez obtenir un dossier de demande auprès de votre :
+                                            <ul>
+                                                <li>
+                                                    Mairie
+                                                </li>
+                                                <li>
+                                                    Conseil Départemental (site internet ou guichet)
+                                                </li>
+                                                <li>
+                                                    CLIC (Centre Local d'Information et de Coordination)
+                                                </li>
+                                                <li>
+                                                    CCAS (Centre Communal d'Action Sociale)
+                                                </li>
+                                            </ul>
+                                            Votre dossier sera ensuite évalué par une équipe médico-sociale qui déterminera
+                                            votre niveau de dépendance (GIR) et élaborera un plan d'aide.
+
+                                            <h6 class="green-text mt-2">
+                                                Quel est le montant de l'APA ?
+                                            </h6>
+                                            Le montant de l'APA varie en fonction de vos revenus, de votre niveau de
+                                            dépendance (GIR) et des règles de votre Conseil Départemental. Il peut aller
+                                            jusqu'à 1 914,04 € par mois.
+
+                                            <h6 class="green-text mt-2">
+                                                Comprendre la grille AGGIR
+                                            </h6>
+                                            La grille AGGIR est l'outil utilisé pour évaluer votre degré de dépendance. Elle
+                                            classe la perte d'autonomie en six niveaux, appelés GIR (Groupes
+                                            Iso-Ressources).
+
+                                            <table class="mt-4">
+                                                <thead>
+                                                    <th>Groupe</th>
+                                                    <td>Caractéristiques des personnes</td>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>
+                                                            GIR 1
+                                                        </th>
+                                                        <td>
+                                                            Personnes clouées au lit ou en fauteuil, dont les fonctions
+                                                            intellectuelles sont très altérées, et qui ont besoin d'une aide
+                                                            constante.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            GIR 2
+                                                        </th>
+                                                        <td>
+                                                            Personnes clouées au lit ou en fauteuil, dont les fonctions
+                                                            intellectuelles ne sont pas totalement altérées, nécessitant de
+                                                            l'aide pour la plupart des activités quotidiennes. Ou personnes
+                                                            pouvant se déplacer mais ayant des difficultés mentales pour des
+                                                            gestes comme s'habiller ou se laver.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            GIR 3
+                                                        </th>
+                                                        <td>
+                                                            Personnes ayant encore des capacités de mouvement mais qui ont
+                                                            besoin d'aide pour manger, se coucher ou se laver.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            GIR 4
+                                                        </th>
+                                                        <td>
+                                                            Personnes ayant besoin d'aide pour se lever et se coucher, mais
+                                                            pouvant se déplacer seules à l'intérieur. Une aide est parfois
+                                                            nécessaire pour la toilette et l'habillage. Ou personnes n'ayant
+                                                            pas de problème pour se déplacer mais qui ont besoin d'aide pour
+                                                            les activités corporelles et les repas.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            GIR 5
+                                                        </th>
+                                                        <td>
+                                                            Personnes assez autonomes dans leurs activités, se déplaçant
+                                                            seules, mais qui ont besoin d'aides ponctuelles pour la
+                                                            toilette, la préparation des repas ou l'entretien du logement.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            GIR 6
+                                                        </th>
+                                                        <td>
+                                                            Personnes totalement autonomes dans tous les actes de la vie
+                                                            courante.
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                            aria-controls="collapseFour">
+                                            4. La Prestation de Compensation du Handicap (PCH)
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            La PCH est une aide financière conçue pour les personnes en situation de
+                                            handicap. Elle vise à couvrir les besoins liés à la perte d'autonomie.
+                                            <h6 class="green-text mt-2">
+                                                Pour quels besoins ?
+                                            </h6>
+                                            La PCH peut financer :
+                                            <ul>
+                                                <li>
+                                                    Les aides humaines (aide à domicile).
+                                                </li>
+                                                <li>
+                                                    Les aides techniques (fauteuil roulant, lève-personne, etc.).
+                                                </li>
+                                                <li>
+                                                    L'aménagement de votre véhicule ou de votre lieu de vie.
+                                                </li>
+                                                <li>
+                                                    Les aides animalières (comme les chiens guides).
+                                                </li>
+                                            </ul>
+
+                                            <h6 class="green-text mt-2">
+                                                Quelles conditions pour en bénéficier ?
+                                            </h6>
+                                            Vous devez :
+                                            <ul>
+                                                <li>
+                                                    Vivre de manière stable en France.
+                                                </li>
+                                                <li>
+                                                    Avoir un handicap qui rend difficile la réalisation d'au moins une
+                                                    activité essentielle (ou très difficile pour deux activités
+                                                    essentielles).
+                                                </li>
+                                                <li>
+                                                    Avoir moins de 60 ans au moment de la demande (des exceptions existent
+                                                    si le handicap était présent avant 60 ans).
+                                                </li>
+                                            </ul>
+                                            <h6 class="green-text mt-2">
+                                                Comment faire votre demande ?
+                                            </h6>
+                                            Vous devez déposer votre dossier à la Maison Départementale des Personnes
+                                            Handicapées (MDPH) de votre lieu de résidence. C'est la Commission des Droits et
+                                            de l'Autonomie des Personnes Handicapées (CDAPH) qui prendra la décision.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFive">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                                            aria-controls="collapseFive">
+                                            5. Les prises en charge par votre assurance, mutuelle ou caisse
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            De nombreuses assurances, mutuelles ou caisses (de retraite par exemple) peuvent
+                                            proposer des prises en charge pour les services d'aide à domicile. <br>
+                                            N'hésitez pas à nous contacter ! Nous pourrons vous aider à vérifier si votre
+                                            organisme a des conventions avec des services d'aide à la personne et comment
+                                            cela pourrait vous aider à financer votre accompagnement.Des questions sur le
+                                            financement ? N'hésitez pas à nous contacter chez AGAPÉ. Nous sommes là pour
+                                            vous guider et vous aider à trouver la meilleure solution pour votre situation !
                                         </div>
                                     </div>
                                 </div>
@@ -592,6 +759,7 @@
                     </div>
                 </div>
             </div>
+            <a href="{{asset('frontend/assets/TARIF_AGAPEÌ_.pdf')}}" style="top: 36px;position: relative;" class="mt-4 rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn" target="_blank">Tarifs</a>
         </div>
     </div>
 @endsection

@@ -47,7 +47,13 @@
                         </ul>
                         </p>
                         <p class="disc">
-                            Parce qu’accompagner la fin de vie, cʼest aussi honorer la vie elle- même, agapé sʼengage à être un soutien solide et respectueux, dans les moments les plus sensibles.
+                            Parce qu’accompagner la fin de vie, cʼest aussi honorer la vie elle- même, <span
+                                style="
+                            font-weight: 1000;
+                            font-style: italic;
+                            font-family: cursive;
+                            font-size: 18px;
+                        ">agapé</span> sʼengage à être un soutien solide et respectueux, dans les moments les plus sensibles.
                         </p>
                     </div>
                 </div>
