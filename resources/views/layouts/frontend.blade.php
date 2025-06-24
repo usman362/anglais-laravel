@@ -24,28 +24,32 @@
                 margin-bottom: 12px;
             }
         }
-        .skiptranslate{
+
+        .skiptranslate {
             display: none !important;
         }
-        body{
+
+        body {
             top: 0 !important;
             text-align: justify !important;
         }
-        #goog-gt-tt{
+
+        #goog-gt-tt {
             visibility: hidden !important;
         }
 
-	  @media (max-width:700px){
-		  .rts-banner-one .swiper-wrapper .swiper-slide .banner-one-inner {
-			  width: 100%;
-			  padding: 90px 15px 90px;
-		  }
-		  .rts-banner-one .swiper-wrapper .swiper-slide .banner-one-inner h4.title span {
-			  font-size: 26px !important;
-			  line-height: 25px;
-			  display: block;
-		  }
-		}
+        @media (max-width:700px) {
+            .rts-banner-one .swiper-wrapper .swiper-slide .banner-one-inner {
+                width: 100%;
+                padding: 90px 15px 90px;
+            }
+
+            .rts-banner-one .swiper-wrapper .swiper-slide .banner-one-inner h4.title span {
+                font-size: 26px !important;
+                line-height: 25px;
+                display: block;
+            }
+        }
     </style>
 </head>
 
@@ -69,7 +73,7 @@
                                     contact@agape-nantes.fr</a>
                             </div>
                             <div class="working-time">
-                                <p><i class="fal fa-map-marker-alt"></i> 10 bis rue de la Basinerie 44300 Nantes</p>
+                                <p><i class="fal fa-map-marker-alt"></i> 10 bis rue de la Basinerie</p>
                             </div>
                         </div>
                     </div>
@@ -97,7 +101,8 @@
                                         <a href="{{ route('services') }}">Nos prestations</a>
                                     </li>
                                     <li class="#" style="list-style: none">
-                                        <a href="{{ asset('frontend/assets/TARIF_AGAPEÌ_.pdf') }}" target="_blank">Tarifs</a>
+                                        <a href="{{ asset('frontend/assets/TARIF_AGAPEÌ_.pdf') }}"
+                                            target="_blank">Tarifs</a>
                                     </li>
                                     {{-- <li><a href="{{ route('who_we_are') }}">Qui sommes-nous</a></li>
                                     <li class="#">
@@ -126,10 +131,12 @@
                             <div class="button-area">
                                 @auth
                                     <a href="{{ url('dashboard') }}"
-                                        class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn">Tableau de bord</a>
+                                        class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn">Tableau de
+                                        bord</a>
                                 @else
                                     <a href="{{ route('client-login') }}"
-                                        class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn">Votre espace client</a>
+                                        class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn">Votre espace
+                                        client</a>
                                 @endauth
 
                                 <button id="menu-btn" class="menu rts-btn btn-primary-alta ml--20 ml_sm--5">
@@ -188,7 +195,8 @@
                         <!-- single -->
                         <div class="single">
                             <i class="fas fa-map-marker-alt"></i>
-                            <a href="#">10 bis rue de la Basinerie 44300 Nantes</a>
+                            <a href="#">10 bis rue de la Basinerie <br> <span style="margin-left:28px">44300
+                                    Nantes</span></a>
                         </div>
                         <!-- single ENd -->
                     </div>
@@ -307,14 +315,17 @@
                             des questions ?
                         </h3>
                         <p class="disc">
-                            <img style="width: 36px;" src="{{asset('frontend/assets/images/SMILEY-AGAPEÌ_-2.png')}}" alt=""> Un sourire est souvent l’essentiel.
+                            <img style="width: 36px;"
+                                src="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ_-2.png') }}" alt=""> Un
+                            sourire est souvent l’essentiel.
                         </p>
                     </div>
 
                     <div class="footer-one-single-wized mt-4">
                         <div class="opening-time-inner">
                             <div class="single-opening">
-                                <p class="day"><a style="color:#fff" href="{{ route('contact_us') }}">Contactez-nous</a></p>
+                                <p class="day"><a style="color:#fff"
+                                        href="{{ route('contact_us') }}">Contactez-nous</a></p>
                             </div>
                             {{-- <div class="single-opening">
                                 <p class="day"><a style="color:#fff" href="{{ route('career') }}">Nous
@@ -336,7 +347,9 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="text-center">
-                            <p class="mb-2">Copyright 2025 Tous droits réservés - <a href="https://digital-webcreation.fr/" target="_blank">Développement Digital Web Creation</a></p>
+                            <p class="mb-2">Copyright 2025 Tous droits réservés - <a
+                                    href="https://digital-webcreation.fr/" target="_blank">Développement Digital Web
+                                    Creation</a></p>
                             <p>Philippien 4 : 13 Je puis tout par celui qui me fortifie</p>
                         </div>
                     </div>
