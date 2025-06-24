@@ -131,7 +131,7 @@
                                 src="{{ asset('frontend/assets/images/service-4.jpeg') }}" alt="Business_image"></a>
                         <div class="body-content w-100">
                             <div class="hidden-area">
-                                <h5 class="title">Interaction sociale</h5>
+                                <h5 class="title">Interaction sociale stimulante</h5>
                                 <a class="rts-read-more-two color-primary" href="{{ route('service_details_4') }}"> En
                                     savoir plus<i class="far fa-arrow-right"></i></a>
                             </div>
@@ -146,7 +146,7 @@
                                 src="{{ asset('frontend/assets/images/service-8.jpeg') }}" alt="Business_image"></a>
                         <div class="body-content w-100">
                             <div class="hidden-area">
-                                <h5 class="title">Appui administratif personnalisé</h5>
+                                <h5 class="title">Aide administratif</h5>
                                 <a class="rts-read-more-two color-primary" href="{{ route('service_details_5') }}"> En
                                     savoir plus<i class="far fa-arrow-right"></i></a>
                             </div>

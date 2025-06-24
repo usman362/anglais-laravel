@@ -24,7 +24,7 @@
                         <!-- inner start -->
                         <div class="inner">
                             <p class="disc">
-                                Dernière mise à jour  5 mai 2025 <br>
+                                Dernière mise à jour - 5 mai 2025 <br>
                                 Bienvenue sur le site agape-nantes.fr, édité par la société AGAPÉ, SARL au capital de 4 000
                                 €, immatriculée au R.C.S. de Nantes sous le numéro 938 848 264, dont le siège social est
                                 situé au 10 bis rue de la Basinerie, 44300 Nantes - France.

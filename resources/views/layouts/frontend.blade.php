@@ -33,6 +33,18 @@
         #goog-gt-tt{
             visibility: hidden !important;
         }
+	  
+	  @media (max-width:700px){
+		  .rts-banner-one .swiper-wrapper .swiper-slide .banner-one-inner {
+			  width: 100%;
+			  padding: 90px 15px 90px;
+		  }
+		  .rts-banner-one .swiper-wrapper .swiper-slide .banner-one-inner h4.title span {
+			  font-size: 26px !important;
+			  line-height: 25px;
+			  display: block;
+		  }
+		}
     </style>
 </head>
 
@@ -323,7 +335,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="text-center">
-                            <p class="mb-2">Copyright 2025 Tous droits réservés - <a href="https://digitalwebcreative.fr/" target="_blank">Développement Digital Web Creation</a></p>
+                            <p class="mb-2">Copyright 2025 Tous droits réservés - <a href="https://digital-webcreation.fr/" target="_blank">Développement Digital Web Creation</a></p>
                             <p>Philippien 4 : 13 Je puis tout par celui qui me fortifie</p>
                         </div>
                     </div>

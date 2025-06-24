@@ -25,10 +25,7 @@
                         <!-- inner start -->
                         <div class="inner">
                             <p class="disc">
-                                Conformément à lʼarticle 6 III1 et 19 de la loi n°2004575 du 21 juin 2004 pour la
-                                confiance dans lʼéconomie numérique LCEN, il est précisé aux utilisateurs du site
-                                agape-nantes.fr lʼidentité des différents intervenants dans le cadre de sa réalisation et de
-                                son suivi.
+                                Conformément aux articles 6 III-1 et 19 de la loi n°2004-575 du 21 juin 2004 pour la confiance dans l’économie numérique (LCEN), il est précisé aux utilisateurs du site agape-nantes.fr l’identité des différents intervenants dans le cadre de sa réalisation et de son suivi.
                             </p>
 
 
@@ -99,7 +96,7 @@
                                 proposées par Agapé sont éligibles au crédit dʼimpôt pour lʼemploi dʼun salarié à domicile
                                 (selon conditions en vigueur).
                                 <br>
-                                Des aides peuvent également être mobilisées  APA, PCH, mutuelles, aides
+                                Des aides peuvent également être mobilisées - APA, PCH, mutuelles, aides
                                 sociales, etc.
                             </p>
 
