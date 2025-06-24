@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ_-2.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ_-2.png') }}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/plugins/swiper.min.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/plugins/fontawesome-5.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/plugins/animate.min.css') }}">
@@ -33,6 +33,18 @@
         #goog-gt-tt{
             visibility: hidden !important;
         }
+	  
+	  @media (max-width:700px){
+		  .rts-banner-one .swiper-wrapper .swiper-slide .banner-one-inner {
+			  width: 100%;
+			  padding: 90px 15px 90px;
+		  }
+		  .rts-banner-one .swiper-wrapper .swiper-slide .banner-one-inner h4.title span {
+			  font-size: 26px !important;
+			  line-height: 25px;
+			  display: block;
+		  }
+		}
     </style>
 </head>
 
@@ -140,11 +152,11 @@
         <!-- inner menu area desktop start -->
         <div class="rts-sidebar-menu-desktop">
             <a class="logo-1" href="{{ route('home') }}" aria-label="Go to Home"><img
-                    src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}" alt=""></a>
+                    src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}" alt=""></a>
             <a class="logo-2" href="{{ route('home') }}" aria-label="Go to Home"><img
-                    src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}" alt=""></a>
+                    src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}" alt=""></a>
             <a class="logo-3" href="{{ route('home') }}" aria-label="Go to Home"><img
-                    src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}" alt=""></a>
+                    src="{{ asset('frontend/assets/images/LOGO-AGAPEÌ-purple.png') }}" alt=""></a>
             <div class="body d-none d-xl-block">
                 <p class="disc">
                     N’attendez pas d’être heureux pour sourire. Souriez plutôt afin d’être heureux
@@ -241,7 +253,11 @@
 
     <!-- start header area -->
 
-  
+    {{-- <a href="{{asset('frontend/assets/TARIF_AGAPEÌ_.pdf')}}" target="_blank">
+        <div class="tarif-section">
+                Tarifs
+        </div>
+    </a> --}}
     <!-- rts footer area start -->
     <div class="rts-footer-area footer-one rts-section-gapTop bg-footer-one">
         <div class="container bg-shape-f1">
@@ -290,7 +306,7 @@
                             des questions ?
                         </h3>
                         <p class="disc">
-                            <img style="width: 36px;" src="{{asset('frontend/assets/images/SMILEY-AGAPEÌ_-2.png')}}" alt=""> Un sourire est souvent l’essentiel.
+                            <img style="width: 36px;" src="{{asset('frontend/assets/images/SMILEY-AGAPEÌ_-2.png')}}" alt=""> Un sourire est souvent l’essentiel.
                         </p>
                     </div>
 
