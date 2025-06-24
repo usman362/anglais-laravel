@@ -29,11 +29,12 @@
         }
         body{
             top: 0 !important;
+            text-align: justify !important;
         }
         #goog-gt-tt{
             visibility: hidden !important;
         }
-	  
+
 	  @media (max-width:700px){
 		  .rts-banner-one .swiper-wrapper .swiper-slide .banner-one-inner {
 			  width: 100%;
