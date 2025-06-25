@@ -27,8 +27,8 @@ class AccountCreatedNotification extends Notification
     {
         $roleLabel = $this->role === 'client' ? 'client' : 'collaborateur';
         $loginUrl = $this->role === 'client'
-            ? url('/client-login')
-            : url('/employee-login');
+            ? url('/votre-espace-client')
+            : url('/espace-collaborateurs');
 
         return (new MailMessage)
             ->from('contact@agape-nantes.fr', 'AGAPÉ')
