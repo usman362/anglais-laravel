@@ -80,7 +80,13 @@
 
                 serverSide: true,
 
-                ajax: "{{ route('documents.index') }}",
+                ajax: {
+                    url: "{{ route('documents.index') }}",
+                    type: 'GET',
+                    data: function(d) {
+                        d.type = '{{$type}}';
+                    }
+                },
                 language: {
                     url: 'https://cdn.datatables.net/plug-ins/1.13.7/i18n/fr-FR.json'
                 },
@@ -98,13 +104,13 @@
                         data: 'type',
                         name: 'type'
                     },
-                    @if(auth()->user()->role == 'admin')
-                    {
-                        data: 'actions',
-                        name: 'actions',
-                        orderable: false,
-                        searchable: false
-                    },
+                    @if (auth()->user()->role == 'admin')
+                        {
+                            data: 'actions',
+                            name: 'actions',
+                            orderable: false,
+                            searchable: false
+                        },
                     @endif
                 ]
 

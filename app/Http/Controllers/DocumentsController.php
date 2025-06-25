@@ -23,9 +23,9 @@ class DocumentsController extends Controller
     {
         if ($request->ajax()) {
             if (Auth::user()->role == 'admin') {
-                $users = Document::all();
+                $users = Document::where('type',$request->type)->get();
             } else {
-                $users = Document::where('user_id', Auth::user()->id)->get();
+                $users = Document::where('type',$request->type)->where('user_id', Auth::user()->id)->get();
             }
             return DataTables::of($users)
                 ->addColumn('user', function ($row) {
@@ -90,7 +90,7 @@ class DocumentsController extends Controller
      */
     public function create()
     {
-        $type = 'document';
+        $type = 'documents';
         $name = 'Document';
         $users = User::where('role', '!=', 'admin')->get();
         return view('documents.create', compact('type', 'name', 'users'));
