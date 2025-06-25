@@ -31,6 +31,7 @@ Route::get('/conditions-générales-de-vente', [App\Http\Controllers\HomeControl
 Route::get('/politique-de-confidentialité', [App\Http\Controllers\HomeController::class, 'legal_4'])->name('legal_4');
 
 Route::get('/contactez-nous', [App\Http\Controllers\HomeController::class, 'contact_us'])->name('contact_us');
+Route::get('/contactez-nous-liste', [App\Http\Controllers\HomeController::class, 'contact_us_list'])->name('contact_us_list');
 Route::get('/nos-services', [App\Http\Controllers\HomeController::class, 'services'])->name('services');
 Route::get('/accompagnement-de-fin-de-vie', [App\Http\Controllers\HomeController::class, 'service_details_1'])->name('service_details_1');
 Route::get('/actes-quotidiens-de-la-vie', [App\Http\Controllers\HomeController::class, 'service_details_2'])->name('service_details_2');

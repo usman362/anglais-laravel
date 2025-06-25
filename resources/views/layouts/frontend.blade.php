@@ -101,8 +101,7 @@
                                         <a href="{{ route('services') }}">Nos services</a>
                                     </li>
                                     <li class="#" style="list-style: none">
-                                        <a href="{{ asset('frontend/assets/TARIF_AGAPEÌ_.pdf') }}"
-                                            target="_blank">Tarifs</a>
+                                        <a href="#tarifs">Tarifs</a>
                                     </li>
                                     {{-- <li><a href="{{ route('who_we_are') }}">Qui sommes-nous</a></li>
                                     <li class="#">
@@ -262,16 +261,16 @@
 
     <!-- start header area -->
 
-  
+
     {{-- <a href="{{asset('frontend/assets/TARIF_AGAPEÌ_.pdf')}}" target="_blank">
         <div class="tarif-section">
                 Tarifs
         </div>
     </a> --}}
-  
-  
-  
-  
+
+
+
+
     <!-- rts footer area start -->
     <div class="rts-footer-area footer-one rts-section-gapTop bg-footer-one">
         <div class="container bg-shape-f1">
@@ -351,7 +350,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="text-center">
-                         
+
                             <p>Philippien 4 : 13 Je puis tout par celui qui me fortifie</p>
                         </div>
                     </div>

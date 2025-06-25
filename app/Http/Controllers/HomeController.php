@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Blog;
 use App\Models\ContactUs;
 use Illuminate\Http\Request;
+use Yajra\DataTables\DataTables;
 
 class HomeController extends Controller
 {
@@ -41,6 +42,16 @@ class HomeController extends Controller
     public function contact_us()
     {
         return view('frontend.contact-us');
+    }
+
+    public function contact_us_list(Request $request)
+    {
+        if ($request->ajax()) {
+            $contracts = ContactUs::all();
+            return DataTables::of($contracts)
+                ->make(true);
+        }
+        return view('contact_us.index');
     }
 
     public function blog_list()
