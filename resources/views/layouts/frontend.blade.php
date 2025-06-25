@@ -211,7 +211,7 @@
                             <a href="{{ route('services') }}">Nos services</a>
                         </li>
                         <li class="#" style="list-style: none">
-                            <a href="{{ asset('frontend/assets/TARIF_AGAPEÌ_.pdf') }}" target="_blank">Tarifs</a>
+                            <a href="#tarifs" >Tarifs</a>
                         </li>
                         {{--
                         <li><a href="{{ route('who_we_are') }}">Qui sommes-nous</a></li>
