@@ -98,7 +98,7 @@
                                         <a href="{{ route('home') }}">Accueil</a>
                                     </li>
                                     <li class="#" style="list-style: none">
-                                        <a href="{{ route('services') }}">Nos prestations</a>
+                                        <a href="{{ route('services') }}">Nos services</a>
                                     </li>
                                     <li class="#" style="list-style: none">
                                         <a href="{{ asset('frontend/assets/TARIF_AGAPEÌ_.pdf') }}"
@@ -209,7 +209,7 @@
                             <a href="{{ route('home') }}">Accueil</a>
                         </li>
                         <li class="#" style="list-style: none">
-                            <a href="{{ route('services') }}">Nos prestations</a>
+                            <a href="{{ route('services') }}">Nos services</a>
                         </li>
                         <li class="#" style="list-style: none">
                             <a href="{{ asset('frontend/assets/TARIF_AGAPEÌ_.pdf') }}" target="_blank">Tarifs</a>
@@ -262,11 +262,16 @@
 
     <!-- start header area -->
 
+  
     {{-- <a href="{{asset('frontend/assets/TARIF_AGAPEÌ_.pdf')}}" target="_blank">
         <div class="tarif-section">
                 Tarifs
         </div>
     </a> --}}
+  
+  
+  
+  
     <!-- rts footer area start -->
     <div class="rts-footer-area footer-one rts-section-gapTop bg-footer-one">
         <div class="container bg-shape-f1">
@@ -274,7 +279,6 @@
             <div class="row">
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12">
                     <div class="footer-two-single-wized left pt--50">
-                        <img src="{{ asset('frontend/assets/images/logo/agape-gif.gif') }}" alt="">
                     </div>
                 </div>
                 <!-- footer mid area -->
@@ -347,9 +351,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="text-center">
-                            <p class="mb-2">Copyright 2025 Tous droits réservés - <a
-                                    href="https://digital-webcreation.fr/" target="_blank">Développement Digital Web
-                                    Creation</a></p>
+                         
                             <p>Philippien 4 : 13 Je puis tout par celui qui me fortifie</p>
                         </div>
                     </div>

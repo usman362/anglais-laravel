@@ -2,12 +2,12 @@
 @section('title', 'Accueil')
 @section('content')
 
-  
-  <style>
+    <style>
         .value-box .title {
             padding-bottom: 20px !important;
         }
     </style>
+
     <!-- banner blank space area -->
     <div class="rts-banner-area rts-banner-one">
         <div class="swiper mySwiper banner-one">
@@ -70,9 +70,7 @@ Des gestes simples                                </span>
 
 
    <!-- rts about us section start -->
-<!-- rts about us section start -->
-<div class="rts-about-area rts-section-gap bg-about-sm-shape" style="margin-top: 150px;">
-
+<div class="rts-about-area rts-section-gap bg-about-sm-shape">
     <div class="container">
         <div class="row g-5 align-items-center">
             <!-- Image à gauche -->
@@ -132,6 +130,7 @@ Des gestes simples                                </span>
     </div>
 </div>
 <!-- rts about us section end -->
+
 
   <!-- our services -->
 <section class="values-section py-5">
@@ -251,18 +250,13 @@ Des gestes simples                                </span>
     </div>
 </section>
 
-<style>
-    .rts-about-area.rts-section-gap {
-        padding-top: 40px !important;
-    }
-</style>
 
     <!-- our service area start -->
-<div class="rts-service-area rts-section-gapTop pb--80 service-two-bg bg_image">
+    <div class="rts-service-area rts-section-gapTop pb--200 service-two-bg bg_image">
         <div class="container">
             <div class="row g-5 service padding-controler">
                 <div class="rts-title-area">
-<h2 class="title" style="color: #006144; font-weight: 800;">Nos services</h2>
+                    <h1 class="title">Nos services</h1>
                 </div>
                 <!-- single service area -->
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--100">
@@ -316,7 +310,7 @@ Des gestes simples                                </span>
                                 src="{{ asset('frontend/assets/images/faq/faq-2.jpeg') }}" alt="Business_image"></a>
                         <div class="body-content w-100">
                             <div class="hidden-area">
-                                <h5 class="title">Interaction sociale stimulante </h5>
+                                <h5 class="title">Interaction sociale</h5>
                                 <a class="rts-read-more-two color-primary" href="{{ route('service_details_4') }}"> En
                                     savoir plus<i class="far fa-arrow-right"></i></a>
                             </div>
@@ -344,49 +338,53 @@ Des gestes simples                                </span>
     </div>
     <!-- our service area end -->
     <!-- our services -->
-<style>
-    .rts-about-area.rts-section-gap {
-        padding-top: 40px !important;
-    }
-</style>
 
 
 <!-- SECTION FAQ TARIFS & AIDES -->
 <div class="rts-faq-section rts-section-gap rts-faq-bg" style="background-color: #ffffff;">
-    <style>
-        .faq-two-inner .title-area-faq h1.title {
-            text-transform: none;
-            font-size: 42px;
-        }
+   <style>
+    .faq-two-inner .title-area-faq h1.title {
+        text-transform: none;
+        font-size: 32px;
+    }
 
-        .faq-two-inner .disc {
-            text-align: justify;
-        }
+    .faq-two-inner .disc {
+        text-align: justify;
+    }
 
-        /* Supprimer le fond par défaut si une image était appliquée */
-        .rts-faq-bg {
-            background-image: none !important;
-            background-color: #ffffff !important;
-        }
-	  
-    </style>
-  <style>
-        .value-box .title {
-            padding-bottom: -100px !important;
-        }
-    </style>
+    /* Supprimer le fond par défaut si une image était appliquée */
+    .rts-faq-bg {
+        background-image: none !important;
+        background-color: #ffffff !important;
+    }
+
+    /* Accordéons fermés : couleur de fond rose */
+    .accordion-button.collapsed {
+        background-color: #f088b6;
+        color: white;
+        transition: background-color 0.3s ease;
+    }
+
+    /* Accordéons ouverts : fond blanc et texte foncé */
+    .accordion-button:not(.collapsed) {
+        background-color: #ffffff;
+        color: #333;
+    }
+</style>
+
+
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-12">
                 <div class="faq-two-inner">
                     <div class="title-area-faq">
                         <h1 class="title">
-                             Tout est compris !
+                            Financer votre accompagnement : les différentes aides disponibles
                         </h1>
                         <p class="disc">
-						<br>
+                            Tout est compris !<br><br>
 
-                            Nous vous offrons un service complet, sans surprise. Voici ce que couvre notre tarif :<br>
+                            Nous vous offrons un service complet, sans surprise. Voici ce que couvre notre tarif :<br><br>
 
                             <ul>
                                 <li>Le salaire de nos auxiliaires de vie : Des personnes dévouées et formées pour vous accompagner au quotidien.</li>
@@ -400,9 +398,6 @@ Des gestes simples                                </span>
 
                             N'hésitez pas à nous contacter pour en discuter. Nous sommes là pour vous !
                         </p>
-				    <h3> Financer votre accompagnement : les différentes aides disponibles </h3>
-				  
-				  <p> Nous savons que le coût peut être une préoccupation. C'est pourquoi nous vous aidons à utiliser les aides financières et dispositifs existants possibles. </p>
                     </div>
               
 
@@ -649,27 +644,6 @@ Des gestes simples                                </span>
     </div>
 </div>
 
-						<div style="text-align: center; margin: 40px 0;">
-    <a href="{{ asset('frontend/assets/TARIF_AGAPEÌ_.pdf') }}" 
-       target="_blank"
-       style="
-           background-color: #006144;
-           color: white;
-           font-weight: bold;
-           font-size: 18px;
-           padding: 12px 30px;
-           border-radius: 8px;
-           text-decoration: none;
-           display: inline-block;
-           transition: background-color 0.3s ease;
-       "
-       onmouseover="this.style.backgroundColor='#004d36';"
-       onmouseout="this.style.backgroundColor='#006144';">
-        Nos tarifs
-    </a>
-</div>
-
-
                            
                             </div>
 
@@ -699,8 +673,7 @@ Des gestes simples                                </span>
                 </div>
                 <div class="col-md-6 col-sm-12 col-12 mt_md--50 mt_sm--50">
                     <div class="rts-title-area">
-                     <h2 class="title" style="color: #006144; font-weight: 800;">Ce qui nous distingue</h2>
-
+                        <h2 class="title">Ce qui nous distingue</h2>
                     </div>
                     <div class="about-inner">
                         <p class="disc">
@@ -747,54 +720,74 @@ Des gestes simples                                </span>
                             </p>
                         </div>
 					  
-				<!-- faq accordion area -->
-<div class="faq-accordion-area" style="scroll-margin-top: 100px;">
+					  
+					  
+					  
+                    <!-- faq accordion area -->
+<div class="faq-accordion-area">
     <div class="accordion" id="accordionExample">
 
-        <!-- QUESTION -->
+        <!-- Question 1 -->
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button collapsed" type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne"
-                        aria-expanded="false"
-                        aria-controls="collapseOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                     1. Que font les aides à domicile ? Quels services peuvent-elles offrir ?
                 </button>
             </h2>
-            <div id="collapseOne" class="accordion-collapse collapse"
-                 aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    Les aides à domicile sont là pour vous accompagner dans votre quotidien et vous aider à maintenir votre autonomie. Leurs missions peuvent être très variées et sont toujours personnalisées selon vos besoins. Elles peuvent inclure :
+                    Les aides à domicile sont là pour vous accompagner dans votre quotidien et vous
+                    aider à maintenir votre autonomie. Leurs missions peuvent être très variées et
+                    sont toujours personnalisées selon vos besoins. Elles peuvent inclure :
                     <ul>
-                        <li>Aide à la personne : toilette, habillage, mobilité, repas.</li>
-                        <li>Entretien du cadre de vie : ménage, repassage, linge.</li>
-                        <li>Préparation des repas : menus équilibrés, aide à la prise.</li>
-                        <li>Accompagnement : courses, rendez-vous, activités sociales.</li>
-                        <li>Soutien moral : présence, lutte contre l’isolement.</li>
-                        <li>Aide administrative : documents, démarches simples.</li>
+                        <li style="list-style: circle; color: #000;">
+                            Aide à la personne : aide à la toilette, à l'habillage, à la mobilité
+                            (lever, coucher, transferts), aide à la prise de repas.
+                        </li>
+                        <li style="list-style: circle; color: #000;">
+                            Entretien du cadre de vie : ménage courant, repassage, entretien du linge.
+                        </li>
+                        <li style="list-style: circle; color: #000;">
+                            Préparation des repas : élaboration de menus équilibrés, préparation des
+                            repas et aide à la prise.
+                        </li>
+                        <li style="list-style: circle; color: #000;">
+                            Accompagnement extérieur : courses, rendez-vous médicaux, promenades,
+                            activités sociales.
+                        </li>
+                        <li style="list-style: circle; color: #000;">
+                            Soutien moral et social : présence attentive, conversation, lutte contre
+                            l'isolement.
+                        </li>
+                        <li style="list-style: circle; color: #000;">
+                            Aide administrative : classement de documents, aide aux démarches simples.
+                        </li>
                     </ul>
-                    Chaque plan d’aide est unique et défini avec vous.
+                    Chaque plan d'aide est unique et défini avec vous.
                 </div>
             </div>
         </div>
 
-        <!-- Répéter la même structure pour les autres questions -->
         <!-- Question 2 -->
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo"
-                        aria-expanded="false"
-                        aria-controls="collapseTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     2. Quels sont les délais pour mettre en place une aide à domicile ?
                 </button>
             </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse"
-                 aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    Nous nous efforçons d’être les plus réactifs possible. Une fois vos besoins identifiés, la mise en place peut se faire sous quelques jours. En cas d’urgence, tout est fait pour accélérer les démarches.
+                    Nous nous efforçons d'être les plus réactifs possible. Une fois que nous avons
+                    bien compris vos besoins, la mise en place d'une aide à domicile peut
+                    généralement se faire dans un délai de quelques jours à une semaine. Ce délai
+                    dépendra de la disponibilité de l'intervenant idéal correspondant à votre profil
+                    et de la rapidité des démarches administratives (signature de contrat, etc.).
+                    Pour les situations urgentes, nous mettons tout en œuvre pour accélérer le
+                    processus.
                 </div>
             </div>
         </div>
@@ -802,18 +795,20 @@ Des gestes simples                                </span>
         <!-- Question 3 -->
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree"
-                        aria-expanded="false"
-                        aria-controls="collapseThree">
-                    3. Qu’est-ce que le mode mandataire chez AGAPÉ ?
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    3. Qu'est-ce que le mode mandataire chez AGAPÉ ?
                 </button>
             </h2>
-            <div id="collapseThree" class="accordion-collapse collapse"
-                 aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    Vous êtes l’employeur de votre aide à domicile. AGAPÉ vous guide dans toutes les démarches : contrat, fiches de paie, déclarations. Vous gardez le contrôle, accompagné de notre expertise.
+                    En mode mandataire, vous êtes l'employeur direct de votre auxiliaire de vie.
+                    AGAPÉ vous accompagne dans toutes les démarches administratives et de gestion :
+                    aide au recrutement, élaboration du contrat de travail, gestion des salaires et
+                    des déclarations Urssaf. Ce mode vous offre plus de flexibilité et un lien
+                    direct avec votre intervenant, tout en bénéficiant de notre expertise et de
+                    notre soutien.
                 </div>
             </div>
         </div>
@@ -821,18 +816,20 @@ Des gestes simples                                </span>
         <!-- Question 4 -->
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingFour">
-                <button class="accordion-button collapsed" type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseFour"
-                        aria-expanded="false"
-                        aria-controls="collapseFour">
-                    4. Est-il possible de changer d’auxiliaire de vie ?
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    4. Est-il possible de changer d'auxiliaire de vie en cours de prestation ?
                 </button>
             </h2>
-            <div id="collapseFour" class="accordion-collapse collapse"
-                 aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    Oui. Votre confort est essentiel. Si le lien ne se crée pas, ou si vos besoins changent, AGAPÉ vous aide à trouver un intervenant plus adapté.
+                    Oui, absolument. Votre confort et votre satisfaction sont nos priorités. Si,
+                    pour quelque raison que ce soit, le courant ne passe pas avec l'auxiliaire de
+                    vie choisi ou si vos besoins évoluent, il est tout à fait possible de demander
+                    un changement. Nous sommes là pour vous aider à trouver une nouvelle personne
+                    qui correspondra mieux à vos attentes et à votre personnalité. C'est l'un des
+                    avantages de notre approche personnalisée.
                 </div>
             </div>
         </div>
@@ -840,18 +837,19 @@ Des gestes simples                                </span>
         <!-- Question 5 -->
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingFive">
-                <button class="accordion-button collapsed" type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseFive"
-                        aria-expanded="false"
-                        aria-controls="collapseFive">
-                    5. Comment est assurée la continuité des services ?
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    5. Comment la continuité des services est-elle assurée (vacances, maladie) ?
                 </button>
             </h2>
-            <div id="collapseFive" class="accordion-collapse collapse"
-                 aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    AGAPÉ vous aide à prévoir les absences et à organiser des remplacements si besoin. Nous restons à vos côtés pour que le service ne soit jamais interrompu.
+                    En mode mandataire, puisque vous êtes l'employeur, nous vous aidons à anticiper
+                    les absences (vacances, maladie) de votre auxiliaire. Nous pouvons vous
+                    accompagner dans la recherche d'un remplaçant temporaire si votre intervenant
+                    habituel est absent, afin d'assurer une continuité des services. Nous vous
+                    conseillons sur les meilleures pratiques pour gérer ces situations.
                 </div>
             </div>
         </div>
@@ -859,33 +857,34 @@ Des gestes simples                                </span>
         <!-- Question 6 -->
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingSix">
-                <button class="accordion-button collapsed" type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseSix"
-                        aria-expanded="false"
-                        aria-controls="collapseSix">
-                    6. Comment est garantie la qualité des intervenants ?
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    6. Comment la qualité des intervenants est-elle garantie en mode mandataire ?
                 </button>
             </h2>
-            <div id="collapseSix" class="accordion-collapse collapse"
-                 aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    Nous sélectionnons des intervenants qualifiés et vérifions leurs références. AGAPÉ vous propose des profils adaptés et reste disponible pour tout ajustement.
+                    Bien que vous soyez l'employeur, AGAPÉ vous aide à recruter des intervenants
+                    qualifiés et expérimentés. Nous vous accompagnons dans la vérification de leurs
+                    compétences, de leurs références, et vous proposons des profils qui
+                    correspondent à vos besoins et à nos valeurs de bienveillance et de
+                    professionnalisme. Nous mettons à votre disposition des outils et des conseils
+                    pour vous aider à faire le meilleur choix.<br>
+                    Vous avez d'autres questions ? N'hésitez pas à nous contacter directement. Nous
+                    sommes là pour vous accompagner !
                 </div>
             </div>
         </div>
 
     </div>
 </div>
-<!-- faq accordion area end -->
 
+                        <!-- faq accordion area end -->
                     </div>
                 </div>
             </div>
             {{-- <a href="{{asset('frontend/assets/TARIF_AGAPEÌ_.pdf')}}" style="top: 36px;position: relative;" class="mt-4 rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn" target="_blank">Tarifs</a> --}}
         </div>
     </div>
-
-
-
 @endsection

@@ -36,7 +36,7 @@
                                 Siège social : 10 bis rue de la Basinerie, 44300 Nantes, France
                                 Numéro dʼagrément SAP : (en attente de délivrance) Directrice de la publication : Ramziath
                                 Arlène SALOU <br>
-                                Téléphone : 06 12 10 98 22 <br>
+                                Téléphone : 06 71 67 31 68 <br>
                                 E-mail : contact@agape-nantes.fr <br>
                                 Site internet : www.agape-nantes.fr
                             </p>
