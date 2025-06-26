@@ -13,7 +13,7 @@
         <div class="swiper mySwiper banner-one">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div style="background: #0707074d;">
+                    <div class="inner-swiper-side">
                         <!-- banner single content -->
                         <div class="banner-one-inner text-start">
                             <h4 class="title">
@@ -28,7 +28,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide two">
-                    <div style="background: #0707074d;">
+                    <div class="inner-swiper-side">
                         <!-- banner single content -->
                         <div class="banner-one-inner text-start">
                             <h4 class="title">
@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide three">
-                    <div style="background: #0707074d;">
+                    <div class="inner-swiper-side">
                         <!-- banner single content -->
                         <div class="banner-one-inner text-start">
                             <h4 class="title">
