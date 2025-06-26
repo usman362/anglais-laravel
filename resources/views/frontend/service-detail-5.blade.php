@@ -51,7 +51,8 @@
                         </p>
 
                         <p class="disc">
-                            Chez Agapé, lʼappui administratif est plus quʼun simple service : cʼest
+                            Chez  <span
+                                    style="font-weight: 1000; font-style: italic; font-family: cursive; font-size: 18px;">agapé</span>, lʼappui administratif est plus quʼun simple service : cʼest
 un soutien concret à lʼautonomie et à la tranquillité dʼesprit, pour que chacun puisse faire valoir ses droits, rester informé et conserver le contrôle de ses démarches, sans stress ni confusion.
                         </p>
 

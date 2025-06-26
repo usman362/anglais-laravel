@@ -8,7 +8,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-sm-12 col-12 breadcrumb-1">
-                        <h1 class="title pink-text">Nos prestations</h1>
+                        <h1 class="title pink-text">Nos services</h1>
                     </div>
                 </div>
             </div>

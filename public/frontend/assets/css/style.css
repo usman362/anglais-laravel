@@ -32036,3 +32036,36 @@ p.disc {
 }
 
 /*# sourceMappingURL=../maps/style.css.map */
+.working-time p {
+    color: #fff !important;
+}
+ul li {
+    color: #000 !important;
+}																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							  
+.footer-one .rts-copyright-area p {
+    color: #fff !important;
+}
+  .rts-banner-one .swiper-wrapper .swiper-slide {
+
+            height: 1000px !important;
+        }
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							  
+@media only screen and (max-width: 734px) {
+
+         .rts-banner-one .swiper-wrapper .swiper-slide
+ {
+   
+    height: 265px !important;
+}
+
+
+.rts-section-gap {
+    margin-top: 10px !important;
+}
+
+div#tarifs {
+    margin-top: 40px !important;
+}
+}																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							  
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							  
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							  

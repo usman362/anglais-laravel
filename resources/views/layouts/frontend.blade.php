@@ -51,11 +51,7 @@
             }
         }
 
-        .rts-banner-one .swiper-wrapper .swiper-slide {
-
-            height: 1000px !important;
-        }
-
+      
         .swiper-slide .inner-swiper-side {
 
             background: #0707074d;

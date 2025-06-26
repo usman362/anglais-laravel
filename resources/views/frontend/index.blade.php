@@ -18,7 +18,7 @@
                         <div class="banner-one-inner text-start">
                             <h4 class="title">
                                 <span style="font-size: 50px;-webkit-text-stroke: 1pt #fff37f47;">
-                                    Des gestes simples
+                                                                     L’aide à domicile, une présence qui réconforte
                                 </span>
                             </h4>
                             <img class="shape-img one" src="{{ asset('frontend/assets/images/banner/shape/01.png') }}"
@@ -33,7 +33,7 @@
                         <div class="banner-one-inner text-start">
                             <h4 class="title">
                                 <span style="font-size: 50px;-webkit-text-stroke: 1pt #fff37f47;">
-                                    L’aide à domicile
+   Des gestes simples
                                      </span>
                             </h4>
                             <img class="shape-img one" src="{{ asset('frontend/assets/images/banner/shape/01.png') }}"
@@ -151,7 +151,8 @@
                     <div class="top">
                         <h1 class="title">Nos Valeurs</h1>
                         <p class="description">
-                            Chez AGAPÉ, nous sommes convaincus que l'aide à domicile est avant tout une question de
+                            Chez <span
+                                    style="font-weight: 1000; font-style: italic; font-family: cursive; font-size: 18px;">agapé</span>, nous sommes convaincus que l'aide à domicile est avant tout une question de
                             confiance et de respect. C'est pourquoi nos valeurs guident chacune de nos actions, pour vous
                             offrir un accompagnement de qualité.
                         </p>
@@ -166,7 +167,8 @@
                 <div class="col-lg-4 col-md-12 col-sm-12 gap-4">
                     <div class="value-box box-1">
                         <img class="icon" src="{{ asset('frontend/assets/images/our_values/2.jpg') }}" alt="icon" />
-                        <h5 class="title">La bienveillance AGAPÉ : une écoute attentive</h5>
+                        <h5 class="title">La bienveillance <span
+                                    style="font-weight: 1000; font-style: italic; font-family: cursive; font-size: 18px;">agapé</span> : une écoute attentive</h5>
                         <p class="description">
                             Avec votre collaboration et celle de nos intervenants, nous veillons à
                             ce que votre accompagnement respecte toujours votre dignité et votre autonomie.
@@ -208,7 +210,7 @@
                             <h5 class="title">Les deux règles de base</h5>
                             <img class="icon" src="{{ asset('frontend/assets/images/our_values/7.jpg') }}"
                                 alt="icon" />
-                            <p class="description">
+                            <p class="description not-justified">
                                 Ne jamais prendre des engagements que l’on ne peut tenir.
                             </p>
                             <img class="icon" src="{{ asset('frontend/assets/images/our_values/7.jpg') }}"
@@ -398,18 +400,18 @@
                                 Nous vous offrons un service complet, sans surprise. Voici ce que couvre notre tarif :<br>
 
                             <ul>
-                                <li>Le salaire de nos auxiliaires de vie : Des personnes dévouées et formées pour vous
+                                <li><strong>Le salaire de nos auxiliaires de vie </strong> : Des personnes dévouées et formées pour vous
                                     accompagner au quotidien.</li>
-                                <li>Les charges sociales : Pour que nos équipes soient bien protégées.</li>
-                                <li>Les frais de déplacement : Quand nos aides se rendent à votre domicile.</li>
-                                <li>L'assurance qualité : Pour un service fiable et sécurisant.</li>
+                                <li><strong>Les charges sociales </strong>: Pour que nos équipes soient bien protégées.</li>
+                                <li><strong>Les frais de déplacement </strong>: Quand nos aides se rendent à votre domicile.</li>
+                                <li><strong>L'assurance qualité </strong>: Pour un service fiable et sécurisant.</li>
                             </ul>
 
                             <br>
-                            Votre devis gratuit ! Avant de commencer, nous vous préparons un devis clair et précis – sans
+                          <strong>  Votre devis gratuit ! </strong>Avant de commencer, nous vous préparons un devis clair et précis – sans
                             engagement.<br><br>
 
-                            N'hésitez pas à nous contacter pour en discuter. Nous sommes là pour vous !
+                          <strong>  N'hésitez pas à nous contacter pour en discuter. Nous sommes là pour vous !</strong>
                             </p>
                             <h3> Financer votre accompagnement : les différentes aides disponibles </h3>
 
@@ -434,7 +436,7 @@
                                         <div class="accordion-body"
                                             style="text-align: justify; font-size: 15px; color: #333;">
                                             <p>
-                                                C'est un service gratuit et facile à utiliser qui vous permet de déduire
+                                                C'est un service <strong>gratuit</strong> et <strong>facile à utiliser</strong> qui vous permet de déduire
                                                 immédiatement votre crédit d'impôt de 50 % au moment du paiement de votre
                                                 facture. Vous ne payez donc que la moitié du montant !
                                             </p>
@@ -449,15 +451,16 @@
                                             <p><strong>Attention :</strong> ce service n'est pas encore disponible si vous
                                                 bénéficiez déjà de l'APA ou de la PCH.</p>
 
-                                            <h6 class="mt-4"><strong>Comment ça fonctionne avec AGAPÉ ?</strong></h6>
+                                            <h6 class="mt-4"><strong>Comment ça fonctionne avec <span
+                                    style="font-weight: 1000; font-style: italic; font-family: cursive; font-size: 18px;">agapé</span> ?</strong></h6>
                                             <ol>
-                                                <li>Nous créons votre compte Urssaf avec votre accord.</li>
-                                                <li>Vous recevez un e-mail pour activer votre compte en ligne.</li>
+                                                <li><strong>Nous créons votre compte Urssaf</strong> avec votre accord.</li>
+                                                <li>Vous recevez un e-mail pour <strong>activer votre compte en ligne </strong> sur le site de l'Urssaf.</li>
                                                 <li>Dès l'activation, vous bénéficiez de l'Avance Immédiate.</li>
                                                 <li>Chaque mois, l'Urssaf vous notifie la demande de paiement. Vous la
                                                     validez.</li>
                                                 <li>L'Urssaf prélève le montant réduit et nous reverse la totalité.</li>
-                                                <li>Votre déclaration de revenus est pré-remplie !</li>
+                                                <li><strong>Votre déclaration de revenus est pré-remplie !</strong></li>
                                             </ol>
                                         </div>
                                     </div>
@@ -476,14 +479,15 @@
                                         <div class="accordion-body" style="font-size: 15px; color: #333;">
                                             <p>
                                                 Lorsque vous faites appel à un service d'aide à la personne comme
-                                                <strong>agapé</strong>, vous pouvez bénéficier
-                                                d'une réduction ou d'un crédit d'impôt de <strong>50 %</strong> des sommes
+                                               <span
+                                    style="font-weight: 1000; font-style: italic; font-family: cursive; font-size: 18px;">agapé</span>, vous pouvez bénéficier
+                                                d'une <strong>réduction ou d'un crédit d'impôt de <strong>50 %</strong></strong> des sommes
                                                 facturées.
                                             </p>
 
                                             <h6><strong>Comment ça marche ?</strong></h6>
                                             <p>
-                                                Chaque année, nous vous fournirons une attestation fiscale récapitulant les
+                                                Chaque année, nous vous fournirons une <strong>attestation fiscale</strong> récapitulant les
                                                 montants facturés.
                                                 Il vous suffira de reporter le montant sur votre déclaration d'impôts pour
                                                 bénéficier de la déduction.
@@ -493,9 +497,9 @@
                                             <table class="mt-2 table table-bordered">
                                                 <thead>
                                                     <tr>
-                                                        <th>Situation</th>
-                                                        <th>Plafond de dépenses annuelles</th>
-                                                        <th>Déduction maximale</th>
+                                                        <th><strong>Situation</strong></th>
+                                                        <th><strong>Plafond de dépenses annuelles</strong></th>
+                                                        <th><strong>Déduction maximale par foyer fiscal</strong></th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -703,7 +707,8 @@
                                                 accompagner pour vérifier si votre
                                                 organisme propose ce type d’aide et vous guider dans les démarches. <br>
                                                 <br>
-                                                Une question sur le financement ? AGAPÉ est à vos côtés pour vous aider à
+                                                Une question sur le financement ? <span
+                                    style="font-weight: 1000; font-style: italic; font-family: cursive; font-size: 18px;">agapé</span> est à vos côtés pour vous aider à
                                                 trouver la solution
                                                 la mieux adaptée à votre situation.
                                             </p>
@@ -767,21 +772,21 @@
                         <p class="disc">
                             <strong>Une expertise reconnue : </strong>Nos intervenants sont le cœur de notre service.
                             Chacune et chacun
-                            possède une expérience minimale de 3 ans auprès de personnes âgées, en perte d'autonomie ou en
+                            possède une <strong> expérience minimale de 3 ans </strong> auprès de personnes âgées, en perte d'autonomie ou en
                             situation de handicap, garantissant un accompagnement professionnel et bienveillant. <br><br>
                             <strong>Savoir-faire et savoir-être au service de l'humain :</strong> Nous avons spécifiquement
                             adapté leurs
-                            compétences et leur savoir-être aux outils de l'éducation populaire. Cette approche unique nous
+                            compétences et leur savoir-être <strong> aux outils de l'éducation populaire.</strong> Cette approche unique nous
                             permet d'assurer un service optimal, axé sur le maintien de l'autonomie et le bien-être global
                             de la personne accompagnée. <br><br>
-                            <strong>Stabilité et confiance :</strong> Nous nous engageons à ce que les mêmes personnes
+                            <strong>Stabilité et confiance :</strong> Nous nous engageons à ce que les <strong> mêmes personnes</strong>
                             accompagnent vos
                             proches. Cette continuité est essentielle pour établir une relation de confiance durable et un
                             accompagnement personnalisé qui répond au plus près des besoins de chacun. <br><br>
                             <strong>Collaboration pour un suivi complet :</strong> Nos intervenants travaillent en
-                            collaboration étroite avec
-                            tous les professionnels à domicile (médecins, infirmiers, kinésithérapeutes, etc.) ainsi qu'avec
-                            la famille. Cette approche coordonnée garantit un suivi et une prise en charge globale de la
+                           <strong> collaboration étroite avec
+                            tous les professionnels à domicile </strong> (médecins, infirmiers, kinésithérapeutes, etc.) ainsi qu'avec
+                            la <strong> famille.</strong> Cette approche coordonnée garantit un suivi et une prise en charge globale de la
                             personne, assurant une sérénité pour tous.
                         </p>
                     </div>
@@ -790,7 +795,7 @@
         </div>
     </div>
 
-    <div class="rts-faq-section rts-section-gap rts-faq-bg bg_image" style="background-color: rgb(255, 243, 127) !important;">
+    <div class="rts-faq-section rts-section-gap rts-faq-bg bg_image"style="background-color: rgb(255 255 255) ;">
         <div class="container">
             <div class="row align-items-center">
                 {{-- <div class="col-lg-5">
@@ -806,7 +811,8 @@
                         <div class="title-area-faq">
                             <h2 class="title">FAQ</h2>
                             <p class="disc">
-                                Chez AGAPÉ, nous savons qu'il est normal d'avoir des questions lorsque l'on envisage une
+                                Chez <span
+                                    style="font-weight: 1000; font-style: italic; font-family: cursive; font-size: 18px;">agapé</span>, nous savons qu'il est normal d'avoir des questions lorsque l'on envisage une
                                 aide à domicile, surtout en mode mandataire. Voici les réponses aux interrogations les plus
                                 fréquentes pour vous éclairer.
                             </p>
@@ -870,13 +876,14 @@
                                         <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseThree"
                                             aria-expanded="false" aria-controls="collapseThree">
-                                            3. Qu’est-ce que le mode mandataire chez AGAPÉ ?
+                                            3. Qu’est-ce que le mode mandataire chez agapé ?
                                         </button>
                                     </h2>
                                     <div id="collapseThree" class="accordion-collapse collapse"
                                         aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            Vous êtes l’employeur de votre aide à domicile. AGAPÉ vous guide dans toutes les
+                                            Vous êtes l’employeur de votre aide à domicile. <span
+                                    style="font-weight: 1000; font-style: italic; font-family: cursive; font-size: 18px;">agapé</span> vous guide dans toutes les
                                             démarches : contrat, fiches de paie, déclarations. Vous gardez le contrôle,
                                             accompagné de notre expertise.
                                         </div>
@@ -896,7 +903,8 @@
                                         aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
                                             Oui. Votre confort est essentiel. Si le lien ne se crée pas, ou si vos besoins
-                                            changent, AGAPÉ vous aide à trouver un intervenant plus adapté.
+                                            changent, <span
+                                    style="font-weight: 1000; font-style: italic; font-family: cursive; font-size: 18px;">agapé</span> vous aide à trouver un intervenant plus adapté.
                                         </div>
                                     </div>
                                 </div>
@@ -913,7 +921,8 @@
                                     <div id="collapseFive" class="accordion-collapse collapse"
                                         aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            AGAPÉ vous aide à prévoir les absences et à organiser des remplacements si
+                                           <span
+                                    style="font-weight: 1000; font-style: italic; font-family: cursive; font-size: 18px;">agapé</span> vous aide à prévoir les absences et à organiser des remplacements si
                                             besoin. Nous restons à vos côtés pour que le service ne soit jamais interrompu.
                                         </div>
                                     </div>
@@ -932,7 +941,8 @@
                                         aria-labelledby="headingSix" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
                                             Nous sélectionnons des intervenants qualifiés et vérifions leurs références.
-                                            AGAPÉ vous propose des profils adaptés et reste disponible pour tout ajustement.
+                                           <span
+                                    style="font-weight: 1000; font-style: italic; font-family: cursive; font-size: 18px;">agapé</span> vous propose des profils adaptés et reste disponible pour tout ajustement.
                                         </div>
                                     </div>
                                 </div>
