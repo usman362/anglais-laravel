@@ -267,7 +267,7 @@
     </style>
 
     <!-- our service area start -->
-    <div class="rts-service-area rts-section-gapTop pb--80 service-two-bg bg_image">
+    <div class="rts-service-area pb--80 service-two-bg bg_image">
         <div class="container">
             <div class="row g-5 service padding-controler">
                 <div class="rts-title-area">
@@ -361,7 +361,7 @@
 
 
     <!-- SECTION FAQ TARIFS & AIDES -->
-    <div class="rts-faq-section rts-section-gap rts-faq-bg" id="tarifs" style="background-color: #ffffff;">
+    <div class="rts-faq-section rts-faq-bg" id="tarifs" style="background-color: #ffffff;">
         <style>
             .faq-two-inner .title-area-faq h1.title {
                 text-transform: none;
@@ -789,7 +789,7 @@
         </div>
     </div>
 
-    <div class="rts-faq-section rts-section-gap rts-faq-bg bg_image">
+    <div class="rts-faq-section rts-section-gap rts-faq-bg bg_image" style="background-color: rgb(255, 243, 127) !important;">
         <div class="container">
             <div class="row align-items-center">
                 {{-- <div class="col-lg-5">
