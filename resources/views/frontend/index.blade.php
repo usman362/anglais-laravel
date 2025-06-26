@@ -430,20 +430,20 @@
 
 
                         <div class="faq-accordion-area">
-                            <div class="accordion" id="accordionExample">
+                            <div class="accordion" id="accordionExample2">
                                 <!-- Question 1 -->
                                 <div class="accordion-item"
                                     style="background-color: #ffeced !important;border: var(--bs-accordion-border-width) solid #ffeced;">
-                                    <h2 class="accordion-header" id="headingOne">
+                                    <h2 class="accordion-header" id="headingOne2">
                                         <button class="accordion-button collapsed" type="button"
                                             style="background: #ffeced;border: #ffeced;color: #016144;"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
-                                            aria-controls="collapseOne">
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="false"
+                                            aria-controls="collapseOne2">
                                             1. L'Avance Immédiate de l'Urssaf : payez moins cher tout de suite !
                                         </button>
                                     </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse"
-                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div id="collapseOne2" class="accordion-collapse collapse"
+                                        aria-labelledby="headingOne2" data-bs-parent="#accordionExample2">
                                         <div class="accordion-body"
                                             style="text-align: justify; font-size: 15px; color: #333;">
                                             <p>
@@ -482,16 +482,16 @@
                                 <!-- Question 2 -->
                                 <div class="accordion-item"
                                     style="background-color: #ffeced !important;border: var(--bs-accordion-border-width) solid #ffeced;">
-                                    <h2 class="accordion-header" id="headingTwo">
+                                    <h2 class="accordion-header" id="headingTwo2">
                                         <button class="accordion-button collapsed" type="button"
                                             style="background: #ffeced;border: #ffeced;color: #016144;"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                                            aria-controls="collapseTwo">
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false"
+                                            aria-controls="collapseTwo2">
                                             2. La réduction ou le crédit d'impôt
                                         </button>
                                     </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse"
-                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div id="collapseTwo2" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo2" data-bs-parent="#accordionExample2">
                                         <div class="accordion-body" style="font-size: 15px; color: #333;">
                                             <p>
                                                 Lorsque vous faites appel à un service d'aide à la personne comme
@@ -546,16 +546,16 @@
                                 <!-- Question 3 -->
                                 <div class="accordion-item"
                                     style="background-color: #ffeced !important;border: var(--bs-accordion-border-width) solid #ffeced;">
-                                    <h2 class="accordion-header" id="headingThree">
+                                    <h2 class="accordion-header" id="headingThree2">
                                         <button class="accordion-button collapsed" type="button"
                                             style="background: #ffeced;border: #ffeced;color: #016144;"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                            aria-expanded="false" aria-controls="collapseThree">
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree2"
+                                            aria-expanded="false" aria-controls="collapseThree2">
                                             3. L'Allocation Personnalisée d'Autonomie (APA)
                                         </button>
                                     </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse"
-                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div id="collapseThree2" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree2" data-bs-parent="#accordionExample2">
                                         <div class="accordion-body" style="font-size: 15px; color: #333;">
                                             <p>
                                                 L'APA est une aide financière destinée aux personnes âgées de 60 ans et plus
@@ -656,16 +656,16 @@
                                 <!-- Question 4 -->
                                 <div class="accordion-item"
                                     style="background-color: #ffeced !important;border: var(--bs-accordion-border-width) solid #ffeced;">
-                                    <h2 class="accordion-header" id="headingEight">
+                                    <h2 class="accordion-header" id="headingEight2">
                                         <button class="accordion-button collapsed" type="button"
                                             style="background: #ffeced;border: #ffeced;color: #016144;"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseEight"
-                                            aria-expanded="false" aria-controls="collapseEight">
+                                            data-bs-toggle="collapse" data-bs-target="#collapseEight2"
+                                            aria-expanded="false" aria-controls="collapseEight2">
                                             4. La Prestation de Compensation du Handicap (PCH)
                                         </button>
                                     </h2>
-                                    <div id="collapseEight" class="accordion-collapse collapse"
-                                        aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                                    <div id="collapseEight2" class="accordion-collapse collapse"
+                                        aria-labelledby="headingEight2" data-bs-parent="#accordionExample2">
                                         <div class="accordion-body" style="font-size: 15px; color: #333;">
                                             <p>
                                                 La <strong>PCH</strong> est une aide financière conçue pour les personnes en
@@ -707,16 +707,16 @@
                                 <!-- Question 5 -->
                                 <div class="accordion-item"
                                     style="background-color: #ffeced !important;border: var(--bs-accordion-border-width) solid #ffeced;">
-                                    <h2 class="accordion-header" id="headingNine">
+                                    <h2 class="accordion-header" id="headingNine2">
                                         <button class="accordion-button collapsed" type="button"
                                             style="background: #ffeced;border: #ffeced;color: #016144;"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseNine"
-                                            aria-expanded="false" aria-controls="collapseNine">
+                                            data-bs-toggle="collapse" data-bs-target="#collapseNine2"
+                                            aria-expanded="false" aria-controls="collapseNine2">
                                             5. Les prises en charge par votre assurance, mutuelle ou caisse
                                         </button>
                                     </h2>
-                                    <div id="collapseNine" class="accordion-collapse collapse"
-                                        aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                                    <div id="collapseNine2" class="accordion-collapse collapse"
+                                        aria-labelledby="headingNine2" data-bs-parent="#accordionExample2">
                                         <div class="accordion-body" style="font-size: 15px; color: #333;">
                                             <p>
                                                 De nombreuses <strong>assurances</strong>, <strong>mutuelles</strong> ou
