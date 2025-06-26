@@ -10,9 +10,9 @@
                 <!-- EN-TÊTE DE PAGE -->
                 <div class="page-header">
                     <div>
-                        <h2 class="main-content-title tx-24 mg-b-5">Plannings</h2>
+                        <h2 class="main-content-title tx-24 mg-b-5">Interventions</h2>
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:;">Plannings</a></li>
+                            <li class="breadcrumb-item"><a href="javascript:;">Interventions</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Liste</li>
                         </ol>
                     </div>
@@ -20,7 +20,7 @@
                         <div class="justify-content-center">
                             <a href="{{route('schedules.create')}}" class="btn btn-primary my-2 btn-icon-text">
                                 <i class="fe fe-plus bg-white-transparent text-white"></i>
-                                <span>Ajouter un planning</span>
+                                <span>Ajouter une intervention</span>
                             </a>
                         </div>
                     </div>
@@ -39,7 +39,8 @@
                                     <table class="table table-bordered text-nowrap border-bottom" id="users-datatable">
                                         <thead>
                                             <tr>
-                                                <th class="wd-20p">Utilisateur</th>
+                                                <th class="wd-20p">Employé</th>
+                                                <th class="wd-20p">Client</th>
                                                 <th class="wd-25p">Date</th>
                                                 <th class="wd-20p">Heure de début</th>
                                                 <th class="wd-20p">Heure de fin</th>
@@ -85,8 +86,12 @@
                 columns: [
 
                     {
-                        data: 'user_name',
-                        name: 'user_name'
+                        data: 'employee_name',
+                        name: 'employee_name'
+                    },
+                    {
+                        data: 'client_name',
+                        name: 'client_name'
                     },
 
                     {

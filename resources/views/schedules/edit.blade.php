@@ -33,7 +33,7 @@
                                     data-select2-id="13">
                                     @csrf
                                     @method('PUT')
-                                    <div class="col-md-6">
+                                    <div class="col-md-4">
                                         <label for="first_name" class="form-label tx-semibold">Sélectionner la date</label>
                                         <div class="">
                                             <div class="input-group">
@@ -51,15 +51,29 @@
                                             </div>
                                         @enderror
                                     </div>
-                                    <div class="col-md-6">
-                                        <label for="user_id" class="form-label tx-semibold">Sélectionner un utilisateur</label>
-                                        <select class="form-select" name="user_id" id="user_id" required="">
+                                    <div class="col-md-4">
+                                        <label for="employee_id" class="form-label tx-semibold">Sélectionner un employé</label>
+                                        <select class="form-select" name="employee_id" id="employee_id" required="">
                                             <option selected="" disabled="" value="">Choisir...</option>
-                                            @foreach (\App\Models\User::all() as $user)
-                                                <option value="{{ $user->id }}" @selected($user->id == old('role',@$schedule->user_id))>{{ $user->name }}</option>
+                                            @foreach (\App\Models\User::where('role','employee')->get() as $user)
+                                                <option value="{{ $user->id }}" @selected($user->id == old('role',@$schedule->employee_id))>{{ $user->name }}</option>
                                             @endforeach
                                         </select>
-                                        @error('role')
+                                        @error('employee_id')
+                                            <div class="text-danger">
+                                                {{ $message }}
+                                            </div>
+                                        @enderror
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="client_id" class="form-label tx-semibold">Sélectionner un client</label>
+                                        <select class="form-select" name="client_id" id="client_id" required="">
+                                            <option selected="" disabled="" value="">Choisir...</option>
+                                            @foreach (\App\Models\User::where('role','client')->get() as $user)
+                                                <option value="{{ $user->id }}" @selected($user->id == old('role',@$schedule->client_id))>{{ $user->name }}</option>
+                                            @endforeach
+                                        </select>
+                                        @error('client_id')
                                             <div class="text-danger">
                                                 {{ $message }}
                                             </div>

@@ -22,10 +22,13 @@ class ScheduleController extends Controller
     public function index(Request $request)
     {
         if ($request->ajax()) {
-            $users = Schedule::all();
+            $users = Schedule::with(['employee', 'client'])->get();
             return DataTables::of($users)
-                ->addColumn('user_name', function ($row) {
-                    return 'Employee';
+                ->addColumn('employee_name', function ($row) {
+                    return $row->employee->name ?? 'N/A';
+                })
+                ->addColumn('client_name', function ($row) {
+                    return $row->client->name ?? 'N/A';
                 })
                 ->addColumn('actions', function ($row) {
                     $editUrl = route('schedules.edit', $row->id);
@@ -63,14 +66,16 @@ class ScheduleController extends Controller
             'start_time' => 'required',
             'end_time' => 'required',
             'date' => 'required',
-            // 'user_id' => 'required',
+            'employee_id' => 'required',
+            'client_id' => 'required',
         ]);
         try {
             $user = Schedule::create([
                 'start_time' => $request->start_time,
                 'end_time' => $request->end_time,
                 'date' => $request->date,
-                'user_id' => $request->user_id,
+                'employee_id' => $request->employee_id,
+                'client_id' => $request->client_id,
             ]);
 
             return redirect(route('schedules.index'))->with('success', 'Le calendrier a été créé avec succès');
@@ -102,22 +107,24 @@ class ScheduleController extends Controller
     public function update(Request $request, string $id)
     {
         $request->validate([
-            'first_name' => 'required',
-            'last_name' => 'required',
-            'email' => 'required|email|unique:users,email,' . $id,
-            'password' => 'required',
+            'start_time' => 'required',
+            'end_time' => 'required',
+            'date' => 'required',
+            'employee_id' => 'required',
+            'client_id' => 'required',
         ]);
-
         try {
-            $user = Schedule::create([
-                'name' => $request->first_name . ' ' . $request->last_name,
-                'email' => $request->email,
-                'password' => Hash::make($request->password),
+            $user = Schedule::updateOrCreate(['id' => $id], [
+                'start_time' => $request->start_time,
+                'end_time' => $request->end_time,
+                'date' => $request->date,
+                'employee_id' => $request->employee_id,
+                'client_id' => $request->client_id,
             ]);
 
-            return redirect(route('schedules.index'))->with('success', 'User has been Created Successfully');
+            return redirect(route('schedules.index'))->with('success', 'Le calendrier a été créé avec succès');
         } catch (\Exception $e) {
-            return redirect(route('schedules.index'))->with('error', 'Failed to Create User');
+            return redirect(route('schedules.index'))->with('error', 'Échec de la création du planning');
         }
     }
 
