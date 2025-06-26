@@ -18,7 +18,7 @@
                         <div class="banner-one-inner text-start">
                             <h4 class="title">
                                 <span style="font-size: 50px;-webkit-text-stroke: 1pt #fff37f47;">
-                                    L’aide à domicile, une présence qui réconforte
+                                    Des gestes simples
                                 </span>
                             </h4>
                             <img class="shape-img one" src="{{ asset('frontend/assets/images/banner/shape/01.png') }}"
@@ -33,7 +33,8 @@
                         <div class="banner-one-inner text-start">
                             <h4 class="title">
                                 <span style="font-size: 50px;-webkit-text-stroke: 1pt #fff37f47;">
-                                    Des gestes simples </span>
+                                    L’aide à domicile
+                                     </span>
                             </h4>
                             <img class="shape-img one" src="{{ asset('frontend/assets/images/banner/shape/01.png') }}"
                                 alt="banner_business">
