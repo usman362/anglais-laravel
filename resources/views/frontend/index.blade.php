@@ -394,11 +394,11 @@
                             <h1 class="title">
                                 Tout est compris !
                             </h1>
+                            <br>
                             <p class="disc">
-                                <br>
 
                                 Nous vous offrons un service complet, sans surprise. Voici ce que couvre notre tarif :<br>
-
+                            </p>
                             <ul>
                                 <li><strong>Le salaire de nos auxiliaires de vie </strong> : Des personnes dévouées et formées pour vous
                                     accompagner au quotidien.</li>
@@ -408,9 +408,12 @@
                             </ul>
 
                             <br>
+                            <p class="disc">
                           <strong>  Votre devis gratuit ! </strong>Avant de commencer, nous vous préparons un devis clair et précis – sans
-                            engagement.<br><br>
-
+                            engagement.
+                            </p>
+                            
+                            <p class="disc">
                           <strong>  N'hésitez pas à nous contacter pour en discuter. Nous sommes là pour vous !</strong>
                             </p>
                             <h3> Financer votre accompagnement : les différentes aides disponibles </h3>

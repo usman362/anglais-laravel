@@ -51,7 +51,7 @@
             }
         }
 
-      
+
         .swiper-slide .inner-swiper-side {
 
             background: #0707074d;
@@ -90,6 +90,11 @@
         p {
             color: #000 !important;
 
+        }
+
+        .rts-contact-fluid .form-wrapper input,
+        .rts-contact-fluid .form-wrapper input::placeholder {
+            color: #000 !important;
         }
     </style>
 </head>
