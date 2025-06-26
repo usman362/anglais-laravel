@@ -7,6 +7,11 @@
         .value-box .title {
             padding-bottom: 20px !important;
         }
+
+        .rts-section-gap {
+            border-top: 1px solid #35353568;
+            border-bottom: 1px solid #35353568;
+        }
     </style>
     <!-- banner blank space area -->
     <div class="rts-banner-area rts-banner-one">
@@ -440,8 +445,8 @@
                                     <h2 class="accordion-header" id="headingOne2">
                                         <button class="accordion-button collapsed" type="button"
                                             style="background: #ffeced;border: #ffeced;color: #016144;"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="false"
-                                            aria-controls="collapseOne2">
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne2"
+                                            aria-expanded="false" aria-controls="collapseOne2">
                                             1. L'Avance Immédiate de l'Urssaf : payez moins cher tout de suite !
                                         </button>
                                     </h2>
@@ -488,8 +493,8 @@
                                     <h2 class="accordion-header" id="headingTwo2">
                                         <button class="accordion-button collapsed" type="button"
                                             style="background: #ffeced;border: #ffeced;color: #016144;"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false"
-                                            aria-controls="collapseTwo2">
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo2"
+                                            aria-expanded="false" aria-controls="collapseTwo2">
                                             2. La réduction ou le crédit d'impôt
                                         </button>
                                     </h2>

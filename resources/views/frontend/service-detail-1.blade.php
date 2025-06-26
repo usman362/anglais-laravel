@@ -1,8 +1,14 @@
 @extends('layouts.frontend')
 @section('title', 'Accompagnement de fin de vie')
 @section('content')
+    <style>
+        .rts-service-area.pb--100.notranslate {
+            padding-top: 50px;
+        }
+    </style>
     <!-- start breadcrumb area -->
-    <div class="breadcrumb-bg bg_image notranslate" style="background-image: url({{asset('frontend/assets/images/service-7.jpeg')}})">
+    <div class="breadcrumb-bg bg_image notranslate"
+        style="background-image: url({{ asset('frontend/assets/images/service-7.jpeg') }})">
         <div class="rts-breadcrumb-area" style="background-color: #0000007d">
             <div class="container">
                 <div class="row align-items-center">
@@ -22,9 +28,13 @@
                 <div class="col-md-12 col-sm-12 col-12">
                     <!-- service details left area start -->
                     <div class="service-detials-step-1">
-                        <h1 class="title pink-text" style="font-size: 40px"><img src="{{asset('frontend/assets/images/icon/29.png')}}" width="50" alt=""> Accompagnement de fin de vie</h1>
+                        <h1 class="title pink-text" style="font-size: 40px"><img
+                                src="{{ asset('frontend/assets/images/icon/29.png') }}" width="50" alt="">
+                            Accompagnement de fin de vie</h1>
                         <p class="disc">
-                            Chaque fin de vie mérite dʼêtre vécue avec dignité et sérénité. Lʼaccompagnement que nous proposons sʼinscrit dans une approche profondément humaine, attentive et respectueuse des volontés de la personne en fin de vie, ainsi que de sa famille.
+                            Chaque fin de vie mérite dʼêtre vécue avec dignité et sérénité. Lʼaccompagnement que nous
+                            proposons sʼinscrit dans une approche profondément humaine, attentive et respectueuse des
+                            volontés de la personne en fin de vie, ainsi que de sa famille.
                         </p>
                         <p class="disc">
                             Nos intervenants offrent une présence rassurante et bienveillante, un soutien émotionnel
@@ -53,7 +63,8 @@
                             font-style: italic;
                             font-family: cursive;
                             font-size: 18px;
-                        ">agapé</span> sʼengage à être un soutien solide et respectueux, dans les moments les plus sensibles.
+                        ">agapé</span>
+                            sʼengage à être un soutien solide et respectueux, dans les moments les plus sensibles.
                         </p>
                     </div>
                 </div>
@@ -64,7 +75,7 @@
 
 
     <!-- our service area start -->
-    <div class="rts-service-area pb--200 notranslate">
+    <div class="rts-service-area pb--100 notranslate">
         <div class="container">
             <div class="row g-5 service padding-controler">
                 <h4 class="title">Autres Services</h4>

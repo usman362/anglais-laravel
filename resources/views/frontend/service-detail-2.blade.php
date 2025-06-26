@@ -1,6 +1,11 @@
 @extends('layouts.frontend')
 @section('title', 'Actes quotidiens de la vie')
 @section('content')
+<style>
+        .rts-service-area.pb--100.notranslate {
+            padding-top: 50px;
+        }
+    </style>
     <!-- start breadcrumb area -->
     <div class="breadcrumb-bg bg_image notranslate" style="background-image: url({{asset('frontend/assets/images/service-2.jpeg')}})">
         <div class="rts-breadcrumb-area" style="background-color: #0000007d">
@@ -53,7 +58,7 @@
     <!-- End service details area -->
 
     <!-- our service area start -->
-    <div class="rts-service-area pb--200 notranslate">
+    <div class="rts-service-area pb--100 notranslate">
         <div class="container">
             <div class="row g-5 service padding-controler">
                 <h4 class="title">Autres Services</h4>
