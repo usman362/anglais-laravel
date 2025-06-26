@@ -50,6 +50,51 @@
                 display: block;
             }
         }
+
+        .rts-banner-one .swiper-wrapper .swiper-slide {
+
+            height: 1000px !important;
+        }
+
+        .swiper-slide .inner-swiper-side {
+
+            background: #0707074d;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+        }
+
+        .banner-one-inner {
+            display: flex !important;
+            align-items: center !important;
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            bottom: 0 !important;
+        }
+
+        only screen and (max-width: 767px) responsive ka andr ya wali dalna .rts-banner-one .swiper-wrapper .swiper-slide {
+
+            height: 265px !important;
+        }
+
+
+        .rts-section-gap {
+            margin-top: 10px !important;
+        }
+
+        div#tarifs {
+            margin-top: 40px !important;
+        }
+
+        p {
+            color: #000 !important;
+
+        }
     </style>
 </head>
 
@@ -211,7 +256,7 @@
                             <a href="{{ route('services') }}">Nos services</a>
                         </li>
                         <li class="#" style="list-style: none">
-                            <a href="#tarifs" >Tarifs</a>
+                            <a href="#tarifs">Tarifs</a>
                         </li>
                         {{--
                         <li><a href="{{ route('who_we_are') }}">Qui sommes-nous</a></li>
