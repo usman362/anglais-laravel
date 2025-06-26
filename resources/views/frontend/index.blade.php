@@ -322,7 +322,7 @@
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--100">
                     <div class="service-two-inner">
                         <a href="{{ route('service_details_4') }}"><img style="height: 276px;width: 415px;"
-                                src="{{ asset('frontend/assets/images/faq/faq-2.jpeg') }}" alt="Business_image"></a>
+                                src="{{ asset('frontend/assets/images/sommes-nous.jpeg') }}" alt="Business_image"></a>
                         <div class="body-content w-100">
                             <div class="hidden-area">
                                 <h5 class="title">Interaction sociale stimulante </h5>
