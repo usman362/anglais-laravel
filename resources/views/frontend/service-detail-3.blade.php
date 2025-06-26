@@ -1,5 +1,5 @@
 @extends('layouts.frontend')
-@section('title', 'Entretien du cadre de vie')
+@section('title', 'Aide à domicile')
 @section('content')
     <!-- start breadcrumb area -->
     <div class="breadcrumb-bg bg_image notranslate" style="background-image: url({{asset('frontend/assets/images/service-6.jpeg')}});background-size: 100% 170%;background-position: top;">
@@ -7,7 +7,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-sm-12 col-12 breadcrumb-1">
-                    <h1 class="title">Entretien du cadre de vie</h1>
+                    <h1 class="title">Aide à domicile</h1>
                 </div>
             </div>
         </div>

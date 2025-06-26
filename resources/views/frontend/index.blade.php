@@ -316,7 +316,7 @@
                                 src="{{ asset('frontend/assets/images/service-6.jpeg') }}" alt="Business_image"></a>
                         <div class="body-content w-100">
                             <div class="hidden-area">
-                                <h5 class="title">Entretien du cadre de vie</h5>
+                                <h5 class="title">Aide à domicile</h5>
                                 <a class="rts-read-more-two color-primary" href="{{ route('service_details_3') }}"> En
                                     savoir plus<i class="far fa-arrow-right"></i></a>
                             </div>
@@ -875,7 +875,7 @@
                                             sont toujours personnalisées selon vos besoins. Elles peuvent inclure :
                                             <ul>
                                                 <li>Aide à la personne : toilette, habillage, mobilité, repas.</li>
-                                                <li>Entretien du cadre de vie : ménage, repassage, linge.</li>
+                                                <li>Aide à domicile : ménage, repassage, linge.</li>
                                                 <li>Préparation des repas : menus équilibrés, aide à la prise.</li>
                                                 <li>Accompagnement : courses, rendez-vous, activités sociales.</li>
                                                 <li>Soutien moral : présence, lutte contre l’isolement.</li>

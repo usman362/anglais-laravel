@@ -47,7 +47,7 @@ Des gestes simples                                </span>
                         <div class="banner-one-inner text-start">
                             <h4 class="title">
                                 <span style="font-size: 50px;-webkit-text-stroke: 1pt #fff37f47;">
-                                      Un soutien qui respecte 
+                                      Un soutien qui respecte
                                 </span>
                             </h4>
                             <img class="shape-img one" src="{{ asset('frontend/assets/images/banner/shape/01.png') }}"
@@ -295,7 +295,7 @@ Des gestes simples                                </span>
                                 src="{{ asset('frontend/assets/images/service-6.jpeg') }}" alt="Business_image"></a>
                         <div class="body-content w-100">
                             <div class="hidden-area">
-                                <h5 class="title">Entretien du cadre de vie</h5>
+                                <h5 class="title">Aide à domicile</h5>
                                 <a class="rts-read-more-two color-primary" href="{{ route('service_details_3') }}"> En
                                     savoir plus<i class="far fa-arrow-right"></i></a>
                             </div>
@@ -399,7 +399,7 @@ Des gestes simples                                </span>
                             N'hésitez pas à nous contacter pour en discuter. Nous sommes là pour vous !
                         </p>
                     </div>
-              
+
 
                     <div class="faq-accordion-area">
                         <div class="accordion" id="accordionExample">
@@ -630,10 +630,10 @@ Des gestes simples                                </span>
             <p>
                 De nombreuses <strong>assurances</strong>, <strong>mutuelles</strong> ou <strong>caisses de retraite</strong>
                 peuvent proposer une participation financière aux services d'aide à domicile.     <br>   <br>
-           
+
                 Certaines d’entre elles ont signé des conventions avec des prestataires ou proposent des forfaits dédiés
                 aux bénéficiaires en perte d’autonomie.    <br>    <br>
-           
+
                 <strong>N’hésitez pas à nous contacter !</strong> Nous pourrons vous accompagner pour vérifier si votre
                 organisme propose ce type d’aide et vous guider dans les démarches.    <br>
                <br>
@@ -644,7 +644,7 @@ Des gestes simples                                </span>
     </div>
 </div>
 
-                           
+
                             </div>
 
                         </div> <!-- .accordion -->
@@ -719,10 +719,10 @@ Des gestes simples                                </span>
                                 fréquentes pour vous éclairer.
                             </p>
                         </div>
-					  
-					  
-					  
-					  
+
+
+
+
                     <!-- faq accordion area -->
 <div class="faq-accordion-area">
     <div class="accordion" id="accordionExample">
@@ -747,7 +747,7 @@ Des gestes simples                                </span>
                             (lever, coucher, transferts), aide à la prise de repas.
                         </li>
                         <li style="list-style: circle; color: #000;">
-                            Entretien du cadre de vie : ménage courant, repassage, entretien du linge.
+                            Aide à domicile : ménage courant, repassage, entretien du linge.
                         </li>
                         <li style="list-style: circle; color: #000;">
                             Préparation des repas : élaboration de menus équilibrés, préparation des

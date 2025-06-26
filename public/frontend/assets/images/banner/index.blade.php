@@ -296,7 +296,7 @@
                                 src="{{ asset('frontend/assets/images/service-6.jpeg') }}" alt="Business_image"></a>
                         <div class="body-content w-100">
                             <div class="hidden-area">
-                                <h5 class="title">Entretien du cadre de vie</h5>
+                                <h5 class="title">Aide à domicile</h5>
                                 <a class="rts-read-more-two color-primary" href="{{ route('service_details_3') }}"> En
                                     savoir plus<i class="far fa-arrow-right"></i></a>
                             </div>
@@ -609,7 +609,7 @@
                             (lever, coucher, transferts), aide à la prise de repas.
                         </li>
                         <li style="list-style: circle; color: #000;">
-                            Entretien du cadre de vie : ménage courant, repassage, entretien du linge.
+                            Aide à domicile : ménage courant, repassage, entretien du linge.
                         </li>
                         <li style="list-style: circle; color: #000;">
                             Préparation des repas : élaboration de menus équilibrés, préparation des
