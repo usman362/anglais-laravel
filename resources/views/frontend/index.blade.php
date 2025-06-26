@@ -308,6 +308,7 @@
                     </div>
                 </div>
                 <!-- single service area end-->
+                <div id="tarifs"></div>
                 <!-- single service area -->
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--100">
                     <div class="service-two-inner">
@@ -322,6 +323,7 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- single service area end-->
                 <!-- single service area -->
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--100">
@@ -339,6 +341,7 @@
                 </div>
                 <!-- single service area end-->
                 <!-- single service area -->
+
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--60">
                     <div class="service-two-inner">
                         <a href="{{ route('service_details_5') }}"><img
@@ -366,7 +369,7 @@
 
 
     <!-- SECTION FAQ TARIFS & AIDES -->
-    <div class="rts-faq-section rts-faq-bg" id="tarifs" style="background-color: #ffffff;">
+    <div class="rts-faq-section rts-faq-bg" style="background-color: #ffffff;">
         <style>
             .faq-two-inner .title-area-faq h1.title {
                 text-transform: none;
