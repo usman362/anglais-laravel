@@ -29687,7 +29687,7 @@ a.rts-btn.btn-secondary-5:hover {
     font-size: 22px;
 }
 
-.tarif-section a:hover{
+.tarif-section a:hover {
     color: #fff;
 }
 
@@ -32037,34 +32037,46 @@ p.disc {
 .working-time p {
     color: #fff !important;
 }
+
 ul li {
     color: #000 !important;
 }
+
 .footer-one .rts-copyright-area p {
     color: #fff !important;
 }
-  .rts-banner-one .swiper-wrapper .swiper-slide {
 
-            height: 860px !important;
-            background-position: inherit !important;
-        }
+.rts-banner-one .swiper-wrapper .swiper-slide {
+
+    height: 860px !important;
+    background-position: inherit !important;
+}
 
 @media only screen and (max-width: 734px) {
 
-         .rts-banner-one .swiper-wrapper .swiper-slide
- {
+    .rts-banner-one .swiper-wrapper .swiper-slide {
 
-    height: 265px !important;
-}
+        height: 265px !important;
+    }
 
 
-.rts-section-gap {
-    margin-top: 10px !important;
-}
+    .rts-section-gap {
+        margin-top: 10px !important;
+    }
 
-div#tarifs {
-    margin-top: 40px !important;
-}
+    div#tarifs {
+        margin-top: 40px !important;
+    }
+
+
+    .breadcrumb-bg.bg_image.notranslate {
+        height: inherit !important;
+    }
+
+    .breadcrumb-bg.bg_image.notranslate .rts-breadcrumb-area {
+        height: inherit !important;
+        padding-top: 80px !important;
+    }
 }
 
 .breadcrumb-bg.bg_image.notranslate {
