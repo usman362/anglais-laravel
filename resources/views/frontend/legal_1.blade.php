@@ -7,7 +7,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-sm-12 col-12 breadcrumb-1">
-                        <h1 class="title pink-text">Mentions légales</h1>
+                        <h1 class="title">Mentions légales</h1>
                     </div>
 
                 </div>

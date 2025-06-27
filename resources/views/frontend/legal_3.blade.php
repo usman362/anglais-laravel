@@ -7,7 +7,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-sm-12 col-12 breadcrumb-1">
-                        <h1 class="title pink-text">Conditions Générales de Vente (CGV)</h1>
+                        <h1 class="title">Conditions Générales de Vente (CGV)</h1>
                     </div>
                 </div>
             </div>
