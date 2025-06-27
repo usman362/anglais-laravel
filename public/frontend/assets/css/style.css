@@ -32045,7 +32045,8 @@ ul li {
 }
   .rts-banner-one .swiper-wrapper .swiper-slide {
 
-            height: 1000px !important;
+            height: 860px !important;
+            background-position: inherit !important;
         }
 
 @media only screen and (max-width: 734px) {
