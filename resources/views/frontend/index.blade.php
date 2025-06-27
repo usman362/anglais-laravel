@@ -298,8 +298,8 @@
                     </div>
                 </div>
                 <!-- single service area end-->
-                <!-- single service area -->
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--100">
+                <!-- single service area -->
                     <div class="service-two-inner">
                         <a href="{{ route('service_details_2') }}"><img
                                 src="{{ asset('frontend/assets/images/service-sommes.png') }}" alt="Business_image"></a>
@@ -313,7 +313,6 @@
                     </div>
                 </div>
                 <!-- single service area end-->
-                <div id="tarifs"></div>
                 <!-- single service area -->
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--100">
                     <div class="service-two-inner">
@@ -327,6 +326,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
 
                 <!-- single service area end-->
@@ -343,6 +343,7 @@
                             </div>
                         </div>
                     </div>
+                    <div id="tarifs"></div>
                 </div>
                 <!-- single service area end-->
                 <!-- single service area -->
