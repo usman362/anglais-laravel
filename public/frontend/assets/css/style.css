@@ -32067,3 +32067,15 @@ div#tarifs {
 }
 }
 
+.breadcrumb-bg.bg_image.notranslate {
+    height: 860px;
+    background-position: inherit;
+}
+
+.rts-breadcrumb-area {}
+
+.breadcrumb-bg.bg_image.notranslate .rts-breadcrumb-area {
+    height: 860px;
+    align-items: center;
+    padding-top: 460px;
+}
