@@ -32077,6 +32077,18 @@ ul li {
         height: inherit !important;
         padding-top: 80px !important;
     }
+
+    .rts-faq-section.rts-faq-bg {
+        margin-top: 45px;
+    }
+
+    .rts-service-area.pb--80.service-two-bg.bg_image {
+        padding-bottom: 120px !important;
+    }
+
+    .service-two-inner .body-content .hidden-area {
+        max-height: 130px;
+    }
 }
 
 .breadcrumb-bg.bg_image.notranslate {
