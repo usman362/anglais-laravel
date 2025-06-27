@@ -12,4 +12,14 @@ class Intervention extends Model
         'intervention_date',
         'notes',
     ];
+
+    public function employee()
+    {
+        return $this->hasOne(User::class, 'id', 'employee_id');
+    }
+
+    public function client()
+    {
+        return $this->hasOne(User::class, 'id', 'client_id');
+    }
 }

@@ -23,10 +23,10 @@ class InterventionController extends Controller
             $users = Intervention::all();
             return DataTables::of($users)
                 ->addColumn('employee', function ($row) {
-                    return 'Employee';
+                    return $row->employee->name ?? 'N/A';
                 })
                 ->addColumn('client', function ($row) {
-                    return 'Client';
+                    return $row->client->name ?? 'N/A';
                 })
                 ->addColumn('actions', function ($row) {
                     $editUrl = route('interventions.edit', $row->id);
@@ -63,6 +63,7 @@ class InterventionController extends Controller
         $request->validate([
             'date' => 'required',
             'employee_id' => 'required',
+            'client_id' => 'required',
         ]);
         try {
             $user = Intervention::create([
@@ -100,7 +101,23 @@ class InterventionController extends Controller
      */
     public function update(Request $request, string $id)
     {
+        $request->validate([
+            'date' => 'required',
+            'employee_id' => 'required',
+            'client_id' => 'required',
+        ]);
+        try {
+            $user = Intervention::updateOrCreate(['id' => $id],[
+                'date' => $request->date,
+                'employee_id' => $request->employee_id,
+                'client_id' => $request->client_id,
+                'notes' => $request->notes,
+            ]);
 
+            return redirect(route('interventions.index'))->with('success', "L'intervention a été créée avec succès");
+        } catch (\Exception $e) {
+            return redirect(route('interventions.index'))->with('error', "Échec de la création d'une intervention");
+        }
     }
 
     /**
