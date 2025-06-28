@@ -257,7 +257,7 @@
                             <a href="{{ route('services') }}">Nos services</a>
                         </li>
                         <li class="#" style="list-style: none">
-                            <a href="#tarifs">Tarifs</a>
+                            <a href="#tarifs-mob">Tarifs</a>
                         </li>
                         {{--
                         <li><a href="{{ route('who_we_are') }}">Qui sommes-nous</a></li>

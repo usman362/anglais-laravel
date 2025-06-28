@@ -375,7 +375,7 @@
 
 
     <!-- SECTION FAQ TARIFS & AIDES -->
-    <div class="rts-faq-section rts-faq-bg" style="background-color: #ffffff;">
+    <div class="rts-faq-section rts-faq-bg" id="tarifs-mob" style="background-color: #ffffff;">
         <style>
             .faq-two-inner .title-area-faq h1.title {
                 text-transform: none;
