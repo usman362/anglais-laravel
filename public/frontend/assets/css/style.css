@@ -152,6 +152,11 @@ body {
     body {
         overflow: hidden;
     }
+
+    .header-main-one .thumbnail a img {
+        max-width: 150px !important;
+    }
+
 }
 
 body::before {
