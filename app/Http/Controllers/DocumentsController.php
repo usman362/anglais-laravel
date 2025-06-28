@@ -23,9 +23,9 @@ class DocumentsController extends Controller
     {
         if ($request->ajax()) {
             if (Auth::user()->role == 'admin') {
-                $users = Document::where('type',$request->type)->get();
+                $users = Document::where('type', $request->type)->get();
             } else {
-                $users = Document::where('type',$request->type)->where('user_id', Auth::user()->id)->get();
+                $users = Document::where('type', $request->type)->where('user_id', Auth::user()->id)->get();
             }
             return DataTables::of($users)
                 ->addColumn('user', function ($row) {
@@ -148,8 +148,32 @@ class DocumentsController extends Controller
                 'type' => $request->type,
                 'user_id' => $request->user_id,
             ]);
+            if ($request->type == 'payslip') {
+                return redirect(route('payslip.List'))->with('success', 'Le document a été créé avec succès');
+            }
+            if ($request->type == 'followup') {
+                return redirect(route('followup.List'))->with('success', 'Le document a été créé avec succès');
+            }
+            if ($request->type == 'activity') {
+                return redirect(route('activity.List'))->with('success', 'Le document a été créé avec succès');
+            }
+            if ($request->type == 'invoice') {
+                return redirect(route('invoice.List'))->with('success', 'Le document a été créé avec succès');
+            }
             return redirect(route('documents.index'))->with('success', 'Le document a été créé avec succès');
         } catch (\Exception $e) {
+            if ($request->type == 'payslip') {
+                return redirect(route('payslip.List'))->with('success', 'Le document a été créé avec succès');
+            }
+            if ($request->type == 'followup') {
+                return redirect(route('followup.List'))->with('success', 'Le document a été créé avec succès');
+            }
+            if ($request->type == 'activity') {
+                return redirect(route('activity.List'))->with('success', 'Le document a été créé avec succès');
+            }
+            if ($request->type == 'invoice') {
+                return redirect(route('invoice.List'))->with('success', 'Le document a été créé avec succès');
+            }
             return redirect(route('documents.index'))->with('error', 'Échec de la création du document');
         }
     }
