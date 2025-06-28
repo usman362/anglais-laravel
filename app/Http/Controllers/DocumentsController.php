@@ -163,16 +163,16 @@ class DocumentsController extends Controller
             return redirect(route('documents.index'))->with('success', 'Le document a été créé avec succès');
         } catch (\Exception $e) {
             if ($request->type == 'payslip') {
-                return redirect(route('payslip.List'))->with('success', 'Le document a été créé avec succès');
+                return redirect(route('payslip.List'))->with('success', 'Échec de la création du document');
             }
             if ($request->type == 'followup') {
-                return redirect(route('followup.List'))->with('success', 'Le document a été créé avec succès');
+                return redirect(route('followup.List'))->with('success', 'Échec de la création du document');
             }
             if ($request->type == 'activity') {
-                return redirect(route('activity.List'))->with('success', 'Le document a été créé avec succès');
+                return redirect(route('activity.List'))->with('success', 'Échec de la création du document');
             }
             if ($request->type == 'invoice') {
-                return redirect(route('invoice.List'))->with('success', 'Le document a été créé avec succès');
+                return redirect(route('invoice.List'))->with('success', 'Échec de la création du document');
             }
             return redirect(route('documents.index'))->with('error', 'Échec de la création du document');
         }
@@ -193,7 +193,20 @@ class DocumentsController extends Controller
     {
         $document = Document::find($id);
         $users = User::where('role', '!=', 'admin')->get();
-        return view('documents.edit', compact('document', 'users'));
+        $name = 'Document';
+        if ($document->type == 'payslip') {
+            $name = 'Fiche de paie';
+        }
+        if ($document->type == 'followup') {
+            $name = 'Fiche de suivi';
+        }
+        if ($document->type == 'activity') {
+            $name = "Rapport d'activité";
+        }
+        if ($document->type == 'invoice') {
+            $name = 'Facture';
+        }
+        return view('documents.edit', compact('document', 'name', 'users'));
     }
 
     /**
@@ -203,10 +216,10 @@ class DocumentsController extends Controller
     {
         $request->validate([
             'title' => 'required',
-            'file' => 'nullable',
+            'file' => 'required',
         ]);
         try {
-            $filePath = Document::find($id)->file_path ?? null;
+            $filePath = null;
 
             if ($request->hasFile('file')) {
                 $uniqueName = uniqid() . '___' . str_replace(' ', '_', $request->file->getClientOriginalName());
@@ -217,12 +230,36 @@ class DocumentsController extends Controller
             $document = Document::updateOrCreate(['id' => $id], [
                 'title' => $request->title,
                 'file_path' => $filePath,
+                'type' => $request->type,
                 'user_id' => $request->user_id,
             ]);
-
+            if ($request->type == 'payslip') {
+                return redirect(route('payslip.List'))->with('success', 'Le document a été mis à jour avec succès');
+            }
+            if ($request->type == 'followup') {
+                return redirect(route('followup.List'))->with('success', 'Le document a été mis à jour avec succès');
+            }
+            if ($request->type == 'activity') {
+                return redirect(route('activity.List'))->with('success', 'Le document a été mis à jour avec succès');
+            }
+            if ($request->type == 'invoice') {
+                return redirect(route('invoice.List'))->with('success', 'Le document a été mis à jour avec succès');
+            }
             return redirect(route('documents.index'))->with('success', 'Le document a été mis à jour avec succès');
         } catch (\Exception $e) {
-            return redirect(route('documents.index'))->with('error', 'Échec de la création du document');
+            if ($request->type == 'payslip') {
+                return redirect(route('payslip.List'))->with('success', 'Échec de la mise à jour du document');
+            }
+            if ($request->type == 'followup') {
+                return redirect(route('followup.List'))->with('success', 'Échec de la mise à jour du document');
+            }
+            if ($request->type == 'activity') {
+                return redirect(route('activity.List'))->with('success', 'Échec de la mise à jour du document');
+            }
+            if ($request->type == 'invoice') {
+                return redirect(route('invoice.List'))->with('success', 'Échec de la mise à jour du document');
+            }
+            return redirect(route('documents.index'))->with('error', 'Échec de la mise à jour du document');
         }
     }
 
