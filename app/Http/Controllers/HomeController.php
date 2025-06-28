@@ -131,7 +131,7 @@ class HomeController extends Controller
                 "Sujet : {$request->subject}\n\n" .
                 "Message :\n{$request->message}",
             function ($message) use ($request) {
-                $message->to('usmanshoaib362@gmail.com')
+                $message->to('contact@agape-nantes.fr')
                     ->subject('Nouveau message du formulaire de contact');
             }
         );
