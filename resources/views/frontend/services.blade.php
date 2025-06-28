@@ -20,7 +20,7 @@
     <div class="rts-service-area rts-section-gapTop pb--200 service-two-bg bg_image notranslate">
         <div class="container">
             <div class="row g-5 service padding-controler">
-                <!-- single service area -->
+               <!-- single service area -->
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--100">
                     <div class="service-two-inner">
                         <a href="{{ route('service_details_1') }}"><img style="height: 276px;width: 415px;"
@@ -35,11 +35,11 @@
                     </div>
                 </div>
                 <!-- single service area end-->
-                <!-- single service area -->
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--100">
+                <!-- single service area -->
                     <div class="service-two-inner">
                         <a href="{{ route('service_details_2') }}"><img
-                                src="{{ asset('frontend/assets/images/service-2.jpeg') }}" alt="Business_image"></a>
+                                src="{{ asset('frontend/assets/images/service-sommes.png') }}" alt="Business_image"></a>
                         <div class="body-content w-100">
                             <div class="hidden-area">
                                 <h5 class="title">Actes quotidiens de la vie</h5>
@@ -63,24 +63,28 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
+
                 <!-- single service area end-->
                 <!-- single service area -->
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--100">
                     <div class="service-two-inner">
                         <a href="{{ route('service_details_4') }}"><img style="height: 276px;width: 415px;"
-                                src="{{ asset('frontend/assets/images/service-4.jpeg') }}" alt="Business_image"></a>
+                                src="{{ asset('frontend/assets/images/faq/faq-2.jpeg') }}" alt="Business_image"></a>
                         <div class="body-content w-100">
                             <div class="hidden-area">
-                                <h5 class="title">Interaction sociale</h5>
+                                <h5 class="title">Interaction sociale stimulante </h5>
                                 <a class="rts-read-more-two color-primary" href="{{ route('service_details_4') }}"> En
                                     savoir plus<i class="far fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
+                    <div id="tarifs"></div>
                 </div>
                 <!-- single service area end-->
                 <!-- single service area -->
+
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--60">
                     <div class="service-two-inner">
                         <a href="{{ route('service_details_5') }}"><img

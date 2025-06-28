@@ -7,7 +7,7 @@
         }
     </style>
     <!-- start breadcrumb area -->
-    <div class="breadcrumb-bg bg_image notranslate" style="background-image: url({{asset('frontend/assets/images/service-2.jpeg')}})">
+    <div class="breadcrumb-bg bg_image notranslate" style="background-image: url({{asset('frontend/assets/images/service-sommes.png')}})">
         <div class="rts-breadcrumb-area" style="background-color: #0000007d">
         <div class="container">
             <div class="row align-items-center">
