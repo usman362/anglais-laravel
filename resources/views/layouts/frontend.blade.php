@@ -34,6 +34,11 @@
             text-align: justify !important;
         }
 
+        html {
+            scroll-padding-top: 100px;
+            /* Adjust based on your header height */
+        }
+
         #goog-gt-tt {
             visibility: hidden !important;
         }
