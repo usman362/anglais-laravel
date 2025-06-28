@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Add '.$name)
+@section('title', 'Ajouter une '.$name)
 @section('content')
 
     <div class="main-content side-content pt-0">
@@ -9,10 +9,10 @@
                 <!-- PAGE HEADER -->
                 <div class="page-header">
                     <div>
-                        <h2 class="main-content-title tx-24 mg-b-5">Add {{$name}}</h2>
+                        <h2 class="main-content-title tx-24 mg-b-5">Ajouter une {{$name}}</h2>
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:;">{{$name}}s</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Create</li>
+                            <li class="breadcrumb-item"><a href="javascript:;">{{$name}}</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Créer</li>
                         </ol>
                     </div>
                 </div>
@@ -24,7 +24,7 @@
                         <div class="card custom-card" data-select2-id="15">
                             <div class="card-header">
                                 <div>
-                                    <h6 class="main-content-label tx-15">Add {{$name}}</h6>
+                                    <h6 class="main-content-label tx-15">Ajouter une {{$name}}</h6>
                                 </div>
                             </div>
                             <div class="card-body" data-select2-id="14">
@@ -38,19 +38,18 @@
                                             <div class="card custom-card">
                                                 <div class="card-body">
                                                     <label for="title" class="form-label tx-semibold">{{$name}}
-                                                        name</label>
+                                                        Nom</label>
                                                     <input type="text" name="title" class="form-control mb-4"
                                                         id="title" value="{{ old('title', @$document->title) }}"
                                                         required="">
 
-                                                    <label for="user_id" class="form-label tx-semibold">Select User</label>
+                                                    <label for="user_id" class="form-label tx-semibold">Sélectionnez un utilisateur</label>
                                                     <select name="user_id" class="form-control notranslate mb-4" id="user_id" required>
                                                         @foreach ($users as $user)
                                                             <option value="{{$user->id}}" @selected(old('user_id') == $user->id)>{{$user->name.' ('.$user->role.')'}}</option>
                                                         @endforeach
                                                     </select>
-                                                    <label for="file" class="form-label tx-semibold">{{$name}}
-                                                        file</label>
+                                                    <label for="file" class="form-label tx-semibold">{{$name}}</label>
                                                     <input type="file" id="file" name="file" required
                                                         class="dropify mb-4" data-height="200" />
                                                 </div>
@@ -58,7 +57,7 @@
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <button class="btn btn-primary" type="submit">Submit form</button>
+                                        <button class="btn btn-primary" type="submit">Soumettre le formulaire</button>
                                     </div>
                                 </form>
                             </div>

@@ -63,25 +63,25 @@ class DocumentsController extends Controller
     public function invoiceList()
     {
         $type = 'invoice';
-        $name = 'Invoice';
+        $name = 'Facture';
         return view('documents.index', compact('type', 'name'));
     }
     public function payslipList()
     {
         $type = 'payslip';
-        $name = 'Payslip';
+        $name = 'Fiche de paie';
         return view('documents.index', compact('type', 'name'));
     }
     public function activityList()
     {
         $type = 'activity';
-        $name = 'Activity Report';
+        $name = "Rapport d'activité";
         return view('documents.index', compact('type', 'name'));
     }
     public function followupList()
     {
         $type = 'followup';
-        $name = 'Follow up Sheet';
+        $name = 'Fiche de suivi';
         return view('documents.index', compact('type', 'name'));
     }
 
@@ -98,28 +98,28 @@ class DocumentsController extends Controller
     public function invoiceCreate()
     {
         $type = 'invoice';
-        $name = 'Invoice';
+        $name = 'Facture';
         $users = User::where('role', '!=', 'admin')->get();
         return view('documents.create', compact('type', 'name', 'users'));
     }
     public function payslipCreate()
     {
         $type = 'payslip';
-        $name = 'Payslip';
+        $name = 'Fiche de paie';
         $users = User::where('role', '!=', 'admin')->get();
         return view('documents.create', compact('type', 'name', 'users'));
     }
     public function activityCreate()
     {
         $type = 'activity';
-        $name = 'Activity Report';
+        $name = "Rapport d'activité";
         $users = User::where('role', '!=', 'admin')->get();
         return view('documents.create', compact('type', 'name', 'users'));
     }
     public function followupCreate()
     {
         $type = 'followup';
-        $name = 'Follow up Sheet';
+        $name = 'Fiche de suivi';
         $users = User::where('role', '!=', 'admin')->get();
         return view('documents.create', compact('type', 'name', 'users'));
     }
@@ -148,7 +148,6 @@ class DocumentsController extends Controller
                 'type' => $request->type,
                 'user_id' => $request->user_id,
             ]);
-
             return redirect(route('documents.index'))->with('success', 'Le document a été créé avec succès');
         } catch (\Exception $e) {
             return redirect(route('documents.index'))->with('error', 'Échec de la création du document');

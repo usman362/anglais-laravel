@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Liste des documents')
+@section('title', 'Liste des '.$name)
 @section('content')
 
     <!-- MAIN-CONTENT -->
@@ -10,10 +10,10 @@
                 <!-- PAGE HEADER -->
                 <div class="page-header">
                     <div>
-                        <h2 class="main-content-title tx-24 mg-b-5">{{ $name }}s</h2>
+                        <h2 class="main-content-title tx-24 mg-b-5">{{ $name }}</h2>
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:;">{{ $name }}s</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Liste</li>
+                            <li class="breadcrumb-item"><a href="javascript:;">Liste de</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">{{ $name }}</li>
                         </ol>
                     </div>
                     @if (auth()->user()->role == 'admin')
@@ -21,7 +21,7 @@
                             <div class="justify-content-center">
                                 <a href="{{ route($type . '.create') }}" class="btn btn-primary my-2 btn-icon-text">
                                     <i class="fe fe-plus bg-white-transparent text-white"></i>
-                                    <span>Add {{ $name }}</span>
+                                    <span>Ajouter une {{ $name }}</span>
                                 </a>
                             </div>
                         </div>
@@ -36,14 +36,14 @@
                         <div class="card custom-card overflow-hidden">
                             <div class="card-body">
                                 <div>
-                                    <h6 class="main-content-label mb-1">Liste des documents</h6>
+                                    <h6 class="main-content-label mb-1">Liste des {{$name}}</h6>
                                 </div>
                                 <div class="table-responsive">
                                     <table class="table table-bordered text-nowrap border-bottom" id="documents-datatable">
                                         <thead>
                                             <tr>
-                                                <th class="wd-20p">File Name</th>
-                                                <th class="wd-20p">User</th>
+                                                <th class="wd-20p">Nom de fichier</th>
+                                                <th class="wd-20p">Utilisateur</th>
                                                 <th class="wd-25p">Type</th>
                                                 @if (auth()->user()->role == 'admin')
                                                     <th class="wd-20p">Action</th>
