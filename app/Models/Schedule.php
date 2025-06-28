@@ -13,6 +13,7 @@ class Schedule extends Model
         'user_id',
         'employee_id',
         'client_id',
+        'notes'
     ];
 
     public function employee()

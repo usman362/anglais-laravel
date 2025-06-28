@@ -61,15 +61,20 @@ class InterventionController extends Controller
     public function store(Request $request)
     {
         $request->validate([
+            'start_time' => 'required',
+            'end_time' => 'required',
             'date' => 'required',
             'employee_id' => 'required',
             'client_id' => 'required',
         ]);
         try {
             $user = Intervention::create([
-                'date' => $request->date,
+                'title' => $request->title,
+                'intervention_date' => $request->date,
                 'employee_id' => $request->employee_id,
                 'client_id' => $request->client_id,
+                'start_time' => $request->start_time,
+                'end_time' => $request->end_time,
                 'notes' => $request->notes,
             ]);
 
@@ -102,15 +107,21 @@ class InterventionController extends Controller
     public function update(Request $request, string $id)
     {
         $request->validate([
+            'title' => 'required',
+            'start_time' => 'required',
+            'end_time' => 'required',
             'date' => 'required',
             'employee_id' => 'required',
             'client_id' => 'required',
         ]);
         try {
             $user = Intervention::updateOrCreate(['id' => $id],[
-                'date' => $request->date,
+                'title' => $request->title,
+                'intervention_date' => $request->date,
                 'employee_id' => $request->employee_id,
                 'client_id' => $request->client_id,
+                'start_time' => $request->start_time,
+                'end_time' => $request->end_time,
                 'notes' => $request->notes,
             ]);
 

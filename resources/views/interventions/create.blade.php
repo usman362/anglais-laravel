@@ -29,11 +29,24 @@
                             </div>
                             <div class="card-body" data-select2-id="14">
                                 {{-- needs-validation was-validated --}}
-                                <form class="row g-3" action="{{ route('schedules.store') }}" novalidate="" method="POST"
+                                <form class="row g-3" action="{{ route('interventions.store') }}" novalidate="" method="POST"
                                     data-select2-id="13">
                                     @csrf
-                                    <div class="col-md-4">
-                                        <label for="first_name" class="form-label tx-semibold">Sélectionner la date</label>
+                                    <div class="col-md-6">
+                                        <label for="title" class="form-label tx-semibold">Titre de l’intervention</label>
+                                            <div class="input-group">
+                                                <input class="form-control" placeholder=""
+                                                    type="text" name="title" id="title"
+                                                    value="{{ old('title', @$schedule->intervention_date) }}" required>
+                                            </div>
+                                        @error('title')
+                                            <div class="text-danger">
+                                                {{ $message }}
+                                            </div>
+                                        @enderror
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="date" class="form-label tx-semibold">Sélectionner la date</label>
                                         <div class="">
                                             <div class="input-group">
                                                 <div class="input-group-text">
@@ -41,22 +54,22 @@
                                                 </div>
                                                 <input class="form-control fc-datepicker" placeholder="MM/JJ/AAAA"
                                                     type="text" name="date"
-                                                    value="{{ old('date', @$schedule->date) }}" required>
+                                                    value="{{ old('date', @$schedule->intervention_date) }}" required>
                                             </div>
                                         </div>
-                                        @error('first_name')
+                                        @error('date')
                                             <div class="text-danger">
                                                 {{ $message }}
                                             </div>
                                         @enderror
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-6">
                                         <label for="employee_id" class="form-label tx-semibold">Sélectionner un
                                             employé</label>
                                         <select class="form-select" name="employee_id" id="employee_id" required="">
                                             <option selected="" disabled="" value="">Choisir...</option>
                                             @foreach (\App\Models\User::where('role', 'employee')->get() as $user)
-                                                <option value="{{ $user->id }}" @selected($user->id == old('role', @$schedule->employee_id))>
+                                                <option value="{{ $user->id }}" @selected($user->id == old('employee_id', @$schedule->employee_id))>
                                                     {{ $user->name }}</option>
                                             @endforeach
                                         </select>
@@ -66,12 +79,12 @@
                                             </div>
                                         @enderror
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-6">
                                         <label for="client_id" class="form-label tx-semibold">Sélectionner un client</label>
                                         <select class="form-select" name="client_id" id="client_id" required="">
                                             <option selected="" disabled="" value="">Choisir...</option>
                                             @foreach (\App\Models\User::where('role', 'client')->get() as $user)
-                                                <option value="{{ $user->id }}" @selected($user->id == old('role', @$schedule->client_id))>
+                                                <option value="{{ $user->id }}" @selected($user->id == old('client_id', @$schedule->client_id))>
                                                     {{ $user->name }}</option>
                                             @endforeach
                                         </select>
@@ -81,8 +94,43 @@
                                             </div>
                                         @enderror
                                     </div>
+                                    <div class="col-md-6">
+                                        <label for="start_time" class="form-label tx-semibold">Heure de début</label>
+                                        <div class="">
+                                            <div class="input-group">
+                                                <div class="input-group-text">
+                                                    <i class="fe fe-clock tx-16 lh-0 op-6"></i>
+                                                </div>
+                                                <input class="form-control tp2" id="start_time" name="start_time"
+                                                    placeholder="Définir l'heure" type="text"
+                                                    value="{{ old('start_time', @$schedule->start_time) }}" required>
+                                            </div>
+                                        </div>
+                                        @error('start_time')
+                                            <div class="text-danger">
+                                                {{ $message }}
+                                            </div>
+                                        @enderror
+                                    </div>
 
-
+                                    <div class="col-md-6">
+                                        <label for="end_time" class="form-label tx-semibold">Heure de fin</label>
+                                        <div class="">
+                                            <div class="input-group">
+                                                <div class="input-group-text">
+                                                    <i class="fe fe-clock tx-16 lh-0 op-6"></i>
+                                                </div>
+                                                <input class="form-control tp2" id="end_time" name="end_time"
+                                                    placeholder="Définir l'heure" type="text"
+                                                    value="{{ old('end_time', @$schedule->end_time) }}" required>
+                                            </div>
+                                        </div>
+                                        @error('end_time')
+                                            <div class="text-danger">
+                                                {{ $message }}
+                                            </div>
+                                        @enderror
+                                    </div>
                                     <div class="col-md-12">
                                         <label for="notes" class="form-label tx-semibold">Notes</label>
 

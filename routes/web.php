@@ -62,15 +62,15 @@ Route::get('liste-des-factures', [DocumentsController::class, 'invoiceList'])->n
 Route::get('bulletins-de-paie', [DocumentsController::class, 'payslipList'])->name('payslip.List');
 Route::get('fiches-de-suivi', [DocumentsController::class, 'followupList'])->name('followup.List');
 Route::get('rapports-d-activité', [DocumentsController::class, 'activityList'])->name('activity.List');
-Route::resource('planning', ScheduleController::class)->names([
-    'index'   => 'schedules.index',
-    'create'  => 'schedules.create',
-    'store'   => 'schedules.store',
-    'show'    => 'schedules.show',
-    'edit'    => 'schedules.edit',
-    'update'  => 'schedules.update',
-    'destroy' => 'schedules.destroy',
-]);
+// Route::resource('planning', ScheduleController::class)->names([
+//     'index'   => 'schedules.index',
+//     'create'  => 'schedules.create',
+//     'store'   => 'schedules.store',
+//     'show'    => 'schedules.show',
+//     'edit'    => 'schedules.edit',
+//     'update'  => 'schedules.update',
+//     'destroy' => 'schedules.destroy',
+// ]);
 Route::resource('interventions', InterventionController::class);
 Route::resource('blogs', BlogController::class);
 Route::resource('contracts', ContractsController::class);

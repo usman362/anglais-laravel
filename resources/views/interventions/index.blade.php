@@ -41,10 +41,13 @@
                                     <table class="table table-bordered text-nowrap border-bottom" id="users-datatable">
                                         <thead>
                                             <tr>
-                                                <th class="wd-25p">Date</th>
-                                                <th class="wd-20p">Client</th>
-                                                <th class="wd-20p">Employé</th>
-                                                <th class="wd-20p">Notes</th>
+                                                <th class="">Titre de l’intervention</th>
+                                                <th class="">Date</th>
+                                                <th class="">Client</th>
+                                                <th class="">Employé</th>
+                                                <th class="">Heure de début</th>
+                                                <th class="">Heure de fin</th>
+                                                <th class="wd-30p">Notes</th>
                                                 @if (auth()->user()->role == 'admin')
                                                     <th class="wd-20p">Action</th>
                                                 @endif
@@ -78,10 +81,13 @@
                 language: {
                     url: 'https://cdn.datatables.net/plug-ins/1.13.7/i18n/fr-FR.json'
                 },
-                columns: [
+                columns: [{
+                        data: 'title',
+                        name: 'title'
+                    },
                     {
-                        data: 'date',
-                        name: 'date'
+                        data: 'intervention_date',
+                        name: 'intervention_date'
                     },
                     {
                         data: 'client',
@@ -90,6 +96,14 @@
                     {
                         data: 'employee',
                         name: 'employee'
+                    },
+                    {
+                        data: 'start_time',
+                        name: 'start_time'
+                    },
+                    {
+                        data: 'end_time',
+                        name: 'end_time'
                     },
                     {
                         data: 'notes',

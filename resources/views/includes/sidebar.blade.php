@@ -73,7 +73,7 @@
                             @endif
                         </ul>
                     </li>
-                    @if (auth()->user()->role == 'admin')
+                    {{-- @if (auth()->user()->role == 'admin')
                         <li class="nav-item">
                             <a class="nav-link with-sub" href="javascript:void(0);">
                                 <img style="width: 30px;padding:0 2px;" src="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ_-2.png') }}" alt="">
@@ -90,7 +90,7 @@
                                 </li>
                             </ul>
                         </li>
-                    @endif
+                    @endif --}}
 
 
                     <li class="nav-item">
