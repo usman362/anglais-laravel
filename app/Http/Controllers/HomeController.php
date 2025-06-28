@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Blog;
 use App\Models\ContactUs;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Yajra\DataTables\DataTables;
 
 class HomeController extends Controller
@@ -122,6 +123,18 @@ class HomeController extends Controller
         $contact->subject = $request->subject;
         $contact->message = $request->message;
         $contact->save();
+        // Send email
+        Mail::raw(
+            "Nouveau message reçu depuis le formulaire de contact :\n\n" .
+                "Nom : {$request->name}\n" .
+                "Email : {$request->email}\n" .
+                "Sujet : {$request->subject}\n\n" .
+                "Message :\n{$request->message}",
+            function ($message) use ($request) {
+                $message->to('usmanshoaib362@gmail.com')
+                    ->subject('Nouveau message du formulaire de contact');
+            }
+        );
         return back();
     }
 }
