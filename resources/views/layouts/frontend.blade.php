@@ -39,6 +39,10 @@
             /* Adjust based on your header height */
         }
 
+        div#tarifs-mob {
+            margin-top: 100px;
+        }
+
         #goog-gt-tt {
             visibility: hidden !important;
         }
