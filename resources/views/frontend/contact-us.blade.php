@@ -2,7 +2,7 @@
 @section('title', 'Contactez-nous')
 @section('content')
     <!-- début zone fil d’Ariane -->
-    <div class="breadcrumb-bg bg_image" style="background-image:url({{asset('frontend/assets/images/service-8.jpeg')}});">
+    <div class="breadcrumb-bg bg_image" style="background-image:url({{ asset('frontend/assets/images/service-8.jpeg') }});">
         <div class="rts-breadcrumb-area" style="background-color: #0000007d">
             <div class="container">
                 <div class="row align-items-center">
@@ -28,7 +28,24 @@
                             <h2 class="title">Besoin d'aide ? Contactez-nous</h2>
                         </div>
                         <div class="form-wrapper">
-                            <div id="form-messages"></div>
+                            <div id="form-messages">
+                                @if (session('success'))
+                                    <div class="alert alert-success" id="success-message" role="alert">
+                                        {{ session('success') }}
+                                    </div>
+
+                                    <script>
+                                        setTimeout(function() {
+                                            let alertBox = document.getElementById('success-message');
+                                            if (alertBox) {
+                                                alertBox.style.transition = 'opacity 0.5s ease';
+                                                alertBox.style.opacity = 0;
+                                                setTimeout(() => alertBox.remove(), 500); // remove after fade out
+                                            }
+                                        }, 5000); // 5 seconds
+                                    </script>
+                                @endif
+                            </div>
                             <form action="{{ route('store_contact_us') }}" method="post">
                                 @csrf
                                 <div class="name-email">
@@ -47,4 +64,3 @@
     </div>
     <!-- fin zone formulaire de contact -->
 @endsection
-

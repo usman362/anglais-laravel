@@ -135,6 +135,6 @@ class HomeController extends Controller
                     ->subject('Nouveau message du formulaire de contact');
             }
         );
-        return back();
+        return back()->with('success', 'Votre message a bien été envoyé. Nous vous répondrons dès que possible.');
     }
 }
