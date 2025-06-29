@@ -2,7 +2,7 @@
 @section('title', 'Contactez-nous')
 @section('content')
     <!-- début zone fil d’Ariane -->
-    <div class="breadcrumb-bg bg_image" style="background-image:url({{asset('frontend/assets/images/service-8.jpeg')}});">
+    <div >
         <div class="rts-breadcrumb-area" style="background-color: #0000007d">
             <div class="container">
                 <div class="row align-items-center">
@@ -21,7 +21,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="rts-contact-fluid rts-section-gap">
-                        <div class="rts-title-area contact-fluid text-center mb--50">
+                        <div class="rts-title-area text-center mb--50">
                             <p class="pre-title">
                                 Entrer en contact
                             </p>

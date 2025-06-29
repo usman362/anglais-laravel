@@ -85,8 +85,8 @@
                 <div class="col-md-6 col-sm-12 col-12">
                     <div class="about-image-v-inner">
                         <div class="image-area">
-                            <img class="img-1" src="{{ asset('frontend/assets/images/photo-auxiliaire.png') }}"
-                                alt="BUsiness_image">
+                            <img class="img-1" src="{{ asset('frontend/assets/images/equipeagape.jpg') }}"
+                                alt="Equipe Agape">
                         </div>
                     </div>
                 </div>
@@ -110,29 +110,29 @@
                                 L'histoire de notre création est très personnelle. Travailler comme aide à domicile m’a
                                 permis
                                 de comprendre qu'il fallait changer la façon dont on accompagne les personnes chez elles.
-                                Le but est de repenser complètement l'aide à domicile, pour qu'elle mène à une vraie
+                                Le but est de repenser complètement l'aide à domicile, pour qu'elle mène à une  <strong> vraie
                                 interaction
-                                sociale.
+							  sociale </strong>.
                             </p>
 
                             <p class="disc">
-                                Ce service est destiné aux personnes âgées, en situation de handicap de tout genre,
-                                et à toute personne ayant besoin d'une aide au quotidien.
+                              <strong>  Ce service est destiné aux personnes âgées, en situation de handicap de tout genre,
+								et à toute personne ayant besoin d'une aide au quotidien. </strong>
                             </p>
 
                             <p class="disc">
                                 Nous croyons en un accompagnement qui va bien plus loin que les gestes du quotidien.
-                                Notre objectif principal est simple : vous aider à rester chez vous le plus longtemps
-                                possible,
+                                Notre objectif principal est simple : vous aider à  <strong>rester chez vous le plus longtemps
+                                possible, </strong>
                                 dans les meilleures conditions et entouré de ce qui compte le plus pour vous.
                             </p>
 
                             <p class="disc">
-                                Nous nous engageons à vous offrir un soutien chaleureux, personnalisé et respectueux,
+                                Nous nous engageons à vous offrir un  <strong>soutien chaleureux, personnalisé et respectueux, </strong>
                                 en mettant toujours votre dignité au premier plan.
                                 Chez <span
                                     style="font-weight: 1000; font-style: italic; font-family: cursive; font-size: 18px;">agapé</span>,
-                                chaque personne est unique. Notre mission est de vous permettre de vivre pleinement,
+                                <strong> chaque personne est unique.  </strong> Notre mission est de vous permettre de vivre pleinement,
                                 chez vous, et en toute tranquillité.
                             </p>
                         </div>
@@ -217,14 +217,22 @@
                             <h5 class="title">Les deux règles de base</h5>
                             <img class="icon" src="{{ asset('frontend/assets/images/our_values/7.jpg') }}"
                                 alt="icon" />
-                            <p class="description not-justified">
-                                Ne jamais prendre des engagements que l’on ne peut tenir.
-                            </p>
+                         <p class="description" style="text-align: center;">
+    Ne jamais prendre des engagements que l’on ne peut tenir.
+</p>
+
+
                             <img class="icon" src="{{ asset('frontend/assets/images/our_values/7.jpg') }}"
                                 alt="icon" />
-                            <p class="description">
-                                Ne jamais mentir aux clients.
-                            </p>
+                           <div style="display: flex; justify-content: center;">
+   <div style="width: 100%; text-align: center;">
+    <p class="description" style="text-align: center;">
+	  Ne jamais mentir aux <br> clients.
+    </p>
+</div>
+
+</div>
+
                         </div>
                     </div>
                 </div>
@@ -567,38 +575,37 @@
                                         aria-labelledby="headingThree2" data-bs-parent="#accordionExample2">
                                         <div class="accordion-body" style="font-size: 15px; color: #333;">
                                             <p>
-                                                L'APA est une aide financière destinée aux personnes âgées de 60 ans et plus
-                                                en perte d'autonomie.
+                                                L'APA est une aide financière destinée aux  <strong> personnes âgées de 60 ans et plus
+                                                en perte d'autonomie.  </strong>
                                                 elle permet de couvrir une partie des dépenses liées à l’aide à domicile.
                                             </p>
 
                                             <h6><strong>Qui peut en bénéficier ?</strong></h6>
                                             <ul>
-                                                <li>être âgé(e) de 60 ans ou plus</li>
+                                                <li>être âgé(e) de  <strong>60 ans ou plus </strong></li>
                                                 <li>vivre en france de manière stable (ou avoir un titre de séjour valide)
                                                 </li>
-                                                <li>présenter une perte d’autonomie (grille aggir)</li>
+                                                <li>présenter une perte d’autonomie évaluée par la  <strong>grille AGGIR. </strong></li>
                                             </ul>
 
                                             <h6><strong>Comment faire votre demande ?</strong></h6>
-                                            <p>Vous pouvez retirer un dossier auprès de :</p>
+                                            <p>Vous pouvez retirer un dossier auprès de votre :</p>
                                             <ul>
-                                                <li>votre mairie</li>
-                                                <li>le clic (centre local d’information et de coordination)</li>
-                                                <li>le ccas (centre communal d’action sociale)</li>
-                                                <li>le conseil départemental (en ligne ou sur place)</li>
+                                                <li> <strong>Mairie </strong></li>
+                                                <li> <strong>CLIC </strong> (Centre Local d’Information et de Coordination)</li>
+                                                <li> <strong>CCAS </strong> (Centre Communal d’Action Sociale)</li>
+                                                <li> <strong>Conseil départemental  </strong>(en ligne ou guichet)</li>
                                             </ul>
 
-                                            <p>Une équipe médico-sociale évaluera votre situation pour définir votre GIR et
-                                                établir un plan d’aide.</p>
+                                            <p>Votre dossier sera ensuite évalué par une équipe médico-sociale qui déterminera votre niveau de dépendance (GIR) et élaborera un plan d'aide.</p>
 
                                             <h6><strong>Quel est le montant de l’APA ?</strong></h6>
                                             <p>Il peut aller jusqu’à <strong>1 914,04 € par mois</strong>, selon vos
                                                 ressources, votre GIR et votre département.</p>
 
                                             <h6><strong>Comprendre la grille aggir</strong></h6>
-                                            <p>La grille aggir évalue la perte d'autonomie en 6 niveaux appelés
-                                                <strong>GIR</strong> :
+                                            <p>La grille AGGIR évalue la perte d'autonomie en 6 niveaux appelés
+                                                <strong>GIR (Groupe Iso-Ressources).</strong> :
                                             </p>
 
                                             <div class="table-responsive">
@@ -606,56 +613,59 @@
                                                     style="border: 1px solid #ccc; border-collapse: collapse;">
                                                     <thead style="background-color: #f8f9fa;">
                                                         <tr>
-                                                            <th style="border: 1px solid #ccc; padding: 10px; ">GROUPE</th>
+														  <th style="border: 1px solid #ccc; padding: 10px; "> <strong>GROUPE </strong></th>
                                                             <th style="border: 1px solid #ccc; padding: 10px; ">
-                                                                CARACTÉRISITQUES DES PERSONNES</th>
+															  <strong>  CARACTÉRISITQUES DES PERSONNES </strong></th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
                                                             <td style="border: 1px solid #ccc; padding: 10px;"><strong>GIR
                                                                     1</strong></td>
-                                                            <td style="border: 1px solid #ccc; padding: 10px;">Personnes
-                                                                confinées au lit ou en fauteuil, très dépendantes,
-                                                                nécessitant une aide permanente.</td>
+                                                            <td style="border: 1px solid #ccc; padding: 10px;">Personnes clouées au lit ou en fauteuil, dont les fonctions intellectuelles sont très altérées, et qui ont besoin d'une aide constante.</td>
                                                         </tr>
                                                         <tr>
                                                             <td style="border: 1px solid #ccc; padding: 10px;"><strong>GIR
                                                                     2</strong></td>
-                                                            <td style="border: 1px solid #ccc; padding: 10px;">Personnes
-                                                                avec troubles mentaux ou physiques sévères, ayant besoin
-                                                                d'une assistance continue.</td>
+                                                            <td style="border: 1px solid #ccc; padding: 10px;">Personnes clouées au lit ou en fauteuil, dont les fonctions intellectuelles ne sont
+pas totalement altérées, nécessitant de l'aide pour la plupart des activités
+quotidiennes. Ou personnes pouvant se déplacer mais ayant des
+difficultés mentales pour des gestes comme s'habiller ou se laver.</td>
                                                         </tr>
                                                         <tr>
                                                             <td style="border: 1px solid #ccc; padding: 10px;"><strong>GIR
                                                                     3</strong></td>
-                                                            <td style="border: 1px solid #ccc; padding: 10px;">Personnes
-                                                                ayant besoin d’aide plusieurs fois par jour (se lever, se
-                                                                laver, manger...)</td>
+                                                            <td style="border: 1px solid #ccc; padding: 10px;">Personnes ayant encore des capacités de mouvement mais qui ont besoin d'aide
+pour manger, se coucher ou se laver.</td>
                                                         </tr>
                                                         <tr>
                                                             <td style="border: 1px solid #ccc; padding: 10px;"><strong>GIR
                                                                     4</strong></td>
-                                                            <td style="border: 1px solid #ccc; padding: 10px;">Personnes se
-                                                                déplaçant seules mais ayant besoin d’aide pour la toilette,
-                                                                l’habillage ou les repas.</td>
+                                                            <td style="border: 1px solid #ccc; padding: 10px;">Personnes ayant besoin d'aide pour se lever et se coucher, mais pouvant se
+déplacer seules à l'intérieur. Une aide est parfois nécessaire pour la toilette et
+l'habillage. Ou personnes n'ayant pas de problème pour se déplacer mais
+qui ont besoin d'aide pour les activités corporelles et les repas.</td>
                                                         </tr>
                                                         <tr>
                                                             <td style="border: 1px solid #ccc; padding: 10px;"><strong>GIR
                                                                     5</strong></td>
-                                                            <td style="border: 1px solid #ccc; padding: 10px;">Personnes
-                                                                relativement autonomes, ayant besoin d’une aide ponctuelle
-                                                                (ménage, courses...)</td>
+                                                            <td style="border: 1px solid #ccc; padding: 10px;">Personnes assez autonomes dans leurs activités, se déplaçant seules, mais qui ont
+besoin d'aides ponctuelles pour la toilette, la préparation des repas ou l'entretien
+du logement.</td>
                                                         </tr>
                                                         <tr>
                                                             <td style="border: 1px solid #ccc; padding: 10px;"><strong>GIR
                                                                     6</strong></td>
-                                                            <td style="border: 1px solid #ccc; padding: 10px;">Personnes
-                                                                totalement autonomes dans tous les actes de la vie
-                                                                quotidienne.</td>
+                                                            <td style="border: 1px solid #ccc; padding: 10px;">Personnes totalement autonomes dans tous les actes de la vie courante.</td>
                                                         </tr>
+													 
                                                     </tbody>
+												 
                                                 </table>
+											   <p><strong>Important :</strong> Seuls les GIR 1 à 4 peuvent bénéficier de l'APA. Les GIR 5 et 6 peuvent parfois
+prétendre à d'autres aides (aide ménagère via la retraite ou l'aide sociale départementale).
+                                            </p>
+
                                             </div>
                                         </div>
                                     </div>
@@ -677,18 +687,18 @@
                                         aria-labelledby="headingEight2" data-bs-parent="#accordionExample2">
                                         <div class="accordion-body" style="font-size: 15px; color: #333;">
                                             <p>
-                                                La <strong>PCH</strong> est une aide financière conçue pour les personnes en
-                                                situation de handicap.
+                                                La <strong>PCH</strong> est une aide financière conçue pour les <strong>personnes en
+                                                situation de handicap.</strong>
                                                 Elle vise à couvrir les besoins liés à la perte d'autonomie.
                                             </p>
 
                                             <h6><strong>Pour quels besoins ?</strong></h6>
                                             <p>La PCH peut financer :</p>
                                             <ul>
-                                                <li>Les aides humaines (ex. : aide à domicile).</li>
-                                                <li>Les aides techniques (fauteuil roulant, lève-personne, etc.).</li>
-                                                <li>L'aménagement de votre véhicule ou de votre logement.</li>
-                                                <li>Les aides animalières (ex. : chiens guides).</li>
+                                                <li>Les <strong> aides humaines </strong> (ex. : aide à domicile).</li>
+                                                <li>Les <strong> aides techniques </strong>(fauteuil roulant, lève-personne, etc.).</li>
+                                                <li>L'<strong>aménagement de votre véhicule </strong> ou de votre<strong> lieu de vie </strong>.</li>
+                                                <li>Les <strong> aides animalières</strong> (ex. : chiens guides).</li>
                                             </ul>
 
                                             <h6><strong>Quelles conditions pour en bénéficier ?</strong></h6>
@@ -696,7 +706,7 @@
                                                 <li>Vivre de manière stable en France.</li>
                                                 <li>Avoir un handicap rendant difficile au moins une activité essentielle,
                                                     ou très difficile deux activités essentielles.</li>
-                                                <li>Être âgé(e) de moins de 60 ans au moment de la demande (des exceptions
+                                                <li>Être âgé(e) de <strong>moins de 60 ans </strong>au moment de la demande (des exceptions
                                                     existent si le handicap est antérieur à 60 ans).</li>
                                             </ul>
 
@@ -805,29 +815,29 @@
                     </div>
                     <div class="about-inner">
                         <p class="disc">
-                            <strong>Une expertise reconnue : </strong>Nos intervenants sont le cœur de notre service.
+                          <li>    <strong>Une expertise reconnue : </strong>Nos intervenants sont le cœur de notre service.
                             Chacune et chacun
                             possède une <strong> expérience minimale de 3 ans </strong> auprès de personnes âgées, en perte
                             d'autonomie ou en
-                            situation de handicap, garantissant un accompagnement professionnel et bienveillant. <br><br>
-                            <strong>Savoir-faire et savoir-être au service de l'humain :</strong> Nous avons spécifiquement
+							situation de handicap, garantissant un accompagnement professionnel et bienveillant. <br><br>   </li>
+                             <li> <strong>Savoir-faire et savoir-être au service de l'humain :</strong> Nous avons spécifiquement
                             adapté leurs
                             compétences et leur savoir-être <strong> aux outils de l'éducation populaire.</strong> Cette
                             approche unique nous
                             permet d'assurer un service optimal, axé sur le maintien de l'autonomie et le bien-être global
-                            de la personne accompagnée. <br><br>
-                            <strong>Stabilité et confiance :</strong> Nous nous engageons à ce que les <strong> mêmes
+							   de la personne accompagnée. <br><br>   </li>
+                            <li>  <strong>Stabilité et confiance :</strong> Nous nous engageons à ce que les <strong> mêmes
                                 personnes</strong>
                             accompagnent vos
                             proches. Cette continuité est essentielle pour établir une relation de confiance durable et un
-                            accompagnement personnalisé qui répond au plus près des besoins de chacun. <br><br>
-                            <strong>Collaboration pour un suivi complet :</strong> Nos intervenants travaillent en
+							  accompagnement personnalisé qui répond au plus près des besoins de chacun.   </li> <br><br>
+                           <li>   <strong>Collaboration pour un suivi complet :</strong> Nos intervenants travaillent en
                             <strong> collaboration étroite avec
                                 tous les professionnels à domicile </strong> (médecins, infirmiers, kinésithérapeutes, etc.)
                             ainsi qu'avec
                             la <strong> famille.</strong> Cette approche coordonnée garantit un suivi et une prise en charge
                             globale de la
-                            personne, assurant une sérénité pour tous.
+							 personne, assurant une sérénité pour tous.  </li>
                         </p>
                     </div>
                 </div>
@@ -836,7 +846,7 @@
     </div>
 
     <div class="rts-faq-section rts-section-gap rts-faq-bg bg_image"
-        style="background-color: rgb(255, 243, 127) !important;">
+        style="background-color: rgb(255, 255, 255) !important;">
         <div class="container">
             <div class="row align-items-center">
                 {{-- <div class="col-lg-5">
@@ -878,14 +888,14 @@
                                         <div class="accordion-body">
                                             Les aides à domicile sont là pour vous accompagner dans votre quotidien et vous
                                             aider à maintenir votre autonomie. Leurs missions peuvent être très variées et
-                                            sont toujours personnalisées selon vos besoins. Elles peuvent inclure :
+										  sont toujours <strong>personnalisées </strong>  selon vos besoins. Elles peuvent inclure :
                                             <ul>
-                                                <li>Aide à la personne : toilette, habillage, mobilité, repas.</li>
-                                                <li>Aide à domicile : ménage, repassage, linge.</li>
-                                                <li>Préparation des repas : menus équilibrés, aide à la prise.</li>
-                                                <li>Accompagnement : courses, rendez-vous, activités sociales.</li>
-                                                <li>Soutien moral : présence, lutte contre l’isolement.</li>
-                                                <li>Aide administrative : documents, démarches simples.</li>
+                                                <li><strong>Aide à la personne : </strong> toilette, habillage, mobilité, repas.</li>
+                                                <li><strong>Aide à domicile : </strong> ménage, repassage, linge.</li>
+                                                <li><strong>Préparation des repas : </strong> menus équilibrés, aide à la prise.</li>
+                                                <li><strong>Accompagnement :</strong> courses, rendez-vous, activités sociales.</li>
+                                                <li><strong>Soutien moral :</strong> présence, lutte contre l’isolement.</li>
+                                                <li><strong>Aide administrative :</strong> documents, démarches simples.</li>
                                             </ul>
                                             Chaque plan d’aide est unique et défini avec vous.
                                         </div>
@@ -905,9 +915,7 @@
                                     <div id="collapseTwo" class="accordion-collapse collapse"
                                         aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            Nous nous efforçons d’être les plus réactifs possible. Une fois vos besoins
-                                            identifiés, la mise en place peut se faire sous quelques jours. En cas
-                                            d’urgence, tout est fait pour accélérer les démarches.
+										  Nous nous efforçons d'être les plus réactifs possible. Une fois que nous avons bien compris vos besoins, la mise en place d'une aide à domicile peut généralement se faire dans un délai de <strong> quelques jours à une semaine. </strong> Ce délai dépendra de la disponibilité de l'intervenant idéal correspondant à votre profil et de la rapidité des démarches administratives (signature de contrat, etc.). Pour les situations urgentes, nous mettons tout en œuvre pour accélérer le processus.
                                         </div>
                                     </div>
                                 </div>
@@ -924,11 +932,12 @@
                                     <div id="collapseThree" class="accordion-collapse collapse"
                                         aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            Vous êtes l’employeur de votre aide à domicile. <span
-                                                style="font-weight: 1000; font-style: italic; font-family: cursive; font-size: 18px;">agapé</span>
-                                            vous guide dans toutes les
-                                            démarches : contrat, fiches de paie, déclarations. Vous gardez le contrôle,
-                                            accompagné de notre expertise.
+                                         En mode mandataire, vous êtes l'employeur direct de votre auxiliaire de vie. 	 <span
+                                                style="font-weight: 1000; font-style: italic; font-family: cursive; font-size: 18px;">agapé</span> vous accompagne dans toutes les démarches administratives et de gestion : aide au recrutement, élaboration du contrat de travail, gestion des salaires et des déclarations Urssaf. Ce mode vous offre plus de flexibilité et un lien direct avec votre intervenant, tout en bénéficiant de notre expertise et de notre soutien.
+										  
+										  
+								
+                                           
                                         </div>
                                     </div>
                                 </div>
@@ -939,16 +948,13 @@
                                         <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseFour"
                                             aria-expanded="false" aria-controls="collapseFour">
-                                            4. Est-il possible de changer d’auxiliaire de vie ?
+                                            4. Est-il possible de changer d’auxiliaire de vie en cours de prestation ?
                                         </button>
                                     </h2>
                                     <div id="collapseFour" class="accordion-collapse collapse"
                                         aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            Oui. Votre confort est essentiel. Si le lien ne se crée pas, ou si vos besoins
-                                            changent, <span
-                                                style="font-weight: 1000; font-style: italic; font-family: cursive; font-size: 18px;">agapé</span>
-                                            vous aide à trouver un intervenant plus adapté.
+										  <strong>  Oui, absolument. </strong> Votre confort et votre satisfaction sont nos priorités. Si, pour quelque raison que ce soit, le courant ne passe pas avec l'auxiliaire de vie choisi ou si vos besoins évoluent, il est tout à fait possible de demander un changement. Nous sommes là pour vous aider à trouver une nouvelle personne qui correspondra mieux à vos attentes et à votre personnalité. C'est l'un des avantages de notre approche personnalisée.
                                         </div>
                                     </div>
                                 </div>
@@ -959,16 +965,13 @@
                                         <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseFive"
                                             aria-expanded="false" aria-controls="collapseFive">
-                                            5. Comment est assurée la continuité des services ?
+                                            5. Comment la continuité des services est-elle assurée (vacances, maladie) ?
                                         </button>
                                     </h2>
                                     <div id="collapseFive" class="accordion-collapse collapse"
                                         aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            <span
-                                                style="font-weight: 1000; font-style: italic; font-family: cursive; font-size: 18px;">agapé</span>
-                                            vous aide à prévoir les absences et à organiser des remplacements si
-                                            besoin. Nous restons à vos côtés pour que le service ne soit jamais interrompu.
+										  En mode mandataire, puisque vous êtes l'employeur, nous vous aidons à anticiper les absences (vacances, maladie) de votre auxiliaire. Nous pouvons vous accompagner dans la recherche d'un <strong> remplaçant </strong> temporaire si votre intervenant habituel est absent, afin d'assurer une continuité des services. Nous vous conseillons sur les meilleures pratiques pour gérer ces situations.
                                         </div>
                                     </div>
                                 </div>
@@ -979,20 +982,23 @@
                                         <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
                                             aria-controls="collapseSix">
-                                            6. Comment est garantie la qualité des intervenants ?
+                                            6. Comment la qualité des intervenants est-elle garantie en mode mandataire ?
                                         </button>
                                     </h2>
                                     <div id="collapseSix" class="accordion-collapse collapse"
                                         aria-labelledby="headingSix" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            Nous sélectionnons des intervenants qualifiés et vérifions leurs références.
-                                            <span
-                                                style="font-weight: 1000; font-style: italic; font-family: cursive; font-size: 18px;">agapé</span>
-                                            vous propose des profils adaptés et reste disponible pour tout ajustement.
+                                         Bien que vous soyez l'employeur,   <span
+                                                style="font-weight: 1000; font-style: italic; font-family: cursive; font-size: 18px;">agapé</span> vous aide à recruter des intervenants qualifiés et expérimentés. Nous vous accompagnons dans la vérification de leurs compétences, de leurs références, et vous proposons des profils qui correspondent à vos besoins et à nos valeurs de bienveillance et de professionnalisme. Nous mettons à votre disposition des outils et des conseils pour vous aider à faire le meilleur choix.
+                                          
                                         </div>
                                     </div>
                                 </div>
+   <p class="disc">
+                               Vous avez d'autres questions ? N'hésitez pas à nous contacter directement. Nous sommes là pour vous accompagner !
 
+
+                            </p>
                             </div>
                         </div>
                         <!-- faq accordion area end -->
