@@ -21,7 +21,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="rts-contact-fluid rts-section-gap">
-                        <div class="rts-title-area contact-fluid text-center mb--50">
+                        <div class="rts-title-area text-center mb--50">
                             <p class="pre-title">
                                 Entrer en contact
                             </p>
