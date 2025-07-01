@@ -44,7 +44,7 @@
         }
 
         div#tarifs-mob {
-            margin-top: 100px;
+            margin-top: 30px;
         }
 
         #goog-gt-tt {

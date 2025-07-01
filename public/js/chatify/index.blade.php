@@ -346,6 +346,7 @@ Des gestes simples                                </span>
     .faq-two-inner .title-area-faq h1.title {
         text-transform: none;
         font-size: 32px;
+        margin-bottom: 0px !important;
     }
 
     .faq-two-inner .disc {
