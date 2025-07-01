@@ -978,7 +978,7 @@ prétendre à d'autres aides (aide ménagère via la retraite ou l'aide sociale 
                                 </div>
 
                                 <!-- Question 6 -->
-                                <div class="accordion-item">
+                                {{-- <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingSix">
                                         <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
@@ -994,7 +994,7 @@ prétendre à d'autres aides (aide ménagère via la retraite ou l'aide sociale 
 
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
    <p class="disc">
                                Vous avez d'autres questions ? N'hésitez pas à nous contacter directement. Nous sommes là pour vous accompagner !
 
