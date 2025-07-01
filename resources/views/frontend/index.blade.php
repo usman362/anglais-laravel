@@ -155,7 +155,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 gap-4">
                     <div class="top">
                         <h1 class="title">Nos Valeurs</h1>
-                        <p class="description">
+                        <p class="description" style="text-align: justify;">
                             Chez <span
                                 style="font-weight: 1000; font-style: italic; font-family: cursive; font-size: 18px;">agapé</span>,
                             nous sommes convaincus que l'aide à domicile est avant tout une question de
@@ -176,10 +176,11 @@
                         <h5 class="title">La bienveillance <span
                                 style="font-weight: 1000; font-style: italic; font-family: cursive; font-size: 18px;">agapé</span>
                             : une écoute attentive</h5>
-                        <p class="description">
-                            Avec votre collaboration et celle de nos intervenants, nous veillons à
-                            ce que votre accompagnement respecte toujours votre dignité et votre autonomie.
-                        </p>
+                       <p class="disc" style="text-align: justify;">
+    Avec votre collaboration et celle de nos intervenants, nous veillons à
+    ce que votre accompagnement respecte toujours votre dignité et votre autonomie.
+</p>
+
                     </div>
                 </div>
             </div>
@@ -191,7 +192,7 @@
                     <div class="value-box box-2">
                         <img class="icon" src="{{ asset('frontend/assets/images/our_values/1.jpg') }}" alt="icon" />
                         <h5 class="title">La bien-traitance : un accompagnement sur mesure</h5>
-                        <p class="description">
+                       <p class="disc" style="text-align: justify;">
                             Nous veillons à ce que votre accompagnement respecte toujours
                             votre dignité et votre autonomie. Nous nous adaptons au plus
                             juste à vos besoins pour vous proposer des prestations
@@ -201,7 +202,7 @@
                     <div class="value-box box-3">
                         <img class="icon" src="{{ asset('frontend/assets/images/our_values/4.jpg') }}" alt="icon" />
                         <h5 class="title">Le mieux-être : notre priorité</h5>
-                        <p class="description">
+                        <p class="disc">
                             Maintenir votre bien-être physique, mental et social est au cœur de nos préoccupations. Nous
                             vous aidons à trouver des services adaptés à vos besoins spécifiques pour que vous puissiez vous
                             sentir bien.
@@ -217,7 +218,7 @@
                             <h5 class="title">Les deux règles de base</h5>
                             <img class="icon" src="{{ asset('frontend/assets/images/our_values/7.jpg') }}"
                                 alt="icon" />
-                         <p class="description" style="text-align: center;">
+                         <p class="disc" style="text-align: center;">
     Ne jamais prendre des engagements que l’on ne peut tenir.
 </p>
 
@@ -226,7 +227,7 @@
                                 alt="icon" />
                            <div style="display: flex; justify-content: center;">
    <div style="width: 100%; text-align: center;">
-    <p class="description" style="text-align: center;">
+    <p class="disc" style="text-align: center;">
 	  Ne jamais mentir aux <br> clients.
     </p>
 </div>
@@ -243,7 +244,7 @@
                         <img class="icon" src="{{ asset('frontend/assets/images/our_values/3.jpg') }}"
                             alt="icon" />
                         <h5 class="title">L'humanité : le respect de chacun</h5>
-                        <p class="description">
+                       <p class="disc" style="text-align: justify;">
                             L'humain est au centre de tout ce que nous faisons. Cela signifie créer un environnement de
                             travail agréable et respectueux pour les intervenants, tout en vous offrant un accompagnement
                             chaleureux et bienveillant.
@@ -253,7 +254,7 @@
                         <img class="icon" src="{{ asset('frontend/assets/images/our_values/5.jpg') }}"
                             alt="icon" />
                         <h5 class="title">L'autonomie : préserver votre liberté</h5>
-                        <p class="description">
+                       <p class="disc" style="text-align: justify;">
                             Notre objectif est de vous aider à recruter des auxiliaires qui vous permettront de conserver un
                             maximum d'autonomie dans votre vie quotidienne. Il s'agit de vous soutenir sans vous déposséder.
                         </p>
@@ -268,7 +269,7 @@
                         <img class="icon" src="{{ asset('frontend/assets/images/our_values/6.jpg') }}"
                             alt="icon" />
                         <h5 class="title">Le professionnalisme : des services de qualité</h5>
-                        <p class="description">
+                       <p class="disc" style="text-align: justify;">
                             Nous vous proposons des intervenants qualifiés et formés, capables de
                             vous offrir des prestations de haute qualité, parfaitement adaptées à vos besoins spécifiques.
                         </p>
@@ -453,7 +454,7 @@
                                     style="background-color: #ffeced !important;border: var(--bs-accordion-border-width) solid #ffeced;">
                                     <h2 class="accordion-header" id="headingOne2">
                                         <button class="accordion-button collapsed" type="button"
-                                            style="background: #ffeced;border: #ffeced;color: #016144;"
+                                            style="background: #ec66a2;border: #ffeced;color: #fffff;"
                                             data-bs-toggle="collapse" data-bs-target="#collapseOne2"
                                             aria-expanded="false" aria-controls="collapseOne2">
                                             1. L'Avance Immédiate de l'Urssaf : payez moins cher tout de suite !
@@ -501,7 +502,7 @@
                                     style="background-color: #ffeced !important;border: var(--bs-accordion-border-width) solid #ffeced;">
                                     <h2 class="accordion-header" id="headingTwo2">
                                         <button class="accordion-button collapsed" type="button"
-                                            style="background: #ffeced;border: #ffeced;color: #016144;"
+                                            style="background: #ec66a2;border: #ffeced;color: #fffff;"
                                             data-bs-toggle="collapse" data-bs-target="#collapseTwo2"
                                             aria-expanded="false" aria-controls="collapseTwo2">
                                             2. La réduction ou le crédit d'impôt
@@ -565,7 +566,7 @@
                                     style="background-color: #ffeced !important;border: var(--bs-accordion-border-width) solid #ffeced;">
                                     <h2 class="accordion-header" id="headingThree2">
                                         <button class="accordion-button collapsed" type="button"
-                                            style="background: #ffeced;border: #ffeced;color: #016144;"
+                                            style="background: #ec66a2;border: #ec66a2;color: #fffff;"
                                             data-bs-toggle="collapse" data-bs-target="#collapseThree2"
                                             aria-expanded="false" aria-controls="collapseThree2">
                                             3. L'Allocation Personnalisée d'Autonomie (APA)
@@ -677,7 +678,7 @@ prétendre à d'autres aides (aide ménagère via la retraite ou l'aide sociale 
                                     style="background-color: #ffeced !important;border: var(--bs-accordion-border-width) solid #ffeced;">
                                     <h2 class="accordion-header" id="headingEight2">
                                         <button class="accordion-button collapsed" type="button"
-                                            style="background: #ffeced;border: #ffeced;color: #016144;"
+                                            style="background: #ec66a2;border: #ffeced;color: #fffff;"
                                             data-bs-toggle="collapse" data-bs-target="#collapseEight2"
                                             aria-expanded="false" aria-controls="collapseEight2">
                                             4. La Prestation de Compensation du Handicap (PCH)
@@ -728,7 +729,7 @@ prétendre à d'autres aides (aide ménagère via la retraite ou l'aide sociale 
                                     style="background-color: #ffeced !important;border: var(--bs-accordion-border-width) solid #ffeced;">
                                     <h2 class="accordion-header" id="headingNine2">
                                         <button class="accordion-button collapsed" type="button"
-                                            style="background: #ffeced;border: #ffeced;color: #016144;"
+                                            style="background: #ec66a2;border: #ffeced;color: #fffff;"
                                             data-bs-toggle="collapse" data-bs-target="#collapseNine2"
                                             aria-expanded="false" aria-controls="collapseNine2">
                                             5. Les prises en charge par votre assurance, mutuelle ou caisse

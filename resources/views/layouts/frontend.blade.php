@@ -373,8 +373,7 @@
                 <div class="col-xl-3 col-md-6 col-sm-12 col-12 footer-third-section">
                     <div class="footer-two-single-wized left">
                         <h3 class="title animated fadeIn">
-                            Vous avez <br>
-                            des questions ?
+                            Besoin d'aide ?
                         </h3>
                         <p class="disc">
                             <img style="width: 36px;"

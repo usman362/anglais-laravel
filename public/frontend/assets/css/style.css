@@ -32108,3 +32108,6 @@ ul li {
     align-items: center;
     padding-top: 460px;
 }
+.value-box {
+    border-bottom: 3px solid #ec66a2 !Important;
+}
