@@ -388,6 +388,7 @@
             .faq-two-inner .title-area-faq h1.title {
                 text-transform: none;
                 font-size: 42px;
+                margin-bottom: 0px !important;
             }
 
             .faq-two-inner .disc {
@@ -658,9 +659,9 @@ du logement.</td>
                                                                     6</strong></td>
                                                             <td style="border: 1px solid #ccc; padding: 10px;">Personnes totalement autonomes dans tous les actes de la vie courante.</td>
                                                         </tr>
-													 
+
                                                     </tbody>
-												 
+
                                                 </table>
 											   <p><strong>Important :</strong> Seuls les GIR 1 à 4 peuvent bénéficier de l'APA. Les GIR 5 et 6 peuvent parfois
 prétendre à d'autres aides (aide ménagère via la retraite ou l'aide sociale départementale).
@@ -934,10 +935,10 @@ prétendre à d'autres aides (aide ménagère via la retraite ou l'aide sociale 
                                         <div class="accordion-body">
                                          En mode mandataire, vous êtes l'employeur direct de votre auxiliaire de vie. 	 <span
                                                 style="font-weight: 1000; font-style: italic; font-family: cursive; font-size: 18px;">agapé</span> vous accompagne dans toutes les démarches administratives et de gestion : aide au recrutement, élaboration du contrat de travail, gestion des salaires et des déclarations Urssaf. Ce mode vous offre plus de flexibilité et un lien direct avec votre intervenant, tout en bénéficiant de notre expertise et de notre soutien.
-										  
-										  
-								
-                                           
+
+
+
+
                                         </div>
                                     </div>
                                 </div>
@@ -990,7 +991,7 @@ prétendre à d'autres aides (aide ménagère via la retraite ou l'aide sociale 
                                         <div class="accordion-body">
                                          Bien que vous soyez l'employeur,   <span
                                                 style="font-weight: 1000; font-style: italic; font-family: cursive; font-size: 18px;">agapé</span> vous aide à recruter des intervenants qualifiés et expérimentés. Nous vous accompagnons dans la vérification de leurs compétences, de leurs références, et vous proposons des profils qui correspondent à vos besoins et à nos valeurs de bienveillance et de professionnalisme. Nous mettons à votre disposition des outils et des conseils pour vous aider à faire le meilleur choix.
-                                          
+
                                         </div>
                                     </div>
                                 </div>
