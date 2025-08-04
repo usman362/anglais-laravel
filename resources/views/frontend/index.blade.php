@@ -350,7 +350,7 @@
                 <div class="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--100">
                     <div class="service-two-inner">
                         <a href="{{ route('service_details_4') }}"><img style="height: 276px;width: 415px;"
-                                src="{{ asset('frontend/assets/images/faq/faq-2.jpeg') }}" alt="Business_image"></a>
+                                src="{{ asset('frontend/assets/images/faq/faq-2-new.png') }}" alt="Business_image"></a>
                         <div class="body-content w-100">
                             <div class="hidden-area">
                                 <h5 class="title">Interaction sociale stimulante </h5>
@@ -442,7 +442,7 @@
                             </p>
 
                             <p class="disc">
-                               
+
                             </p>
                             <h3> Financer votre accompagnement : les différentes aides disponibles </h3>
 
@@ -854,11 +854,11 @@
                 <div class="about-inner" style="color: #000000;">
                     <ul style="padding-left: 20px;">
                         <li><strong>Une expertise reconnue :</strong> Nos intervenants sont le cœur de notre service. Chacune et chacun possède une <strong>expérience minimale de 3 ans</strong> auprès de personnes âgées, en perte d'autonomie ou en situation de handicap, garantissant un accompagnement professionnel et bienveillant.</li><br>
-                        
+
                         <li><strong>Savoir-faire et savoir-être au service de l'humain :</strong> Nous avons spécifiquement adapté leurs compétences et leur savoir-être <strong>aux outils de l'éducation populaire.</strong> Cette approche unique nous permet d'assurer un service optimal, axé sur le maintien de l'autonomie et le bien-être global de la personne accompagnée.</li><br>
-                        
+
                         <li><strong>Stabilité et confiance :</strong> Nous nous engageons à ce que les <strong>mêmes personnes</strong> accompagnent vos proches. Cette continuité est essentielle pour établir une relation de confiance durable et un accompagnement personnalisé qui répond au plus près des besoins de chacun.</li><br>
-                        
+
                         <li><strong>Collaboration pour un suivi complet :</strong> Nos intervenants travaillent en <strong>collaboration étroite avec tous les professionnels à domicile</strong> (médecins, infirmiers, kinésithérapeutes, etc.) ainsi qu'avec la <strong>famille.</strong> Cette approche coordonnée garantit un suivi et une prise en charge globale de la personne, assurant une sérénité pour tous.</li>
                     </ul>
                 </div>
@@ -883,7 +883,7 @@
                 <div class="col-lg-12">
                     <div class="faq-two-inner">
                         <div class="title-area-faq">
-						  
+
                             <h2 class="title">FAQ</h2>
                             <p class="disc">
                                 Chez <span
@@ -897,7 +897,7 @@
                         <!-- faq accordion area -->
                         <div class="faq-accordion-area" style="scroll-margin-top: 100px;">
                             <div class="accordion" id="accordionExample">
-							  
+
 							      <!-- Question 1 -->
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne">
@@ -961,7 +961,7 @@
                                     </div>
                                 </div>
 
-							  
+
 							   <!-- Question 3 -->
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingThree">
@@ -984,7 +984,7 @@
                                         </div>
                                     </div>
                                 </div>
-							  
+
                                 <!-- Répéter la même structure pour les autres questions -->
                                 <!-- Question 4 -->
                                 <div class="accordion-item">
@@ -1030,7 +1030,7 @@
                                     </div>
                                 </div>
 
-                  
+
 
                                         </div>
                                     </div>

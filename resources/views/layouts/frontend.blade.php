@@ -306,6 +306,39 @@
                         class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btnmenu">Votre espace client</a>
                 @endauth
 
+                <div class="get-in-touch mt-4">
+                    <!-- title -->
+                    <div class="h6 title">Contactez nous</div>
+                    <!-- title End -->
+                    <div class="wrapper">
+                        <!-- single -->
+                        <div class="single">
+                            <i class="fas fa-phone-alt"></i>
+                            <a href="#">06 71 67 31 68</a>
+                        </div>
+                        <!-- single ENd -->
+                        <!-- single -->
+                        <div class="single">
+                            <i class="fas fa-envelope"></i>
+                            <a href="#">contact@agape-nantes.fr</a>
+                        </div>
+                        <!-- single ENd -->
+                        <!-- single -->
+                        <div class="single">
+                            <i class="fas fa-globe"></i>
+                            <a href="https://agape-nantes.fr/" target="_blank">www.agape-nantes.fr</a>
+                        </div>
+                        <!-- single ENd -->
+                        <!-- single -->
+                        <div class="single">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <a href="#">10 bis rue de la Basinerie <br> <span style="margin-left:28px">44300
+                                    Nantes</span></a>
+                        </div>
+                        <!-- single ENd -->
+                    </div>
+                </div>
+
             </div>
         </div>
         <!-- inner menu area desktop End -->
