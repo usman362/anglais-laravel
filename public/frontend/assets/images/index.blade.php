@@ -87,7 +87,7 @@
                 <div class="about-image-v-inner">
                     <div class="image-area">
                         <img class="img-1"
-							src="{{ asset('frontend/assets/images/Design-sans-titre-8.png') }}"
+                             src="{{ asset('frontend/assets/images/equipeagapelarge.png') }}"
                              alt="Equipe Agape"
                              style="display: block; border-top: none !important;">
                     </div>
@@ -1050,12 +1050,11 @@
                                         <div class="accordion-body">
                                          Bien que vous soyez l'employeur,   <span
                                                 style="font-weight: 1000; font-style: italic; font-family: cursive; font-size: 18px;">agapé</span> vous aide à recruter des intervenants qualifiés et expérimentés. Nous vous accompagnons dans la vérification de leurs compétences, de leurs références, et vous proposons des profils qui correspondent à vos besoins et à nos valeurs de bienveillance et de professionnalisme. Nous mettons à votre disposition des outils et des conseils pour vous aider à faire le meilleur choix.
-<br>
+
                                         </div>
                                     </div>
                                 </div> --}}
                                 <p class="disc">
-								  <br>
                                     Vous avez d'autres questions ? N'hésitez pas à nous contacter directement. Nous sommes
                                     là pour vous accompagner !
 

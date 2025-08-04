@@ -25,7 +25,6 @@
                             <p class="pre-title">
                                 Entrer en contact
                             </p>
-                            <h2 class="title">Besoin d'aide ? Contactez-nous</h2>
                         </div>
                         <div class="form-wrapper">
                             <div id="form-messages">

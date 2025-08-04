@@ -16303,7 +16303,7 @@ body.sal-disabled [data-sal|=flip] {
 }
 
 .header-main-one .thumbnail a img {
-    max-width: 246px;
+    max-width: 218px;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
@@ -18830,7 +18830,7 @@ button.menu.rts-btn.btn-primary-3-menu:hover .menu-light {
 }
 
 .banner-one .swiper-wrapper .swiper-slide {
-    background-image: url('../images/banner/banner-new-3.png');
+    background-image: url('../images/banner/banner-new-2.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -18850,7 +18850,7 @@ button.menu.rts-btn.btn-primary-3-menu:hover .menu-light {
 }
 
 .banner-one .swiper-wrapper .swiper-slide.two {
-    background-image: url('../images/banner/banner-new-2.png');
+    background-image: url('../images/banner/banner-new-3.png');
     background-size: cover !important;
 }
 
@@ -20254,12 +20254,12 @@ p.disc.banner-para {
 
 .about-image-v-inner .image-area .img-1 {
     border-top: 10px solid var(--color-primary);
-    padding-top: 10px;
+    padding-top: 85px;
 }
 
 @media only screen and (max-width: 767px) {
     .about-image-v-inner .image-area .img-1 {
-        width: 65%;
+        width: 100%;
     }
 }
 
@@ -32053,7 +32053,7 @@ ul li {
 
 .rts-banner-one .swiper-wrapper .swiper-slide {
 
-    height: 700px !important;
+    height: 600px !important;
     background-position: inherit !important;
 }
 
@@ -32108,6 +32108,7 @@ ul li {
     align-items: center;
     padding-top: 460px;
 }
+
 .value-box {
-    border-bottom: 3px solid #ec66a2 !Important;
+    border-bottom: 3px solid #ec66a2 !important;
 }
