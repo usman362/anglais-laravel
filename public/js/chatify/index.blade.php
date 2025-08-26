@@ -98,10 +98,9 @@ Des gestes simples                                </span>
                         </p>
 
                         <p class="disc">
-                            L'histoire de notre création est très personnelle. Travailler comme aide à domicile m’a permis
-                            de comprendre qu'il fallait changer la façon dont on accompagne les personnes chez elles.
-                            Le but est de repenser complètement l'aide à domicile, pour qu'elle mène à une vraie interaction
-                            sociale.
+                            Le parcours d’Arlène notre gérante, en tant qu'aide à domicile, lui a permis de comprendre qu'il était essentiel de
+							repenser la façon dont les personnes sont accompagnées chez elles. L’objectif est clair : faciliter l'accès à une aide à
+							domicile personnalisée, en offrant la liberté de choisir votre intervenante.
                         </p>
 
                         <p class="disc">
