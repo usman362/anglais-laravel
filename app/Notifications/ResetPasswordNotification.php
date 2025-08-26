@@ -40,7 +40,7 @@ class ResetPasswordNotification extends Notification
             ->line('Pour définir un nouveau mot de passe, cliquez sur le lien ci-dessous :')
             ->action('Réinitialiser mon mot de passe', $resetUrl)
             ->line('⚠ Ce lien est valable pendant une durée limitée. Si vous n’êtes pas à l’origine de cette demande, vous pouvez ignorer ce message — votre mot de passe actuel reste inchangé.')
-            ->line('Pour toute question, notre équipe reste disponible par e-mail à contact@agape-nantes.fr ou par téléphone au [numéro de téléphone].')
+            ->line('Pour toute question, notre équipe reste disponible par e-mail à contact@agape-nantes.fr ou par téléphone au 06 71 67 31 68.')
             ->salutation('Cordialement, L’équipe AGAPÉ');
     }
 }

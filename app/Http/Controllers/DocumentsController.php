@@ -31,6 +31,19 @@ class DocumentsController extends Controller
                 ->addColumn('user', function ($row) {
                     return $row->user->name ?? '';
                 })
+                ->addColumn('type', function ($row) {
+                    $type = 'documents';
+                    if($row->type == 'invoice'){
+                        $type = 'Facture';
+                    }elseif($row->type == 'payslip'){
+                        $type = 'Fiche de paie';
+                    }elseif($row->type == 'activity'){
+                        $type = "Rapport d'activité";
+                    }elseif($row->type == 'followup'){
+                        $type = 'Fiche de suivi';
+                    }
+                    return $type;
+                })
                 ->addColumn('actions', function ($row) {
                     $editUrl = route('documents.edit', $row->id);
                     $deleteUrl = route('documents.destroy', $row->id);

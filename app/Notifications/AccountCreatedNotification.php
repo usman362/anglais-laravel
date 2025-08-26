@@ -40,7 +40,7 @@ class AccountCreatedNotification extends Notification
             ->line('Ce mot de passe est temporaire et devra être modifié lors de votre première connexion (ou via la fonction "mot de passe oublié").')
             ->action('Accédez à votre espace', $loginUrl)
             ->line('Vous y trouverez toutes vos informations personnelles et les outils mis à votre disposition.')
-            ->line('Pour toute question, n’hésitez pas à nous contacter par e-mail à contact@agape-nantes.fr ou par téléphone au [numéro de téléphone].')
+            ->line('Pour toute question, n’hésitez pas à nous contacter par e-mail à contact@agape-nantes.fr ou par téléphone au 06 71 67 31 68.')
             ->salutation('Cordialement, L’équipe AGAPÉ');
     }
 }
