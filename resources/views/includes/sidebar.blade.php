@@ -2,7 +2,7 @@
 <div class="sticky">
     <div class="main-menu main-sidebar main-sidebar-sticky side-menu">
         <div class="main-sidebar-header main-container-1">
-            <div class="sidemenu-logo">
+            <div class="sidemenu-logo p-0">
                 <a class="main-logo" href="{{route('home')}}">
                     <img src="{{ asset('frontend/assets/images/logo/agape-gif.gif') }}" class="header-brand-img desktop-logo-dark"
                         alt="logo">

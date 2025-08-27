@@ -33,13 +33,13 @@ class DocumentsController extends Controller
                 })
                 ->addColumn('type', function ($row) {
                     $type = 'documents';
-                    if($row->type == 'invoice'){
+                    if ($row->type == 'invoice') {
                         $type = 'Facture';
-                    }elseif($row->type == 'payslip'){
+                    } elseif ($row->type == 'payslip') {
                         $type = 'Fiche de paie';
-                    }elseif($row->type == 'activity'){
+                    } elseif ($row->type == 'activity') {
                         $type = "Rapport d'activité";
-                    }elseif($row->type == 'followup'){
+                    } elseif ($row->type == 'followup') {
                         $type = 'Fiche de suivi';
                     }
                     return $type;
@@ -50,20 +50,23 @@ class DocumentsController extends Controller
                     $formId = 'delete-form' . $row->id;
                     $downloadId = 'download-form' . $row->id;
                     $download = route('file.download');
-                    return '
-                        <a href="javascript:void(0)" onclick="document.getElementById(\'' . $downloadId . '\').submit()" class="text-primary m-2"><i class="fas fa-arrow-down"></i></a>
+                    $actionDownload = '<a href="javascript:void(0)" onclick="document.getElementById(\'' . $downloadId . '\').submit()" class="text-primary m-2"><i class="fas fa-arrow-down"></i></a>
                         <form action="' . $download . '" method="POST" id="' . $downloadId . '" style="display:none;">
                             ' . csrf_field() . '
 
                             <input type="hidden" name="file_path" value="' . $row->file_path . '">
-                        </form>
-
-                        <a href="' . $editUrl . '" class="text-info m-2"><i class="fas fa-edit"></i></a>
+                        </form>';
+                    $actionBtn = '<a href="' . $editUrl . '" class="text-info m-2"><i class="fas fa-edit"></i></a>
                         <a href="javascript:void(0)" onclick="document.getElementById(\'' . $formId . '\').submit()" class="text-danger m-2"><i class="fas fa-trash"></i></a>
                         <form action="' . $deleteUrl . '" method="POST" id="' . $formId . '" style="display:none;">
                             ' . csrf_field() . method_field('DELETE') . '
-                        </form>
-                    ';
+                        </form>';
+
+                    if(Auth::user()->role == 'admin'){
+                        return $actionDownload.$actionBtn;
+                    }else{
+                        return $actionDownload;
+                    }
                 })
                 ->rawColumns(['actions'])
                 ->make(true);

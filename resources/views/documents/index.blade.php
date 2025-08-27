@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Liste des '.$name)
+@section('title', 'Liste des ' . $name)
 @section('content')
 
     <!-- MAIN-CONTENT -->
@@ -36,7 +36,7 @@
                         <div class="card custom-card overflow-hidden">
                             <div class="card-body">
                                 <div>
-                                    <h6 class="main-content-label mb-1">Liste des {{$name}}</h6>
+                                    <h6 class="main-content-label mb-1">Liste des {{ $name }}</h6>
                                 </div>
                                 <div class="table-responsive">
                                     <table class="table table-bordered text-nowrap border-bottom" id="documents-datatable">
@@ -45,9 +45,9 @@
                                                 <th class="wd-20p">Nom de fichier</th>
                                                 <th class="wd-20p">Utilisateur</th>
                                                 <th class="wd-25p">Type</th>
-                                                @if (auth()->user()->role == 'admin')
-                                                    <th class="wd-20p">Action</th>
-                                                @endif
+                                                {{-- @if (auth()->user()->role == 'admin') --}}
+                                                <th class="wd-20p">Action</th>
+                                                {{-- @endif --}}
                                             </tr>
                                         </thead>
                                         <tbody class="notranslate">
@@ -84,7 +84,7 @@
                     url: "{{ route('documents.index') }}",
                     type: 'GET',
                     data: function(d) {
-                        d.type = '{{$type}}';
+                        d.type = '{{ $type }}';
                     }
                 },
                 language: {
@@ -104,14 +104,12 @@
                         data: 'type',
                         name: 'type'
                     },
-                    @if (auth()->user()->role == 'admin')
-                        {
-                            data: 'actions',
-                            name: 'actions',
-                            orderable: false,
-                            searchable: false
-                        },
-                    @endif
+                    {
+                        data: 'actions',
+                        name: 'actions',
+                        orderable: false,
+                        searchable: false
+                    },
                 ]
 
             });
