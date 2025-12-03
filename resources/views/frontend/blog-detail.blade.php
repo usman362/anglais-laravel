@@ -1,12 +1,15 @@
 @extends('layouts.frontend')
-@section('title', 'Post Detail')
+@section('title', 'Blog Detail')
 @section('content')
     <!-- start breadcrumb area -->
-    <div class="rts-breadcrumb-area breadcrumb-bg bg_image">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-sm-12 col-12 breadcrumb-1">
-                    <h1 class="title">Post Details</h1>
+    <div class="rts-breadcrumb-area breadcrumb-bg bg_image pt-0 pb-0" style="background-image: url({{asset('assets/img/files/img1.jpg')}})">
+        <div style="background-color:#00000070;padding-top: 153px;padding-bottom: 153px;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-12 breadcrumb-1">
+                        <h1 class="title">Blog Details</h1>
+                    </div>
+
                 </div>
             </div>
         </div>

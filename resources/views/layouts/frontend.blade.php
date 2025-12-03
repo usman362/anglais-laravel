@@ -166,9 +166,9 @@
                                     <li class="#">
                                         <a href="{{ route('our_values') }}">Nos valeurs</a>
                                     </li> --}}
-                                    {{-- <li class="#">
+                                    <li class="#" style="list-style: none">
                                         <a href="{{ route('blog_list') }}">Blogs</a>
-                                    </li> --}}
+                                    </li>
                                     {{-- <li class="#">
                                         <a href="{{ route('career') }}">Nous recrutons</a>
                                     </li> --}}

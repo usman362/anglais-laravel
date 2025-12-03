@@ -38,6 +38,7 @@
                                                 <th class="wd-15p">E-mail</th>
                                                 <th class="wd-15p">Sujet</th>
                                                 <th class="wd-40p">Message</th>
+                                                <th class="wd-15p">Action</th>
                                             </tr>
                                         </thead>
                                         <tbody class="notranslate">
@@ -55,6 +56,30 @@
         </div>
     </div>
     <!-- END MAIN-CONTENT -->
+
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+             <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="card-body">
+                            <p><strong>Name:</strong> <span id="contact-name"></span></p>
+                            <p><strong>Email:</strong> <span id="contact-email"></span></p>
+                            <p><strong>Subject:</strong> <span id="contact-subject"></span></p>
+                            <p><strong>Message:</strong></p>
+                            <p id="contact-message"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 @endsection
 
@@ -86,7 +111,23 @@
                         data: 'message',
                         name: 'message',
                     },
+                    {
+                        data: 'view-button',
+                        name: 'view-button',
+                    },
                 ]
+            });
+
+            $('body').on('click', '.view-contact-us', function() {
+                var name = $(this).data('name');
+                var email = $(this).data('email');
+                var subject = $(this).data('subject');
+                var message = $(this).data('message');
+
+                $('#contact-name').text(name);
+                $('#contact-email').text(email);
+                $('#contact-subject').text(subject);
+                $('#contact-message').text(message);
             });
         });
     </script>

@@ -71,7 +71,7 @@
                         <div class="dropdown d-flex main-profile-menu">
                             <a class="d-flex" href="javascript:void(0)">
                                 <span class="main-img-user">
-                                    <img alt="avatar" src="{{ Chatify::getUserWithAvatar(Auth::user())->avatar }}">
+                                    <img alt="avatar" src="{{ Chatify::getUserWithAvatar(Auth::user())->avatar }}" onerror="this.src='https://media.istockphoto.com/id/588258370/vector/male-avatar-profile-picture-vector.jpg?s=612x612&w=0&k=20&c=HySLtDNJEd_wzsAjchZxWstBToxkMHSI2rKHNss7CD0='">
                                 </span>
                             </a>
                             <div class="dropdown-menu">

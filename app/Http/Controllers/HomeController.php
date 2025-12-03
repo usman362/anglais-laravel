@@ -50,6 +50,14 @@ class HomeController extends Controller
         if ($request->ajax()) {
             $contracts = ContactUs::all();
             return DataTables::of($contracts)
+                ->addIndexColumn()
+                ->addColumn('view-button',function($contracts){
+                    $btn ='<button type="button" class="btn btn-primary view-contact-us"
+                    data-id="'.$contracts->id.'" data-name="'.$contracts->name.'" data-email="'.$contracts->email.'" data-subject="'.$contracts->subject.'"
+                    data-message="'.$contracts->message.'" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fas fa-eye"></i></button>';
+                    return $btn;
+                })
+                ->rawColumns(['view-button'])
                 ->make(true);
         }
         return view('contact_us.index');

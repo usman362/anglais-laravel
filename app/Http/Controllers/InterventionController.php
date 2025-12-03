@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Intervention;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Yajra\DataTables\DataTables;
 
 class InterventionController extends Controller
@@ -20,7 +21,13 @@ class InterventionController extends Controller
     public function index(Request $request)
     {
         if ($request->ajax()) {
-            $users = Intervention::all();
+            if(Auth::user()->role == 'client'){
+                $users = Intervention::where('client_id',Auth::id())->get();
+            }elseif(Auth::user()->role == 'employee'){
+                $users = Intervention::where('employee_id',Auth::id())->get();
+            }else{
+                $users = Intervention::all();
+            }
             return DataTables::of($users)
                 ->addColumn('employee', function ($row) {
                     return $row->employee->name ?? 'N/A';

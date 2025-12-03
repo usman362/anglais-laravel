@@ -16,7 +16,10 @@ class ProfileController extends Controller
 
     public function index()
     {
-        return view('profile.profile-setting');
+        if (Auth::user()->role == 'admin') {
+            return view('profile.profile-setting');
+        }
+        return redirect()->route('documents.index');
     }
 
     public function store(Request $request)
