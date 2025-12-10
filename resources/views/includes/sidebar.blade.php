@@ -73,6 +73,26 @@
                             @endif
                         </ul>
                     </li>
+
+                    @if (auth()->user()->role == 'admin' || auth()->user()->role == 'employee')
+                        <li class="nav-item">
+                            <a class="nav-link with-sub" href="javascript:void(0);">
+                                <img style="width: 30px;padding:0 2px;" src="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ_-2.png') }}" alt="">
+                                <span class="sidemenu-label notranslate">Formation de sécurité</span>
+                                <i class="angle fe fe-chevron-right"></i>
+                            </a>
+                            <ul class="nav-sub notranslate">
+                                <li class="side-menu-label1"><a href="javascript:void(0);">Formation de sécurité</a></li>
+                                <li class="nav-sub-item">
+                                    <a class="nav-sub-link" href="{{ route('formation-de-sécurité.index') }}">Liste du formation</a>
+                                </li>
+                                <li class="nav-sub-item">
+                                    <a class="nav-sub-link" href="{{ route('formation-de-sécurité.create') }}">Créer un formation</a>
+                                </li>
+                            </ul>
+                        </li>
+                    @endif
+
                     @if (auth()->user()->role == 'admin')
                         <li class="nav-item">
                             <a class="nav-link with-sub" href="javascript:void(0);">
@@ -91,7 +111,6 @@
                             </ul>
                         </li>
                     @endif
-
 
                     <li class="nav-item">
                         <a class="nav-link with-sub" href="javascript:void(0);">

@@ -1,0 +1,173 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\Document;
+use App\Models\Formation;
+use App\Models\User;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Yajra\DataTables\DataTables;
+
+class FormationController extends Controller
+{
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    /**
+     * Display a listing of the resource.
+     */
+    public function index(Request $request)
+    {
+        if ($request->ajax()) {
+            if (Auth::user()->role == 'admin') {
+                $users = Formation::where('type', $request->type)->get();
+            } else {
+                $users = Formation::where('type', $request->type)->where('user_id', Auth::user()->id)->get();
+            }
+            return DataTables::of($users)
+                ->addColumn('user', function ($row) {
+                    return $row->user->name ?? '';
+                })
+                ->addColumn('type', function ($row) {
+                    $type = 'formations';
+                    return $type;
+                })
+                ->addColumn('actions', function ($row) {
+                    $editUrl = route('formation-de-sécurité.edit', $row->id);
+                    $deleteUrl = route('formation-de-sécurité.destroy', $row->id);
+                    $formId = 'delete-form' . $row->id;
+                    $downloadId = 'download-form' . $row->id;
+                    $download = route('file.download');
+                    $actionDownload = '<a href="javascript:void(0)" onclick="document.getElementById(\'' . $downloadId . '\').submit()" class="text-primary m-2"><i class="fas fa-arrow-down"></i></a>
+                        <form action="' . $download . '" method="POST" id="' . $downloadId . '" style="display:none;">
+                            ' . csrf_field() . '
+
+                            <input type="hidden" name="file_path" value="' . $row->file_path . '">
+                        </form>';
+                    $actionBtn = '<a href="' . $editUrl . '" class="text-info m-2"><i class="fas fa-edit"></i></a>
+                        <a href="javascript:void(0)" onclick="document.getElementById(\'' . $formId . '\').submit()" class="text-danger m-2"><i class="fas fa-trash"></i></a>
+                        <form action="' . $deleteUrl . '" method="POST" id="' . $formId . '" style="display:none;">
+                            ' . csrf_field() . method_field('DELETE') . '
+                        </form>';
+
+                    if(Auth::user()->role == 'admin'){
+                        return $actionDownload.$actionBtn;
+                    }else{
+                        return $actionDownload;
+                    }
+                })
+                ->rawColumns(['actions'])
+                ->make(true);
+        }
+        $type = 'formations';
+        $name = 'Formation';
+        return view('formation.index', compact('type', 'name'));
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function create()
+    {
+        $type = 'formations';
+        $name = 'Formation';
+        $users = User::where('role', 'employee')->get();
+        return view('formation.create', compact('type', 'name', 'users'));
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Request $request)
+    {
+        $request->validate([
+            'title' => 'required',
+            'file' => 'required',
+        ]);
+        try {
+            $filePath = null;
+
+            if ($request->hasFile('file')) {
+                $uniqueName = uniqid() . '___' . str_replace(' ', '_', $request->file->getClientOriginalName());
+
+                // Store the file in the 'public' disk (configured in config/filesystems.php)
+                $filePath = $request->file->storeAs("/formations", $uniqueName, "public");
+            }
+            $document = Formation::create([
+                'title' => $request->title,
+                'file_path' => $filePath,
+                'type' => $request->type,
+                'user_id' => $request->user_id,
+            ]);
+            return redirect(route('formation-de-sécurité.index'))->with('success', 'Le document a été créé avec succès');
+        } catch (\Exception $e) {
+            return redirect(route('formation-de-sécurité.index'))->with('error', 'Échec de la création du document');
+        }
+    }
+
+    /**
+     * Display the specified resource.
+     */
+    public function show(string $id)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit(string $id)
+    {
+        $document = Formation::find($id);
+        $users = User::where('role', '!=', 'admin')->get();
+        $name = 'Formation';
+        return view('formation.edit', compact('document', 'name', 'users'));
+    }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(Request $request, string $id)
+    {
+        $request->validate([
+            'title' => 'required',
+            'file' => 'required',
+        ]);
+        try {
+            $filePath = null;
+
+            if ($request->hasFile('file')) {
+                $uniqueName = uniqid() . '___' . str_replace(' ', '_', $request->file->getClientOriginalName());
+
+                // Store the file in the 'public' disk (configured in config/filesystems.php)
+                $filePath = $request->file->storeAs("/formations", $uniqueName, "public");
+            }
+            $document = Formation::updateOrCreate(['id' => $id], [
+                'title' => $request->title,
+                'file_path' => $filePath,
+                'type' => $request->type,
+                'user_id' => $request->user_id,
+            ]);
+            return redirect(route('formation-de-sécurité.index'))->with('success', 'Le document a été mis à jour avec succès');
+        } catch (\Exception $e) {
+            return redirect(route('formation-de-sécurité.index'))->with('error', 'Échec de la mise à jour du document');
+        }
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(string $id)
+    {
+        $user = Formation::find($id);
+        if ($user->delete()) {
+            return back()->with('success', 'Le document a été supprimé avec succès !');
+        } else {
+            return back()->with('error', 'Échec de la suppression du document !');
+        }
+    }
+}

@@ -3,6 +3,7 @@
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ContractsController;
 use App\Http\Controllers\DocumentsController;
+use App\Http\Controllers\FormationController;
 use App\Http\Controllers\InterventionController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ScheduleController;
@@ -54,6 +55,7 @@ Route::resource('utilisateurs', UsersController::class)->names([
     'destroy' => 'users-management.destroy',
 ]);
 Route::resource('documents', DocumentsController::class);
+Route::resource('formation-de-sécurité', FormationController::class);
 Route::get('ajouter-une-facture', [DocumentsController::class, 'invoiceCreate'])->name('invoice.create');
 Route::get('ajouter-une-fiche-de-paie', [DocumentsController::class, 'payslipCreate'])->name('payslip.create');
 Route::get('ajouter-une-feuille-de-suivi', [DocumentsController::class, 'followupCreate'])->name('followup.create');
