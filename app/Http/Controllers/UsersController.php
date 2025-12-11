@@ -68,7 +68,10 @@ class UsersController extends Controller
                 'name' => $request->first_name . ' ' . $request->last_name,
                 'email' => $request->email,
                 'password' => Hash::make($request->password),
-                'role' => $request->role
+                'role' => $request->role,
+                'address' => $request->address,
+                'dob' => $request->dob,
+                'gender' => $request->gender,
             ]);
             $user->notify(new AccountCreatedNotification($user->role, $request->password));
             return redirect(route('users-management.index'))->with('success', "L'utilisateur a été créé avec succès");
@@ -112,7 +115,10 @@ class UsersController extends Controller
                 'name' => $request->first_name . ' ' . $request->last_name,
                 'email' => $request->email,
                 'password' => Hash::make($request->password),
-                'role' => $request->role
+                'role' => $request->role,
+                'address' => $request->address,
+                'dob' => $request->dob,
+                'gender' => $request->gender,
             ]);
             return redirect(route('users-management.index'))->with('success', "L'utilisateur a été mis à jour avec succès");
         } catch (\Exception $e) {

@@ -91,6 +91,41 @@
                                             </div>
                                         @enderror
                                     </div>
+                                    <div class="col-md-6">
+                                        <label for="dob" class="form-label tx-semibold">date de naissance</label>
+                                        <input type="date" name="dob" class="form-control" id="dob"
+                                            value="" required="">
+                                        @error('dob')
+                                            <div class="text-danger">
+                                                {{ $message }}
+                                            </div>
+                                        @enderror
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="gender" class="form-label tx-semibold">sexe</label>
+                                        <select name="gender" id="gender" class="form-control" required>
+                                            <option value="">Select Gender</option>
+                                            <option value="male" {{ old('gender', $user->gender ?? '') == 'male' ? 'selected' : '' }}>Male</option>
+                                            <option value="female" {{ old('gender', $user->gender ?? '') == 'female' ? 'selected' : '' }}>Female</option>
+                                            <option value="other" {{ old('gender', $user->gender ?? '') == 'other' ? 'selected' : '' }}>Other</option>
+                                        </select>
+
+                                        @error('gender')
+                                            <div class="text-danger">
+                                                {{ $message }}
+                                            </div>
+                                        @enderror
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="address" class="form-label tx-semibold">adresse</label>
+                                        <textarea name="address" class="form-control" id="address">
+                                        </textarea>
+                                        @error('address')
+                                            <div class="text-danger">
+                                                {{ $message }}
+                                            </div>
+                                        @enderror
+                                    </div>
                                     <div class="col-12">
                                         <button class="btn btn-primary" type="submit">Envoyer</button>
                                     </div>

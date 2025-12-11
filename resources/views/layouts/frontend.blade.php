@@ -421,10 +421,10 @@
                                 <p class="day"><a style="color:#fff"
                                         href="{{ route('contact_us') }}">Contactez-nous</a></p>
                             </div>
-                            {{-- <div class="single-opening">
+                            <div class="single-opening">
                                 <p class="day"><a style="color:#fff" href="{{ route('career') }}">Nous
                                         recrutons</a></p>
-                            </div> --}}
+                            </div>
                             <div class="single-opening">
                                 <p class="day"><a style="color:#fff" href="{{ route('employee-login') }}">Espace
                                         collaborateurs</a></p>

@@ -26,6 +26,8 @@ Route::get('/our-valeurs', [App\Http\Controllers\HomeController::class, 'our_val
 Route::get('/pourquoi-nous', [App\Http\Controllers\HomeController::class, 'why_us'])->name('why_us');
 Route::get('/faq', [App\Http\Controllers\HomeController::class, 'faq'])->name('faq');
 Route::get('/nous-recrutons', [App\Http\Controllers\HomeController::class, 'career'])->name('career');
+Route::post('/nous-recrutons', [App\Http\Controllers\HomeController::class, 'career_store'])->name('career.store');
+Route::get('/nous-recrutons-liste', [App\Http\Controllers\HomeController::class, 'career_list'])->name('career_list');
 Route::get('/mentions-légales', [App\Http\Controllers\HomeController::class, 'legal_1'])->name('legal_1');
 Route::get('/conditions-générales-d-utilisation', [App\Http\Controllers\HomeController::class, 'legal_2'])->name('legal_2');
 Route::get('/conditions-générales-de-vente', [App\Http\Controllers\HomeController::class, 'legal_3'])->name('legal_3');

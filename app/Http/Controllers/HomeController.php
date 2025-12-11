@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Blog;
+use App\Models\Career;
 use App\Models\ContactUs;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -28,6 +29,51 @@ class HomeController extends Controller
     public function career()
     {
         return view('frontend.career');
+    }
+
+    public function career_store(Request $request)
+    {
+        $contact = new Career();
+        $contact->name = $request->name;
+        $contact->position = $request->position;
+        $filePath = null;
+        if ($request->hasFile('file')) {
+            $uniqueName = uniqid() . '___' . str_replace(' ', '_', $request->file->getClientOriginalName());
+            $filePath = $request->file->storeAs("/careers", $uniqueName, "public");
+        }
+        $contact->file = $filePath;
+        $contact->cover = $request->cover;
+        $contact->save();
+        return back()->with('success', 'Votre message a bien été envoyé. Nous vous répondrons dès que possible.');
+    }
+
+    public function career_list(Request $request)
+    {
+        if ($request->ajax()) {
+            $contracts = Career::all();
+            return DataTables::of($contracts)
+                ->addIndexColumn()
+                ->addColumn('view-button',function($contracts){
+                    $btn ='<button type="button" class="btn btn-primary view-career"
+                    data-id="'.$contracts->id.'" data-name="'.$contracts->name.'" data-position="'.$contracts->position.'" data-file="'.asset('storage/'.$contracts->file).'"
+                    data-cover="'.$contracts->cover.'" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fas fa-eye"></i></button>';
+                    $downloadbtn = '<a class="btn btn-primary" href="'.asset('storage/'.$contracts->file).'" download>
+                            <i class="fas fa-arrow-down"></i>
+                        </a>
+                        ';
+                    return $downloadbtn.$btn;
+                })
+                ->addColumn('download-btn',function($contracts){
+                    $btn = '<a href="'.asset('storage/'.$contracts->file).'" download>
+                            <i class="fas fa-arrow-down"></i>
+                        </a>
+                        ';
+                    return $btn;
+                })
+                ->rawColumns(['view-button','download-btn'])
+                ->make(true);
+        }
+        return view('career.index');
     }
 
     public function why_us()
