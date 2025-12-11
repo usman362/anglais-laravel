@@ -33,7 +33,7 @@ class FormationController extends Controller
                     return $row->user->name ?? '';
                 })
                 ->addColumn('type', function ($row) {
-                    $type = 'formations';
+                    $type = 'formation-de-sécurité';
                     return $type;
                 })
                 ->addColumn('actions', function ($row) {
@@ -63,8 +63,8 @@ class FormationController extends Controller
                 ->rawColumns(['actions'])
                 ->make(true);
         }
-        $type = 'formations';
-        $name = 'Formation';
+        $type = 'formation-de-sécurité';
+        $name = 'Formation de sécurité';
         return view('formation.index', compact('type', 'name'));
     }
 
@@ -73,8 +73,8 @@ class FormationController extends Controller
      */
     public function create()
     {
-        $type = 'formations';
-        $name = 'Formation';
+        $type = 'formation-de-sécurité';
+        $name = 'Formation de sécurité';
         $users = User::where('role', 'employee')->get();
         return view('formation.create', compact('type', 'name', 'users'));
     }
@@ -124,7 +124,7 @@ class FormationController extends Controller
     {
         $document = Formation::find($id);
         $users = User::where('role', '!=', 'admin')->get();
-        $name = 'Formation';
+        $name = 'Formation de sécurité';
         return view('formation.edit', compact('document', 'name', 'users'));
     }
 
