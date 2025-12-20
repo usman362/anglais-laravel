@@ -22,13 +22,21 @@ class UsersController extends Controller
     public function index(Request $request)
     {
         if ($request->ajax()) {
-            $users = User::all();
+
+            if(Auth::user()->role == 'employee'){
+                $users = User::whereIn('role',['client','life_assistant'])->get();
+            }else{
+                $users = User::all();
+            }
+
             return DataTables::of($users)
                 ->addColumn('actions', function ($row) {
                     $editUrl = route('users-management.edit', $row->id);
                     $deleteUrl = route('users-management.destroy', $row->id);
                     $formId = 'delete-form' . $row->id;
-
+                    if(Auth::user()->role !== 'admin'){
+                        return '';
+                    }
                     return '
                         <a href="' . $editUrl . '" class="text-info m-2"><i class="fas fa-edit"></i></a>
                         <a href="javascript:void(0)" onclick="document.getElementById(\'' . $formId . '\').submit()" class="text-danger m-2"><i class="fas fa-trash"></i></a>
@@ -48,7 +56,8 @@ class UsersController extends Controller
      */
     public function create()
     {
-        return view('user_management.create');
+        $customers = User::where('role','client')->get();
+        return view('user_management.create',compact('customers'));
     }
 
     /**
@@ -72,6 +81,7 @@ class UsersController extends Controller
                 'address' => $request->address,
                 'dob' => $request->dob,
                 'gender' => $request->gender,
+                 'assign_to' => $request->assign_to,
             ]);
             $user->notify(new AccountCreatedNotification($user->role, $request->password));
             return redirect(route('users-management.index'))->with('success', "L'utilisateur a été créé avec succès");
@@ -94,7 +104,8 @@ class UsersController extends Controller
     public function edit(string $id)
     {
         $user = User::find($id);
-        return view('user_management.edit', compact('user'));
+        $customers = User::where('role','client')->get();
+        return view('user_management.edit', compact('user','customers'));
     }
 
     /**
@@ -111,7 +122,7 @@ class UsersController extends Controller
         ]);
 
         try {
-            $user = User::update(['id' => $id],[
+            $user = User::updateOrCreate(['id' => $id],[
                 'name' => $request->first_name . ' ' . $request->last_name,
                 'email' => $request->email,
                 'password' => Hash::make($request->password),

@@ -21,7 +21,7 @@
                     </svg></div>
                 <ul class="menu-nav nav" style="margin-top:66px !important">
 
-                    @if (auth()->user()->role == 'admin')
+                    @if (auth()->user()->role == 'admin' || auth()->user()->role == 'employee')
                         <li class="nav-item">
                             <a class="nav-link with-sub" href="javascript:void(0);">
                                 <img style="width: 30px;padding:0 2px;" src="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ_-2.png') }}" alt="">
@@ -33,9 +33,11 @@
                                 <li class="nav-sub-item">
                                     <a class="nav-sub-link" href="{{ route('users-management.index') }}">Liste des utilisateurs</a>
                                 </li>
-                                <li class="nav-sub-item">
-                                    <a class="nav-sub-link" href="{{ route('users-management.create') }}">Créer un utilisateur</a>
-                                </li>
+                                 @if (auth()->user()->role == 'admin')
+                                    <li class="nav-sub-item">
+                                        <a class="nav-sub-link" href="{{ route('users-management.create') }}">Créer un utilisateur</a>
+                                    </li>
+                                @endif
                             </ul>
                         </li>
                     @endif
@@ -181,6 +183,27 @@
                             </ul>
                         </li>
                     @endif
+
+                    @if (auth()->user()->role == 'employee' || auth()->user()->role == 'life_assistant' || auth()->user()->role == 'client')
+                        <li class="nav-item">
+                            <a class="nav-link with-sub" href="javascript:void(0);">
+                                <img style="width: 30px;padding:0 2px;" src="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ_-2.png') }}" alt="">
+                                <span class="sidemenu-label">Messagerie</span>
+                                <i class="angle fe fe-chevron-right"></i>
+                            </a>
+                            <ul class="nav-sub">
+                                <li class="nav-sub-item">
+                                    <a class="nav-sub-link" href="{{ route('life_assistant_message') }}">Interne Agapé & Intervenants</a>
+                                </li>
+                                @if (auth()->user()->role == 'employee')
+                                <li class="nav-sub-item">
+                                    <a class="nav-sub-link" href="{{ route('employee_message') }}">Interne Agapé</a>
+                                </li>
+                                @endif
+                            </ul>
+                        </li>
+                    @endif
+
                 </ul>
                 <div class="slide-right" id="slide-right">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="#c9bebe" width="24" height="24"

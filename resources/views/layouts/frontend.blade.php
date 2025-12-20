@@ -429,6 +429,10 @@
                                 <p class="day"><a style="color:#fff" href="{{ route('employee-login') }}">Espace
                                         collaborateurs</a></p>
                             </div>
+
+                             <div class="single-opening">
+                                <p class="day"><a style="color:#fff" href="{{ route('life-assistant-login') }}">Assistant de vie</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>

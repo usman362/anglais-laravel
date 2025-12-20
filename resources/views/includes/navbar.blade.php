@@ -64,9 +64,9 @@
                         <a class="nav-link mt-2 icon" style="margin-right:12px" href="{{ route('home') }}">
                             <img src="{{ asset('frontend/assets/images/SMILEY-AGAPEÌ.png') }}" width="40" alt="">
                         </a>
-                        <a class="nav-link mt-2 icon" style="margin-right:12px" href="{{ url('messenger') }}">
+                        {{-- <a class="nav-link mt-2 icon" style="margin-right:12px" href="{{ url('messenger') }}">
                             <img src="{{ asset('assets/img/chat.png') }}" class="mt-2" width="20" alt="">
-                        </a>
+                        </a> --}}
 
                         <div class="dropdown d-flex main-profile-menu">
                             <a class="d-flex" href="javascript:void(0)">

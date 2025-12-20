@@ -23,9 +23,14 @@ class InterventionController extends Controller
         if ($request->ajax()) {
             if(Auth::user()->role == 'client'){
                 $users = Intervention::where('client_id',Auth::id())->get();
-            }elseif(Auth::user()->role == 'employee'){
-                $users = Intervention::where('employee_id',Auth::id())->get();
-            }else{
+            }
+            if(Auth::user()->role == 'life_assistant'){
+                $users = Intervention::where('client_id',Auth::user()->assign_to)->get();
+            }
+            // elseif(Auth::user()->role == 'employee'){
+            //     $users = Intervention::where('employee_id',Auth::id())->get();
+            // }
+            else{
                 $users = Intervention::all();
             }
             return DataTables::of($users)

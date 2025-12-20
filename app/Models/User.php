@@ -27,6 +27,7 @@ class User extends Authenticatable
         'address',
         'dob',
         'gender',
+        'assign_to'
     ];
 
     /**

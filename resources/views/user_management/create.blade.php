@@ -80,12 +80,26 @@
                                     </div>
                                     <div class="col-md-6">
                                         <label for="role" class="form-label tx-semibold">Rôle</label>
-                                        <select class="form-select" name="role" id="role" required="">
+                                        <select class="form-select select-role" name="role" id="role" required="">
                                             <option selected="" disabled="" value="">Choisir...</option>
                                             <option value="employee">Employé</option>
+                                            <option value="life_assistant">Assistants de vie</option>
                                             <option value="client">Client</option>
                                         </select>
                                         @error('role')
+                                            <div class="text-danger">
+                                                {{ $message }}
+                                            </div>
+                                        @enderror
+                                    </div>
+                                     <div class="col-md-6 d-none" id="assignTo">
+                                        <label for="assign_to" class="form-label tx-semibold">Attribuer à</label>
+                                        <select class="form-select" name="assign_to" id="assign_to">
+                                            @foreach ($customers as $customer)
+                                                <option value="{{$customer->id}}">{{$customer->name}}</option>
+                                            @endforeach
+                                        </select>
+                                        @error('assign_to')
                                             <div class="text-danger">
                                                 {{ $message }}
                                             </div>
@@ -140,3 +154,28 @@
     </div>
 
 @endsection
+
+@push('scripts')
+   <script>
+$(document).ready(function () {
+
+    function toggleAssignTo() {
+        const role = $('.select-role').val();
+
+        if (role === 'life_assistant') {
+            $('#assignTo').removeClass('d-none');
+        } else {
+            $('#assignTo').addClass('d-none');
+        }
+    }
+
+    // On change
+    $('.select-role').on('change', toggleAssignTo);
+
+    // On page load (important if edit form)
+    toggleAssignTo();
+
+});
+</script>
+
+@endpush

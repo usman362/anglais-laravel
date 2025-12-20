@@ -8,6 +8,7 @@ use App\Http\Controllers\InterventionController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ScheduleController;
 use App\Http\Controllers\UsersController;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -18,6 +19,7 @@ Route::get('/home', function () {
 
 Route::view('votre-espace-client','auth.client-login')->name('client-login');
 Route::view('espace-collaborateurs','auth.employee-login')->name('employee-login');
+Route::view('assistant-de-vie','auth.life-assistant-login')->name('life-assistant-login');
 // Route::view('test-translate','translate');
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -90,3 +92,18 @@ Route::post('/file-download', function (Request $request) {
 
     return response()->download($path);
 })->name('file.download');
+
+
+Route::get('life_assistant_message',function(){
+    $user = User::find(Auth::id());
+    $user->group = 'life_assistant_message';
+    $user->save();
+    return redirect(url('messenger'));
+})->name('life_assistant_message');
+
+Route::get('employee_message',function(){
+    $user = User::find(Auth::id());
+    $user->group = 'employee_message';
+    $user->save();
+    return redirect(url('messenger'));
+})->name('employee_message');
